@@ -17,5 +17,7 @@ namespace Academy.Core.Models
         public int code { get; set; }
         public string rahma { get; set; }
 
+       public string address { get; set; }
+
     }
 }

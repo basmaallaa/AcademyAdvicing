@@ -1,4 +1,3 @@
-".vs/" 
-"bin/" 
-"obj/" 
-"*.log/" 
+.vs/
+bin/
+obj/
