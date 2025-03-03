@@ -15,5 +15,7 @@ namespace Academy.Core.Models
         public string PhoneNumber { get; set; }
         public string ImagePath { get; set; }
 
+       public string address { get; set; }
+
     }
 }
