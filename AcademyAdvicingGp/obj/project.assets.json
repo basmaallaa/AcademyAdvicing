@@ -5185,11 +5185,25 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\w\\.nuget\\packages\\": {}
+=======
     "C:\\Users\\IT\\.nuget\\packages\\": {}
+>>>>>>> 92ef9a629db1eb191e12b1ae9f83412f3fb0dfb6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "projectName": "AcademyAdvicingGp",
+      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+      "outputPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
       "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
       "projectName": "AcademyAdvicingGp",
       "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
@@ -5198,6 +5212,7 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 92ef9a629db1eb191e12b1ae9f83412f3fb0dfb6
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5211,8 +5226,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
+            "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+=======
             "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
               "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+>>>>>>> 92ef9a629db1eb191e12b1ae9f83412f3fb0dfb6
             }
           }
         }
