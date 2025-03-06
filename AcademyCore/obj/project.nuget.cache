@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "P8OmKmln8c30oIuJDdVE+GXvD3GEssYBAAV7lhRkfY4va+FIR5vwv22wFFhImZOLZuEUQmzo70Ca6hujwD6bCA==",
+  "dgSpecHash": "WMoRaoVncOY65e5VRUr+er04ryXnlUyQhzWVbQsu2awjHX5FEGg3cZF0llrzH/x4teu5unahaZiz8XK0W6ssAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IT\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CBKqCuvYkNQULkL8O2yfvyPBxtWlXRZvss23zg4wujSsmWjucP1Kv6VwVwY5/vArLR+fLsGPGqwhxk0vuS5Tfg==",
+  "dgSpecHash": "Zy9qetKMDIpC+7qM0WcAlXbF6t35wyyfDn+T6Jc5sZ2ByYpBp3BDiWoax4Z8xLjG/cJ7vOX6gfwxk/pLOCgGMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IT\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

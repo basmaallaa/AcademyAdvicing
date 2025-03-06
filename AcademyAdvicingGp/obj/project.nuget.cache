@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zeW/9cMWTr/L9ZfSMMR+51vO2ZHVWAbMJV0k6KaSQtpJsaDd/wRg6RXyD5qnoYKWKXF2/TQJ3L28oXXCcvi+Zg==",
+  "dgSpecHash": "9reHu2PYD12zj7OZeBzwtn8cz6mDyoTlZXGeC4FAv++DpYB9OX/MT4bb3WJHMkuGAMAcTOdpK4cLsCohU06SFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IT\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

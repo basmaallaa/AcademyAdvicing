@@ -130,12 +130,21 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<int>("CreditHours")
                         .HasColumnType("int");
 
-                    b.Property<int>("ManageById")
+                    b.Property<int?>("ManageById")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("category")
+                        .HasColumnType("int");
+
+                    b.Property<string>("prerequisite")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("type")
+                        .HasColumnType("int");
 
                     b.HasKey("CourseId");
 
@@ -420,9 +429,7 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.Coordinator", "ManageBy")
                         .WithMany("Courses")
-                        .HasForeignKey("ManageById")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ManageById");
 
                     b.Navigation("ManageBy");
                 });

@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Academy.Repo\Academy.Repo.csproj" />
+    <ProjectReference Include="..\Academy.Services\Academy.Services.csproj" />
   </ItemGroup>
 
 </Project>

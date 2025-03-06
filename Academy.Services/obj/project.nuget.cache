@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4y7l0cEiuIbOKNCHUR3W0Z9mbnD0V1z/3i7jrFyAiXA5VSU/X5PKJxU+Ylya1g7ZB+xVx5e2dJRiWIaBzSY3CQ==",
+  "dgSpecHash": "4+vKsbN7h5rOIsAa+QKVnxDoi46GDQuWnVKPD7Yp83hwtVScRimD5Cd4zlJAiSJ4xBWyXXdkNDctCp+qy6CJsw==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IT\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
