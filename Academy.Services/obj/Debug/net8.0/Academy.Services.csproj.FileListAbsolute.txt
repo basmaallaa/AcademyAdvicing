@@ -87,4 +87,8 @@ C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Services\obj\Debug\ne
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+<<<<<<< HEAD
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.sourcelink.json
+=======
 >>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
+>>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a

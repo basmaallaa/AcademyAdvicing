@@ -64,6 +64,47 @@ public class CreateCourseService : ICourseService
             return _mapper.Map<IEnumerable<CreateCourseDto>>(courses);
         }
 
+        public async Task<IEnumerable<CreateCourseDto>> SearchCoursesAsync(
+    string? name)
+    /*string? courseCode,
+    int? creditHours,
+    courseType? type,
+    courseCategory? category)*/
+        {
+            var coursesQuery =await _unitOfWork.Repository<Course>().GetAllAsync();
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                coursesQuery = coursesQuery.Where(c => c.Name.Contains(name));
+            }
+
+            /*if (!string.IsNullOrEmpty(courseCode))
+            {
+                coursesQuery = coursesQuery.Where(c => c.CourseCode.Contains(courseCode));
+            }
+
+            if (creditHours.HasValue)
+            {
+                coursesQuery = coursesQuery.Where(c => c.CreditHours == creditHours.Value);
+            }
+
+            if (type.HasValue)
+            {
+                coursesQuery = coursesQuery.Where(c => c.type == type.Value);
+            }
+
+            if (category.HasValue)
+            {
+                coursesQuery = coursesQuery.Where(c => c.category == category.Value);
+            }*/
+
+            var courses = await coursesQuery.ToListAsync();
+            return _mapper.Map<IEnumerable<CreateCourseDto>>(courses);
+        }
+
+
+
+
 
        /* public async Task<bool> DeleteCourseAsync(int id)
          {
@@ -71,6 +112,9 @@ public class CreateCourseService : ICourseService
              var course = await _unitOfWork.Repository<Course>().GetAsync(id);
              if (course == null) return false;
 
+<<<<<<< HEAD
+
+=======
              // مرر الـ id بدلاً من كائن course
              _unitOfWork.Repository<Course>().Delete(id);
              await _unitOfWork.CompleteAsync();
@@ -82,6 +126,7 @@ public class CreateCourseService : ICourseService
 
 
 
+>>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
     }
 
 

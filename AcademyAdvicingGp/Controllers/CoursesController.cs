@@ -45,6 +45,22 @@ namespace AcademyAdvicingGp.Controllers
             }
         }
 
+<<<<<<< HEAD
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchCourses(
+    [FromQuery] string? name)
+    /*[FromQuery] string? courseCode,
+    [FromQuery] int? creditHours,
+    [FromQuery] courseType? type,
+    [FromQuery] courseCategory? category)*/
+        {
+            var result = await _courseService.SearchCoursesAsync(name/*, courseCode, creditHours, type, category*/);
+            return Ok(result);
+        }
+
+    }
+}
+=======
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCourse(int id, [FromBody] CreateCourseDto updateCourseDto)
         {
@@ -85,6 +101,7 @@ namespace AcademyAdvicingGp.Controllers
             return Ok($"Course with ID {id} deleted successfully.");
         }*/
     }
+>>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
 
 }
     

@@ -27,6 +27,9 @@ namespace Academy.Repo.Repositories
             _context.Remove(item);
         }
 
+<<<<<<< HEAD
+        public async Task<IQueryable<T>> GetAllAsync()
+=======
         /*public async Task Delete(int id)
         {
             var entity = await _context.Set<T>().FindAsync(id); // 🔍 البحث عن الكيان أولاً
@@ -40,8 +43,10 @@ namespace Academy.Repo.Repositories
         }*/
 
         public async Task<IEnumerable<T>> GetAllAsync()
+>>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
         {
-            return await _context.Set<T>().ToListAsync();
+            // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
+            return _context.Set<T>().AsQueryable();
         }
 
         public async Task<T> GetAsync(int id)
