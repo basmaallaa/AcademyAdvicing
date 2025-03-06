@@ -1,5 +1,10 @@
 ﻿
+using Academy.Core;
+using Academy.Core.Mapping;
+using Academy.Core.ServicesInterfaces;
+using Academy.Repo;
 using Academy.Repo.Data;
+using Academy.Services.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace AcademyAdvicingGp
@@ -21,6 +26,11 @@ namespace AcademyAdvicingGp
             {
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            // dependency enjection 
+            builder.Services.AddScoped<IStudentService, StudentService>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
 
             var app = builder.Build();
 

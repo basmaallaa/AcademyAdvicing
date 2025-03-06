@@ -4783,19 +4783,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\w\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\gp\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
       "projectName": "Academy.Repo",
-      "projectPath": "P:\\gp\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "P:\\gp\\AcademyAdvicing\\Academy.Repo\\obj\\",
+      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+      "outputPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4803,15 +4803,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "P:\\gp\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
-              "projectPath": "P:\\gp\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj"
+            "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
             }
           }
         }
@@ -4858,7 +4857,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

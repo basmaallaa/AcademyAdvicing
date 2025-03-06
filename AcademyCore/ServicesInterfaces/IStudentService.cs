@@ -10,10 +10,13 @@ namespace Academy.Core.ServicesInterfaces
 {
 	public interface IStudentService
 	{
-		Task<IEnumerable<StudentDto>> GetAllStudentsAsync();
-		Task<StudentDto> GetStudentByIdAsync(int id);
-		Task UpdateStudentAsync(StudentDto studentDto);
-		void DeleteStudentAsync(int id);
+		Task<IEnumerable<StudentDtoID>> GetAllStudentsAsync();
+		Task<StudentDtoID> GetStudentByIdAsync(int id);
+		Task UpdateStudentAsync(StudentDtoID studentDtoid);
+		Task<StudentDto> AddStudentAsync(StudentDto studentDto);
 
-	}
+        Task DeleteStudentAsync(int id);
+		//Task<IEnumerable<StudentDtoID>> SearchStudentsAsync(string? query, double? gpa, string? level, int? completedHours);
+        Task<IEnumerable<Student>> Search(string searchString);
+    }
 }

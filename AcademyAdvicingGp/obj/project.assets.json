@@ -1738,6 +1738,19 @@
         "runtime": {
           "bin/placeholder/Academy.Repo.dll": {}
         }
+      },
+      "Academy.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Academy.Repo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Academy.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Academy.Services.dll": {}
+        }
       }
     }
   },
@@ -5208,11 +5221,16 @@
       "type": "project",
       "path": "../Academy.Repo/Academy.Repo.csproj",
       "msbuildProject": "../Academy.Repo/Academy.Repo.csproj"
+    },
+    "Academy.Services/1.0.0": {
+      "type": "project",
+      "path": "../Academy.Services/Academy.Services.csproj",
+      "msbuildProject": "../Academy.Services/Academy.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Academy.Repo >= 1.0.0",
+      "Academy.Services >= 1.0.0",
       "AutoMapper >= 14.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.2",
@@ -5220,19 +5238,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\w\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\gp\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
       "projectName": "AcademyAdvicingGp",
-      "projectPath": "P:\\gp\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "P:\\gp\\AcademyAdvicing\\AcademyAdvicingGp\\obj\\",
+      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+      "outputPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5240,15 +5258,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "P:\\gp\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "P:\\gp\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+            "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
+              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj"
             }
           }
         }
@@ -5306,7 +5323,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
