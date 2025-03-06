@@ -84,22 +84,22 @@ namespace Academy.Services.Services
             await _unitOfWork.CompleteAsync();
         }
 
-        public Task<IEnumerable<StudentDtoID>> SearchStudentByNameAsync(string name)
-        {
-            if (string.IsNullOrWhiteSpace(name))
-                return Task.FromResult<IEnumerable<StudentDtoID>>(new List<StudentDtoID>()); // Return empty list if name is null/empty
+        //public Task<IEnumerable<StudentDtoID>> SearchStudentByNameAsync(string name)
+        //{
+        //    if (string.IsNullOrWhiteSpace(name))
+        //        return Task.FromResult<IEnumerable<StudentDtoID>>(new List<StudentDtoID>()); // Return empty list if name is null/empty
 
-            //var studentsQuery = _unitOfWork.Repository<Student>().GetQueryable();
-            IQueryable<Student> studentsQuery = (IQueryable<Student>)_unitOfWork.Repository<Student>().GetQueryable();
+        //    //var studentsQuery = _unitOfWork.Repository<Student>().GetQueryable();
+        //    IQueryable<Student> studentsQuery = (IQueryable<Student>)_unitOfWork.Repository<Student>().GetQueryable();
 
 
-            string loweredName = name.ToLower(); // Convert search input to lowercase
+        //    string loweredName = name.ToLower(); // Convert search input to lowercase
 
-            studentsQuery = studentsQuery.Where(s => s.Name.ToLower().Contains(loweredName)); // Case-insensitive search
+        //    studentsQuery = studentsQuery.Where(s => s.Name.ToLower().Contains(loweredName)); // Case-insensitive search
 
-            var result = studentsQuery.ToList(); // Execute query
-            return Task.FromResult(_mapper.Map<IEnumerable<StudentDtoID>>(result));
-        }
+        //    var result = studentsQuery.ToList(); // Execute query
+        //    return Task.FromResult(_mapper.Map<IEnumerable<StudentDtoID>>(result));
+        //}
 
 
 

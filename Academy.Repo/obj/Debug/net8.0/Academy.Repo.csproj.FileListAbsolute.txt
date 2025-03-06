@@ -83,8 +83,6 @@ C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\bin\Debug\net8.0
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
-<<<<<<< HEAD
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.sourcelink.json
-=======
 >>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
 >>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a

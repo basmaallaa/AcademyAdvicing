@@ -18,7 +18,7 @@ namespace Academy.Core.ServicesInterfaces
         Task DeleteStudentAsync(int id);
 		//Task<IEnumerable<StudentDtoID>> SearchStudentsAsync(string? query, double? gpa, string? level, int? completedHours);
 		//Task<IEnumerable<Student>> Search(string searchString);
-		Task<IEnumerable<StudentDtoID>> SearchStudentByNameAsync(string name);
+		//Task<IEnumerable<StudentDtoID>> SearchStudentByNameAsync(string name);
 
     }
 }

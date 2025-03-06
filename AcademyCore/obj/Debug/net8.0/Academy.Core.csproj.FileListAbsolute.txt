@@ -65,9 +65,7 @@ C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyCore\bin\Debug\net8.0\
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.AssemblyReference.cache
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll
-<<<<<<< HEAD
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.AssemblyReference.cache
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.sourcelink.json
-=======
 >>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
 >>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
