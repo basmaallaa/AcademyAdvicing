@@ -94,27 +94,7 @@ namespace AcademyAdvicingGp.Controllers
         //        return Ok(result);
         //    }
 
-        [HttpGet("search")]
-        public async Task<IActionResult> SearchStudents(
-    [FromQuery] string? query,  // General search query (ID, name, phone, username, etc.)
-    [FromQuery] double? gpa,
-    [FromQuery] string? level,
-    [FromQuery] int? completedHours)
-        {
-            // Ensure at least one parameter is provided for searching
-            if (string.IsNullOrEmpty(query) && gpa == null && string.IsNullOrEmpty(level) && completedHours == null)
-            {
-                return BadRequest("At least one search parameter is required.");
-            }
-
-            var result = await _studentService.SearchStudentsAsync(query, gpa, level, completedHours);
-
-            if (result == null || !result.Any())
-                return NotFound("No students found matching the criteria.");
-
-            return Ok(result);
-        }
-
+        
 
     }
 }

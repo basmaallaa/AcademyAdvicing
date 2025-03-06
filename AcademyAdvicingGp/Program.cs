@@ -1,17 +1,15 @@
 ﻿
 using Academy.Core;
 using Academy.Core.Mapping;
-<<<<<<< HEAD
+
 using Academy.Core.ServicesInterfaces;
 using Academy.Repo;
 using Academy.Repo.Data;
 using Academy.Services.Services;
-=======
+
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
-using Academy.Repo;
-using Academy.Repo.Data;
 using Academy.Services.Services.CourseService;
->>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
+
 using Microsoft.EntityFrameworkCore;
 
 namespace AcademyAdvicingGp
@@ -25,7 +23,7 @@ namespace AcademyAdvicingGp
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -34,17 +32,17 @@ namespace AcademyAdvicingGp
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-<<<<<<< HEAD
+
             // dependency enjection 
             builder.Services.AddScoped<IStudentService, StudentService>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
 
-=======
+
             builder.Services.AddScoped<ICourseService, CreateCourseService>();
-            builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+         
             builder.Services.AddAutoMapper(M=>M.AddProfile(new CourseProfile()));
->>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
+
             var app = builder.Build();
 
             #region update-Database
