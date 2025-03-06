@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\Academy.Repo\Academy.Repo.csproj" />
+>>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
     <ProjectReference Include="..\Academy.Services\Academy.Services.csproj" />
   </ItemGroup>
 

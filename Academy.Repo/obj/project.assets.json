@@ -4783,11 +4783,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\w\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\IT\\.nuget\\packages\\": {}
+>>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
       "projectName": "Academy.Repo",
       "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
@@ -4796,6 +4801,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+      "projectName": "Academy.Repo",
+      "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+      "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4809,8 +4824,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
               "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
+=======
+            "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
+>>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
             }
           }
         }

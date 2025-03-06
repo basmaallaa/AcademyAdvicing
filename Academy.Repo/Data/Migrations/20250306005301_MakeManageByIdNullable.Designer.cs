@@ -4,6 +4,7 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Data.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    partial class AcademyContextModelSnapshot : ModelSnapshot
+    [Migration("20250306005301_MakeManageByIdNullable")]
+    partial class MakeManageByIdNullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -343,7 +346,7 @@ namespace Academy.Repo.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ManageById")
+                    b.Property<int>("ManageById")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -512,7 +515,9 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.StudentAffair", "ManageBy")
                         .WithMany("Students")
-                        .HasForeignKey("ManageById");
+                        .HasForeignKey("ManageById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("ManageBy");
                 });

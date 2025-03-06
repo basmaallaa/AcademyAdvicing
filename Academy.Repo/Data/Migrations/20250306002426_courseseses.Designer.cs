@@ -4,6 +4,7 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Data.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    partial class AcademyContextModelSnapshot : ModelSnapshot
+    [Migration("20250306002426_courseseses")]
+    partial class courseseses
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -130,7 +133,7 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<int>("CreditHours")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ManageById")
+                    b.Property<int>("ManageById")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -141,6 +144,7 @@ namespace Academy.Repo.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("prerequisite")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("type")
@@ -343,7 +347,7 @@ namespace Academy.Repo.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ManageById")
+                    b.Property<int>("ManageById")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -429,7 +433,9 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.Coordinator", "ManageBy")
                         .WithMany("Courses")
-                        .HasForeignKey("ManageById");
+                        .HasForeignKey("ManageById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("ManageBy");
                 });
@@ -512,7 +518,9 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.StudentAffair", "ManageBy")
                         .WithMany("Students")
-                        .HasForeignKey("ManageById");
+                        .HasForeignKey("ManageById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("ManageBy");
                 });
