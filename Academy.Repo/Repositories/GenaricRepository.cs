@@ -22,9 +22,9 @@ namespace Academy.Repo.Repositories
             await _context.AddAsync(item);
         }
 
-        public void Delete(int id)
+        public void Delete(T item)
         {
-            _context.Remove(id);
+            _context.Remove(item);
         }
 
         /*public async Task Delete(int id)
@@ -53,7 +53,14 @@ namespace Academy.Repo.Repositories
         {
             _context.Update(item);
         }
+<<<<<<< HEAD
 
        
+=======
+        public IEnumerable<object> GetQueryable() 
+        {
+            return _context.Set<T>().AsQueryable().ToList<object>();
+        }
+>>>>>>> 57f5f3ac5fdf27a54ae57d64aec420d0d500fc17
     }
 }

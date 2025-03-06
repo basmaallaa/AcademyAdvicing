@@ -13,8 +13,8 @@ namespace Academy.Core.Models
         public float GPA { get; set; }
         public int CompeletedHours { get; set; }
         public List<AssignedCourse> Courses { get; set; }
-        public StudentAffair ManageBy { get; set; }
-        public int ManageById { get; set; }
+        public StudentAffair ManageBy{ get; set; }
+        public int? ManageById { get; set; }
 
 
     }

@@ -14,6 +14,7 @@ namespace Academy.Core.Mapping
         public StudentProfile()
         {
             CreateMap<Student,StudentDto>().ReverseMap(); //el reverce deh 3lshan lw h map el 3aks
+            CreateMap<Student, StudentDtoID>().ReverseMap();
         }
     }
 }
