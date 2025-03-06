@@ -27,6 +27,18 @@ namespace Academy.Repo.Repositories
             _context.Remove(id);
         }
 
+        /*public async Task Delete(int id)
+        {
+            var entity = await _context.Set<T>().FindAsync(id); // 🔍 البحث عن الكيان أولاً
+
+            if (entity == null)
+            {
+                throw new InvalidOperationException($"Entity of type {typeof(T).Name} with ID {id} was not found.");
+            }
+
+            _context.Remove(entity); // ✅ الآن يمكن الحذف بأمان
+        }*/
+
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
@@ -41,5 +53,7 @@ namespace Academy.Repo.Repositories
         {
             _context.Update(item);
         }
+
+       
     }
 }

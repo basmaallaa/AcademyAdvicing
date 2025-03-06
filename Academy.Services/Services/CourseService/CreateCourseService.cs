@@ -5,6 +5,7 @@ using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Academy.Repo;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,13 +40,50 @@ public class CreateCourseService : ICourseService
             var createdCourseDto = _mapper.Map<CreateCourseDto>(course);
             return createdCourseDto;
         }
+        public async Task<CreateCourseDto> UpdateCourseAsync(int id, CreateCourseDto updateCourseDto)
+        {
+            var course = await _unitOfWork.Repository<Course>().GetAsync(id);
+            if (course == null) return null;
+
+            _mapper.Map(updateCourseDto, course);
+            _unitOfWork.Repository<Course>().Update(course);
+            await _unitOfWork.CompleteAsync();
+
+            return _mapper.Map<CreateCourseDto>(course);
+        }
+
+        public async Task<CreateCourseDto> GetCourseByIdAsync(int id)
+        {
+            var course = await _unitOfWork.Repository<Course>().GetAsync(id);
+            return course == null ? null : _mapper.Map<CreateCourseDto>(course);
+        }
+
+        public async Task<IEnumerable<CreateCourseDto>> GetAllCoursesAsync()
+        {
+            var courses = await _unitOfWork.Repository<Course>().GetAllAsync();
+            return _mapper.Map<IEnumerable<CreateCourseDto>>(courses);
+        }
 
 
+       /* public async Task<bool> DeleteCourseAsync(int id)
+         {
+             // اجلب الكيان الفعلي Course من قاعدة البيانات
+             var course = await _unitOfWork.Repository<Course>().GetAsync(id);
+             if (course == null) return false;
 
- 
+             // مرر الـ id بدلاً من كائن course
+             _unitOfWork.Repository<Course>().Delete(id);
+             await _unitOfWork.CompleteAsync();
+
+             return true;
+         }*/
 
      
+
+
+
     }
+
 
 
 
