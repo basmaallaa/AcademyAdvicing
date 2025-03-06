@@ -53,14 +53,11 @@ namespace Academy.Repo.Repositories
         {
             _context.Update(item);
         }
-<<<<<<< HEAD
 
-       
-=======
         public IEnumerable<object> GetQueryable() 
         {
             return _context.Set<T>().AsQueryable().ToList<object>();
         }
->>>>>>> 57f5f3ac5fdf27a54ae57d64aec420d0d500fc17
-    }
+
+ }
 }
