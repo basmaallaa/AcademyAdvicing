@@ -45,6 +45,7 @@ namespace AcademyAdvicingGp.Controllers
             }
         }
 
+<<<<<<< HEAD
         [HttpGet("search")]
         public async Task<IActionResult> SearchCourses(
     [FromQuery] string? name)
@@ -59,6 +60,52 @@ namespace AcademyAdvicingGp.Controllers
 
     }
 }
+=======
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCourse(int id, [FromBody] CreateCourseDto updateCourseDto)
+        {
+            if (updateCourseDto == null)
+                return BadRequest("Invalid course data.");
+
+            var updatedCourse = await _courseService.UpdateCourseAsync(id, updateCourseDto);
+            if (updatedCourse == null)
+                return NotFound($"Course with ID {id} not found.");
+
+            return Ok(updatedCourse);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCourseById(int id)
+        {
+            var course = await _courseService.GetCourseByIdAsync(id);
+            if (course == null)
+                return NotFound($"Course with ID {id} not found.");
+
+            return Ok(course);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllCourses()
+        {
+            var courses = await _courseService.GetAllCoursesAsync();
+            return Ok(courses);
+        }
+
+        /*[HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCourse(int id)
+        {
+            var deleted = await _courseService.DeleteCourseAsync(id);
+            if (!deleted)
+                return NotFound($"Course with ID {id} not found.");
+
+            return Ok($"Course with ID {id} deleted successfully.");
+        }*/
+    }
+>>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
+
+}
+    
+    
 
 
 
