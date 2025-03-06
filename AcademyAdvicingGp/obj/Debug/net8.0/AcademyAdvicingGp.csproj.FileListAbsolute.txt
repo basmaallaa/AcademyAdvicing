@@ -868,11 +868,9 @@ C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyAdvicingGp\obj\Debug\n
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\ref\AcademyAdvicingGp.dll
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.dll
 C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.pdb
-<<<<<<< HEAD
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.dll
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.pdb
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.sourcelink.json
-=======
 >>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
 >>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a

@@ -27,23 +27,8 @@ namespace Academy.Repo.Repositories
             _context.Remove(item);
         }
 
-<<<<<<< HEAD
+
         public async Task<IQueryable<T>> GetAllAsync()
-=======
-        /*public async Task Delete(int id)
-        {
-            var entity = await _context.Set<T>().FindAsync(id); // 🔍 البحث عن الكيان أولاً
-
-            if (entity == null)
-            {
-                throw new InvalidOperationException($"Entity of type {typeof(T).Name} with ID {id} was not found.");
-            }
-
-            _context.Remove(entity); // ✅ الآن يمكن الحذف بأمان
-        }*/
-
-        public async Task<IEnumerable<T>> GetAllAsync()
->>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
         {
             // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
             return _context.Set<T>().AsQueryable();
