@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/14.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1699,6 +1715,9 @@
       "Academy.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "14.0.0"
+        },
         "compile": {
           "bin/placeholder/Academy.Core.dll": {}
         },
@@ -1719,10 +1738,38 @@
         "runtime": {
           "bin/placeholder/Academy.Repo.dll": {}
         }
+      },
+      "Academy.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Academy.Repo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Academy.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Academy.Services.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/14.0.0": {
+      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "type": "package",
+      "path": "automapper/14.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.14.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net8.0/AutoMapper.dll",
+        "lib/net8.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -5174,30 +5221,36 @@
       "type": "project",
       "path": "../Academy.Repo/Academy.Repo.csproj",
       "msbuildProject": "../Academy.Repo/Academy.Repo.csproj"
+    },
+    "Academy.Services/1.0.0": {
+      "type": "project",
+      "path": "../Academy.Services/Academy.Services.csproj",
+      "msbuildProject": "../Academy.Services/Academy.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Academy.Repo >= 1.0.0",
+      "Academy.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.2",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\w\\.nuget\\packages\\": {}
+    "C:\\Users\\basma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
       "projectName": "AcademyAdvicingGp",
-      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-      "outputPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\obj\\",
+      "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5211,8 +5264,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+            "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
+              "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj"
+            },
+            "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj": {
+              "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj"
             }
           }
         }
@@ -5269,13 +5325,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

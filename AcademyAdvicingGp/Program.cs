@@ -1,5 +1,10 @@
 ﻿
+using Academy.Core;
+using Academy.Core.Mapping;
+using Academy.Core.ServicesInterfaces.ICoursesInterface;
+using Academy.Repo;
 using Academy.Repo.Data;
+using Academy.Services.Services.CourseService;
 using Microsoft.EntityFrameworkCore;
 
 namespace AcademyAdvicingGp
@@ -22,6 +27,9 @@ namespace AcademyAdvicingGp
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            builder.Services.AddScoped<ICourseService, CreateCourseService>();
+            builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+            builder.Services.AddAutoMapper(M=>M.AddProfile(new CourseProfile()));
             var app = builder.Build();
 
             #region update-Database

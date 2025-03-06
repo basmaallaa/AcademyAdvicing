@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {}
+    "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {}
   },
   "projects": {
-    "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+    "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+        "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
         "projectName": "Academy.Core",
-        "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
-        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-        "outputPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\obj\\",
+        "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
+        "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

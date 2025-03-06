@@ -27,9 +27,10 @@ namespace Academy.Repo.Repositories
             _context.Remove(id);
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IQueryable<T>> GetAllAsync()
         {
-            return await _context.Set<T>().ToListAsync();
+            // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
+            return _context.Set<T>().AsQueryable();
         }
 
         public async Task<T> GetAsync(int id)
