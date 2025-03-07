@@ -19,12 +19,17 @@ namespace Academy.Core.Dtos
         [Range(2, 3, ErrorMessage = "CreditHours must be either 2 or 3.")]
         public int CreditHours { get; set; }
         public float Credit { get; set; }
-
         public string? prerequisite { get; set; }
+
+
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public courseCategory category { get; set; }
+
+
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public courseType type { get; set; }
+
+
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             if (CreditHours != 2 && CreditHours != 3)

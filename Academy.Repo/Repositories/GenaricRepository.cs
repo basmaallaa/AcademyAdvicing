@@ -27,9 +27,11 @@ namespace Academy.Repo.Repositories
             _context.Remove(item);
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+
+        public async Task<IQueryable<T>> GetAllAsync()
         {
-            return await _context.Set<T>().ToListAsync();
+            // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
+            return _context.Set<T>().AsQueryable();
         }
 
         public async Task<T> GetAsync(int id)
@@ -41,7 +43,17 @@ namespace Academy.Repo.Repositories
         {
             _context.Update(item);
         }
+<<<<<<< HEAD
         
         
     }
+=======
+
+        public IEnumerable<object> GetQueryable() 
+        {
+            return _context.Set<T>().AsQueryable().ToList<object>();
+        }
+
+ }
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
 }

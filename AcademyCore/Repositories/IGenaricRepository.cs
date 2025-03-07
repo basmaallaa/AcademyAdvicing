@@ -10,10 +10,11 @@ namespace Academy.Core.Repositories
 {
     public interface IGenaricRepository<T> where T : class 
     {
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<IQueryable<T>> GetAllAsync();
         Task<T> GetAsync(int id);
         Task AddAsync(T item);
-        void Delete(T item);
+       void Delete(T item);
+
         void Update(T item);
         
     }

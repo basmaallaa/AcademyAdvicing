@@ -44,8 +44,67 @@ namespace AcademyAdvicingGp.Controllers
                 return StatusCode(500, $"Error creating course: {ex.InnerException?.Message ?? ex.Message}");
             }
         }
+
+
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchCourses(
+    [FromQuery] string? name)
+    /*[FromQuery] string? courseCode,
+    [FromQuery] int? creditHours,
+    [FromQuery] courseType? type,
+    [FromQuery] courseCategory? category)*/
+        {
+            var result = await _courseService.SearchCoursesAsync(name/*, courseCode, creditHours, type, category*/);
+            return Ok(result);
+        }
+
+    
+
+      [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCourse(int id, [FromBody] CreateCourseDto updateCourseDto)
+        {
+            if (updateCourseDto == null)
+                return BadRequest("Invalid course data.");
+
+            var updatedCourse = await _courseService.UpdateCourseAsync(id, updateCourseDto);
+            if (updatedCourse == null)
+                return NotFound($"Course with ID {id} not found.");
+
+            return Ok(updatedCourse);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCourseById(int id)
+        {
+            var course = await _courseService.GetCourseByIdAsync(id);
+            if (course == null)
+                return NotFound($"Course with ID {id} not found.");
+
+            return Ok(course);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllCourses()
+        {
+            var courses = await _courseService.GetAllCoursesAsync();
+            return Ok(courses);
+        }
+
+        /*[HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCourse(int id)
+        {
+            var deleted = await _courseService.DeleteCourseAsync(id);
+            if (!deleted)
+                return NotFound($"Course with ID {id} not found.");
+
+            return Ok($"Course with ID {id} deleted successfully.");
+        }*/
     }
-    }
+
+
+}
+    
+    
 
 
 
