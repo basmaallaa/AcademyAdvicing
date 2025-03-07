@@ -4783,27 +4783,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IT\\.nuget\\packages\\": {}
+    "C:\\Users\\w\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
       "projectName": "Academy.Repo",
       "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
       "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
       "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
-      "projectName": "Academy.Repo",
-      "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
-      "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\obj\\",
->>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4817,13 +4809,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< HEAD
             "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
               "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj"
-=======
-            "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
->>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
             }
           }
         }
