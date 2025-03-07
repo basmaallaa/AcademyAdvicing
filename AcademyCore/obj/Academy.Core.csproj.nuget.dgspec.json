@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {}
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+        "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
         "projectName": "Academy.Core",
-        "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+        "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
         "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\obj\\",
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",

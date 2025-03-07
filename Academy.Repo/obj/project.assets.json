@@ -4788,11 +4788,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
       "projectName": "Academy.Repo",
-      "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+      "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
       "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\obj\\",
+      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4809,8 +4809,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
+            "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj"
             }
           }
         }

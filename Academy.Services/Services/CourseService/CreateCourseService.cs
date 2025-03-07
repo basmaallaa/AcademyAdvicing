@@ -101,6 +101,17 @@ namespace Academy.Services.Services.CourseService
             var courses = await coursesQuery.ToListAsync();
             return _mapper.Map<IEnumerable<CreateCourseDto>>(courses);
         }
+        public async Task<bool> DeleteCourseAsync(int id)
+        {
+            var course = await _unitOfWork.Repository<Course>().GetAsync(id);
+            if (course == null) return false;
+
+            _unitOfWork.Repository<Course>().Delete(course);
+            await _unitOfWork.CompleteAsync();
+
+            return true;
+        }
+
     }
 }
 
