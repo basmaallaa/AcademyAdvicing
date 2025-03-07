@@ -60,7 +60,12 @@ namespace AcademyAdvicingGp.Controllers
 
    
 
-        [HttpPut("{id}")]
+        
+
+    
+
+      [HttpPut("{id}")]
+
         public async Task<IActionResult> UpdateCourse(int id, [FromBody] CreateCourseDto updateCourseDto)
         {
             if (updateCourseDto == null)

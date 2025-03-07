@@ -14,6 +14,7 @@ namespace Academy.Core.ServicesInterfaces.ICoursesInterface
         Task<CreateCourseDto> CreateCourseAsync(CreateCourseDto createCourseDto);
 
         Task<IEnumerable<CreateCourseDto>> SearchCoursesAsync(string? name/*, string? courseCode, int? creditHours, courseType? type, courseCategory? category*/);
+       
 
         Task<CreateCourseDto> UpdateCourseAsync(int id, CreateCourseDto updateCourseDto);
         Task<CreateCourseDto> GetCourseByIdAsync(int id);

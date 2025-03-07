@@ -14,12 +14,12 @@ using System.Threading.Tasks;
 
 namespace Academy.Services.Services.CourseService
 {
-   
-public class CreateCourseService : ICourseService
+
+    public class CreateCourseService : ICourseService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        
+
         public CreateCourseService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
@@ -66,12 +66,12 @@ public class CreateCourseService : ICourseService
 
         public async Task<IEnumerable<CreateCourseDto>> SearchCoursesAsync(
     string? name)
-    /*string? courseCode,
-    int? creditHours,
-    courseType? type,
-    courseCategory? category)*/
+        /*string? courseCode,
+        int? creditHours,
+        courseType? type,
+        courseCategory? category)*/
         {
-            var coursesQuery =await _unitOfWork.Repository<Course>().GetAllAsync();
+            var coursesQuery = await _unitOfWork.Repository<Course>().GetAllAsync();
 
             if (!string.IsNullOrEmpty(name))
             {
@@ -106,6 +106,7 @@ public class CreateCourseService : ICourseService
 
 
 
+
        /* public async Task<bool> DeleteCourseAsync(int id)
          {
              // اجلب الكيان الفعلي Course من قاعدة البيانات
@@ -127,11 +128,10 @@ public class CreateCourseService : ICourseService
 
 
 
+
     }
-
-
-
-
 }
+
+
 
 
