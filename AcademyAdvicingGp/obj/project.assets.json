@@ -5244,33 +5244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-=======
-<<<<<<< HEAD
->>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
-      "projectUniqueName": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
       "projectName": "AcademyAdvicingGp",
-      "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
       "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
       "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\obj\\",
-<<<<<<< HEAD
-=======
-=======
-      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
->>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
-      "projectName": "AcademyAdvicingGp",
-      "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-      "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
-<<<<<<< HEAD
-      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\obj\\",
-=======
-      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\obj\\",
->>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
->>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
->>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5287,33 +5265,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+            "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
             },
-            "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj"
-=======
-<<<<<<< HEAD
->>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
-            "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
-            },
-            "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj": {
-              "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj"
-<<<<<<< HEAD
-=======
-=======
-            "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
-            },
-            "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj"
->>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
->>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
->>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
+            "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
+              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj"
             }
           }
         }

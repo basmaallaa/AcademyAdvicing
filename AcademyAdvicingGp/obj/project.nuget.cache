@@ -1,26 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "2n14E/pWcXvWa2JtG3+b0yMBj4dLSKtF086KnQKXUkt+12mgXIzgyi3w0+oMoEbU8B25v7FHqUz07yNHH1t1Jg==",
+  "dgSpecHash": "XhNQQqHyVPlfH6MDp60WBt1r82QrwfhBcils9JvsffIK5kfqVwdyGIFkaIjYLDopAOYlXrwndw+YcnHIlepCYA==",
   "success": true,
-  "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "atAEIt63bCUIM8Hd1V2rn7NlDijEqRQIl3uPg+RA8vQhkVbApTmwb9aWRNdr+pxLg/uR4VJhvMJcyxrERLQJfw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "2n14E/pWcXvWa2JtG3+b0yMBj4dLSKtF086KnQKXUkt+12mgXIzgyi3w0+oMoEbU8B25v7FHqUz07yNHH1t1Jg==",
-  "success": true,
-  "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-=======
-  "dgSpecHash": "ZaoXgkbxz7iFWOyY+0XuI+IfB6l+Ktjn5aV60xBwsPj8ceftXrQxqIyl14/I9j75P74JXhkfs9G9eQpv982aQg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
->>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
->>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
->>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
+  "projectFilePath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\w\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\w\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
