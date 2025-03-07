@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "+QpBdJMOpliMYsT+r/HIO6HqKhXEwInYsbwfeRhPmyx2EzxUPEBFJLtkfr/Qw5AeqyauIY5A3e25ruh4nD6HHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "vndJoTpUsIdiz4sLxxUc4VBc/SSYcHGRifP0fJ0W3Py2pw5p2LVP4xpumWAlJyMNNhok8XEC3v+q7E9pnicsrg==",
+  "success": true,
+  "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
+=======
+  "dgSpecHash": "WMoRaoVncOY65e5VRUr+er04ryXnlUyQhzWVbQsu2awjHX5FEGg3cZF0llrzH/x4teu5unahaZiz8XK0W6ssAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
   "expectedPackageFiles": [
     "C:\\Users\\IT\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -19,10 +19,10 @@ namespace Academy.Core.Models
 
         public string? prerequisite {  get; set; }
 
-        [JsonConverter(typeof(JsonStringEnumConverter))]
+       [JsonConverter(typeof(JsonStringEnumConverter))]
         public courseCategory category { get; set; }
 
-        [JsonConverter(typeof(JsonStringEnumConverter))]
+       [JsonConverter(typeof(JsonStringEnumConverter))]
         public courseType type  { get; set; }
 
         public List<AssignedCourse> Students { get; set; }

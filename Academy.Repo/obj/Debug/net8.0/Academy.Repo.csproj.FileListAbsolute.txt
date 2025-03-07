@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.runtimeconfig.json
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
@@ -16,3 +17,114 @@ C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+=======
+<<<<<<< HEAD
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.runtimeconfig.json
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.pdb
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Core.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Core.pdb
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.AssemblyReference.cache
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfoInputs.cache
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfo.cs
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.CoreCompileInputs.cache
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.sourcelink.json
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\refint\Academy.Repo.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
+D:\Acadamy_Project\AcademyAdvicing\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+=======
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.pdb
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfo.cs
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\refint\Academy.Repo.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.pdb
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.AssemblyReference.cache
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfoInputs.cache
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfo.cs
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.CoreCompileInputs.cache
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\refint\Academy.Repo.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.AssemblyReference.cache
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfoInputs.cache
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfo.cs
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.CoreCompileInputs.cache
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\refint\Academy.Repo.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.runtimeconfig.json
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Repo.pdb
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+<<<<<<< HEAD
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.runtimeconfig.json
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.pdb
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Core.dll
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Core.pdb
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.AssemblyReference.cache
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfoInputs.cache
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfo.cs
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.CoreCompileInputs.cache
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.sourcelink.json
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.dll
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\refint\Academy.Repo.dll
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
+D:\Acadamy_Project\academyAdvicing\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+=======
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.AssemblyReference.cache
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfoInputs.cache
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfo.cs
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.CoreCompileInputs.cache
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.sourcelink.json
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.dll
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\refint\Academy.Repo.dll
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.runtimeconfig.json
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Repo.pdb
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
+C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Repo\obj\Debug\net8.0\Academy.Repo.sourcelink.json
+>>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
+>>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44

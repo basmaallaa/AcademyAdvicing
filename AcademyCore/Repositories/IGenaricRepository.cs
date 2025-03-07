@@ -16,6 +16,6 @@ namespace Academy.Core.Repositories
        void Delete(T item);
 
         void Update(T item);
-        IEnumerable<object> GetQueryable();
+        
     }
 }
