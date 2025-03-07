@@ -1,8 +1,10 @@
 ﻿using Academy.Core.Dtos;
 using Academy.Core.Enums;
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
+using Academy.Repo.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AcademyAdvicingGp.Controllers
 {
@@ -58,20 +60,23 @@ namespace AcademyAdvicingGp.Controllers
             return Ok(result);
         }
 
-    
 
-      [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCourse(int id, [FromBody] CreateCourseDto updateCourseDto)
-        {
-            if (updateCourseDto == null)
-                return BadRequest("Invalid course data.");
 
-            var updatedCourse = await _courseService.UpdateCourseAsync(id, updateCourseDto);
-            if (updatedCourse == null)
-                return NotFound($"Course with ID {id} not found.");
+        [HttpPut("{id}")]
+          public async Task<IActionResult> UpdateCourse(int id,  CreateCourseDto updateCourseDto)
+          {
+              if (updateCourseDto == null)
+                  return BadRequest("Invalid course data.");
 
-            return Ok(updatedCourse);
-        }
+              var updatedCourse = await _courseService.UpdateCourseAsync(id, updateCourseDto);
+              if (updatedCourse == null)
+                  return NotFound($"Course with ID {id} not found.");
+
+              return Ok(updatedCourse);
+          }
+
+     
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCourseById(int id)
@@ -90,7 +95,7 @@ namespace AcademyAdvicingGp.Controllers
             return Ok(courses);
         }
 
-        /*[HttpDelete("{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCourse(int id)
         {
             var deleted = await _courseService.DeleteCourseAsync(id);
@@ -98,7 +103,7 @@ namespace AcademyAdvicingGp.Controllers
                 return NotFound($"Course with ID {id} not found.");
 
             return Ok($"Course with ID {id} deleted successfully.");
-        }*/
+        }
     }
 
 

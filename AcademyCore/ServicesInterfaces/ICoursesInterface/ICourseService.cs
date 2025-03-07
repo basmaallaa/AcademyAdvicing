@@ -19,7 +19,7 @@ namespace Academy.Core.ServicesInterfaces.ICoursesInterface
         Task<CreateCourseDto> UpdateCourseAsync(int id, CreateCourseDto updateCourseDto);
         Task<CreateCourseDto> GetCourseByIdAsync(int id);
         Task<IEnumerable<CreateCourseDto>> GetAllCoursesAsync();
-        //Task<bool> DeleteCourseAsync(int id);
+        Task<bool> DeleteCourseAsync(int id);
 
     }
 }

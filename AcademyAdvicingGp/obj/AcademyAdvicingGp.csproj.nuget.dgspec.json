@@ -1,6 +1,13 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {}
+=======
+<<<<<<< HEAD
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
     "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {}
   },
   "projects": {
@@ -12,6 +19,27 @@
         "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
         "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
         "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\obj\\",
+<<<<<<< HEAD
+=======
+=======
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {}
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+  },
+  "projects": {
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+        "projectName": "Academy.Repo",
+        "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+        "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
+<<<<<<< HEAD
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\obj\\",
+=======
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\obj\\",
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +56,23 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
                 "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj"
+=======
+<<<<<<< HEAD
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj"
+=======
+<<<<<<< HEAD
+              "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj"
+=======
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
               }
             }
           }
@@ -80,6 +123,13 @@
         }
       }
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj": {
+=======
+<<<<<<< HEAD
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
     "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -88,6 +138,24 @@
         "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
         "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
         "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\obj\\",
+<<<<<<< HEAD
+=======
+=======
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
+        "projectName": "Academy.Services",
+        "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
+        "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
+<<<<<<< HEAD
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\obj\\",
+=======
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\obj\\",
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,8 +172,23 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
                 "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+=======
+<<<<<<< HEAD
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+=======
+<<<<<<< HEAD
+              "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+=======
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
               }
             }
           }
@@ -144,6 +227,13 @@
         }
       }
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {
+=======
+<<<<<<< HEAD
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
     "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -152,6 +242,24 @@
         "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
         "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
         "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\obj\\",
+<<<<<<< HEAD
+=======
+=======
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+        "projectName": "AcademyAdvicingGp",
+        "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+        "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
+<<<<<<< HEAD
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyAdvicingGp\\obj\\",
+=======
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\obj\\",
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -168,11 +276,33 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+              },
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj"
+=======
+<<<<<<< HEAD
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
               "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
                 "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
               },
               "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj": {
                 "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj"
+<<<<<<< HEAD
+=======
+=======
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+              },
+              "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
+                "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj"
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
               }
             }
           }
@@ -234,6 +364,13 @@
         }
       }
     },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+=======
+<<<<<<< HEAD
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
     "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -242,6 +379,24 @@
         "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
         "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
         "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\obj\\",
+<<<<<<< HEAD
+=======
+=======
+    "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
+        "projectName": "Academy.Core",
+        "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
+        "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
+<<<<<<< HEAD
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\obj\\",
+=======
+        "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\obj\\",
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",

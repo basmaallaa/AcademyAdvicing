@@ -1,8 +1,26 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "xirxaeIQeaNaeeW4qDuuY87sHCZciuy6kzofxO1QHGSSJLfGZaZsYBye7/FTZyVpsTdtUo4Kvk6lbuYc4OLOXg==",
   "success": true,
   "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "BURyzLg4G/d23vqrlTuBFaOf/0fLe8AHzEKH1z3AI0Js8Dqq4Dq3AHbVaT3OoHbjEyNaTgc8zUeD4szMWuVfGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "xirxaeIQeaNaeeW4qDuuY87sHCZciuy6kzofxO1QHGSSJLfGZaZsYBye7/FTZyVpsTdtUo4Kvk6lbuYc4OLOXg==",
+  "success": true,
+  "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+=======
+  "dgSpecHash": "Zy9qetKMDIpC+7qM0WcAlXbF6t35wyyfDn+T6Jc5sZ2ByYpBp3BDiWoax4Z8xLjG/cJ7vOX6gfwxk/pLOCgGMw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
   "expectedPackageFiles": [
     "C:\\Users\\w\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\w\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
