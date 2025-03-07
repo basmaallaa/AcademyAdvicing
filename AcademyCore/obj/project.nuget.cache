@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gw6CZWXYAWpI9OMQ0NIVG6uaNTss2RAwO4qQ0H/ZTkCTSEEqliNaxYdJLDRUDt9I6gP7HkN1zdJM+p0qFdp6sQ==",
+  "dgSpecHash": "vndJoTpUsIdiz4sLxxUc4VBc/SSYcHGRifP0fJ0W3Py2pw5p2LVP4xpumWAlJyMNNhok8XEC3v+q7E9pnicsrg==",
   "success": true,
-  "projectFilePath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+  "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\w\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\w\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

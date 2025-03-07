@@ -15,6 +15,6 @@ namespace Academy.Core.Repositories
         Task AddAsync(T item);
         void Delete(T item);
         void Update(T item);
-        IEnumerable<object> GetQueryable();
+        
     }
 }

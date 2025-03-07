@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SvuBQtK5TLgzP4uQBcNXDK06vPTjez1xD20CFksvmWdpuJudJFCfdWfn1uRsPmm49MeHoaFHRFdEfPTZkEg2qA==",
+  "dgSpecHash": "AWgTLu8p2yHYFm9UYlkQ7kdTG5CgHg8OH9pycVFTWZMh00u2VsHQrwjJLEIKDC+8d7SbqwEqv6Oovc1093Omcg==",
   "success": true,
-  "projectFilePath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
+  "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\w\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\w\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

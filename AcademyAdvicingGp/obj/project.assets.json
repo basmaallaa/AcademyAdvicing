@@ -5244,11 +5244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "projectUniqueName": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
       "projectName": "AcademyAdvicingGp",
-      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+      "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
       "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-      "outputPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\obj\\",
+      "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5265,11 +5265,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+            "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+              "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
             },
-            "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
-              "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj"
+            "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj": {
+              "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj"
             }
           }
         }

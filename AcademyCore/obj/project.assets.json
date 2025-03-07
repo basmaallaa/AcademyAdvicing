@@ -2902,11 +2902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+      "projectUniqueName": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
       "projectName": "Academy.Core",
-      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+      "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
       "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-      "outputPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\obj\\",
+      "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
