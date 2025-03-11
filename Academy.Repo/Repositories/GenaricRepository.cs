@@ -13,9 +13,10 @@ namespace Academy.Repo.Repositories
     {
         private AcademyContext _context;
 
-        public GenaricRepository(AcademyContext context) {
-            _context = context; 
-        
+        public GenaricRepository(AcademyContext context)
+        {
+            _context = context;
+
         }
         public async Task AddAsync(T item)
         {
@@ -40,7 +41,7 @@ namespace Academy.Repo.Repositories
             _context.Remove(entity); // ✅ الآن يمكن الحذف بأمان
         }*/
 
-        
+
 
 
 
@@ -63,11 +64,12 @@ namespace Academy.Repo.Repositories
 
 
 
-       
 
-       
 
     }
 
+
 }
+
+
 
