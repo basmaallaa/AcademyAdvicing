@@ -43,6 +43,7 @@ namespace Academy.Repo.Repositories
         {
             _context.Update(item);
         }
+<<<<<<< HEAD
 
 
         public IEnumerable<object> GetQueryable() 
@@ -53,3 +54,9 @@ namespace Academy.Repo.Repositories
  }
 
 }
+=======
+    }   
+ }
+
+
+>>>>>>> 599d57c30684a0c911b511a31e2802778fac6155

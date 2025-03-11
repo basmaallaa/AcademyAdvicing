@@ -16,7 +16,7 @@ namespace Academy.Core.ServicesInterfaces
 		Task<StudentDto> AddStudentAsync(StudentDto studentDto);
 
         Task DeleteStudentAsync(int id);
-		
+		Task<IEnumerable<StudentDtoID>> SearchStudentsAsync(string? searchTerm);
 
     }
 }

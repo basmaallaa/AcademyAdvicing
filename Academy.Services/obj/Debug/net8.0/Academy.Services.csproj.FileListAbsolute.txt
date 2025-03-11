@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.sourcelink.json
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
@@ -16,3 +21,81 @@ C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\ne
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
 C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+<<<<<<< HEAD
+=======
+>>>>>>> 49b7495ce29823cba9ff951aae0e7f5a6e9f7540
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Core.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Repo.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Repo.pdb
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\bin\Debug\net8.0\Academy.Core.pdb
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.sourcelink.json
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy..23AF24D1.Up2Date
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
+D:\Acadamy_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.pdb
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy..23AF24D1.Up2Date
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
+C:\Users\user\Downloads\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.pdb
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy..23AF24D1.Up2Date
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
+C:\Users\w\Downloads\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.pdb
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy..23AF24D1.Up2Date
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.sourcelink.json
+>>>>>>> e2296de2350a0e17b10a72f0c6620d7a91c94cc6
+>>>>>>> 46b2f49194103baaca2e54b0d60967dcc35e727a
+>>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
+>>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
+>>>>>>> 599d57c30684a0c911b511a31e2802778fac6155

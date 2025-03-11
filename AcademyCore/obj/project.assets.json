@@ -2897,19 +2897,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IT\\.nuget\\packages\\": {}
+    "C:\\Users\\w\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
       "projectName": "Academy.Core",
       "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
       "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\obj\\",
+=======
+      "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+      "projectName": "Academy.Core",
+      "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
+      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+      "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\obj\\",
+>>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

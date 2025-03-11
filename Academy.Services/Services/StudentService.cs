@@ -84,7 +84,41 @@ namespace Academy.Services.Services
             await _unitOfWork.CompleteAsync();
         }
 
-        
+       
+
+        public async Task<IEnumerable<StudentDtoID>> SearchStudentsAsync(string? searchTerm)
+        {
+            // Fetch data first
+            var studentsList = await _unitOfWork.Repository<Student>().GetAllAsync();
+            var studentsQuery = studentsList.AsQueryable(); // Convert to IQueryable for filtering
+
+            if (!string.IsNullOrWhiteSpace(searchTerm))
+            {
+                searchTerm = searchTerm.Trim().ToLower(); // Normalize input
+
+                // Parse searchTerm before filtering
+                bool isInt = int.TryParse(searchTerm, out int id);
+                bool isFloat = float.TryParse(searchTerm, out float gpa);
+                bool isHours = int.TryParse(searchTerm, out int hours);
+
+                studentsQuery = studentsQuery.Where(c =>
+                    c.Name.ToLower().Contains(searchTerm) ||
+                    c.UserName.ToLower().Contains(searchTerm) ||
+                    c.PhoneNumber.ToLower().Contains(searchTerm) ||
+                    c.Level.ToLower().Contains(searchTerm) ||
+                    c.Status.ToLower().Contains(searchTerm) ||
+                    (isInt && c.Id == id) ||            // If number, check ID
+                    (isFloat && c.GPA == gpa) ||        // If float, check GPA
+                    (isHours && c.CompeletedHours == hours) // If int, check Completed Hours
+                );
+            }
+
+            var students = studentsQuery.ToList(); // Execute filtering in memory
+            return _mapper.Map<IEnumerable<StudentDtoID>>(students);
+        }
+
+
+
 
     }
 }
