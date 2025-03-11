@@ -66,15 +66,19 @@ namespace Academy.Repo.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AcademicYear")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("AcademicYears")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Semester")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
 
                     b.ToTable("Availablecourses");
                 });
@@ -423,6 +427,17 @@ namespace Academy.Repo.Data.Migrations
                     b.Navigation("Course");
 
                     b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Course", b =>

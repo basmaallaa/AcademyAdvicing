@@ -1,20 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "6wfMJ1rySwypotwzz3aPikke8mRkVhiqDS60bdQjaSIq92hqJb8HoleHwfXaDQ4w8f6pkIfg44MVXb0QUvtJ/g==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "AWgTLu8p2yHYFm9UYlkQ7kdTG5CgHg8OH9pycVFTWZMh00u2VsHQrwjJLEIKDC+8d7SbqwEqv6Oovc1093Omcg==",
-  "success": true,
-  "projectFilePath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
-=======
   "dgSpecHash": "4+vKsbN7h5rOIsAa+QKVnxDoi46GDQuWnVKPD7Yp83hwtVScRimD5Cd4zlJAiSJ4xBWyXXdkNDctCp+qy6CJsw==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
->>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
->>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
   "expectedPackageFiles": [
     "C:\\Users\\IT\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

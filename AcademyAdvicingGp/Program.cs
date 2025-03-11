@@ -38,6 +38,9 @@ namespace AcademyAdvicingGp
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
 
+            builder.Services.AddScoped<IAvailableCourse, AvailableCourseService>();
+            builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseProfile()));
+
 
             builder.Services.AddScoped<ICourseService, CreateCourseService>();
          

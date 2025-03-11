@@ -2902,27 +2902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
-      "projectName": "Academy.Core",
-      "projectPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
-      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-      "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
->>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
       "projectName": "Academy.Core",
       "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
       "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
-<<<<<<< HEAD
       "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\AcademyCore\\obj\\",
-=======
-      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\obj\\",
->>>>>>> 4fd21ce652db88d6acae8165f1f54dd22ef60408
->>>>>>> 4aa24948100e10df23bd13912e5b42753287fc44
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",

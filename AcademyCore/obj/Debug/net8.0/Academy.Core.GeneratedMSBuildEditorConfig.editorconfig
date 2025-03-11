@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Academy.Core
-build_property.ProjectDir = C:\Users\IT\Desktop\New folder (2)\AcademyAdvicing\AcademyCore\
+build_property.ProjectDir = C:\Users\IT\Desktop\New folder (2)\academyAdvicing\AcademyCore\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
