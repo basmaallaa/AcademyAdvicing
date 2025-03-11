@@ -47,13 +47,23 @@ namespace AcademyAdvicingGp.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("{id}")]
+        /*[HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAvailableCourse(int id)
         {
             var success = await _availableCourseService.DeleteAvailableCourseAsync(id);
             if (!success) return NotFound();
             return NoContent();
+        }*/
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAvailableCourse(int id)
+        {
+            var success = await _availableCourseService.DeleteAvailableCourseAsync(id);
+            if (!success)
+                return NotFound(new { message = "The course was not found or has already been deleted!" });
+
+            return Ok(new { message = "The course has been successfully deleted!" });
         }
+
     }
-    }
+}
 

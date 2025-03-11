@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {}
   },
   "projects": {
@@ -13,22 +12,9 @@
         "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
         "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\obj\\",
-=======
-    "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {}
-  },
-  "projects": {
-    "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
-        "projectName": "Academy.Repo",
-        "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
-        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-        "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Repo\\obj\\",
->>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,13 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
                 "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
-=======
-              "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
-                "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj"
->>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
               }
             }
           }
@@ -99,7 +80,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -108,19 +88,9 @@
         "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
         "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\obj\\",
-=======
-    "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
-        "projectName": "Academy.Services",
-        "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
-        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-        "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\Academy.Services\\obj\\",
->>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -134,13 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
                 "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
-=======
-              "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-                "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
->>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
               }
             }
           }
@@ -179,7 +144,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -188,19 +152,9 @@
         "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
         "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyAdvicingGp\\obj\\",
-=======
-    "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-        "projectName": "AcademyAdvicingGp",
-        "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
-        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-        "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyAdvicingGp\\obj\\",
->>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -214,19 +168,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
                 "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
               },
               "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
                 "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj"
-=======
-              "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-                "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
-              },
-              "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj": {
-                "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\Academy.Services\\Academy.Services.csproj"
->>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
               }
             }
           }
@@ -288,7 +234,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -297,19 +242,9 @@
         "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
         "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\AcademyCore\\obj\\",
-=======
-    "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
-        "projectName": "Academy.Core",
-        "projectPath": "D:\\Acadamy_Project\\academyAdvicing\\AcademyCore\\Academy.Core.csproj",
-        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-        "outputPath": "D:\\Acadamy_Project\\AcademyAdvicing\\AcademyCore\\obj\\",
->>>>>>> 599d57c30684a0c911b511a31e2802778fac6155
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

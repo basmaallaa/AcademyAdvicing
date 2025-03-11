@@ -12,7 +12,7 @@ namespace Academy.Core.Models
         public int Id { get; set; }
 
 
-        public AcadmicYear AcademicYears { get; set; }
+        public int AcademicYears { get; set; }
 
         public Semster Semester { get; set; }
 
