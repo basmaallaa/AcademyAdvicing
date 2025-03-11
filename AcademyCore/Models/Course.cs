@@ -32,5 +32,6 @@ namespace Academy.Core.Models
         public int? ManageById { get; set; }
         public List<DoctorCourses> Doctor { get; set; }
 
+
     }
 }

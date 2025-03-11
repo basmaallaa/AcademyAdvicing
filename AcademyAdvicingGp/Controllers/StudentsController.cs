@@ -1,5 +1,6 @@
 ﻿using Academy.Core.Dtos;
 using Academy.Core.ServicesInterfaces;
+using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,14 +12,14 @@ namespace AcademyAdvicingGp.Controllers
     {
         private readonly IStudentService _studentService;
 
-        public StudentsController(IStudentService studentService) 
+        public StudentsController(IStudentService studentService)
         {
-            _studentService=studentService;
+            _studentService = studentService;
         }
         [HttpGet]
-        public async Task<IActionResult> GetAllStudents() 
+        public async Task<IActionResult> GetAllStudents()
         {
-            var result =  await _studentService.GetAllStudentsAsync();
+            var result = await _studentService.GetAllStudentsAsync();
 
             return Ok(result);
         }
@@ -68,33 +69,20 @@ namespace AcademyAdvicingGp.Controllers
             return Ok();
         }
 
-        //    [HttpGet("search")]
-        //    public async Task<IActionResult> SearchStudents(
-        //[FromQuery] int? id,
-        //[FromQuery] string? name,
-        //[FromQuery] string? phone,
-        //[FromQuery] string? username,
-        //[FromQuery] double? gpa,
-        //[FromQuery] string? level,
-        //[FromQuery] int? completedHours)
-        //    {
-        //        // Ensure at least one parameter is provided for searching
-        //        if (id == null && string.IsNullOrEmpty(name) && string.IsNullOrEmpty(phone)
-        //            && string.IsNullOrEmpty(username) && gpa == null
-        //            && string.IsNullOrEmpty(level) && completedHours == null)
-        //        {
-        //            return BadRequest("At least one search parameter is required.");
-        //        }
 
-        //        var result = await _studentService.SearchStudentsAsync(id, name, phone, username, gpa, level, completedHours);
 
-        //        if (result == null || !result.Any())
-        //            return NotFound("No students found matching the criteria.");
+       
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchStudents([FromQuery] string? searchTerm)
+        {
+            var students = await _studentService.SearchStudentsAsync(searchTerm);
 
-        //        return Ok(result);
-        //    }
+            if (students == null || !students.Any())
+            {
+                return NotFound("No students found matching the search criteria.");
+            }
 
-        
-
+            return Ok(students);
+        }
     }
 }
