@@ -11,8 +11,8 @@ namespace Academy.Core.ServicesInterfaces
     {
         Task<AvailableCourseDto> CreateAvailableCourseAsync(AvailableCourseDto availableCourseDto);
         Task<AvailableCourseDto> UpdateAvailableCourseAsync(int id, AvailableCourseDto updateCAvailableCourseDto);
-        Task<AvailableCourseDto> GetAvailableCourseByIdAsync(int id);
-        Task<IEnumerable<AvailableCourseDto>> GetAllAvailableCoursesAsync();
+        Task<ViewAvailableCourseDto> GetAvailableCourseByIdAsync(int id);
+        Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync();
         Task<bool> DeleteAvailableCourseAsync(int id);
     }
 }

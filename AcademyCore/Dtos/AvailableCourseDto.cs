@@ -12,6 +12,8 @@ namespace Academy.Core.Dtos
     {
         public int  AcademicYears { get; set; }
         public Semster Semester { get; set; }
-       
+        public int CourseId { get; set; }
+
+   
     }
 }

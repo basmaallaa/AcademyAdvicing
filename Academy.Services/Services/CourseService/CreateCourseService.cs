@@ -58,10 +58,10 @@ namespace Academy.Services.Services.CourseService
             return course == null ? null : _mapper.Map<CreateCourseDto>(course);
         }
 
-        public async Task<IEnumerable<CreateCourseDto>> GetAllCoursesAsync()
+        public async Task<IEnumerable<GetCoursesDto>> GetAllCoursesAsync()
         {
             var courses = await _unitOfWork.Repository<Course>().GetAllAsync();
-            return _mapper.Map<IEnumerable<CreateCourseDto>>(courses);
+            return _mapper.Map<IEnumerable<GetCoursesDto>>(courses);
         }
 
         public async Task<IEnumerable<CreateCourseDto>> SearchCoursesAsync(

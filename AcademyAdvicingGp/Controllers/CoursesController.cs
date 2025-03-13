@@ -61,11 +61,6 @@ namespace AcademyAdvicingGp.Controllers
         }
 
 
-
-
-
-
-
         
 
             [HttpPut("{id}")]
