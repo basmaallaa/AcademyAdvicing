@@ -12,14 +12,14 @@ namespace AcademyAdvicingGp.Controllers
     [ApiController]
     public class CoursesController : ControllerBase
     {
-  
 
-            private readonly ICourseService _courseService;
 
-            public CoursesController(ICourseService courseService)
-            {
-                _courseService = courseService;
-            }
+        private readonly ICourseService _courseService;
+
+        public CoursesController(ICourseService courseService)
+        {
+            _courseService = courseService;
+        }
 
         // ✅ إضافة كورس جديد
         [HttpPost]
@@ -51,65 +51,65 @@ namespace AcademyAdvicingGp.Controllers
         [HttpGet("search")]
         public async Task<IActionResult> SearchCourses(
     [FromQuery] string? name)
-    /*[FromQuery] string? courseCode,
-    [FromQuery] int? creditHours,
-    [FromQuery] courseType? type,
-    [FromQuery] courseCategory? category)*/
+        /*[FromQuery] string? courseCode,
+        [FromQuery] int? creditHours,
+        [FromQuery] courseType? type,
+        [FromQuery] courseCategory? category)*/
         {
             var result = await _courseService.SearchCoursesAsync(name/*, courseCode, creditHours, type, category*/);
             return Ok(result);
         }
 
 
+        
 
-        [HttpPut("{id}")]
-          public async Task<IActionResult> UpdateCourse(int id,  CreateCourseDto updateCourseDto)
-          {
-              if (updateCourseDto == null)
-                  return BadRequest("Invalid course data.");
+            [HttpPut("{id}")]
+            public async Task<IActionResult> UpdateCourse(int id, CreateCourseDto updateCourseDto)
+            {
+                if (updateCourseDto == null)
+                    return BadRequest("Invalid course data.");
 
-              var updatedCourse = await _courseService.UpdateCourseAsync(id, updateCourseDto);
-              if (updatedCourse == null)
-                  return NotFound($"Course with ID {id} not found.");
+                var updatedCourse = await _courseService.UpdateCourseAsync(id, updateCourseDto);
+                if (updatedCourse == null)
+                    return NotFound($"Course with ID {id} not found.");
 
-              return Ok(updatedCourse);
-          }
-
-     
+                return Ok(updatedCourse);
+            }
 
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetCourseById(int id)
-        {
-            var course = await _courseService.GetCourseByIdAsync(id);
-            if (course == null)
-                return NotFound($"Course with ID {id} not found.");
 
-            return Ok(course);
+
+            [HttpGet("{id}")]
+            public async Task<IActionResult> GetCourseById(int id)
+            {
+                var course = await _courseService.GetCourseByIdAsync(id);
+                if (course == null)
+                    return NotFound($"Course with ID {id} not found.");
+
+                return Ok(course);
+            }
+
+            [HttpGet]
+            public async Task<IActionResult> GetAllCourses()
+            {
+                var courses = await _courseService.GetAllCoursesAsync();
+                return Ok(courses);
+            }
+
+            [HttpDelete("{id}")]
+            public async Task<IActionResult> DeleteCourse(int id)
+            {
+                var deleted = await _courseService.DeleteCourseAsync(id);
+                if (!deleted)
+                    return NotFound($"Course with ID {id} not found.");
+
+                return Ok($"Course with ID {id} deleted successfully.");
+            }
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllCourses()
-        {
-            var courses = await _courseService.GetAllCoursesAsync();
-            return Ok(courses);
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCourse(int id)
-        {
-            var deleted = await _courseService.DeleteCourseAsync(id);
-            if (!deleted)
-                return NotFound($"Course with ID {id} not found.");
-
-            return Ok($"Course with ID {id} deleted successfully.");
-        }
-    }
+    } 
 
 
-}
-    
-    
 
 
 

@@ -58,10 +58,10 @@ namespace Academy.Services.Services.CourseService
             return course == null ? null : _mapper.Map<CreateCourseDto>(course);
         }
 
-        public async Task<IEnumerable<CreateCourseDto>> GetAllCoursesAsync()
+        public async Task<IEnumerable<GetCoursesDto>> GetAllCoursesAsync()
         {
             var courses = await _unitOfWork.Repository<Course>().GetAllAsync();
-            return _mapper.Map<IEnumerable<CreateCourseDto>>(courses);
+            return _mapper.Map<IEnumerable<GetCoursesDto>>(courses);
         }
 
         public async Task<IEnumerable<CreateCourseDto>> SearchCoursesAsync(
@@ -101,6 +101,33 @@ namespace Academy.Services.Services.CourseService
             var courses = await coursesQuery.ToListAsync();
             return _mapper.Map<IEnumerable<CreateCourseDto>>(courses);
         }
+
+
+
+
+
+
+       /* public async Task<bool> DeleteCourseAsync(int id)
+         {
+             // اجلب الكيان الفعلي Course من قاعدة البيانات
+             var course = await _unitOfWork.Repository<Course>().GetAsync(id);
+             if (course == null) return false;
+
+
+
+             // مرر الـ id بدلاً من كائن course
+             _unitOfWork.Repository<Course>().Delete(id);
+             await _unitOfWork.CompleteAsync();
+
+             return true;
+         }*/
+
+     
+
+
+
+
+
         public async Task<bool> DeleteCourseAsync(int id)
         {
             var course = await _unitOfWork.Repository<Course>().GetAsync(id);

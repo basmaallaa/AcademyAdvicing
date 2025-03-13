@@ -14,9 +14,10 @@ namespace Academy.Repo.Repositories
     {
         private AcademyContext _context;
 
-        public GenaricRepository(AcademyContext context) {
-            _context = context; 
-        
+        public GenaricRepository(AcademyContext context)
+        {
+            _context = context;
+
         }
         public async Task AddAsync(T item)
         {
@@ -29,7 +30,24 @@ namespace Academy.Repo.Repositories
         }
 
 
+        /*public async Task Delete(int id)
+        {
+            var entity = await _context.Set<T>().FindAsync(id); // 🔍 البحث عن الكيان أولاً
+
+            if (entity == null)
+            {
+                throw new InvalidOperationException($"Entity of type {typeof(T).Name} with ID {id} was not found.");
+            }
+
+            _context.Remove(entity); // ✅ الآن يمكن الحذف بأمان
+        }*/
+
+
+
+
+
         public async Task<IQueryable<T>> GetAllAsync()
+
         {
             // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
             return _context.Set<T>().AsQueryable();
@@ -45,6 +63,7 @@ namespace Academy.Repo.Repositories
             _context.Update(item);
         }
 
+<<<<<<< HEAD
         public IEnumerable<object> GetQueryable() 
         {
             return _context.Set<T>().AsQueryable().ToList<object>();
@@ -52,6 +71,21 @@ namespace Academy.Repo.Repositories
        
 
     }
+=======
+
+
+
+
+    }
+
+
+
+>>>>>>> ee7281c9636d2f7915a80cc53aa72294e730c815
 
 }
+
+
+
+ 
+
 
