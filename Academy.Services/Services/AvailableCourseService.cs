@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Academy.Core.Enums;
 
 namespace Academy.Services.Services
 {
@@ -88,6 +89,18 @@ namespace Academy.Services.Services
             await _unitOfWork.CompleteAsync();
             return true;
         }
-    
-}
+
+
+        public async Task<bool> IsCourseAvailableAsync(int courseId, int academicYear,  Semster semester)
+        {
+            var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync();
+
+            return availableCourses.Any(c => c.CourseId == courseId
+                                          && c.AcademicYears == academicYear
+                                          && c.Semester == semester);
+        }
+
+
+
+    }
 }

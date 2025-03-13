@@ -1,4 +1,5 @@
 ﻿using Academy.Core.Dtos;
+using Academy.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,7 @@ namespace Academy.Core.ServicesInterfaces
         Task<AvailableCourseDto> GetAvailableCourseByIdAsync(int id);
         Task<IEnumerable<AvailableCourseDto>> GetAllAvailableCoursesAsync();
         Task<bool> DeleteAvailableCourseAsync(int id);
+
+        Task<bool> IsCourseAvailableAsync(int courseId, int academicYear, Semster semester);
     }
 }
