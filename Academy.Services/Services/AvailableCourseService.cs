@@ -95,17 +95,6 @@ namespace Academy.Services.Services
             return availableCourseDto;
         }
 
-        //public async Task<AvailableCourseViewDto> GetAvailableCourseByIdAsync(int id)
-        //{
-        //    var availableCourse = await _unitOfWork.Repository<AvailableCourse>()
-        //        .GetQueryable()
-        //        .Include(ac => ac.Course)  // تحميل بيانات الكورس مباشرة
-        //        .FirstOrDefaultAsync(ac => ac.Id == id);
-
-        //    return availableCourse == null ? null : _mapper.Map<AvailableCourseViewDto>(availableCourse);
-        //}
-
-
         public async Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync()
         {
             var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync();
@@ -123,10 +112,6 @@ namespace Academy.Services.Services
 
             return result;
         }
-
-
-
-
 
         public async Task<bool> DeleteAvailableCourseAsync(int id)
         {
