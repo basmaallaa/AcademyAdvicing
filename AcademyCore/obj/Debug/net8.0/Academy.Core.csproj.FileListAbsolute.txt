@@ -13,3 +13,18 @@ C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyCore\obj\De
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.pdb
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
 C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll
+C:\Users\user\Desktop\project grad GIT\AcademyCore\bin\Debug\net8.0\Academy.Core.deps.json
+C:\Users\user\Desktop\project grad GIT\AcademyCore\bin\Debug\net8.0\Academy.Core.runtimeconfig.json
+C:\Users\user\Desktop\project grad GIT\AcademyCore\bin\Debug\net8.0\Academy.Core.dll
+C:\Users\user\Desktop\project grad GIT\AcademyCore\bin\Debug\net8.0\Academy.Core.pdb
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfo.cs
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.sourcelink.json
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.dll
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\refint\Academy.Core.dll
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.pdb
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
+C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll

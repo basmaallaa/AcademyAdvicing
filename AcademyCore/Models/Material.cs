@@ -12,5 +12,8 @@ namespace Academy.Core.Models
         public string Title { get; set; }
         public Doctor UploadedBy { get; set; }
         public int UploadedById { get; set; }
-    }
+        //e3mlo migration 3ndko b deh
+		public string FilePath { get; set; }
+
+	}
 }

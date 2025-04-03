@@ -17,7 +17,7 @@ namespace AcademyAdvicingGp.Controllers
             _availableCourseService = availableCourseService;
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         /*[HttpPost]
 =======
         [HttpPost("Add")]
@@ -50,12 +50,12 @@ namespace AcademyAdvicingGp.Controllers
             return Ok(new { message = "Available course created successfully", id = result.CourseId });
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
         [HttpPut("{id}")]
-=======
+//=======
         [HttpPut("Edit/{id}")]
->>>>>>> ee7281c9636d2f7915a80cc53aa72294e730c815
+//>>>>>>> ee7281c9636d2f7915a80cc53aa72294e730c815
         public async Task<IActionResult> UpdateAvailableCourse(int id, [FromBody] AvailableCourseDto updateAvailableCourseDto)
         {
             var result = await _availableCourseService.UpdateAvailableCourseAsync(id, updateAvailableCourseDto);
