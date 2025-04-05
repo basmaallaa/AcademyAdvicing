@@ -2876,19 +2876,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\basma\\.nuget\\packages\\": {}
+    "C:\\Users\\IT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
+      "projectUniqueName": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
       "projectName": "Academy.Services",
-      "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
-      "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\obj\\",
+      "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Services\\Academy.Services.csproj",
+      "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\AcademyAdvicing\\Academy.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2902,8 +2902,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj"
+            "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
+              "projectPath": "C:\\Users\\IT\\Desktop\\New folder (2)\\academyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
             }
           }
         }

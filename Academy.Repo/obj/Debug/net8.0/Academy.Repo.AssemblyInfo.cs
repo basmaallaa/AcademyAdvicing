@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Academy.Repo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+323fee41a0fe95f1dd99187719a1762c76e46aa3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+555e0ecbbc7c84c8ad167db7243c7665d6b9c852")]
 [assembly: System.Reflection.AssemblyProductAttribute("Academy.Repo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Academy.Repo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
