@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Academy.Core.Dtos
@@ -11,7 +12,9 @@ namespace Academy.Core.Dtos
     {
             public int Id { get; set; }  // ID الخاص بـ Available Course
             public int AcademicYears { get; set; }
-            public Semster Semester { get; set; }
+
+             [JsonConverter(typeof(JsonStringEnumConverter))]
+             public Semster Semester { get; set; }
 
             // بيانات الكورس المختار
             public int CourseId { get; set; }
