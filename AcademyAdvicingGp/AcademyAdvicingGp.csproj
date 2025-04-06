@@ -22,6 +22,8 @@
     <ProjectReference Include="..\Academy.Repo\Academy.Repo.csproj" />
 
     <ProjectReference Include="..\Academy.Services\Academy.Services.csproj" />
+
+    <ProjectReference Include="..\AcademyCore\Academy.Core.csproj" />
   </ItemGroup>
 
 </Project>

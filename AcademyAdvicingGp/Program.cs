@@ -26,8 +26,10 @@ namespace AcademyAdvicingGp
             
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+			
 
-            builder.Services.AddDbContext<AcademyContext>(Options =>
+
+			builder.Services.AddDbContext<AcademyContext>(Options =>
             {
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
@@ -41,8 +43,11 @@ namespace AcademyAdvicingGp
             builder.Services.AddScoped<IAvailableCourse, AvailableCourseService>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseProfile()));
 
+			builder.Services.AddScoped<IMaterialService, MaterialService>();
+			builder.Services.AddAutoMapper(M => M.AddProfile(new MaterialProfile()));
 
-            builder.Services.AddScoped<ICourseService, CreateCourseService>();
+
+			builder.Services.AddScoped<ICourseService, CreateCourseService>();
          
             builder.Services.AddAutoMapper(M=>M.AddProfile(new CourseProfile()));
 

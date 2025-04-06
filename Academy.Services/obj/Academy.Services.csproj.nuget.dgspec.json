@@ -106,6 +106,9 @@
             "projectReferences": {
               "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
                 "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj"
+              },
+              "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
               }
             }
           }
@@ -124,6 +127,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -188,6 +197,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[14.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
