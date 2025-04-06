@@ -15,7 +15,7 @@ namespace Academy.Core.Dtos
 
              [JsonConverter(typeof(JsonStringEnumConverter))]
              public Semster Semester { get; set; }
-
+        
             // بيانات الكورس المختار
             public int CourseId { get; set; }
             public string CourseName { get; set; }

@@ -12,7 +12,5 @@ namespace Academy.Core.Dtos
 		public string Title { get; set; }
 		public int UploadedById { get; set; }
 
-		//public string DoctorName { get; set; }
-		//public string FilePath { get; set; }
 	}
 }

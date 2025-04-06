@@ -11,6 +11,11 @@ using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Academy.Services.Services.CourseService;
 
 using Microsoft.EntityFrameworkCore;
+using Academy.Repo.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using AcademyAdvicingGp.Extensions;
+using Academy.Core.Models.Identity;
 
 namespace AcademyAdvicingGp
 {
@@ -19,6 +24,7 @@ namespace AcademyAdvicingGp
         public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
 
             // Add services to the container.
 
@@ -51,6 +57,14 @@ namespace AcademyAdvicingGp
          
             builder.Services.AddAutoMapper(M=>M.AddProfile(new CourseProfile()));
 
+            builder.Services.AddDbContext<AppIdentityDbContext>(Options =>
+            {
+                Options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
+            });
+
+            builder.Services.AddIdentityServices();
+
+
             var app = builder.Build();
 
             #region update-Database
@@ -65,8 +79,12 @@ namespace AcademyAdvicingGp
                 var dbContext = Services.GetRequiredService<AcademyContext>();
                 //ask clr for creating object from dbcontext explicity
                 await dbContext.Database.MigrateAsync(); // update-database
-                // scope.Dispose(); استخدمت using
-                //await StoreContextSeed.SeedAsync(dbContext);
+                var IdentityDbContext= Services.GetRequiredService<AppIdentityDbContext>();
+                await IdentityDbContext.Database.MigrateAsync();
+                var UserManger = Services.GetRequiredService<UserManager<AppUser>>();
+                await AppIdentityDbContextSeed.SeedUserAsync(UserManger);
+         
+
             }
             catch (Exception ex)
             {

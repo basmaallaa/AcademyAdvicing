@@ -44,10 +44,7 @@ namespace AcademyAdvicingGp.Controllers
         }
 
 
-        
-       
         [HttpPut("Edit/{id}")]
-
         public async Task<IActionResult> UpdateAvailableCourse(int id, [FromBody] AvailableCourseDto updateAvailableCourseDto)
         {
             var result = await _availableCourseService.UpdateAvailableCourseAsync(id, updateAvailableCourseDto);

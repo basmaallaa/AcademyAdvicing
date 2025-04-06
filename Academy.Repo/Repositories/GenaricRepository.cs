@@ -64,21 +64,20 @@ namespace Academy.Repo.Repositories
         }
 
 
-        public IEnumerable<object> GetQueryable() 
+        public IEnumerable<object> GetQueryable()
+
         {
             return _context.Set<T>().AsQueryable().ToList<object>();
         }
-       
-
+    }
     }
 
 
 
 
 
-    }
 
-
+    
 
 
 
