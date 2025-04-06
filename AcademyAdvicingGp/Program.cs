@@ -11,6 +11,11 @@ using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Academy.Services.Services.CourseService;
 
 using Microsoft.EntityFrameworkCore;
+using Academy.Repo.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using AcademyAdvicingGp.Extensions;
+using Academy.Core.Models.Identity;
 
 namespace AcademyAdvicingGp
 {
@@ -26,8 +31,10 @@ namespace AcademyAdvicingGp
             
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+			
 
-            builder.Services.AddDbContext<AcademyContext>(Options =>
+
+			builder.Services.AddDbContext<AcademyContext>(Options =>
             {
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
@@ -41,10 +48,21 @@ namespace AcademyAdvicingGp
             builder.Services.AddScoped<IAvailableCourse, AvailableCourseService>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseProfile()));
 
+			builder.Services.AddScoped<IMaterialService, MaterialService>();
+			builder.Services.AddAutoMapper(M => M.AddProfile(new MaterialProfile()));
 
-            builder.Services.AddScoped<ICourseService, CreateCourseService>();
+
+			builder.Services.AddScoped<ICourseService, CreateCourseService>();
          
             builder.Services.AddAutoMapper(M=>M.AddProfile(new CourseProfile()));
+
+            builder.Services.AddDbContext<AppIdentityDbContext>(Options =>
+            {
+                Options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
+            });
+
+            builder.Services.AddIdentityServices();
+
 
             var app = builder.Build();
 
@@ -60,8 +78,12 @@ namespace AcademyAdvicingGp
                 var dbContext = Services.GetRequiredService<AcademyContext>();
                 //ask clr for creating object from dbcontext explicity
                 await dbContext.Database.MigrateAsync(); // update-database
-                // scope.Dispose(); استخدمت using
-                //await StoreContextSeed.SeedAsync(dbContext);
+                var IdentityDbContext= Services.GetRequiredService<AppIdentityDbContext>();
+                await IdentityDbContext.Database.MigrateAsync();
+                var UserManger = Services.GetRequiredService<UserManager<AppUser>>();
+                await AppIdentityDbContextSeed.SeedUserAsync(UserManger);
+         
+
             }
             catch (Exception ex)
             {

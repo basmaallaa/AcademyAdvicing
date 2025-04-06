@@ -63,13 +63,19 @@ namespace Academy.Repo.Repositories
             _context.Update(item);
         }
 
+
         public IEnumerable<object> GetQueryable()
+
         {
             return _context.Set<T>().AsQueryable().ToList<object>();
         }
-
     }
-}
+    }
+
+
+
+
+
 
     
 

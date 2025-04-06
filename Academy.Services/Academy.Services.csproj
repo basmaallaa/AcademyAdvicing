@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Academy.Repo\Academy.Repo.csproj" />
+    <ProjectReference Include="..\AcademyCore\Academy.Core.csproj" />
   </ItemGroup>
 
 </Project>
