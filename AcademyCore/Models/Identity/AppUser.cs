@@ -10,9 +10,7 @@ namespace Academy.Core.Models.Identity
     public class AppUser : IdentityUser
     {
         public string DisplayName { get; set; }
-        public int? PersonId { get; set; }
-        public Person Person { get; set; }
-            
         
+          
         }
 }
