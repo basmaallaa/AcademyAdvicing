@@ -55,7 +55,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("StudentId1");
 
-                    b.ToTable("Assignedcourses");
+                    b.ToTable("Assignedcourses", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
@@ -79,7 +79,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("CourseId");
 
-                    b.ToTable("Availablecourses");
+                    b.ToTable("Availablecourses", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Coordinator", b =>
@@ -112,7 +112,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Coordinates");
+                    b.ToTable("Coordinates", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Course", b =>
@@ -153,7 +153,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("ManageById");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Doctor", b =>
@@ -191,7 +191,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("AssignedById");
 
-                    b.ToTable("Doctors");
+                    b.ToTable("Doctors", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.DoctorCourses", b =>
@@ -206,7 +206,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("DoctorId");
 
-                    b.ToTable("doctorCourses");
+                    b.ToTable("doctorCourses", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>
@@ -241,7 +241,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("UploadedById");
 
-                    b.ToTable("FinalExamTimeTable");
+                    b.ToTable("FinalExamTimeTable", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Material", b =>
@@ -267,7 +267,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("UploadedById");
 
-                    b.ToTable("Materials");
+                    b.ToTable("Materials", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Report", b =>
@@ -293,7 +293,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("GenerateById");
 
-                    b.ToTable("Reports");
+                    b.ToTable("Reports", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.ScheduleTimeTable", b =>
@@ -325,7 +325,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("UploadedById");
 
-                    b.ToTable("ScheduleTimeTable");
+                    b.ToTable("ScheduleTimeTable", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Student", b =>
@@ -377,7 +377,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasIndex("ManageById");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.StudentAffair", b =>
@@ -410,7 +410,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("StudentAffairs");
+                    b.ToTable("StudentAffairs", (string)null);
                 });
 
             modelBuilder.Entity("Academy.Core.Models.AssignedCourse", b =>

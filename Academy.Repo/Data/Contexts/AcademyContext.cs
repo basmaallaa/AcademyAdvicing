@@ -1,4 +1,5 @@
 ﻿using Academy.Core.Models;
+using Academy.Core.Models.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace Academy.Repo.Data
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 			
 			base.OnModelCreating(modelBuilder);
+
         }
 		
 
