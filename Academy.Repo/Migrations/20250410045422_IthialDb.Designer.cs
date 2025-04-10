@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Academy.Repo.Data.Migrations
+namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250306002426_courseseses")]
-    partial class courseseses
+    [Migration("20250410045422_IthialDb")]
+    partial class IthialDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,17 +27,14 @@ namespace Academy.Repo.Data.Migrations
 
             modelBuilder.Entity("Academy.Core.Models.AssignedCourse", b =>
                 {
-                    b.Property<string>("StudentId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("CourseId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
 
                     b.Property<float>("ClassWorkScore")
                         .HasColumnType("real");
-
-                    b.Property<int>("CourseId1")
-                        .HasColumnType("int");
 
                     b.Property<float>("FinalScore")
                         .HasColumnType("real");
@@ -49,14 +46,9 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<float>("PracticalScore")
                         .HasColumnType("real");
 
-                    b.Property<int>("StudentId1")
-                        .HasColumnType("int");
-
                     b.HasKey("StudentId", "CourseId");
 
-                    b.HasIndex("CourseId1");
-
-                    b.HasIndex("StudentId1");
+                    b.HasIndex("CourseId");
 
                     b.ToTable("Assignedcourses");
                 });
@@ -69,15 +61,18 @@ namespace Academy.Repo.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AcademicYear")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("AcademicYears")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Semester")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Semester")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
 
                     b.ToTable("Availablecourses");
                 });
@@ -89,6 +84,10 @@ namespace Academy.Repo.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
@@ -133,7 +132,7 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<int>("CreditHours")
                         .HasColumnType("int");
 
-                    b.Property<int>("ManageById")
+                    b.Property<int?>("ManageById")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -144,7 +143,6 @@ namespace Academy.Repo.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("prerequisite")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("type")
@@ -167,6 +165,10 @@ namespace Academy.Repo.Data.Migrations
 
                     b.Property<int>("AssignedById")
                         .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
@@ -253,6 +255,10 @@ namespace Academy.Repo.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -336,6 +342,10 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<int>("CompeletedHours")
                         .HasColumnType("int");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<float>("GPA")
                         .HasColumnType("real");
 
@@ -347,7 +357,7 @@ namespace Academy.Repo.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ManageById")
+                    b.Property<int?>("ManageById")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -385,6 +395,10 @@ namespace Academy.Repo.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -414,13 +428,13 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.Course", "Course")
                         .WithMany("Students")
-                        .HasForeignKey("CourseId1")
+                        .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Academy.Core.Models.Student", "Student")
                         .WithMany("Courses")
-                        .HasForeignKey("StudentId1")
+                        .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -429,13 +443,22 @@ namespace Academy.Repo.Data.Migrations
                     b.Navigation("Student");
                 });
 
+            modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
             modelBuilder.Entity("Academy.Core.Models.Course", b =>
                 {
                     b.HasOne("Academy.Core.Models.Coordinator", "ManageBy")
                         .WithMany("Courses")
-                        .HasForeignKey("ManageById")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ManageById");
 
                     b.Navigation("ManageBy");
                 });
@@ -518,9 +541,7 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.StudentAffair", "ManageBy")
                         .WithMany("Students")
-                        .HasForeignKey("ManageById")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ManageById");
 
                     b.Navigation("ManageBy");
                 });
