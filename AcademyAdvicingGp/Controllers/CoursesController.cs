@@ -2,6 +2,7 @@
 using Academy.Core.Enums;
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Academy.Repo.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ namespace AcademyAdvicingGp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CoursesController : ControllerBase
     {
 
@@ -23,6 +25,7 @@ namespace AcademyAdvicingGp.Controllers
 
         // ✅ إضافة كورس جديد
         [HttpPost]
+        [Authorize(Roles = "Doctor")]
         public async Task<IActionResult> CreateCourse([FromBody] CreateCourseDto createCourseDto)
         {
             if (createCourseDto == null)

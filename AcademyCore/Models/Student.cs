@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Academy.Core.Models.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace Academy.Core.Models
 {
     public class Student : Person
     {
+        
         public string Level { get; set; }
         public string Status { get; set; }
         public float GPA { get; set; }

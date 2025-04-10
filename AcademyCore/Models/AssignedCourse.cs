@@ -8,8 +8,8 @@ namespace Academy.Core.Models
 {
     public class AssignedCourse
     {
-        public string StudentId { get; set; } //FK
-        public string CourseId { get; set; } //FK
+        public int  StudentId { get; set; } //FK
+        public int  CourseId { get; set; } //FK
 
         public float ClassWorkScore { get; set; }
         public float PracticalScore { get; set; }
