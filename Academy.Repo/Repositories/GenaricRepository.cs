@@ -69,6 +69,7 @@ namespace Academy.Repo.Repositories
             return _context.Set<T>().AsQueryable().ToList<object>();
         }
 
+
         // من هنا البوست
         public IQueryable<T> Where(Expression<Func<T, bool>> predicate)
         {
@@ -158,13 +159,13 @@ namespace Academy.Repo.Repositories
         }
 
 
+
+    }
+
     }
 
 
 
-
-
-}
 
 
     

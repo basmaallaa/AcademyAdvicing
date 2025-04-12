@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academy.Repo.Migrations
 {
     /// <inheritdoc />
-    public partial class IthialDb : Migration
+    public partial class initialchange : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

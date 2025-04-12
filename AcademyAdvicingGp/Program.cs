@@ -11,6 +11,12 @@ using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Academy.Services.Services.CourseService;
 
 using Microsoft.EntityFrameworkCore;
+using Academy.Repo.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using AcademyAdvicingGp.Extensions;
+using Academy.Core.Models.Identity;
+using Microsoft.OpenApi.Models;
 
 using System.Text.Json.Serialization;
 
