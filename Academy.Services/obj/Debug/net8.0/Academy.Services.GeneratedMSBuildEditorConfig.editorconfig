@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Academy.Services
-build_property.ProjectDir = C:\Users\IT\Desktop\New folder (2)\academyAdvicing\Academy.Services\
+build_property.ProjectDir = C:\Users\basma\Desktop\C#\AcademyAdvicingGp\AcademyAdvicingGp\Academy.Services\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
