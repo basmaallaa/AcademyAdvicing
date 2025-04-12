@@ -5167,6 +5167,7 @@
       "Academy.Repo >= 1.0.0",
       "Academy.Services >= 1.0.0",
       "AutoMapper >= 14.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.2",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -5229,6 +5230,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[14.0.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[8.0.15, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
