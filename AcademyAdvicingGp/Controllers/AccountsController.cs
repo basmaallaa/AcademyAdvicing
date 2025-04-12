@@ -28,8 +28,51 @@ namespace AcademyAdvicingGp.Controllers
             _signInManager = signInManager;
         }
 
+        [HttpPost("Register")]
+        [Authorize(Roles = "Admin")] // السماح فقط للمسؤول
+        public async Task<ActionResult<UserDto>> Register([FromBody] RegisterDto model)
+        {
+            // التحقق مما إذا كان البريد الإلكتروني مسجلاً بالفعل
+            var existingUser = await _userManager.FindByEmailAsync(model.Email);
+            if (existingUser != null)
+                return BadRequest("Email is already registered.");
 
-       
+            // إنشاء كائن AppUser جديد وتعيين الخصائص
+            var appUser = new AppUser
+            {
+                UserName = model.Email,
+                Email = model.Email,
+                DisplayName = model.DisplayName,
+                PhoneNumber = model.PhoneNumber,
+            };
+
+            // إنشاء المستخدم وتعيين كلمة المرور
+            var result = await _userManager.CreateAsync(appUser, model.Password);
+            if (!result.Succeeded)
+                return BadRequest(result.Errors.Select(x => x.Description));
+
+            // التحقق من صحة الدور المرسل
+            var validRoles = new[] { "Doctor", "Coordinator", "StudentAffair" }; // أضف الأدوار المتاحة هنا
+            if (!validRoles.Contains(model.Role))
+                return BadRequest("Invalid role.");
+
+            // إضافة الدور للمستخدم
+            var roleResult = await _userManager.AddToRoleAsync(appUser, model.Role);
+            if (!roleResult.Succeeded)
+                return BadRequest(roleResult.Errors.Select(x => x.Description));
+
+            // إنشاء كائن UserDto لإرجاع معلومات المستخدم
+            var returnedUser = new UserDto()
+            {
+                DisplayName = appUser.DisplayName,
+                Email = appUser.Email,
+                Token = await _tokenService.CreateTokenAsync(appUser, _userManager)
+            };
+
+            return Ok(returnedUser);
+        }
+
+
         [HttpPost("Login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto model)
         {

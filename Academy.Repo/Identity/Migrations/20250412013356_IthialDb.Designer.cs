@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Identity.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20250410054029_IthialDb")]
+    [Migration("20250412013356_IthialDb")]
     partial class IthialDb
     {
         /// <inheritdoc />
