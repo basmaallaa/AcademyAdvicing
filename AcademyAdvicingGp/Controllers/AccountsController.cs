@@ -28,7 +28,6 @@ namespace AcademyAdvicingGp.Controllers
             _signInManager = signInManager;
         }
 
-
         [HttpPost("Register")]
         [Authorize(Roles = "Admin")] // السماح فقط للمسؤول
         public async Task<ActionResult<UserDto>> Register([FromBody] RegisterDto model)

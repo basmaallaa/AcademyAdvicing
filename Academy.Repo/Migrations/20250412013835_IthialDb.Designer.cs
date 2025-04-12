@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250411192623_deletePassPerson")]
-    partial class deletePassPerson
+    [Migration("20250412013835_IthialDb")]
+    partial class IthialDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
