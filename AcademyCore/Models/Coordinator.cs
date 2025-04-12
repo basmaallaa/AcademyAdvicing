@@ -12,7 +12,7 @@ namespace Academy.Core.Models
      
  
         public List<Course> Courses { get; set; }
-        public List<Doctor> Doctors { get; set; }
+        //public List<Doctor> Doctors { get; set; }
         public List<Report> Reports { get; set; }
         public List<ScheduleTimeTable> ScheduleTimeTables { get; set; }
         public List<FinalExamTimeTable> finalExamTimeTables { get; set; }

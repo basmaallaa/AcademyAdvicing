@@ -3108,19 +3108,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\w\\.nuget\\packages\\": {}
+    "C:\\Users\\basma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj",
+      "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
       "projectName": "Academy.Core",
-      "projectPath": "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj",
-      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-      "outputPath": "D:\\Acadmy_GP\\AcademyCore\\obj\\",
+      "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
+      "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
