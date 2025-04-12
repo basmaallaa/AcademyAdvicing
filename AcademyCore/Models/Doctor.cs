@@ -11,7 +11,7 @@ namespace Academy.Core.Models
         public Coordinator AssignedBy { get; set; }
         public int AssignedById { get; set; }
         public List<Material> Materials { get; set; }
-        public List<DoctorCourses> Courses { get; set; }
+        public List<AvailableCourse> Courses { get; set; }
 
 
     }

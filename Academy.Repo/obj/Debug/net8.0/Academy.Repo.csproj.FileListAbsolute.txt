@@ -34,3 +34,21 @@ C:\Users\user\Desktop\project grad GIT\Academy.Repo\bin\Debug\net8.0\Academy.Cor
 C:\Users\user\Desktop\project grad GIT\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
 C:\Users\user\Desktop\project grad GIT\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
 C:\Users\user\Desktop\project grad GIT\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll
+D:\Acadmy_GP\Academy.Repo\bin\Debug\net8.0\Academy.Repo.deps.json
+D:\Acadmy_GP\Academy.Repo\bin\Debug\net8.0\Academy.Repo.runtimeconfig.json
+D:\Acadmy_GP\Academy.Repo\bin\Debug\net8.0\Academy.Repo.dll
+D:\Acadmy_GP\Academy.Repo\bin\Debug\net8.0\Academy.Repo.pdb
+D:\Acadmy_GP\Academy.Repo\bin\Debug\net8.0\Academy.Core.dll
+D:\Acadmy_GP\Academy.Repo\bin\Debug\net8.0\Academy.Core.pdb
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.AssemblyReference.cache
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfoInputs.cache
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.AssemblyInfo.cs
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.csproj.CoreCompileInputs.cache
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.sourcelink.json
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy..58AB9B28.Up2Date
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.dll
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\refint\Academy.Repo.dll
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.pdb
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\Academy.Repo.genruntimeconfig.cache
+D:\Acadmy_GP\Academy.Repo\obj\Debug\net8.0\ref\Academy.Repo.dll

@@ -30,7 +30,9 @@ namespace Academy.Core.Models
         //اي الكورس يضاف بواسطه كورديناتر واحد 
         public Coordinator ManageBy { get; set; }
         public int? ManageById { get; set; }
-        public List<DoctorCourses> Doctor { get; set; }
+        public List <AvailableCourse> Doctors { get; set; }
+
+        //public List<DoctorAvailableCourses> Doctors { get; set; }
 
 
     }

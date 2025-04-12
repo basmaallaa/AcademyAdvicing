@@ -11,6 +11,7 @@ using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Academy.Services.Services.CourseService;
 
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 namespace AcademyAdvicingGp
 {
@@ -34,11 +35,20 @@ namespace AcademyAdvicingGp
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-
+            builder.Services.AddControllers().AddJsonOptions(x =>
+            {
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            });
             // dependency enjection 
             builder.Services.AddScoped<IStudentService, StudentService>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
+
+            builder.Services.AddScoped<IDoctorService, DoctorService>();
+            builder.Services.AddAutoMapper(M => M.AddProfile(new DoctorProfile()));
+
+            builder.Services.AddScoped<IDoctorCourseService, DoctorCourseService>();
+            //builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseDoctorProfile()));
 
             builder.Services.AddScoped<IAvailableCourse, AvailableCourseService>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseProfile()));

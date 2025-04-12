@@ -17,6 +17,12 @@ namespace Academy.Core.ServicesInterfaces
 
         Task DeleteStudentAsync(int id);
 		Task<IEnumerable<StudentDtoID>> SearchStudentsAsync(string? searchTerm);
+		/* Assign courses to the student */
 
-    }
+	 //Task<List<Course>> GetAvailableCoursesForStudentAsync(int studentId);
+	 //Task<string> AssignCourseToStudentAsync(int studentId, int courseId, string semester, int academicYear);
+
+
+
+        }
 }

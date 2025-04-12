@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Services\\Academy.Services.csproj": {}
+    "D:\\Acadmy_GP\\Academy.Services\\Academy.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Repo\\Academy.Repo.csproj": {
+    "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Repo\\Academy.Repo.csproj",
+        "projectUniqueName": "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj",
         "projectName": "Academy.Repo",
-        "projectPath": "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Repo\\Academy.Repo.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Repo\\obj\\",
+        "projectPath": "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj",
+        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+        "outputPath": "D:\\Acadmy_GP\\Academy.Repo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\project grad GIT\\AcademyCore\\Academy.Core.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\project grad GIT\\AcademyCore\\Academy.Core.csproj"
+              "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj"
               }
             }
           }
@@ -50,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -77,21 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Services\\Academy.Services.csproj": {
+    "D:\\Acadmy_GP\\Academy.Services\\Academy.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Services\\Academy.Services.csproj",
+        "projectUniqueName": "D:\\Acadmy_GP\\Academy.Services\\Academy.Services.csproj",
         "projectName": "Academy.Services",
-        "projectPath": "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Services\\Academy.Services.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Services\\obj\\",
+        "projectPath": "D:\\Acadmy_GP\\Academy.Services\\Academy.Services.csproj",
+        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+        "outputPath": "D:\\Acadmy_GP\\Academy.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,15 +102,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Repo\\Academy.Repo.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\project grad GIT\\Academy.Repo\\Academy.Repo.csproj"
+              "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj"
               }
             }
           }
@@ -142,21 +144,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\project grad GIT\\AcademyCore\\Academy.Core.csproj": {
+    "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\project grad GIT\\AcademyCore\\Academy.Core.csproj",
+        "projectUniqueName": "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj",
         "projectName": "Academy.Core",
-        "projectPath": "C:\\Users\\user\\Desktop\\project grad GIT\\AcademyCore\\Academy.Core.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\project grad GIT\\AcademyCore\\obj\\",
+        "projectPath": "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj",
+        "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+        "outputPath": "D:\\Acadmy_GP\\AcademyCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,7 +166,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -219,7 +220,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

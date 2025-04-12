@@ -29,7 +29,7 @@ namespace Academy.Repo.Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<AvailableCourse> Availablecourses { get; set; }
         public DbSet<AssignedCourse> Assignedcourses { get; set; }
-        public DbSet<DoctorCourses> doctorCourses { get; set; }
+   
         public DbSet<FinalExamTimeTable> FinalExamTimeTable { get; set; }
         public DbSet<ScheduleTimeTable> ScheduleTimeTable { get; set; }
         public DbSet<Material> Materials { get; set; }

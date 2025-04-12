@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Academy.Repo.Data.Migrations
+namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
     partial class AcademyContextModelSnapshot : ModelSnapshot
@@ -17,24 +17,24 @@ namespace Academy.Repo.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "9.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("Academy.Core.Models.AssignedCourse", b =>
                 {
-                    b.Property<string>("StudentId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("CourseId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AcademicYears")
+                        .HasColumnType("int");
 
                     b.Property<float>("ClassWorkScore")
                         .HasColumnType("real");
-
-                    b.Property<int>("CourseId1")
-                        .HasColumnType("int");
 
                     b.Property<float>("FinalScore")
                         .HasColumnType("real");
@@ -46,14 +46,12 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<float>("PracticalScore")
                         .HasColumnType("real");
 
-                    b.Property<int>("StudentId1")
+                    b.Property<int>("Semester")
                         .HasColumnType("int");
 
                     b.HasKey("StudentId", "CourseId");
 
-                    b.HasIndex("CourseId1");
-
-                    b.HasIndex("StudentId1");
+                    b.HasIndex("CourseId");
 
                     b.ToTable("Assignedcourses");
                 });
@@ -72,12 +70,17 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Semester")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CourseId");
+
+                    b.HasIndex("DoctorId");
 
                     b.ToTable("Availablecourses");
                 });
@@ -194,21 +197,6 @@ namespace Academy.Repo.Data.Migrations
                     b.ToTable("Doctors");
                 });
 
-            modelBuilder.Entity("Academy.Core.Models.DoctorCourses", b =>
-                {
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("DoctorId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CourseId", "DoctorId");
-
-                    b.HasIndex("DoctorId");
-
-                    b.ToTable("doctorCourses");
-                });
-
             modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>
                 {
                     b.Property<int>("Id")
@@ -251,6 +239,10 @@ namespace Academy.Repo.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -413,13 +405,13 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.Course", "Course")
                         .WithMany("Students")
-                        .HasForeignKey("CourseId1")
+                        .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Academy.Core.Models.Student", "Student")
                         .WithMany("Courses")
-                        .HasForeignKey("StudentId1")
+                        .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -431,12 +423,20 @@ namespace Academy.Repo.Data.Migrations
             modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
                 {
                     b.HasOne("Academy.Core.Models.Course", "Course")
-                        .WithMany()
+                        .WithMany("Doctors")
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Academy.Core.Models.Doctor", "Doctor")
+                        .WithMany("Courses")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Course");
+
+                    b.Navigation("Doctor");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Course", b =>
@@ -457,25 +457,6 @@ namespace Academy.Repo.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("AssignedBy");
-                });
-
-            modelBuilder.Entity("Academy.Core.Models.DoctorCourses", b =>
-                {
-                    b.HasOne("Academy.Core.Models.Course", "Course")
-                        .WithMany("Doctor")
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("Academy.Core.Models.Doctor", "Doctor")
-                        .WithMany("Courses")
-                        .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Doctor");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>
@@ -546,7 +527,7 @@ namespace Academy.Repo.Data.Migrations
 
             modelBuilder.Entity("Academy.Core.Models.Course", b =>
                 {
-                    b.Navigation("Doctor");
+                    b.Navigation("Doctors");
 
                     b.Navigation("Students");
                 });

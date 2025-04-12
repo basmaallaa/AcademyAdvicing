@@ -34,3 +34,21 @@ C:\Users\user\Desktop\project grad GIT\Academy.Services\obj\Debug\net8.0\Academy
 C:\Users\user\Desktop\project grad GIT\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
 C:\Users\user\Desktop\project grad GIT\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
 C:\Users\user\Desktop\project grad GIT\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+D:\Acadmy_GP\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
+D:\Acadmy_GP\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
+D:\Acadmy_GP\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
+D:\Acadmy_GP\Academy.Services\bin\Debug\net8.0\Academy.Core.dll
+D:\Acadmy_GP\Academy.Services\bin\Debug\net8.0\Academy.Repo.dll
+D:\Acadmy_GP\Academy.Services\bin\Debug\net8.0\Academy.Repo.pdb
+D:\Acadmy_GP\Academy.Services\bin\Debug\net8.0\Academy.Core.pdb
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.sourcelink.json
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy..23AF24D1.Up2Date
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.dll
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
+D:\Acadmy_GP\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll

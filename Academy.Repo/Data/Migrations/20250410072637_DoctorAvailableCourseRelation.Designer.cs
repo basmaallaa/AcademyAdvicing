@@ -9,35 +9,35 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Academy.Repo.Data.Migrations
+namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250302123741_CourseStudentRelation")]
-    partial class CourseStudentRelation
+    [Migration("20250410072637_DoctorAvailableCourseRelation")]
+    partial class DoctorAvailableCourseRelation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "9.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("Academy.Core.Models.AssignedCourse", b =>
                 {
-                    b.Property<string>("StudentId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("CourseId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AcademicYears")
+                        .HasColumnType("int");
 
                     b.Property<float>("ClassWorkScore")
                         .HasColumnType("real");
-
-                    b.Property<int>("CourseId1")
-                        .HasColumnType("int");
 
                     b.Property<float>("FinalScore")
                         .HasColumnType("real");
@@ -49,14 +49,12 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<float>("PracticalScore")
                         .HasColumnType("real");
 
-                    b.Property<int>("StudentId1")
+                    b.Property<int>("Semester")
                         .HasColumnType("int");
 
                     b.HasKey("StudentId", "CourseId");
 
-                    b.HasIndex("CourseId1");
-
-                    b.HasIndex("StudentId1");
+                    b.HasIndex("CourseId");
 
                     b.ToTable("Assignedcourses");
                 });
@@ -69,15 +67,23 @@ namespace Academy.Repo.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AcademicYear")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("AcademicYears")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Semester")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Semester")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("DoctorId");
 
                     b.ToTable("Availablecourses");
                 });
@@ -133,14 +139,25 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<int>("CreditHours")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ManageById")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("StudentId")
+                    b.Property<int>("category")
+                        .HasColumnType("int");
+
+                    b.Property<string>("prerequisite")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("type")
                         .HasColumnType("int");
 
                     b.HasKey("CourseId");
+
+                    b.HasIndex("ManageById");
 
                     b.ToTable("Courses");
                 });
@@ -152,6 +169,9 @@ namespace Academy.Repo.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AssignedById")
+                        .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
@@ -174,6 +194,8 @@ namespace Academy.Repo.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AssignedById");
 
                     b.ToTable("Doctors");
                 });
@@ -203,7 +225,12 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<TimeOnly>("StartTime")
                         .HasColumnType("time");
 
+                    b.Property<int>("UploadedById")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UploadedById");
 
                     b.ToTable("FinalExamTimeTable");
                 });
@@ -216,11 +243,20 @@ namespace Academy.Repo.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UploadedById")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UploadedById");
 
                     b.ToTable("Materials");
                 });
@@ -237,11 +273,16 @@ namespace Academy.Repo.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("GenerateById")
+                        .HasColumnType("int");
+
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GenerateById");
 
                     b.ToTable("Reports");
                 });
@@ -268,7 +309,12 @@ namespace Academy.Repo.Data.Migrations
                     b.Property<TimeOnly>("StartTime")
                         .HasColumnType("time");
 
+                    b.Property<int>("UploadedById")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UploadedById");
 
                     b.ToTable("ScheduleTimeTable");
                 });
@@ -295,6 +341,9 @@ namespace Academy.Repo.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ManageById")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -316,6 +365,8 @@ namespace Academy.Repo.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ManageById");
 
                     b.ToTable("Students");
                 });
@@ -357,13 +408,13 @@ namespace Academy.Repo.Data.Migrations
                 {
                     b.HasOne("Academy.Core.Models.Course", "Course")
                         .WithMany("Students")
-                        .HasForeignKey("CourseId1")
+                        .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Academy.Core.Models.Student", "Student")
                         .WithMany("Courses")
-                        .HasForeignKey("StudentId1")
+                        .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -372,14 +423,133 @@ namespace Academy.Repo.Data.Migrations
                     b.Navigation("Student");
                 });
 
+            modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Course", "Course")
+                        .WithMany("Doctors")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Academy.Core.Models.Doctor", "Doctor")
+                        .WithMany("Courses")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Doctor");
+                });
+
             modelBuilder.Entity("Academy.Core.Models.Course", b =>
                 {
+                    b.HasOne("Academy.Core.Models.Coordinator", "ManageBy")
+                        .WithMany("Courses")
+                        .HasForeignKey("ManageById");
+
+                    b.Navigation("ManageBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Doctor", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Coordinator", "AssignedBy")
+                        .WithMany("Doctors")
+                        .HasForeignKey("AssignedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AssignedBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Coordinator", "UploadedBy")
+                        .WithMany("finalExamTimeTables")
+                        .HasForeignKey("UploadedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("UploadedBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Material", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Doctor", "UploadedBy")
+                        .WithMany("Materials")
+                        .HasForeignKey("UploadedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("UploadedBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Report", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Coordinator", "GenerateBy")
+                        .WithMany("Reports")
+                        .HasForeignKey("GenerateById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("GenerateBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.ScheduleTimeTable", b =>
+                {
+                    b.HasOne("Academy.Core.Models.Coordinator", "UploadedBy")
+                        .WithMany("ScheduleTimeTables")
+                        .HasForeignKey("UploadedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("UploadedBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Student", b =>
+                {
+                    b.HasOne("Academy.Core.Models.StudentAffair", "ManageBy")
+                        .WithMany("Students")
+                        .HasForeignKey("ManageById");
+
+                    b.Navigation("ManageBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Coordinator", b =>
+                {
+                    b.Navigation("Courses");
+
+                    b.Navigation("Doctors");
+
+                    b.Navigation("Reports");
+
+                    b.Navigation("ScheduleTimeTables");
+
+                    b.Navigation("finalExamTimeTables");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Course", b =>
+                {
+                    b.Navigation("Doctors");
+
                     b.Navigation("Students");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Doctor", b =>
+                {
+                    b.Navigation("Courses");
+
+                    b.Navigation("Materials");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Student", b =>
                 {
                     b.Navigation("Courses");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.StudentAffair", b =>
+                {
+                    b.Navigation("Students");
                 });
 #pragma warning restore 612, 618
         }

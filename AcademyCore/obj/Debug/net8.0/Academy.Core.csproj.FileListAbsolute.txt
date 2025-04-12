@@ -28,3 +28,18 @@ C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\refint\Acade
 C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.pdb
 C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
 C:\Users\user\Desktop\project grad GIT\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll
+D:\Acadmy_GP\AcademyCore\bin\Debug\net8.0\Academy.Core.deps.json
+D:\Acadmy_GP\AcademyCore\bin\Debug\net8.0\Academy.Core.runtimeconfig.json
+D:\Acadmy_GP\AcademyCore\bin\Debug\net8.0\Academy.Core.dll
+D:\Acadmy_GP\AcademyCore\bin\Debug\net8.0\Academy.Core.pdb
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.AssemblyReference.cache
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfoInputs.cache
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfo.cs
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.CoreCompileInputs.cache
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.sourcelink.json
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.dll
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\refint\Academy.Core.dll
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.pdb
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
+D:\Acadmy_GP\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll
