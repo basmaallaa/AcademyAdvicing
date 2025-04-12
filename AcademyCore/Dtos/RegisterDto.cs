@@ -22,6 +22,7 @@ namespace Academy.Core.Dtos
             ErrorMessage = "Password must contain at least 1 Uppercase letter, 1 Digit, and 1 Special Character.")]
 
         public string Password { get; set; }
+        public string ImagePath { get; set; }
 
         public string Role { get; set; }
     }

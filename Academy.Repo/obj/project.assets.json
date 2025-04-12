@@ -4995,19 +4995,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\w\\.nuget\\packages\\": {}
+    "C:\\Users\\basma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj",
+      "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj",
       "projectName": "Academy.Repo",
-      "projectPath": "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj",
-      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-      "outputPath": "D:\\Acadmy_GP\\Academy.Repo\\obj\\",
+      "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj",
+      "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5021,8 +5021,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj": {
-              "projectPath": "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj"
+            "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
+              "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
             }
           }
         }
