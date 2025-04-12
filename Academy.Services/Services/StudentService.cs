@@ -1,8 +1,12 @@
 ﻿using Academy.Core;
 using Academy.Core.Dtos;
 using Academy.Core.Models;
+using Academy.Core.Models.Identity;
+using Academy.Core.Service;
 using Academy.Core.ServicesInterfaces;
+using Academy.Repo.Data;
 using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
@@ -17,11 +21,17 @@ namespace Academy.Services.Services
 	{
 		private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        public StudentService(IMapper mapper , IUnitOfWork unitOfWork)
+        private readonly UserManager<AppUser> _userManager;
+        private readonly ITokenService _tokenService;
+        private readonly AcademyContext _academyDbContext;
+        public StudentService(IMapper mapper , IUnitOfWork unitOfWork, UserManager<AppUser> userManager, ITokenService tokenService, AcademyContext academyDbContext)
         {
 			_mapper = mapper;
 			_unitOfWork = unitOfWork;
-		}
+            _userManager = userManager;
+            _tokenService = tokenService;
+            _academyDbContext = academyDbContext;
+        }
 
        
 
@@ -38,24 +48,87 @@ namespace Academy.Services.Services
 			return studentMapped;
 		}
 
-		public async Task<StudentDto> AddStudentAsync(StudentDto studentDto)
-		{
-			// map dto to model
-			var student = _mapper.Map<Student>(studentDto);
+        //public async Task<StudentDto> AddStudentAsync(StudentDto studentDto)
+        //{
+        //	// map dto to model
+        //	var student = _mapper.Map<Student>(studentDto);
 
-			// add the student to the repo 
-			await _unitOfWork.Repository<Student>().AddAsync(student);
+        //	// add the student to the repo 
+        //	await _unitOfWork.Repository<Student>().AddAsync(student);
 
-			await _unitOfWork.CompleteAsync();
+        //	await _unitOfWork.CompleteAsync();
 
-			// map back the model to dto
-			return _mapper.Map<StudentDto>(student);
-		}
+        //	// map back the model to dto
+        //	return _mapper.Map<StudentDto>(student);
+        //}
+
+        public async Task<StudentDtoID> AddStudentAsync(StudentDto model)
+        {
+            
+            var existingStudent = await _academyDbContext.Students
+                .FirstOrDefaultAsync(s => s.Email == model.Email);
+            if (existingStudent != null)
+                throw new Exception("Student with this email is already registered.");
+
+            var student = new Student
+            {
+                Name = model.Name,
+                UserName = model.UserName,
+                Email = model.Email,
+                Level = model.Level,
+                Status = model.Status,
+                GPA = model.GPA,
+                CompeletedHours = model.CompeletedHours,
+                ImagePath = model.ImagePath ?? "defaultImagePath.jpg",
+                PhoneNumber = model.PhoneNumber
+
+            };
+
+            // إضافة الطالب إلى قاعدة البيانات الخاصة بالأكاديمية
+            _academyDbContext.Students.Add(student);
+            await _academyDbContext.SaveChangesAsync();
+
+            // الآن سننشئ المستخدم في Identity
+            var appUser = new AppUser
+            {
+                UserName = model.Email,
+                Email = model.Email,
+                DisplayName = model.Name,
+                PhoneNumber= model.PhoneNumber
+            };
+
+            var result = await _userManager.CreateAsync(appUser, "Student@123"); // تأكدي من تعيين كلمة مرور مؤقتة أو إرسال بريد إلكتروني لتغييرها
+            if (!result.Succeeded)
+                throw new Exception(string.Join(", ", result.Errors.Select(x => x.Description)));
+
+            // إضافة دور الطالب إلى Identity
+            var roleResult = await _userManager.AddToRoleAsync(appUser, "Student");
+            if (!roleResult.Succeeded)
+                throw new Exception(string.Join(", ", roleResult.Errors.Select(x => x.Description)));
+
+            // إنشاء توكين للمستخدم الجديد
+            var token = await _tokenService.CreateTokenAsync(appUser, _userManager);
+
+            // إنشاء كائن StudentDto لإرجاع تفاصيل الطالب والتوكين
+            var studentDtoID = new StudentDtoID
+            {
+                Id = student.Id,
+                Name = student.Name,
+                Email = student.Email,
+                Level = student.Level,
+                Status = student.Status,
+                GPA = student.GPA,
+                CompeletedHours = student.CompeletedHours,
+                Token = token
+            };
+
+            return studentDtoID;
+        }
 
 
 
-		
-        public async Task UpdateStudentAsync(StudentDtoID studentDtoid)
+
+            public async Task UpdateStudentAsync(StudentDtoID studentDtoid)
         {
             var existingStudent = await _unitOfWork.Repository<Student>().GetAsync(studentDtoid.Id);
 

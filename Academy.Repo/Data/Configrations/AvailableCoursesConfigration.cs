@@ -26,3 +26,4 @@ namespace Academy.Repo.Data.Configrations
         }
     }
 }
+

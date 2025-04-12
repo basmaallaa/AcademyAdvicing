@@ -4,6 +4,7 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    partial class AcademyContextModelSnapshot : ModelSnapshot
+    [Migration("20250412032723_IthialDb")]
+    partial class IthialDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -93,15 +96,15 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -170,15 +173,15 @@ namespace Academy.Repo.Migrations
                     b.Property<int>("AssignedById")
                         .HasColumnType("int");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -327,6 +330,10 @@ namespace Academy.Repo.Migrations
                     b.Property<int>("CompeletedHours")
                         .HasColumnType("int");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<float>("GPA")
                         .HasColumnType("real");
 
@@ -342,10 +349,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -376,15 +379,15 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

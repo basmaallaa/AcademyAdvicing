@@ -31,105 +31,9 @@ namespace AcademyAdvicingGp.Controllers
 
 
 
-        ///
-        //[HttpPost]
-        //public async Task<IActionResult> CreateAvailableCourse([FromBody] AvailableCourseDto availableCourseDto)
-        //{
-        //    // التحقق مما إذا كان الكورس مضافًا مسبقًا
-        //    bool isAvailable = await _availableCourseService.IsCourseAvailableAsync(
-        //        availableCourseDto.CourseId, availableCourseDto.AcademicYears, availableCourseDto.Semester);
+       
 
-        //    if (isAvailable)
-        //    {
-        //        return BadRequest(new { message = "This course is already available." });
-        //    }
-
-        //    // إذا لم يكن مضافًا، قم بإنشائه
-        //    var result = await _availableCourseService.CreateAvailableCourseAsync(availableCourseDto);
-
-        //    if (result == null)
-        //    {
-        //        return BadRequest(new { message = "Failed to create available course." });
-        //    }
-
-        //    return Ok(new { message = "Available course created successfully", id = result.CourseId });
-        //}
-
-
-        //[HttpPost("Assign_Doctors_To_Available_Course")]
-        //public async Task<IActionResult> AssignDoctorsToAvailableCourse([FromBody] AvailableCourseDoctorDto dto)
-        //{
-        //    if (dto == null || dto.DoctorIds == null || !dto.DoctorIds.Any())
-        //        return BadRequest("Invalid data.");
-
-        //    // تحقق إذا الكورس متسجل في نفس السنة والترم
-        //    var availableCourse = await _unitOfWork.Repository<AvailableCourse>()
-        //        .FirstOrDefaultAsync(ac =>
-        //            ac.CourseId == dto.CourseId &&
-        //            ac.AcademicYears == dto.AcademicYears &&
-        //            ac.Semester == dto.Semester);
-
-        //    if (availableCourse == null)
-        //    {
-        //        availableCourse = new AvailableCourse
-        //        {
-        //            CourseId = dto.CourseId,
-        //            AcademicYears = dto.AcademicYears,
-        //            Semester = dto.Semester
-        //        };
-
-        //        await _unitOfWork.Repository<AvailableCourse>().AddAsync(availableCourse);
-        //        await _unitOfWork.CompleteAsync();
-        //    }
-
-        //    // هنا هنحتفظ بالدكاترة اللي الكورس متسجل ليهم بالفعل
-        //    var alreadyAssignedDoctors = new List<int>();
-        //    var newAssignments = new List<AvailableCourse>();
-
-        //    foreach (var doctorId in dto.DoctorIds)
-        //    {
-        //        var alreadyLinked = await _unitOfWork.Repository<AvailableCourse>()
-        //            .AnyAsync(link =>
-        //                link.DoctorId == doctorId &&
-        //                link.CourseId == availableCourse.Id);
-
-        //        if (alreadyLinked)
-        //        {
-        //            alreadyAssignedDoctors.Add(doctorId);
-        //        }
-        //        else
-        //        {
-        //            newAssignments.Add(new AvailableCourse
-        //            {
-        //                DoctorId = doctorId,
-        //                CourseId = availableCourse.Id
-        //            });
-        //        }
-        //    }
-
-        //    if (newAssignments.Any())
-        //    {
-        //        foreach (var item in newAssignments)
-        //        {
-        //            await _unitOfWork.Repository<AvailableCourse>().AddAsync(item);
-        //        }
-
-        //        await _unitOfWork.CompleteAsync();
-        //    }
-
-        //    if (alreadyAssignedDoctors.Any())
-        //    {
-        //        return Ok(new
-        //        {
-        //            message = "Some doctors were already assigned to this course for the same semester and academic year.",
-        //            duplicateDoctorIds = alreadyAssignedDoctors
-        //        });
-        //    }
-
-        //    return Ok("Doctors assigned to the available course successfully.");
-        //}
-
-        [HttpPost("Assign_Doctors_To_Available_Course")]
+        [HttpPost("AddAvailableCourseWithDoctors")]
         public async Task<IActionResult> AssignDoctorsToAvailableCourse([FromBody] AvailableCourseDoctorDto dto)
         {
             if (dto == null || dto.DoctorIds == null || !dto.DoctorIds.Any())
@@ -189,8 +93,6 @@ namespace AcademyAdvicingGp.Controllers
         }
 
 
-
-        [HttpPut("{id}")]
         [HttpPut("Edit/{id}")]
         public async Task<IActionResult> UpdateAvailableCourse(int id, [FromBody] AvailableCourseDto updateAvailableCourseDto)
         {

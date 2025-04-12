@@ -8,7 +8,7 @@ namespace Academy.Core.Enums
 {
     public enum Semster
     {
-        first,
-        second
+        Fall,
+        Spring
     }
 }

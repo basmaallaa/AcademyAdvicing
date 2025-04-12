@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academy.Repo.Migrations
 {
     /// <inheritdoc />
-    public partial class initiall : Migration
+    public partial class IthialDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,9 +19,9 @@ namespace Academy.Repo.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -36,9 +36,9 @@ namespace Academy.Repo.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -79,9 +79,9 @@ namespace Academy.Repo.Migrations
                     AssignedById = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -175,9 +175,9 @@ namespace Academy.Repo.Migrations
                     ManageById = table.Column<int>(type: "int", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -197,7 +197,8 @@ namespace Academy.Repo.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AcademicYears = table.Column<int>(type: "int", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false)
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    DoctorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -207,7 +208,13 @@ namespace Academy.Repo.Migrations
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "CourseId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Availablecourses_Doctors_DoctorId",
+                        column: x => x.DoctorId,
+                        principalTable: "Doctors",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -261,28 +268,6 @@ namespace Academy.Repo.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "doctorAvailableCourses",
-                columns: table => new
-                {
-                    DoctorId = table.Column<int>(type: "int", nullable: false),
-                    AvailableCourseId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_doctorAvailableCourses", x => new { x.AvailableCourseId, x.DoctorId });
-                    table.ForeignKey(
-                        name: "FK_doctorAvailableCourses_Availablecourses_AvailableCourseId",
-                        column: x => x.AvailableCourseId,
-                        principalTable: "Availablecourses",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_doctorAvailableCourses_Doctors_DoctorId",
-                        column: x => x.DoctorId,
-                        principalTable: "Doctors",
-                        principalColumn: "Id");
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Assignedcourses_CourseId",
                 table: "Assignedcourses",
@@ -294,14 +279,14 @@ namespace Academy.Repo.Migrations
                 column: "CourseId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Availablecourses_DoctorId",
+                table: "Availablecourses",
+                column: "DoctorId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Courses_ManageById",
                 table: "Courses",
                 column: "ManageById");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_doctorAvailableCourses_DoctorId",
-                table: "doctorAvailableCourses",
-                column: "DoctorId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Doctors_AssignedById",
@@ -341,7 +326,7 @@ namespace Academy.Repo.Migrations
                 name: "Assignedcourses");
 
             migrationBuilder.DropTable(
-                name: "doctorAvailableCourses");
+                name: "Availablecourses");
 
             migrationBuilder.DropTable(
                 name: "FinalExamTimeTable");
@@ -359,16 +344,13 @@ namespace Academy.Repo.Migrations
                 name: "Students");
 
             migrationBuilder.DropTable(
-                name: "Availablecourses");
+                name: "Courses");
 
             migrationBuilder.DropTable(
                 name: "Doctors");
 
             migrationBuilder.DropTable(
                 name: "StudentAffairs");
-
-            migrationBuilder.DropTable(
-                name: "Courses");
 
             migrationBuilder.DropTable(
                 name: "Coordinates");

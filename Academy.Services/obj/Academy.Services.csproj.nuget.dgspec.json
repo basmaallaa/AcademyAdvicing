@@ -110,6 +110,9 @@
             "projectReferences": {
               "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj": {
                 "projectPath": "D:\\Acadmy_GP\\Academy.Repo\\Academy.Repo.csproj"
+              },
+              "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "D:\\Acadmy_GP\\AcademyCore\\Academy.Core.csproj"
               }
             }
           }
@@ -128,6 +131,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -196,6 +209,10 @@
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
