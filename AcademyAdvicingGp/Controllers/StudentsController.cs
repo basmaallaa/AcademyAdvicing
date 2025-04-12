@@ -1,9 +1,13 @@
-﻿using Academy.Core.Dtos;
+﻿using Academy.Core;
+using Academy.Core.Dtos;
+using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces;
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Linq;
 
 namespace AcademyAdvicingGp.Controllers
 {
@@ -12,10 +16,12 @@ namespace AcademyAdvicingGp.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IStudentService _studentService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public StudentsController(IStudentService studentService)
+        public StudentsController(IStudentService studentService , IUnitOfWork unitOfWork)
         {
             _studentService = studentService;
+            _unitOfWork = unitOfWork;
         }
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
@@ -103,5 +109,133 @@ namespace AcademyAdvicingGp.Controllers
 
             return Ok(students);
         }
+
+        /* The student assign course that are available */
+
+
+
+
+        //    [HttpGet("{studentId}/available-courses")]
+        //    public async Task<IActionResult> GetAvailableCourses(int studentId)
+        //    {
+        //        var student = await _unitOfWork.Repository<Student>()
+        //            .GetAllIncludingAsyncc(s => s.Courses)
+        //            .ContinueWith(t => t.Result.FirstOrDefault(s => s.Id == studentId));
+
+        //        if (student == null)
+        //            return NotFound("Student not found");
+
+        //        // Get the IDs of courses the student already completed
+        //        var previouslyTakenCourseIds = student.Courses?
+        //.Where(sc => !string.IsNullOrEmpty(sc.Grade)) // الطالب حصل على درجة
+        //.Select(sc => sc.CourseId)
+        //.ToList() ?? new List<int>();
+
+        //        // Get all available courses including their Course navigation
+        //        // بدل previouslyTakenCourseIds نخزن CourseCodes مش CourseIds
+        //        var previouslyTakenCourseCodes = student.Courses?
+        //            .Where(sc => sc.Grade != null) // يعني نجح فيها أو خلصها
+        //            .Select(sc => sc.Course.CourseCode) // نفترض إن Course navigation موجود
+        //            .ToList() ?? new List<string>();
+
+        //        var availableCourses = await _unitOfWork.Repository<AvailableCourse>()
+        //.GetAllIncludingAsyncc(ac => ac.Course);
+
+        //        var eligibleCourses = availableCourses
+        //            .Where(ac =>
+        //                // مش مسجل بالفعل
+        //                !(student.Courses?.Any(sc => sc.CourseId == ac.CourseId) ?? false)
+
+        //                // مفيش prerequisite أو الطالب واخدها
+        //                && (
+        //                    string.IsNullOrEmpty(ac.Course.prerequisite)
+        //                    || previouslyTakenCourseCodes.Contains(ac.Course.prerequisite)
+        //                )
+        //            ).ToList();
+
+
+        //        return Ok(eligibleCourses);
+        //    }
+
+
+        [HttpGet("{studentId}/available-courses")]
+        public async Task<IActionResult> GetAvailableCourses(int studentId)
+        {
+            var student = await _unitOfWork.Repository<Student>()
+                .GetAllIncludingAsyncc(s => s.Courses)
+                .ContinueWith(t => t.Result.FirstOrDefault(s => s.Id == studentId));
+
+            if (student == null)
+                return NotFound("Student not found");
+
+            var previouslyTakenCourseCodes = student.Courses?
+                .Where(sc => sc.Grade != null && sc.Course != null)
+                .Select(sc => sc.Course.CourseCode)
+                .ToList() ?? new List<string>();
+
+            var availableCourses = await _unitOfWork.Repository<AvailableCourse>()
+                .GetAllIncludingAsyncc(ac => ac.Course);
+
+            var eligibleCourses = availableCourses
+                .Where(ac =>
+                    // مش مسجل بالفعل
+                    !(student.Courses?.Any(sc => sc.CourseId == ac.CourseId) ?? false)
+
+                    // مفيش prerequisite أو الطالب واخدها
+                    && (
+                        string.IsNullOrEmpty(ac.Course?.prerequisite)
+                        || previouslyTakenCourseCodes.Contains(ac.Course.prerequisite)
+                    )
+                ).ToList();
+
+            return Ok(eligibleCourses);
+        }
+
+
+
+
+
+        [HttpPost("{studentId}/assign-course/{availableCourseId}")]
+        public async Task<IActionResult> AssignCourseToStudent(int studentId, int availableCourseId)
+        {
+            // 1. جيب الطالب من الداتا
+            var student = await _unitOfWork.Repository<Student>()
+                .GetIncludingAsync(s => s.Id == studentId, s => s.Courses); // تأكدنا إن الكورسات متحمّلة مع الطالب
+
+            if (student == null)
+                return NotFound("Student not found");
+
+            // 2. جيب الكورس المتاح
+            var availableCourse = await _unitOfWork.Repository<AvailableCourse>()
+                .GetIncludingAsync(ac => ac.Id == availableCourseId, ac => ac.Course);
+
+            if (availableCourse == null)
+                return NotFound("Available course not found");
+
+            // 3. تأكد إن الـ Courses مش null
+            student.Courses ??= new List<AssignedCourse>();
+
+            // 4. تأكد إن الطالب مش مسجل نفس الكورس قبل كده
+            bool alreadyRegistered = student.Courses.Any(c => c.CourseId == availableCourse.CourseId);
+            if (alreadyRegistered)
+                return BadRequest("Student already registered this course");
+
+            // 5. أضف الكورس للطالب
+            student.Courses.Add(new AssignedCourse
+            {
+                StudentId = studentId,
+                CourseId = availableCourse.CourseId,
+                Grade = "0" // لسه متسجلش درجات
+            });
+
+            // 6. احفظ التغييرات
+            await _unitOfWork.CompleteAsync();
+
+            // 7. رجّع OK
+            return Ok("Course assigned successfully");
+        }
     }
 }
+        
+
+

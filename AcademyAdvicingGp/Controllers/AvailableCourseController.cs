@@ -1,8 +1,14 @@
-﻿using Academy.Core.Dtos;
+﻿using Academy.Core;
+using Academy.Core.Dtos;
 using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces;
+using Academy.Services.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Linq;
+
 
 namespace AcademyAdvicingGp.Controllers
 {
@@ -11,36 +17,79 @@ namespace AcademyAdvicingGp.Controllers
     public class AvailableCourseController : ControllerBase
     {
         private readonly IAvailableCourse _availableCourseService;
+        private readonly IDoctorCourseService _doctorCourseService;
+        private readonly IDoctorService _doctorService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AvailableCourseController(IAvailableCourse availableCourseService)
+        public AvailableCourseController(IAvailableCourse availableCourseService, IDoctorCourseService doctorCourseService , IDoctorService doctorService, IUnitOfWork unitOfWork)
         {
             _availableCourseService = availableCourseService;
+            _doctorCourseService = doctorCourseService;
+            _doctorService = doctorService;
+            _unitOfWork = unitOfWork;
         }
 
 
 
+       
 
-        [HttpPost]
-        public async Task<IActionResult> CreateAvailableCourse([FromBody] AvailableCourseDto availableCourseDto)
+        [HttpPost("AddAvailableCourseWithDoctors")]
+        public async Task<IActionResult> AssignDoctorsToAvailableCourse([FromBody] AvailableCourseDoctorDto dto)
         {
-            // التحقق مما إذا كان الكورس مضافًا مسبقًا
-            bool isAvailable = await _availableCourseService.IsCourseAvailableAsync(
-                availableCourseDto.CourseId, availableCourseDto.AcademicYears, availableCourseDto.Semester);
+            if (dto == null || dto.DoctorIds == null || !dto.DoctorIds.Any())
+                return BadRequest("Invalid data.");
 
-            if (isAvailable)
+            var alreadyAssignedDoctors = new List<int>();
+            var newAssignments = new List<AvailableCourse>();
+
+            foreach (var doctorId in dto.DoctorIds)
             {
-                return BadRequest(new { message = "This course is already available." });
+                // هل فيه بالفعل AvailableCourse لنفس الدكتور والكورس والسنة والترم؟
+                var alreadyLinked = await _unitOfWork.Repository<AvailableCourse>().AnyAsync(ac =>
+                    ac.DoctorId == doctorId &&
+                    ac.CourseId == dto.CourseId &&
+                    ac.AcademicYears == dto.AcademicYears &&
+                    ac.Semester == dto.Semester
+                );
+
+                if (alreadyLinked)
+                {
+                    alreadyAssignedDoctors.Add(doctorId);
+                }
+                else
+                {
+                    newAssignments.Add(new AvailableCourse
+                    {
+                        DoctorId = doctorId,
+                        CourseId = dto.CourseId,
+                        AcademicYears = dto.AcademicYears,
+                        Semester = dto.Semester
+                    });
+                }
             }
 
-            // إذا لم يكن مضافًا، قم بإنشائه
-            var result = await _availableCourseService.CreateAvailableCourseAsync(availableCourseDto);
-
-            if (result == null)
+            // أضف التعيينات الجديدة
+            if (newAssignments.Any())
             {
-                return BadRequest(new { message = "Failed to create available course." });
+                foreach (var assignment in newAssignments)
+                {
+                    await _unitOfWork.Repository<AvailableCourse>().AddAsync(assignment);
+                }
+
+                await _unitOfWork.CompleteAsync();
             }
 
-            return Ok(new { message = "Available course created successfully", id = result.CourseId });
+            // لو فيه دكاترة متسجلين قبل كده
+            if (alreadyAssignedDoctors.Any())
+            {
+                return Ok(new
+                {
+                    message = "Some doctors were already assigned to this course for the same semester and academic year.",
+                    duplicateDoctorIds = alreadyAssignedDoctors
+                });
+            }
+
+            return Ok("Doctors assigned to the available course successfully.");
         }
 
 

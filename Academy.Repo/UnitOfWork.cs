@@ -21,6 +21,9 @@ namespace Academy.Repo
             _context = context;
             _repositories = new Hashtable();
         }
+       
+
+       
         public async Task<int> CompleteAsync()
         => await _context.SaveChangesAsync();
         
@@ -38,5 +41,6 @@ namespace Academy.Repo
             // بعد ما ضيفته رجعهولي بقي اشتغل عليه 
             return _repositories[type] as IGenaricRepository<T>;
         }
+    
     }
 }

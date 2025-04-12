@@ -33,29 +33,35 @@ namespace Academy.Services.Services
              await _unitOfWork.CompleteAsync();
              return _mapper.Map<AvailableCourseDto>(availableCourse);
          }*/
-        public async Task<AvailableCourseDto> CreateAvailableCourseAsync(AvailableCourseDto availableCourseDto)
+
+        ///edit/
+        //public async Task<AvailableCourseDto> CreateAvailableCourseAsync(AvailableCourseDto availableCourseDto)
+        //{
+        //    // الأول نشوف الكورس ده موجود ولا لأ
+        //    var existingCourse = await _unitOfWork.Repository<Course>().GetAsync(availableCourseDto.CourseId);
+        //    if (existingCourse == null)
+        //    {
+        //        throw new Exception($"CourseId {availableCourseDto.CourseId} مش موجود!");
+        //    }
+
+        //    // تحويل الـ DTO إلى كيان AvailableCourse
+        //    var availableCourse = _mapper.Map<AvailableCourse>(availableCourseDto);
+
+        //    // إضافة الكورس المتاح
+        //    await _unitOfWork.Repository<AvailableCourse>().AddAsync(availableCourse);
+
+        //    // حفظ التغييرات
+        //    await _unitOfWork.CompleteAsync();
+
+        //    // تحويل الكيان مرة تانية إلى DTO وإرجاعه
+        //    return _mapper.Map<AvailableCourseDto>(availableCourse);
+        //}
+
+        public async Task CreateAvailableCourseAsync(AvailableCourse availableCourse)
         {
-            // الأول نشوف الكورس ده موجود ولا لأ
-            var existingCourse = await _unitOfWork.Repository<Course>().GetAsync(availableCourseDto.CourseId);
-            if (existingCourse == null)
-            {
-                throw new Exception($"CourseId {availableCourseDto.CourseId} مش موجود!");
-            }
-
-            // تحويل الـ DTO إلى كيان AvailableCourse
-            var availableCourse = _mapper.Map<AvailableCourse>(availableCourseDto);
-
-            // إضافة الكورس المتاح
             await _unitOfWork.Repository<AvailableCourse>().AddAsync(availableCourse);
-
-            // حفظ التغييرات
             await _unitOfWork.CompleteAsync();
-
-            // تحويل الكيان مرة تانية إلى DTO وإرجاعه
-            return _mapper.Map<AvailableCourseDto>(availableCourse);
         }
-
-
 
 
         public async Task<AvailableCourseDto> UpdateAvailableCourseAsync(int id, AvailableCourseDto updateAvailableCourseDto)

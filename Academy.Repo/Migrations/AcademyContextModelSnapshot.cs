@@ -17,7 +17,7 @@ namespace Academy.Repo.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "9.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -28,6 +28,9 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AcademicYears")
                         .HasColumnType("int");
 
                     b.Property<float>("ClassWorkScore")
@@ -42,6 +45,9 @@ namespace Academy.Repo.Migrations
 
                     b.Property<float>("PracticalScore")
                         .HasColumnType("real");
+
+                    b.Property<int>("Semester")
+                        .HasColumnType("int");
 
                     b.HasKey("StudentId", "CourseId");
 

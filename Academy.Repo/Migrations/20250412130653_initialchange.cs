@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academy.Repo.Migrations
 {
     /// <inheritdoc />
-    public partial class IthialDb : Migration
+    public partial class initialchange : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -197,7 +197,8 @@ namespace Academy.Repo.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AcademicYears = table.Column<int>(type: "int", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false)
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    DoctorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -207,29 +208,13 @@ namespace Academy.Repo.Migrations
                         column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "CourseId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "doctorCourses",
-                columns: table => new
-                {
-                    DoctorId = table.Column<int>(type: "int", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_doctorCourses", x => new { x.CourseId, x.DoctorId });
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_doctorCourses_Courses_CourseId",
-                        column: x => x.CourseId,
-                        principalTable: "Courses",
-                        principalColumn: "CourseId");
-                    table.ForeignKey(
-                        name: "FK_doctorCourses_Doctors_DoctorId",
+                        name: "FK_Availablecourses_Doctors_DoctorId",
                         column: x => x.DoctorId,
                         principalTable: "Doctors",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -262,7 +247,9 @@ namespace Academy.Repo.Migrations
                     ClassWorkScore = table.Column<float>(type: "real", nullable: false),
                     PracticalScore = table.Column<float>(type: "real", nullable: false),
                     FinalScore = table.Column<float>(type: "real", nullable: false),
-                    Grade = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Grade = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AcademicYears = table.Column<int>(type: "int", nullable: false),
+                    Semester = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -292,14 +279,14 @@ namespace Academy.Repo.Migrations
                 column: "CourseId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Availablecourses_DoctorId",
+                table: "Availablecourses",
+                column: "DoctorId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Courses_ManageById",
                 table: "Courses",
                 column: "ManageById");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_doctorCourses_DoctorId",
-                table: "doctorCourses",
-                column: "DoctorId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Doctors_AssignedById",
@@ -340,9 +327,6 @@ namespace Academy.Repo.Migrations
 
             migrationBuilder.DropTable(
                 name: "Availablecourses");
-
-            migrationBuilder.DropTable(
-                name: "doctorCourses");
 
             migrationBuilder.DropTable(
                 name: "FinalExamTimeTable");

@@ -12,15 +12,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250412010924_DoctorAvailableCourseRelation")]
-    partial class DoctorAvailableCourseRelation
+    [Migration("20250412130653_initialchange")]
+    partial class initialchange
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "9.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -31,6 +31,9 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AcademicYears")
                         .HasColumnType("int");
 
                     b.Property<float>("ClassWorkScore")
@@ -45,6 +48,9 @@ namespace Academy.Repo.Migrations
 
                     b.Property<float>("PracticalScore")
                         .HasColumnType("real");
+
+                    b.Property<int>("Semester")
+                        .HasColumnType("int");
 
                     b.HasKey("StudentId", "CourseId");
 

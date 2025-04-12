@@ -18,6 +18,16 @@ using AcademyAdvicingGp.Extensions;
 using Academy.Core.Models.Identity;
 using Microsoft.OpenApi.Models;
 
+using System.Text.Json.Serialization;
+
+using Academy.Repo.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using AcademyAdvicingGp.Extensions;
+using Academy.Core.Models.Identity;
+using Microsoft.OpenApi.Models;
+
+
 namespace AcademyAdvicingGp
 {
     public class Program
@@ -73,11 +83,20 @@ namespace AcademyAdvicingGp
                 Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-
+            builder.Services.AddControllers().AddJsonOptions(x =>
+            {
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            });
             // dependency enjection 
             builder.Services.AddScoped<IStudentService, StudentService>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
+
+            builder.Services.AddScoped<IDoctorService, DoctorService>();
+            builder.Services.AddAutoMapper(M => M.AddProfile(new DoctorProfile()));
+
+            builder.Services.AddScoped<IDoctorCourseService, DoctorCourseService>();
+            //builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseDoctorProfile()));
 
             builder.Services.AddScoped<IAvailableCourse, AvailableCourseService>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseProfile()));

@@ -47,7 +47,6 @@ namespace Academy.Repo.Repositories
 
 
         public async Task<IQueryable<T>> GetAllAsync()
-
         {
             // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
             return _context.Set<T>().AsQueryable();
@@ -69,9 +68,101 @@ namespace Academy.Repo.Repositories
         {
             return _context.Set<T>().AsQueryable().ToList<object>();
         }
-    }
+
+
+        // من هنا البوست
+        public IQueryable<T> Where(Expression<Func<T, bool>> predicate)
+        {
+            return _context.Set<T>().Where(predicate); // استخدم Where من LINQ
+        }
+
+        public async Task<T?> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().FirstOrDefaultAsync(predicate);
+        }
+
+        public async Task<List<T>> FindAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
+        }
+
+        public async Task<bool> AnyAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().AnyAsync(predicate);
+        }
+
+        public async Task<IEnumerable<T>> GetAllIncludingAsync(Expression<Func<T, bool>> predicate,
+                    params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _context.Set<T>();
+
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return await query.Where(predicate).ToListAsync();
+        }
+        public async Task<T> GetOneIncludingAsync(
+    Expression<Func<T, bool>> predicate,
+    params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _context.Set<T>();
+
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return await query.FirstOrDefaultAsync(predicate);
+        }
+
+
+        public async Task<IEnumerable<T>> GetFilteredAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
+        }
+
+        public async Task AddRangeAsync(IEnumerable<T> entities)
+        {
+            await _context.Set<T>().AddRangeAsync(entities);
+        }
+
+        public async Task<T> GetIncludingAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _context.Set<T>();
+
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return await query.FirstOrDefaultAsync(predicate);
+        }
+
+        public async Task<IEnumerable<T>> GetAllIncludingAsyncc(params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _context.Set<T>();
+
+            // Apply each Include
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return await query.ToListAsync();
+        }
+
+        public async Task<T> GetByIdAsync(object id)
+        {
+            return await _context.Set<T>().FindAsync(id);
+        }
+
+
+
     }
 
+    }
 
 
 
