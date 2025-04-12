@@ -1,6 +1,7 @@
 ﻿using Academy.Core.Dtos;
 using Academy.Core.ServicesInterfaces;
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,14 +35,32 @@ namespace AcademyAdvicingGp.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> AddStudent([FromBody] StudentDto studentDto)
-        {
-            if (studentDto == null)
-                return BadRequest("Student data is required.");
+        //[HttpPost]
+        //public async Task<IActionResult> AddStudent([FromBody] StudentDto studentDto)
+        //{
+        //    if (studentDto == null)
+        //        return BadRequest("Student data is required.");
 
-            var addedStudent = await _studentService.AddStudentAsync(studentDto);
-            return CreatedAtAction(nameof(GetAllStudents), addedStudent);
+        //    var addedStudent = await _studentService.AddStudentAsync(studentDto);
+        //    return CreatedAtAction(nameof(GetAllStudents), addedStudent);
+        //}
+
+        [HttpPost("add")]
+        [Authorize(Roles = "StudentAffair")] // السماح فقط لموظف شؤون الطلاب
+        public async Task<IActionResult> AddStudent([FromBody] StudentDto model)
+        {
+            if (model == null)
+                return BadRequest("Invalid student data.");
+
+            try
+            {
+                var studentDto = await _studentService.AddStudentAsync(model);
+                return Ok(studentDto);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error: {ex.Message}");
+            }
         }
 
         [HttpPut("{id}")]

@@ -13,7 +13,7 @@ namespace Academy.Core.ServicesInterfaces
 		Task<IEnumerable<StudentDtoID>> GetAllStudentsAsync();
 		Task<StudentDtoID> GetStudentByIdAsync(int id);
 		Task UpdateStudentAsync(StudentDtoID studentDtoid);
-		Task<StudentDto> AddStudentAsync(StudentDto studentDto);
+		Task<StudentDtoID> AddStudentAsync(StudentDto studentDto);
 
         Task DeleteStudentAsync(int id);
 		Task<IEnumerable<StudentDtoID>> SearchStudentsAsync(string? searchTerm);
