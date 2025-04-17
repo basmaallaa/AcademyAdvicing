@@ -104,6 +104,10 @@ namespace AcademyAdvicingGp
 			builder.Services.AddScoped<IMaterialService, MaterialService>();
 			builder.Services.AddAutoMapper(M => M.AddProfile(new MaterialProfile()));
 
+			builder.Services.AddScoped<IScheduleTimeTableService, ScheduleTimeTableService>();
+			builder.Services.AddAutoMapper(M => M.AddProfile(new ScheduleTimeTableProfile()));
+
+
 
 			builder.Services.AddScoped<ICourseService, CreateCourseService>();
          
