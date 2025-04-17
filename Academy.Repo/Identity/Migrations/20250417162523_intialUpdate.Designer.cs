@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Identity.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20250412182140_ithialDb")]
-    partial class ithialDb
+    [Migration("20250417162523_intialUpdate")]
+    partial class intialUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

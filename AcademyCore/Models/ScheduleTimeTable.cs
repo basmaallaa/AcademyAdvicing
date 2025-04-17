@@ -15,5 +15,9 @@ namespace Academy.Core.Models
         public string Location { get; set; }
         public Coordinator UploadedBy { get; set; }
         public int UploadedById { get; set; }
-    }
+
+		public int? AvailableCourseId { get; set; }
+		public AvailableCourse AvailableCourse { get; set; }
+
+	}
 }
