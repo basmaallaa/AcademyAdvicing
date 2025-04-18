@@ -139,6 +139,18 @@ namespace Academy.Services.Services.CourseService
             return true;
         }
 
+        public async Task<bool> IsCourseExistAsync(CreateCourseDto dto)
+        {
+            var course = await _unitOfWork.Repository<Course>().FirstOrDefaultAsync(c =>
+                c.Name == dto.Name 
+              
+            );
+
+            return course != null;
+        }
+
+
+
     }
 }
 

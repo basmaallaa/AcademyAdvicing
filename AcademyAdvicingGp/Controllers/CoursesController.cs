@@ -23,9 +23,8 @@ namespace AcademyAdvicingGp.Controllers
             _courseService = courseService;
         }
 
-        // ✅ إضافة كورس جديد
         [HttpPost]
-        [Authorize(Roles = "Doctor")]
+        [Authorize(Roles = "Coordinator")]
         public async Task<IActionResult> CreateCourse([FromBody] CreateCourseDto createCourseDto)
         {
             if (createCourseDto == null)
@@ -40,6 +39,13 @@ namespace AcademyAdvicingGp.Controllers
 
             try
             {
+                // ✅ التحقق من وجود كورس بنفس التفاصيل
+                var isCourseExist = await _courseService.IsCourseExistAsync(createCourseDto);
+                if (isCourseExist)
+                {
+                    return BadRequest("This course already exists and cannot be added again.");
+                }
+
                 var createdCourse = await _courseService.CreateCourseAsync(createCourseDto);
                 return Ok(createdCourse);
             }
@@ -51,7 +57,9 @@ namespace AcademyAdvicingGp.Controllers
         }
 
 
+
         [HttpGet("search")]
+        [Authorize(Roles = "Coordinator")]
         public async Task<IActionResult> SearchCourses(
     [FromQuery] string? name)
         /*[FromQuery] string? courseCode,
@@ -67,7 +75,8 @@ namespace AcademyAdvicingGp.Controllers
         
 
             [HttpPut("{id}")]
-            public async Task<IActionResult> UpdateCourse(int id, CreateCourseDto updateCourseDto)
+        [Authorize(Roles = "Coordinator")]
+        public async Task<IActionResult> UpdateCourse(int id, CreateCourseDto updateCourseDto)
             {
                 if (updateCourseDto == null)
                     return BadRequest("Invalid course data.");
@@ -83,7 +92,8 @@ namespace AcademyAdvicingGp.Controllers
 
 
             [HttpGet("{id}")]
-            public async Task<IActionResult> GetCourseById(int id)
+         [Authorize(Roles = "Coordinator")]
+        public async Task<IActionResult> GetCourseById(int id)
             {
                 var course = await _courseService.GetCourseByIdAsync(id);
                 if (course == null)
@@ -93,7 +103,8 @@ namespace AcademyAdvicingGp.Controllers
             }
 
             [HttpGet]
-            public async Task<IActionResult> GetAllCourses()
+        [Authorize(Roles = "Coordinator")]
+        public async Task<IActionResult> GetAllCourses()
             {
                 var courses = await _courseService.GetAllCoursesAsync();
                 return Ok(courses);

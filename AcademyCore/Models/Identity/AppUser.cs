@@ -10,6 +10,7 @@ namespace Academy.Core.Models.Identity
     public class AppUser : IdentityUser
     {
         public string DisplayName { get; set; }
+        public string? ImagePath { get; set; }
 
-        }
+    }
 }
