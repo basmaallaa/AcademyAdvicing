@@ -15,7 +15,10 @@ namespace Academy.Core.Mapping
 
             CreateMap<AvailableCourse, AvailableCourseDto>().ReverseMap();
             CreateMap<AvailableCourse,ViewAvailableCourseDto>().ReverseMap();
-         
+            CreateMap<AvailableCourse, ViewAvailableCourseDto>().ReverseMap();
+            CreateMap<AvailableCourseDoctorDto, AvailableCourse>()
+           .ForMember(dest => dest.DoctorId, opt => opt.MapFrom(src => src.DoctorIds));
+            CreateMap<AvailableCourse, AvailableCourseDoctorDto>();
 
         }
     }

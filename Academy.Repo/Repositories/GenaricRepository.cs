@@ -51,7 +51,10 @@ namespace Academy.Repo.Repositories
             // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
             return _context.Set<T>().AsQueryable();
         }
-
+        public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
+        }
         public async Task<T> GetAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
