@@ -3,6 +3,7 @@ using Academy.Core.Dtos;
 using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces;
 using Academy.Services.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -94,7 +95,8 @@ namespace AcademyAdvicingGp.Controllers
 
 
         [HttpPut("Edit/{id}")]
-        public async Task<IActionResult> UpdateAvailableCourse(int id, [FromBody] AvailableCourseDto updateAvailableCourseDto)
+        
+        public async Task<IActionResult> UpdateAvailableCourse(int id, [FromBody] AvailableCourseDoctorDto updateAvailableCourseDto)
         {
             var result = await _availableCourseService.UpdateAvailableCourseAsync(id, updateAvailableCourseDto);
             if (result == null) return NotFound();

@@ -17,6 +17,8 @@ namespace Academy.Core.Repositories
 
         Task<IQueryable<T>> GetAllAsync();
 
+        Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> predicate);
+
         //Task Delete(int id)
 
         void Delete(T item);
