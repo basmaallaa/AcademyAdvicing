@@ -15,5 +15,8 @@ namespace Academy.Core.Models
         //e3mlo migration 3ndko b deh
 		public string FilePath { get; set; }
 
-	}
+        public int CourseId { get; set; }
+        public Course Course { get; set; }
+
+    }
 }
