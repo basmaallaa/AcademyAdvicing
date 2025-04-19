@@ -3108,19 +3108,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\w\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AcadmyGrProject\\AcademyCore\\Academy.Core.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
       "projectName": "Academy.Core",
-      "projectPath": "D:\\AcadmyGrProject\\AcademyCore\\Academy.Core.csproj",
-      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
-      "outputPath": "D:\\AcadmyGrProject\\AcademyCore\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3128,6 +3128,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3186,7 +3187,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
