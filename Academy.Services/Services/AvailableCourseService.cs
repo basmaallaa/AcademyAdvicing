@@ -64,7 +64,7 @@ namespace Academy.Services.Services
         }
 
 
-        public async Task<AvailableCourseDto> UpdateAvailableCourseAsync(int id, AvailableCourseDto updateAvailableCourseDto)
+        /*public async Task<AvailableCourseDto> UpdateAvailableCourseAsync(int id, AvailableCourseDto updateAvailableCourseDto)
         {
             var availableCourse = await _unitOfWork.Repository<AvailableCourse>().GetAsync(id);
             if (availableCourse == null) return null;
@@ -74,6 +74,55 @@ namespace Academy.Services.Services
             await _unitOfWork.CompleteAsync();
 
             return _mapper.Map<AvailableCourseDto>(availableCourse);
+        }*/
+        public async Task<AvailableCourseDoctorDto> UpdateAvailableCourseAsync(int courseId, AvailableCourseDoctorDto dto)
+        {
+            // 1. جيب كل الصفوف المرتبطة بالكورس
+            var existing = (await _unitOfWork
+                .Repository<AvailableCourse>()
+                .GetAllAsync(ac => ac.CourseId == courseId))
+                .ToList();
+
+            if (!existing.Any())
+                return null;
+
+            // 2. طبّق التحديثات العامة على كل صف
+            existing.ForEach(ac => {
+                ac.AcademicYears = dto.AcademicYears;
+                ac.Semester = dto.Semester;
+            });
+
+            // 3. حدّد اللي اتحذف واللي هيتضاف
+            var oldDoctorIds = existing.Select(ac => ac.DoctorId).ToHashSet();
+            var newDoctorIds = dto.DoctorIds?.ToHashSet() ?? new HashSet<int>();
+
+            var toRemove = oldDoctorIds.Except(newDoctorIds);
+            var toAdd = newDoctorIds.Except(oldDoctorIds);
+
+            // 4. احذف بس اللي اتشال من اللائحة
+            foreach (var removeId in toRemove)
+            {
+                var ent = existing.First(ac => ac.DoctorId == removeId);
+                _unitOfWork.Repository<AvailableCourse>().Delete(ent);
+            }
+
+            // 5. أضف بس اللي اتزاد جديد
+            foreach (var addId in toAdd)
+            {
+                await _unitOfWork.Repository<AvailableCourse>()
+                    .AddAsync(new AvailableCourse
+                    {
+                        CourseId = courseId,
+                        AcademicYears = dto.AcademicYears,
+                        Semester = dto.Semester,
+                        DoctorId = addId
+                    });
+            }
+
+            // 6. احفظ كل التغييرات
+            await _unitOfWork.CompleteAsync();
+
+            return dto;
         }
 
         public async Task<ViewAvailableCourseDto> GetAvailableCourseByIdAsync(int id)
@@ -101,20 +150,45 @@ namespace Academy.Services.Services
             return availableCourseDto;
         }
 
+        /* public async Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync()
+         {
+             var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync();
+
+             var result = availableCourses.Select(ac => new ViewAvailableCourseDto
+             {
+                 Id = ac.Id,
+                 AcademicYears = ac.AcademicYears,
+                 Semester = ac.Semester,
+                 CourseId = ac.CourseId,
+                 CourseName = ac.Course != null ? ac.Course.Name : "Unknown",
+                 CourseCode = ac.Course != null ? ac.Course.CourseCode : "N/A",
+                 CreditHours = ac.Course != null ? ac.Course.CreditHours : 0
+             }).ToList();
+
+             return result;
+         }
+        */
         public async Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync()
         {
+            // استرجاع كل الكورسات المتاحة
             var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync();
 
-            var result = availableCourses.Select(ac => new ViewAvailableCourseDto
-            {
-                Id = ac.Id,
-                AcademicYears = ac.AcademicYears,
-                Semester = ac.Semester,
-                CourseId = ac.CourseId,
-                CourseName = ac.Course != null ? ac.Course.Name : "Unknown",
-                CourseCode = ac.Course != null ? ac.Course.CourseCode : "N/A",
-                CreditHours = ac.Course != null ? ac.Course.CreditHours : 0
-            }).ToList();
+            // إنشاء قائمة بالكورسات من غير تكرار للدكاترة
+            var result = availableCourses
+                .GroupBy(ac => new { ac.CourseId, ac.AcademicYears, ac.Semester }) // تجميع الكورسات حسب الكورس، السنة والترم
+                .Select(group => new ViewAvailableCourseDto
+                {
+                    CourseId = group.Key.CourseId,
+                    AcademicYears = group.Key.AcademicYears,
+                    Semester = group.Key.Semester,
+                    DoctorIds = group.Select(ac => ac.DoctorId).ToList(), // جمع كل الدكاترة الذين يدرسون نفس الكورس
+                    CourseName = group.FirstOrDefault().Course != null ? group.FirstOrDefault().Course.Name : "Unknown",
+                    // جمع أسماء كل الدكاترة
+                    DoctorName = group.Select(ac => ac.Doctor.Name).Distinct().ToList(), // استخدام Distinct لضمان عدم التكرار
+                    CourseCode = group.FirstOrDefault().Course != null ? group.FirstOrDefault().Course.CourseCode : "N/A",
+                    CreditHours = group.FirstOrDefault().Course != null ? group.FirstOrDefault().Course.CreditHours : 0
+                })
+                .ToList();
 
             return result;
         }

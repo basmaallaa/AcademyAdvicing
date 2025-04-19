@@ -124,6 +124,7 @@ namespace Academy.Services.Services.CourseService
 			// 3. فلتر الكورسات اللي متسجلة للطالب
 			var studentCourseIds = new List<int>();
 
+
 			foreach (var ac in allAssignedCourses)
 			{
 				if (ac.StudentId == studentId)

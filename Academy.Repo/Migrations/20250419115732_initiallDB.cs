@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Academy.Repo.Data.Migrations
+namespace Academy.Repo.Migrations
 {
     /// <inheritdoc />
-    public partial class updateDBBassanttt : Migration
+    public partial class initiallDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,7 @@ namespace Academy.Repo.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -37,7 +37,7 @@ namespace Academy.Repo.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -54,7 +54,7 @@ namespace Academy.Repo.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -133,29 +133,6 @@ namespace Academy.Repo.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ScheduleTimeTable",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    DayOfWeek = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StartTime = table.Column<TimeOnly>(type: "time", nullable: false),
-                    EndTime = table.Column<TimeOnly>(type: "time", nullable: false),
-                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UploadedById = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ScheduleTimeTable", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_ScheduleTimeTable_Coordinates_UploadedById",
-                        column: x => x.UploadedById,
-                        principalTable: "Coordinates",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Materials",
                 columns: table => new
                 {
@@ -190,7 +167,7 @@ namespace Academy.Repo.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -261,6 +238,36 @@ namespace Academy.Repo.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ScheduleTimeTable",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    DayOfWeek = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StartTime = table.Column<TimeOnly>(type: "time", nullable: false),
+                    EndTime = table.Column<TimeOnly>(type: "time", nullable: false),
+                    Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UploadedById = table.Column<int>(type: "int", nullable: false),
+                    AvailableCourseId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ScheduleTimeTable", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ScheduleTimeTable_Availablecourses_AvailableCourseId",
+                        column: x => x.AvailableCourseId,
+                        principalTable: "Availablecourses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_ScheduleTimeTable_Coordinates_UploadedById",
+                        column: x => x.UploadedById,
+                        principalTable: "Coordinates",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Assignedcourses_CourseId",
                 table: "Assignedcourses",
@@ -297,6 +304,11 @@ namespace Academy.Repo.Data.Migrations
                 column: "GenerateById");
 
             migrationBuilder.CreateIndex(
+                name: "IX_ScheduleTimeTable_AvailableCourseId",
+                table: "ScheduleTimeTable",
+                column: "AvailableCourseId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ScheduleTimeTable_UploadedById",
                 table: "ScheduleTimeTable",
                 column: "UploadedById");
@@ -314,9 +326,6 @@ namespace Academy.Repo.Data.Migrations
                 name: "Assignedcourses");
 
             migrationBuilder.DropTable(
-                name: "Availablecourses");
-
-            migrationBuilder.DropTable(
                 name: "FinalExamTimeTable");
 
             migrationBuilder.DropTable(
@@ -332,13 +341,16 @@ namespace Academy.Repo.Data.Migrations
                 name: "Students");
 
             migrationBuilder.DropTable(
+                name: "Availablecourses");
+
+            migrationBuilder.DropTable(
+                name: "StudentAffairs");
+
+            migrationBuilder.DropTable(
                 name: "Courses");
 
             migrationBuilder.DropTable(
                 name: "Doctors");
-
-            migrationBuilder.DropTable(
-                name: "StudentAffairs");
 
             migrationBuilder.DropTable(
                 name: "Coordinates");
