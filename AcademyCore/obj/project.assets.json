@@ -3108,19 +3108,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IT\\.nuget\\packages\\": {}
+    "C:\\Users\\w\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
+      "projectUniqueName": "D:\\AcadmyGrProject\\AcademyCore\\Academy.Core.csproj",
       "projectName": "Academy.Core",
-      "projectPath": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj",
-      "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyCore\\obj\\",
+      "projectPath": "D:\\AcadmyGrProject\\AcademyCore\\Academy.Core.csproj",
+      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+      "outputPath": "D:\\AcadmyGrProject\\AcademyCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

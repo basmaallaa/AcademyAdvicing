@@ -2810,19 +2810,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IT\\.nuget\\packages\\": {}
+    "C:\\Users\\w\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
+      "projectUniqueName": "D:\\AcadmyGrProject\\Academy.Services\\Academy.Services.csproj",
       "projectName": "Academy.Services",
-      "projectPath": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\Academy.Services\\Academy.Services.csproj",
-      "packagesPath": "C:\\Users\\IT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\Academy.Services\\obj\\",
+      "projectPath": "D:\\AcadmyGrProject\\Academy.Services\\Academy.Services.csproj",
+      "packagesPath": "C:\\Users\\w\\.nuget\\packages\\",
+      "outputPath": "D:\\AcadmyGrProject\\Academy.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\w\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2836,11 +2836,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj"
+            "D:\\AcadmyGrProject\\Academy.Repo\\Academy.Repo.csproj": {
+              "projectPath": "D:\\AcadmyGrProject\\Academy.Repo\\Academy.Repo.csproj"
             },
-            "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj": {
-              "projectPath": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyCore\\Academy.Core.csproj"
+            "D:\\AcadmyGrProject\\AcademyCore\\Academy.Core.csproj": {
+              "projectPath": "D:\\AcadmyGrProject\\AcademyCore\\Academy.Core.csproj"
             }
           }
         }
