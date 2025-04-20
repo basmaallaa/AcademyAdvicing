@@ -1,561 +1,194 @@
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.AssemblyReference.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfoInputs.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfo.cs
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.CoreCompileInputs.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.sourcelink.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.exe
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.deps.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.runtimeconfig.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.pdb
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Core.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Identity.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Humanizer.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Build.Locator.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.ClientModel.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.CodeDom.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Convention.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Hosting.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Runtime.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.TypedParts.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Formats.Asn1.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Memory.Data.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Runtime.Caching.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Json.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Windows.Extensions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.pdb
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.pdb
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.pdb
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.AcademyAdvicingGp.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.build.AcademyAdvicingGp.props
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AcademyAdvicingGp.props
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AcademyAdvicingGp.props
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\scopedcss\bundle\AcademyAdvicingGp.styles.css
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyA.330838B6.Up2Date
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\refint\AcademyAdvicingGp.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.pdb
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.genruntimeconfig.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\ref\AcademyAdvicingGp.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.Development.json
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.json
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.exe
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.deps.json
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.runtimeconfig.json
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.pdb
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\AutoMapper.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Core.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Identity.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Humanizer.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Build.Locator.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.ClientModel.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.CodeDom.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Formats.Asn1.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.IO.Pipelines.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Memory.Data.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Json.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.pdb
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.pdb
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.pdb
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.AssemblyReference.cache
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.GeneratedMSBuildEditorConfig.editorconfig
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfoInputs.cache
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfo.cs
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.CoreCompileInputs.cache
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.MvcApplicationPartsAssemblyInfo.cs
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.MvcApplicationPartsAssemblyInfo.cache
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.sourcelink.json
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.build.json
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.development.json
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.AcademyAdvicingGp.Microsoft.AspNetCore.StaticWebAssets.props
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.build.AcademyAdvicingGp.props
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AcademyAdvicingGp.props
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AcademyAdvicingGp.props
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.pack.json
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\scopedcss\bundle\AcademyAdvicingGp.styles.css
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyA.330838B6.Up2Date
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\refint\AcademyAdvicingGp.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.pdb
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.genruntimeconfig.cache
-D:\AcadmyGrProject\AcademyAdvicingGp\obj\Debug\net8.0\ref\AcademyAdvicingGp.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ClosedXML.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ClosedXML.Parser.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\ExcelNumberFormat.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\RBush.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\SixLabors.Fonts.dll
-D:\AcadmyGrProject\AcademyAdvicingGp\bin\Debug\net8.0\System.IO.Packaging.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.exe
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.deps.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.runtimeconfig.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.pdb
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Core.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Identity.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ClosedXML.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ClosedXML.Parser.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ExcelNumberFormat.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Humanizer.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Build.Locator.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\RBush.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\SixLabors.Fonts.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.ClientModel.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.CodeDom.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Convention.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Hosting.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Runtime.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.TypedParts.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Formats.Asn1.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.IO.Packaging.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Memory.Data.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Runtime.Caching.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Json.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\System.Windows.Extensions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.pdb
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.pdb
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.pdb
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.AssemblyReference.cache
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfoInputs.cache
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfo.cs
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.sourcelink.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.AcademyAdvicingGp.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.build.AcademyAdvicingGp.props
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AcademyAdvicingGp.props
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AcademyAdvicingGp.props
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\scopedcss\bundle\AcademyAdvicingGp.styles.css
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyA.330838B6.Up2Date
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\refint\AcademyAdvicingGp.dll
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.pdb
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.genruntimeconfig.cache
-C:\Users\user\Desktop\gp git updated\AcademyAdvicing\AcademyAdvicingGp\obj\Debug\net8.0\ref\AcademyAdvicingGp.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.Development.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\appsettings.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.staticwebassets.endpoints.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.exe
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.deps.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.runtimeconfig.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AcademyAdvicingGp.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\AutoMapper.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Core.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Azure.Identity.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ClosedXML.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ClosedXML.Parser.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ExcelNumberFormat.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Humanizer.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\RBush.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.ClientModel.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.CodeDom.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.IO.Packaging.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Text.Json.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Repo.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Services.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\Academy.Core.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.AssemblyReference.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfoInputs.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.AssemblyInfo.cs
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.csproj.CoreCompileInputs.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.MvcApplicationPartsAssemblyInfo.cs
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.MvcApplicationPartsAssemblyInfo.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.sourcelink.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\scopedcss\bundle\AcademyAdvicingGp.styles.css
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.build.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.development.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.AcademyAdvicingGp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.AcademyAdvicingGp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.build.AcademyAdvicingGp.props
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AcademyAdvicingGp.props
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AcademyAdvicingGp.props
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyA.330838B6.Up2Date
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\refint\AcademyAdvicingGp.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.genruntimeconfig.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\ref\AcademyAdvicingGp.dll
