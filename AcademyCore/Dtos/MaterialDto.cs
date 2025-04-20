@@ -11,6 +11,7 @@ namespace Academy.Core.Dtos
 		public int Id { get; set; }
 		public string Title { get; set; }
 		public int UploadedById { get; set; }
+		public int CourseId { get; set; }
 
 	}
 }

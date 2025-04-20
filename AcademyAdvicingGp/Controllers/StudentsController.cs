@@ -3,11 +3,14 @@ using Academy.Core.Dtos;
 using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces;
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
+using Academy.Repo.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
+using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 
 namespace AcademyAdvicingGp.Controllers
 {
@@ -17,11 +20,13 @@ namespace AcademyAdvicingGp.Controllers
     {
         private readonly IStudentService _studentService;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly AcademyContext _academyContext;
 
-        public StudentsController(IStudentService studentService , IUnitOfWork unitOfWork)
+        public StudentsController(IStudentService studentService , IUnitOfWork unitOfWork, AcademyContext academyContext)
         {
             _studentService = studentService;
             _unitOfWork = unitOfWork;
+            _academyContext = academyContext;
         }
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
@@ -53,7 +58,7 @@ namespace AcademyAdvicingGp.Controllers
 
         [HttpPost("add")]
         [Authorize(Roles = "StudentAffair")] // السماح فقط لموظف شؤون الطلاب
-        public async Task<IActionResult> AddStudent([FromBody] StudentDto model)
+        public async Task<IActionResult> AddStudent([FromForm] StudentDto model)
         {
             if (model == null)
                 return BadRequest("Invalid student data.");
@@ -234,6 +239,41 @@ namespace AcademyAdvicingGp.Controllers
             // 7. رجّع OK
             return Ok("Course assigned successfully");
         }
+
+
+        [HttpGet("my-course-scores")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> GetMyCourseScores([FromQuery] int courseId)
+        {
+            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(userEmail))
+                return Unauthorized("Email not found in token.");
+
+            // جلب الطالب مع الكورسات اللي سجلها والكورس نفسه
+            var student = await _academyContext.Students
+                .Include(s => s.Courses)
+                    .ThenInclude(sc => sc.Course)
+                .FirstOrDefaultAsync(s => s.Email == userEmail);
+
+            if (student == null)
+                return NotFound("Student profile not found.");
+
+            // التأكد إن الطالب سجل فعلاً الكورس ده
+            var selectedCourse = student.Courses.FirstOrDefault(c => c.CourseId == courseId);
+            if (selectedCourse == null)
+                return BadRequest("You are not assigned to this course.");
+
+            // تجهيز البيانات المطلوبة فقط
+            return Ok(new
+            {
+                CourseId = selectedCourse.CourseId,
+                CourseName = selectedCourse.Course?.Name,
+                ClassWorkScore = selectedCourse.ClassWorkScore,
+                PracticalScore = selectedCourse.PracticalScore
+            });
+        }
+
+
     }
 }
         

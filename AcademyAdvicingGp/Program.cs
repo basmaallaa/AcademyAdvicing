@@ -126,6 +126,17 @@ namespace AcademyAdvicingGp
             builder.Services.AddIdentityServices(builder.Configuration);
             #endregion
 
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SupportNonNullableReferenceTypes(); // يدعم الـ file types
+                c.MapType<IFormFile>(() => new OpenApiSchema
+                {
+                    Type = "string",
+                    Format = "binary"
+                });
+            });
+
+
             var app = builder.Build();
 
             #region Database Migration & Seeding
