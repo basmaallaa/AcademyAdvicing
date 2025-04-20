@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250412181539_inthialDB")]
-    partial class inthialDB
+    [Migration("20250419115033_addImagePath")]
+    partial class addImagePath
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,7 +101,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -170,15 +169,11 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AssignedById")
-                        .HasColumnType("int");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -194,8 +189,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AssignedById");
 
                     b.ToTable("Doctors");
                 });
@@ -295,6 +288,9 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("AvailableCourseId")
+                        .HasColumnType("int");
+
                     b.Property<string>("DayOfWeek")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -313,6 +309,8 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AvailableCourseId");
 
                     b.HasIndex("UploadedById");
 
@@ -338,7 +336,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Level")
@@ -384,7 +381,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -451,17 +447,6 @@ namespace Academy.Repo.Migrations
                     b.Navigation("ManageBy");
                 });
 
-            modelBuilder.Entity("Academy.Core.Models.Doctor", b =>
-                {
-                    b.HasOne("Academy.Core.Models.Coordinator", "AssignedBy")
-                        .WithMany("Doctors")
-                        .HasForeignKey("AssignedById")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AssignedBy");
-                });
-
             modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>
                 {
                     b.HasOne("Academy.Core.Models.Coordinator", "UploadedBy")
@@ -497,11 +482,18 @@ namespace Academy.Repo.Migrations
 
             modelBuilder.Entity("Academy.Core.Models.ScheduleTimeTable", b =>
                 {
+                    b.HasOne("Academy.Core.Models.AvailableCourse", "AvailableCourse")
+                        .WithMany("ScheduleTimeTables")
+                        .HasForeignKey("AvailableCourseId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("Academy.Core.Models.Coordinator", "UploadedBy")
                         .WithMany("ScheduleTimeTables")
                         .HasForeignKey("UploadedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("AvailableCourse");
 
                     b.Navigation("UploadedBy");
                 });
@@ -515,11 +507,14 @@ namespace Academy.Repo.Migrations
                     b.Navigation("ManageBy");
                 });
 
+            modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
+                {
+                    b.Navigation("ScheduleTimeTables");
+                });
+
             modelBuilder.Entity("Academy.Core.Models.Coordinator", b =>
                 {
                     b.Navigation("Courses");
-
-                    b.Navigation("Doctors");
 
                     b.Navigation("Reports");
 

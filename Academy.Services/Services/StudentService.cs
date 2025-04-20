@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Academy.Services.Services
 {
@@ -24,13 +25,16 @@ namespace Academy.Services.Services
         private readonly UserManager<AppUser> _userManager;
         private readonly ITokenService _tokenService;
         private readonly AcademyContext _academyDbContext;
-        public StudentService(IMapper mapper , IUnitOfWork unitOfWork, UserManager<AppUser> userManager, ITokenService tokenService, AcademyContext academyDbContext)
+        private readonly IFileService _fileService;
+
+        public StudentService(IMapper mapper , IUnitOfWork unitOfWork, UserManager<AppUser> userManager, ITokenService tokenService, AcademyContext academyDbContext, IFileService fileService)
         {
 			_mapper = mapper;
 			_unitOfWork = unitOfWork;
             _userManager = userManager;
             _tokenService = tokenService;
             _academyDbContext = academyDbContext;
+           _fileService = fileService;
         }
 
        
@@ -62,13 +66,27 @@ namespace Academy.Services.Services
         //	return _mapper.Map<StudentDto>(student);
         //}
 
-        public async Task<StudentDtoID> AddStudentAsync(StudentDto model)
+        public async Task<StudentDtoID> AddStudentAsync( StudentDto model)
         {
             
             var existingStudent = await _academyDbContext.Students
                 .FirstOrDefaultAsync(s => s.Email == model.Email);
             if (existingStudent != null)
                 throw new Exception("Student with this email is already registered.");
+
+            string? imageFileName = null;
+
+            if (model.ImageFile is not null)
+            {
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+
+                if (model.ImageFile.Length > 1 * 1024 * 1024)
+                    throw new ArgumentException("Image size should not exceed 1 MB.");
+
+                imageFileName = await _fileService.SaveFileAsync(model.ImageFile, allowedExtensions);
+            }
+
+
 
             var student = new Student
             {
@@ -79,7 +97,7 @@ namespace Academy.Services.Services
                 Status = model.Status,
                 GPA = model.GPA,
                 CompeletedHours = model.CompeletedHours,
-                ImagePath = model.ImagePath ?? "defaultImagePath.jpg",
+                ImagePath = imageFileName,
                 PhoneNumber = model.PhoneNumber
 
             };
@@ -114,7 +132,10 @@ namespace Academy.Services.Services
             {
                 Id = student.Id,
                 Name = student.Name,
+                UserName = student.UserName,
                 Email = student.Email,
+                PhoneNumber = student.PhoneNumber,
+                ImagePath= imageFileName,
                 Level = student.Level,
                 Status = student.Status,
                 GPA = student.GPA,

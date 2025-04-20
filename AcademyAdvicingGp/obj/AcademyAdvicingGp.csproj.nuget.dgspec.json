@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {}
+    "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
+    "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj",
+        "projectUniqueName": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj",
         "projectName": "Academy.Repo",
-        "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj",
+        "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj",
         "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\obj\\",
+        "outputPath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
-                "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
+              "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
               }
             }
           }
@@ -43,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -80,21 +85,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj": {
+    "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
+        "projectUniqueName": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
         "projectName": "Academy.Services",
-        "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
+        "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
         "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\obj\\",
+        "outputPath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,11 +117,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
-                "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj"
+              "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj"
               },
-              "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
-                "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
+              "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
               }
             }
           }
@@ -126,7 +135,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -157,21 +167,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {
+    "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+        "projectUniqueName": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
         "projectName": "AcademyAdvicingGp",
-        "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
+        "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj",
         "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp\\obj\\",
+        "outputPath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -185,14 +199,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
-                "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj"
+              "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj": {
+                "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Academy.Repo.csproj"
               },
-              "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj": {
-                "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj"
+              "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj": {
+                "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj"
               },
-              "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
-                "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
+              "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
+                "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj"
               }
             }
           }
@@ -206,7 +220,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -228,7 +243,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -254,21 +269,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
+    "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
+        "projectUniqueName": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
         "projectName": "Academy.Core",
-        "projectPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
+        "projectPath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
         "packagesPath": "C:\\Users\\basma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\obj\\",
+        "outputPath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\basma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -293,7 +312,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -334,7 +354,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

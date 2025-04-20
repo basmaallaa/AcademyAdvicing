@@ -21,6 +21,9 @@ namespace Academy.Core.ServicesInterfaces.ICoursesInterface
         Task<IEnumerable<GetCoursesDto>> GetAllCoursesAsync();
         Task<bool> DeleteCourseAsync(int id);
 
+        Task<bool> IsCourseExistAsync(CreateCourseDto dto);
+
+
 
     }
 }

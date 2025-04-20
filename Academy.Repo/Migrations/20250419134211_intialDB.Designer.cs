@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250412184403_removeAssignedBy")]
-    partial class removeAssignedBy
+    [Migration("20250419134211_intialDB")]
+    partial class intialDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,7 +101,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -175,7 +174,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -290,6 +288,9 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("AvailableCourseId")
+                        .HasColumnType("int");
+
                     b.Property<string>("DayOfWeek")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -308,6 +309,8 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AvailableCourseId");
 
                     b.HasIndex("UploadedById");
 
@@ -333,7 +336,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Level")
@@ -379,7 +381,6 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -481,11 +482,18 @@ namespace Academy.Repo.Migrations
 
             modelBuilder.Entity("Academy.Core.Models.ScheduleTimeTable", b =>
                 {
+                    b.HasOne("Academy.Core.Models.AvailableCourse", "AvailableCourse")
+                        .WithMany("ScheduleTimeTables")
+                        .HasForeignKey("AvailableCourseId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("Academy.Core.Models.Coordinator", "UploadedBy")
                         .WithMany("ScheduleTimeTables")
                         .HasForeignKey("UploadedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("AvailableCourse");
 
                     b.Navigation("UploadedBy");
                 });
@@ -497,6 +505,11 @@ namespace Academy.Repo.Migrations
                         .HasForeignKey("ManageById");
 
                     b.Navigation("ManageBy");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
+                {
+                    b.Navigation("ScheduleTimeTables");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Coordinator", b =>

@@ -1,32 +1,26 @@
-﻿
-using Academy.Core;
+﻿using Academy.Core;
 using Academy.Core.Mapping;
-
 using Academy.Core.ServicesInterfaces;
+using Academy.Core.ServicesInterfaces.ICoursesInterface;
+using Academy.Core.Models.Identity;
+
 using Academy.Repo;
 using Academy.Repo.Data;
-using Academy.Services.Services;
+using Academy.Repo.Identity;
 
-using Academy.Core.ServicesInterfaces.ICoursesInterface;
+using Academy.Services.Services;
 using Academy.Services.Services.CourseService;
 
-using Microsoft.EntityFrameworkCore;
-using Academy.Repo.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
 using AcademyAdvicingGp.Extensions;
-using Academy.Core.Models.Identity;
+
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
+using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
 
 using System.Text.Json.Serialization;
-
-using Academy.Repo.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using AcademyAdvicingGp.Extensions;
-using Academy.Core.Models.Identity;
-using Microsoft.OpenApi.Models;
-
 
 namespace AcademyAdvicingGp
 {
@@ -36,14 +30,16 @@ namespace AcademyAdvicingGp
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Add services to the container
+            builder.Services.AddControllers().AddJsonOptions(x =>
+            {
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+            });
 
-            // Add services to the container.
-
-            builder.Services.AddControllers();
-            
             builder.Services.AddEndpointsApiExplorer();
-            // builder.Services.AddSwaggerGen();
-             builder.Services.AddSwaggerGen(c =>
+
+            #region Swagger Configuration
+            builder.Services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
@@ -62,93 +58,113 @@ namespace AcademyAdvicingGp
                 });
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
                 {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "bearerAuth"
-                }
-            },
-            new string[] {}
-        }
-    });
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "bearerAuth"
+                            }
+                        },
+                        new string[] {}
+                    }
+                });
             });
+            #endregion
 
+            #region Database Configuration
+            builder.Services.AddDbContext<AcademyContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddDbContext<AcademyContext>(Options =>
-            {
-                Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
+            builder.Services.AddDbContext<AppIdentityDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection")));
+            #endregion
 
-            builder.Services.AddControllers().AddJsonOptions(x =>
-            {
-                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-            });
-            // dependency enjection 
-            builder.Services.AddScoped<IStudentService, StudentService>();
+            #region Dependency Injection
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddAutoMapper(M => M.AddProfile(new StudentProfile()));
+
+            builder.Services.AddScoped<IStudentService, StudentService>();
+            builder.Services.AddAutoMapper(m => m.AddProfile(new StudentProfile()));
 
             builder.Services.AddScoped<IDoctorService, DoctorService>();
-            builder.Services.AddAutoMapper(M => M.AddProfile(new DoctorProfile()));
+            builder.Services.AddAutoMapper(m => m.AddProfile(new DoctorProfile()));
 
             builder.Services.AddScoped<IDoctorCourseService, DoctorCourseService>();
-            //builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseDoctorProfile()));
 
             builder.Services.AddScoped<IAvailableCourse, AvailableCourseService>();
-            builder.Services.AddAutoMapper(M => M.AddProfile(new AvailableCourseProfile()));
+            builder.Services.AddAutoMapper(m => m.AddProfile(new AvailableCourseProfile()));
 
-			builder.Services.AddScoped<IMaterialService, MaterialService>();
-			builder.Services.AddAutoMapper(M => M.AddProfile(new MaterialProfile()));
+            builder.Services.AddScoped<IMaterialService, MaterialService>();
+            builder.Services.AddAutoMapper(m => m.AddProfile(new MaterialProfile()));
 
 
-			builder.Services.AddScoped<ICourseService, CreateCourseService>();
-         
-            builder.Services.AddAutoMapper(M=>M.AddProfile(new CourseProfile()));
+            builder.Services.AddScoped<ICourseService, CreateCourseService>();
+            builder.Services.AddAutoMapper(m => m.AddProfile(new CourseProfile()));
 
-            builder.Services.AddDbContext<AppIdentityDbContext>(Options =>
+			builder.Services.AddScoped<IScheduleTimeTableService, ScheduleTimeTableService>();
+			builder.Services.AddAutoMapper(M => M.AddProfile(new ScheduleTimeTableProfile()));
+
+
+            builder.Services.AddTransient<IFileService, FileService>();
+            #endregion
+
+            #region CORS
+            builder.Services.AddCors(options =>
             {
-                Options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
             });
+            #endregion
+
+            #region Identity
             builder.Services.AddIdentityServices(builder.Configuration);
+            #endregion
+
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SupportNonNullableReferenceTypes(); // يدعم الـ file types
+                c.MapType<IFormFile>(() => new OpenApiSchema
+                {
+                    Type = "string",
+                    Format = "binary"
+                });
+            });
 
 
             var app = builder.Build();
 
-            #region update-Database
+            #region Database Migration & Seeding
             using var scope = app.Services.CreateScope();
-            // group of services lifetime scooped
-            var Services = scope.ServiceProvider; // مسكيت 
-            // servics its self
+            var services = scope.ServiceProvider;
+            var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 
-            var LoggerFactory = Services.GetRequiredService<ILoggerFactory>();
             try
             {
-                var dbContext = Services.GetRequiredService<AcademyContext>();
-                //ask clr for creating object from dbcontext explicity
-                await dbContext.Database.MigrateAsync(); // update-database
-                var IdentityDbContext= Services.GetRequiredService<AppIdentityDbContext>();
-                await IdentityDbContext.Database.MigrateAsync();
+                var dbContext = services.GetRequiredService<AcademyContext>();
+                await dbContext.Database.MigrateAsync();
 
-                var UserManger = Services.GetRequiredService<UserManager<AppUser>>();
-                var roleManager = Services.GetRequiredService<RoleManager<IdentityRole>>();
-                await AppIdentityDbContextSeed.SeedUserAsync(IdentityDbContext);
+                var identityDbContext = services.GetRequiredService<AppIdentityDbContext>();
+                await identityDbContext.Database.MigrateAsync();
 
-
-
+                var userManager = services.GetRequiredService<UserManager<AppUser>>();
+                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+                await AppIdentityDbContextSeed.SeedUserAsync(identityDbContext);
+                
             }
             catch (Exception ex)
             {
-                var Logger = LoggerFactory.CreateLogger<Program>();
-                Logger.LogError(ex, "An Error Occured During Appling The Migration");
-
+                var logger = loggerFactory.CreateLogger<Program>();
+                logger.LogError(ex, "An error occurred during applying the migration");
             }
             #endregion
 
-            // Configure the HTTP request pipeline.
+            #region Middleware
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -156,9 +172,26 @@ namespace AcademyAdvicingGp
             }
 
             app.UseHttpsRedirection();
+            var uploadsPath = Path.Combine(builder.Environment.ContentRootPath, "Uploads");
+
+            // Create the folder if it doesn't exist
+            if (!Directory.Exists(uploadsPath))
+            {
+                Directory.CreateDirectory(uploadsPath);
+            }
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "Uploads")),
+                RequestPath = "/Resources"
+            });
+            
+           // app.UseCors();
+
             app.UseAuthentication();
             app.UseAuthorization();
+
             app.MapControllers();
+            #endregion
 
             app.Run();
         }

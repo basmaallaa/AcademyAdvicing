@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dz/59EgXWNJQpq1Tw64Lswe1AeFEH7Ni5QCDzjDv5x74ZGHF8Aij3LpOiCeulSK/frl0A32XSdPHLts5yPsSlw==",
+  "dgSpecHash": "vSzClNkWOdE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
+  "projectFilePath": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Academy.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\basma\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\basma\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

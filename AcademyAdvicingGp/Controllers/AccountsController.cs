@@ -10,6 +10,8 @@ using Academy.Services;
 using Academy.Core.Models;
 using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
+using Academy.Core.ServicesInterfaces;
+using Academy.Services.Services;
 
 
 namespace AcademyAdvicingGp.Controllers
@@ -23,181 +25,180 @@ namespace AcademyAdvicingGp.Controllers
        
         private readonly ITokenService _tokenService;
         private readonly SignInManager<AppUser> _signInManager;
-        private readonly AcademyContext _academyDbContext;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountsController(UserManager<AppUser> userManager , ITokenService tokenService,SignInManager<AppUser> signInManager, AcademyContext academyDbContext)
+        private readonly AcademyContext _academyDbContext;
+        private readonly IFileService _fileService;
+
+
+
+        public AccountsController(IFileService fileService, UserManager<AppUser> userManager , ITokenService tokenService,SignInManager<AppUser> signInManager, AcademyContext academyDbContext ,RoleManager<IdentityRole> roleManager)
         {
+            _fileService = fileService;
             _userManager = userManager;
             _tokenService = tokenService;
             _signInManager = signInManager;
             _academyDbContext = academyDbContext;
+            _roleManager = roleManager;
         }
-
-        //[HttpPost("Register")]
-        //[Authorize(Roles = "Admin")] // السماح فقط للمسؤول
-        //public async Task<ActionResult<UserDto>> Register([FromBody] RegisterDto model)
-        //{
-        //    // التحقق مما إذا كان البريد الإلكتروني مسجلاً بالفعل
-        //    var existingUser = await _userManager.FindByEmailAsync(model.Email);
-        //    if (existingUser != null)
-        //        return BadRequest("Email is already registered.");
-
-        //    // إنشاء كائن AppUser جديد وتعيين الخصائص
-        //    var appUser = new AppUser
-        //    {
-        //        UserName = model.Email,
-        //        Email = model.Email,
-        //        DisplayName = model.DisplayName,
-        //        PhoneNumber = model.PhoneNumber,
-        //    };
-
-        //    // إنشاء المستخدم وتعيين كلمة المرور
-        //    var result = await _userManager.CreateAsync(appUser, model.Password);
-        //    if (!result.Succeeded)
-        //        return BadRequest(result.Errors.Select(x => x.Description));
-
-        //    // التحقق من صحة الدور المرسل
-        //    var validRoles = new[] { "Doctor", "Coordinator", "StudentAffair" }; // أضف الأدوار المتاحة هنا
-        //    if (!validRoles.Contains(model.Role))
-        //        return BadRequest("Invalid role.");
-
-        //    // إضافة الدور للمستخدم
-        //    var roleResult = await _userManager.AddToRoleAsync(appUser, model.Role);
-        //    if (!roleResult.Succeeded)
-        //        return BadRequest(roleResult.Errors.Select(x => x.Description));
-
-        //    // إنشاء كائن UserDto لإرجاع معلومات المستخدم
-        //    var returnedUser = new UserDto()
-        //    {
-        //        DisplayName = appUser.DisplayName,
-        //        Email = appUser.Email,
-        //        Token = await _tokenService.CreateTokenAsync(appUser, _userManager)
-        //    };
-
-        //    return Ok(returnedUser);
-        //}
-
         [HttpPost("RegisterPerson")]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<UserDto>> RegisterPerson([FromBody] RegisterDto model)
+        public async Task<ActionResult<UserDto>> RegisterPerson([FromForm] RegisterDto model)
         {
-            // تحقق مما إذا كان البريد الإلكتروني موجودًا في Identity
-            var existingIdentityUser = await _userManager.FindByEmailAsync(model.Email);
-            if (existingIdentityUser != null)
-                Console.WriteLine("Found email in Identity database.");
+            if (await _userManager.FindByEmailAsync(model.Email) != null)
+                return BadRequest("Email already exists in Identity.");
 
-            // تحقق مما إذا كان البريد الإلكتروني موجودًا في جداول الأكاديمية
-            var emailExists = await _academyDbContext.Doctors.AnyAsync(d => d.Email == model.Email) ||
-                              await _academyDbContext.Coordinates.AnyAsync(c => c.Email == model.Email) ||
-                              await _academyDbContext.StudentAffairs.AnyAsync(sa => sa.Email == model.Email);
+            bool emailExists = await _academyDbContext.Doctors.AnyAsync(d => d.Email == model.Email) ||
+                               await _academyDbContext.Coordinates.AnyAsync(c => c.Email == model.Email) ||
+                               await _academyDbContext.StudentAffairs.AnyAsync(sa => sa.Email == model.Email);
+
             if (emailExists)
-                Console.WriteLine("Found email in Academy database.");
+                return BadRequest("Email already exists in Academy database.");
 
-            // إنشاء سجل في قاعدة البيانات الرئيسية بناءً على نوع الشخص
-            Person person;
-            switch (model.Role)
+            // هنا هنتعامل مع الصورة عادي سواء null أو موجودة
+            string? imageFileName = null;
+            if (model.ImageFile is not null)
             {
-                case "Doctor":
-                    var doctor = new Doctor
-                    {
-                        Name = model.DisplayName,
-                        UserName = model.Email,
-                        Email = model.Email,
-                        PhoneNumber = model.PhoneNumber,
-                        ImagePath = model.ImagePath
-                    };
-                    _academyDbContext.Doctors.Add(doctor);
-                    break;
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+                if (model.ImageFile.Length > 1 * 1024 * 1024)
+                    return BadRequest("Image size should not exceed 1 MB.");
 
-                case "Coordinator":
-                    var coordinator = new Coordinator
-                    {
-                        Name = model.DisplayName,
-                        UserName = model.Email,
-                        Email = model.Email,
-                        PhoneNumber = model.PhoneNumber,
-                        ImagePath = model.ImagePath
-                    };
-                    _academyDbContext.Coordinates.Add(coordinator);
-                    break;
-
-                case "StudentAffair":
-                    var studentAffair = new StudentAffair
-                    {
-                        Name = model.DisplayName,
-                        UserName = model.Email,
-                        Email = model.Email,
-                        PhoneNumber = model.PhoneNumber,
-                        ImagePath = model.ImagePath
-                    };
-                    _academyDbContext.StudentAffairs.Add(studentAffair);
-                    break;
-
-                default:
-                    return BadRequest("Invalid role.");
+                try
+                {
+                    imageFileName = await _fileService.SaveFileAsync(model.ImageFile, allowedExtensions);
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest($"Image upload failed: {ex.Message}");
+                }
             }
 
-            await _academyDbContext.SaveChangesAsync();
-
-            // إنشاء مستخدم في هوية ASP.NET Identity
             var appUser = new AppUser
             {
                 UserName = model.Email,
                 Email = model.Email,
                 DisplayName = model.DisplayName,
-                PhoneNumber = model.PhoneNumber
+                PhoneNumber = model.PhoneNumber,
+                ImagePath = imageFileName // null أو اسم الصورة
             };
 
             var result = await _userManager.CreateAsync(appUser, model.Password);
             if (!result.Succeeded)
-                return BadRequest(result.Errors.Select(x => x.Description));
+                return BadRequest(result.Errors.Select(e => e.Description));
 
-            // تعيين الدور المناسب
-            var roleResult = await _userManager.AddToRoleAsync(appUser, model.Role);
-            if (!roleResult.Succeeded)
-                return BadRequest(roleResult.Errors.Select(x => x.Description));
+            foreach (var role in model.Roles)
+            {
+                if (!await _roleManager.RoleExistsAsync(role))
+                    return BadRequest($"Role '{role}' does not exist.");
 
-            // إنشاء توكين
-            //var token = await _tokenService.CreateTokenAsync(appUser, _userManager);
+                var addToRoleResult = await _userManager.AddToRoleAsync(appUser, role);
+                if (!addToRoleResult.Succeeded)
+                    return BadRequest(addToRoleResult.Errors.Select(e => e.Description));
 
-            //// إنشاء وإرجاع التفاصيل
-            //var personDto = new PersonDto
-            //{
-            //    Id = person.Id,
-            //    Name = person.Name,
-            //    Email = person.Email,
-            //    Role = model.Role,
-            //    Token = token
-            //};
+                switch (role)
+                {
+                    case "Doctor":
+                        if (!await _academyDbContext.Doctors.AnyAsync(d => d.Email == model.Email))
+                        {
+                            _academyDbContext.Doctors.Add(new Doctor
+                            {
+                                Name = model.DisplayName,
+                                UserName = model.Email,
+                                Email = model.Email,
+                                PhoneNumber = model.PhoneNumber,
+                                ImagePath = imageFileName
+                            });
+                        }
+                        break;
 
-            //return Ok(personDto);
-            var returnedUser = new UserDto()
+                    case "Coordinator":
+                        if (!await _academyDbContext.Coordinates.AnyAsync(c => c.Email == model.Email))
+                        {
+                            _academyDbContext.Coordinates.Add(new Coordinator
+                            {
+                                Name = model.DisplayName,
+                                UserName = model.Email,
+                                Email = model.Email,
+                                PhoneNumber = model.PhoneNumber,
+                                ImagePath = imageFileName
+                            });
+                        }
+                        break;
+
+                    case "StudentAffair":
+                        if (!await _academyDbContext.StudentAffairs.AnyAsync(sa => sa.Email == model.Email))
+                        {
+                            _academyDbContext.StudentAffairs.Add(new StudentAffair
+                            {
+                                Name = model.DisplayName,
+                                UserName = model.Email,
+                                Email = model.Email,
+                                PhoneNumber = model.PhoneNumber,
+                                ImagePath = imageFileName
+                            });
+                        }
+                        break;
+
+                    default:
+                        return BadRequest($"Invalid role: {role}");
+                }
+            }
+
+            await _academyDbContext.SaveChangesAsync();
+
+            var token = await _tokenService.CreateTokenAsync(appUser, _userManager);
+
+            return Ok(new UserDto
             {
                 DisplayName = appUser.DisplayName,
                 Email = appUser.Email,
-                Token = await _tokenService.CreateTokenAsync(appUser, _userManager)
-            };
-
-            return Ok(returnedUser);
+                Token = token,
+                Roles = model.Roles
+            });
         }
 
 
 
+
+
+
+
+        /* [HttpPost("Login")]
+         public async Task<ActionResult<UserDto>> Login(LoginDto model)
+         {
+             var appUser = await _userManager.FindByEmailAsync(model.Email);
+             if (appUser is null) return Unauthorized(new ApiResponse(401));
+             var Result = await _signInManager.CheckPasswordSignInAsync(appUser, model.Password, false);
+             if (!Result.Succeeded) return Unauthorized(new ApiResponse(401));
+             return Ok(new UserDto()
+             {
+                 DisplayName = appUser.DisplayName,
+                 Email = appUser.Email,
+                 Token = await _tokenService.CreateTokenAsync(appUser, _userManager)
+             });
+         }
+        */
         [HttpPost("Login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto model)
         {
             var appUser = await _userManager.FindByEmailAsync(model.Email);
             if (appUser is null) return Unauthorized(new ApiResponse(401));
-            var Result = await _signInManager.CheckPasswordSignInAsync(appUser, model.Password, false);
-            if (!Result.Succeeded) return Unauthorized(new ApiResponse(401));
+
+            var result = await _signInManager.CheckPasswordSignInAsync(appUser, model.Password, false);
+            if (!result.Succeeded) return Unauthorized(new ApiResponse(401));
+
+            // جلب الدور
+            var roles = await _userManager.GetRolesAsync(appUser);
+            //var role = roles.FirstOrDefault();
+      
             return Ok(new UserDto()
             {
                 DisplayName = appUser.DisplayName,
                 Email = appUser.Email,
-                Token = await _tokenService.CreateTokenAsync(appUser, _userManager)
+                Token = await _tokenService.CreateTokenAsync(appUser, _userManager),
+                Roles = roles.ToList()
             });
         }
-
     }
 }
 

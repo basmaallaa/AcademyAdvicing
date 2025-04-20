@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yTZAG5xyuj6jUwuRDXBMMvxVT4Otfq2ZD14j/HNFEnIzN8x8PtJszlQt9LCMZpwhwbAmK8CPuluYm6wKU+w54A==",
+  "dgSpecHash": "02OxFLgPx0E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
+  "projectFilePath": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Academy.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\basma\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\basma\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
