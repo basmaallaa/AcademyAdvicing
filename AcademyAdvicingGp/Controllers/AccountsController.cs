@@ -12,6 +12,7 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Academy.Core.ServicesInterfaces;
 using Academy.Services.Services;
+using System.Security.Claims;
 
 
 namespace AcademyAdvicingGp.Controllers
@@ -157,27 +158,6 @@ namespace AcademyAdvicingGp.Controllers
             });
         }
 
-
-
-
-
-
-
-        /* [HttpPost("Login")]
-         public async Task<ActionResult<UserDto>> Login(LoginDto model)
-         {
-             var appUser = await _userManager.FindByEmailAsync(model.Email);
-             if (appUser is null) return Unauthorized(new ApiResponse(401));
-             var Result = await _signInManager.CheckPasswordSignInAsync(appUser, model.Password, false);
-             if (!Result.Succeeded) return Unauthorized(new ApiResponse(401));
-             return Ok(new UserDto()
-             {
-                 DisplayName = appUser.DisplayName,
-                 Email = appUser.Email,
-                 Token = await _tokenService.CreateTokenAsync(appUser, _userManager)
-             });
-         }
-        */
         [HttpPost("Login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto model)
         {
@@ -199,6 +179,135 @@ namespace AcademyAdvicingGp.Controllers
                 Roles = roles.ToList()
             });
         }
+        [HttpPut("EditProfile")]
+        [Authorize]
+        public async Task<ActionResult<UserDto>> EditProfile([FromForm] EditProfileDto dto)
+        {
+            var email = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return BadRequest("Email not found in token.");
+
+            var appUser = await _userManager.FindByEmailAsync(email);
+            if (appUser == null)
+                return NotFound("User not found");
+
+            string? newImageName = null;
+
+            if (dto.ImageFile is not null)
+            {
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+
+                if (dto.ImageFile.Length > 1 * 1024 * 1024)
+                    return BadRequest("Image size should not exceed 1 MB.");
+
+                try
+                {
+                    newImageName = await _fileService.SaveFileAsync(dto.ImageFile, allowedExtensions);
+                    appUser.ImagePath = newImageName;
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest($"Image upload failed: {ex.Message}");
+                }
+            }
+
+            // Update Identity user
+            appUser.DisplayName = dto.Name ?? appUser.DisplayName;
+            appUser.PhoneNumber = dto.PhoneNumber ?? appUser.PhoneNumber;
+            if (!string.IsNullOrWhiteSpace(dto.Email))
+            {
+                appUser.Email = dto.Email;
+                appUser.UserName = dto.Email;
+            }
+
+            var updateResult = await _userManager.UpdateAsync(appUser);
+            if (!updateResult.Succeeded)
+                return BadRequest(updateResult.Errors.Select(e => e.Description));
+
+            var roles = await _userManager.GetRolesAsync(appUser);
+            var role = roles.FirstOrDefault();
+
+            if (role is null)
+                return BadRequest("User has no assigned role.");
+
+            // Update corresponding entity in Academy database based on role
+            switch (role)
+            {
+                case "Doctor":
+                    var doctor = await _academyDbContext.Doctors.FirstOrDefaultAsync(d => d.Email == email);
+                    if (doctor != null)
+                    {
+                        doctor.Name = dto.Name ?? doctor.Name;
+                        doctor.PhoneNumber = dto.PhoneNumber ?? doctor.PhoneNumber;
+                        if (!string.IsNullOrWhiteSpace(dto.Email))
+                        {
+                            doctor.Email = dto.Email;
+                            doctor.UserName = dto.Email;
+                        }
+                        if (newImageName != null)
+                        {
+                            doctor.ImagePath = newImageName;
+                        }
+                    }
+                    break;
+
+                case "Coordinator":
+                    var coordinator = await _academyDbContext.Coordinates.FirstOrDefaultAsync(c => c.Email == email);
+                    if (coordinator != null)
+                    {
+                        coordinator.Name = dto.Name ?? coordinator.Name;
+                        coordinator.PhoneNumber = dto.PhoneNumber ?? coordinator.PhoneNumber;
+                        if (!string.IsNullOrWhiteSpace(dto.Email))
+                        {
+                            coordinator.Email = dto.Email;
+                            coordinator.UserName = dto.Email;
+                        }
+                        if (newImageName != null)
+                        {
+                            coordinator.ImagePath = newImageName;
+                        }
+                    }
+                    break;
+
+                case "StudentAffair":
+                    var studentAffair = await _academyDbContext.StudentAffairs.FirstOrDefaultAsync(sa => sa.Email == email);
+                    if (studentAffair != null)
+                    {
+                        studentAffair.Name = dto.Name ?? studentAffair.Name;
+                        studentAffair.PhoneNumber = dto.PhoneNumber ?? studentAffair.PhoneNumber;
+                        if (!string.IsNullOrWhiteSpace(dto.Email))
+                        {
+                            studentAffair.Email = dto.Email;
+                            studentAffair.UserName = dto.Email;
+                        }
+                        if (newImageName != null)
+                        {
+                            studentAffair.ImagePath = newImageName;
+                        }
+                    }
+                    break;
+
+                default:
+                    return BadRequest($"Invalid role: {role}");
+            }
+
+            await _academyDbContext.SaveChangesAsync();
+
+            var token = await _tokenService.CreateTokenAsync(appUser, _userManager);
+
+            return Ok(new UserDto
+            {
+                DisplayName = appUser.DisplayName,
+                Email = appUser.Email,
+                Token = token,
+                Roles = roles.ToList(),
+                ImagePath = appUser.ImagePath
+            });
+        }
+
+
+
     }
 }
 
