@@ -4,16 +4,19 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Academy.Repo.Migrations
+namespace Academy.Repo.Data.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    partial class AcademyContextModelSnapshot : ModelSnapshot
+    [Migration("20250419173413_MaterialCourseRelation")]
+    partial class MaterialCourseRelation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,6 +101,7 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -171,6 +175,7 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -338,6 +343,7 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("ImagePath")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Level")
@@ -383,6 +389,7 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagePath")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")

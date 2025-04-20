@@ -55,6 +55,7 @@ namespace Academy.Services.Services.CourseService
 			{
 				Title = materialDto.Title,
 				UploadedById = materialDto.UploadedById,
+				CourseId = materialDto.CourseId,
 				FilePath = filePath
 			};
 			await _unitOfWork.Repository<Material>().AddAsync(material);
@@ -110,5 +111,42 @@ namespace Academy.Services.Services.CourseService
 
 			return _mapper.Map<MaterialDto>(material);
 		}
+
+		
+		public async Task<IEnumerable<MaterialDto>> GetMaterialsForStudentAsync(int studentId)
+		{
+			// 1. هات كل الـ materials
+			var allMaterials =  await _unitOfWork.Repository<Material>().GetAllAsync();
+
+			// 2. هات كل الـ AssignedCourses
+			var allAssignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync();
+
+			// 3. فلتر الكورسات اللي متسجلة للطالب
+			var studentCourseIds = new List<int>();
+
+
+			foreach (var ac in allAssignedCourses)
+			{
+				if (ac.StudentId == studentId)
+				{
+					studentCourseIds.Add(ac.CourseId);
+				}
+			}
+
+			// 4. هات كل المواد اللي تبع الكورسات دي
+			var allMaterialsEntities = await _unitOfWork.Repository<Material>().GetAllAsync();
+			var filteredMaterials = new List<Material>();
+
+			foreach (var material in allMaterialsEntities)
+			{
+				if (studentCourseIds.Contains(material.CourseId)) // لازم تكون عندك CourseId في Material
+				{
+					filteredMaterials.Add(material);
+				}
+			}
+
+			return _mapper.Map<IEnumerable<MaterialDto>>(filteredMaterials);
+		}
+		
 	}
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcademyAdvicingGp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b6554068c315381bd04f95d9baaab3a25a8bd2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5af0833eaa6f692984090000892764dd011eb11")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcademyAdvicingGp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcademyAdvicingGp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

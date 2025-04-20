@@ -53,7 +53,10 @@ namespace Academy.Core.Models
 
         public List <AvailableCourse> Doctors { get; set; }
 
-       
+
+        public List<Material> Materials { get; set; }
+
+
 
     }
 }

@@ -14,6 +14,7 @@ namespace Academy.Core.Mapping
 		public MaterialProfile()
 		{
 			CreateMap<Material, MaterialDto>().ReverseMap();
+
 		}
 	}
 }
