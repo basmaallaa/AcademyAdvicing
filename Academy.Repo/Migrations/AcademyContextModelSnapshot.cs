@@ -114,7 +114,7 @@ namespace Academy.Repo.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Coordinates");
+                    b.ToTable("Coordinator");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Course", b =>
