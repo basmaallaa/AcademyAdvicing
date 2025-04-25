@@ -49,7 +49,7 @@ namespace AcademyAdvicingGp.Controllers
                 return BadRequest("Email already exists in Identity.");
 
             bool emailExists = await _academyDbContext.Doctors.AnyAsync(d => d.Email == model.Email) ||
-                               await _academyDbContext.Coordinates.AnyAsync(c => c.Email == model.Email) ||
+                               await _academyDbContext.Coordinator.AnyAsync(c => c.Email == model.Email) ||
                                await _academyDbContext.StudentAffairs.AnyAsync(sa => sa.Email == model.Email);
 
             if (emailExists)
@@ -112,9 +112,9 @@ namespace AcademyAdvicingGp.Controllers
                         break;
 
                     case "Coordinator":
-                        if (!await _academyDbContext.Coordinates.AnyAsync(c => c.Email == model.Email))
+                        if (!await _academyDbContext.Coordinator.AnyAsync(c => c.Email == model.Email))
                         {
-                            _academyDbContext.Coordinates.Add(new Coordinator
+                            _academyDbContext.Coordinator.Add(new Coordinator
                             {
                                 Name = model.DisplayName,
                                 UserName = model.Email,

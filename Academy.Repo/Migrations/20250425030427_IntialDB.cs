@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academy.Repo.Migrations
 {
     /// <inheritdoc />
-    public partial class addImagePath : Migration
+    public partial class IntialDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Coordinates",
+                name: "Coordinator",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -25,7 +25,7 @@ namespace Academy.Repo.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Coordinates", x => x.Id);
+                    table.PrimaryKey("PK_Coordinator", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -81,9 +81,9 @@ namespace Academy.Repo.Migrations
                 {
                     table.PrimaryKey("PK_Courses", x => x.CourseId);
                     table.ForeignKey(
-                        name: "FK_Courses_Coordinates_ManageById",
+                        name: "FK_Courses_Coordinator_ManageById",
                         column: x => x.ManageById,
-                        principalTable: "Coordinates",
+                        principalTable: "Coordinator",
                         principalColumn: "Id");
                 });
 
@@ -104,9 +104,9 @@ namespace Academy.Repo.Migrations
                 {
                     table.PrimaryKey("PK_FinalExamTimeTable", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_FinalExamTimeTable_Coordinates_UploadedById",
+                        name: "FK_FinalExamTimeTable_Coordinator_UploadedById",
                         column: x => x.UploadedById,
-                        principalTable: "Coordinates",
+                        principalTable: "Coordinator",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -125,30 +125,9 @@ namespace Academy.Repo.Migrations
                 {
                     table.PrimaryKey("PK_Reports", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Reports_Coordinates_GenerateById",
+                        name: "FK_Reports_Coordinator_GenerateById",
                         column: x => x.GenerateById,
-                        principalTable: "Coordinates",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Materials",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UploadedById = table.Column<int>(type: "int", nullable: false),
-                    FilePath = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Materials", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Materials_Doctors_UploadedById",
-                        column: x => x.UploadedById,
-                        principalTable: "Doctors",
+                        principalTable: "Coordinator",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -209,6 +188,34 @@ namespace Academy.Repo.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Materials",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UploadedById = table.Column<int>(type: "int", nullable: false),
+                    FilePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Materials", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Materials_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Materials_Doctors_UploadedById",
+                        column: x => x.UploadedById,
+                        principalTable: "Doctors",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Assignedcourses",
                 columns: table => new
                 {
@@ -261,9 +268,9 @@ namespace Academy.Repo.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_ScheduleTimeTable_Coordinates_UploadedById",
+                        name: "FK_ScheduleTimeTable_Coordinator_UploadedById",
                         column: x => x.UploadedById,
-                        principalTable: "Coordinates",
+                        principalTable: "Coordinator",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -292,6 +299,11 @@ namespace Academy.Repo.Migrations
                 name: "IX_FinalExamTimeTable_UploadedById",
                 table: "FinalExamTimeTable",
                 column: "UploadedById");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Materials_CourseId",
+                table: "Materials",
+                column: "CourseId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Materials_UploadedById",
@@ -353,7 +365,7 @@ namespace Academy.Repo.Migrations
                 name: "Doctors");
 
             migrationBuilder.DropTable(
-                name: "Coordinates");
+                name: "Coordinator");
         }
     }
 }

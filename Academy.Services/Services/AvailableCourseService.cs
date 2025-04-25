@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Academy.Core.Enums;
+using Academy.Repo.Data;
 
 namespace Academy.Services.Services
 {
@@ -19,11 +20,13 @@ namespace Academy.Services.Services
 
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly AcademyContext _academyDbContext;
 
-        public AvailableCourseService(IUnitOfWork unitOfWork, IMapper mapper)
+        public AvailableCourseService(IUnitOfWork unitOfWork, IMapper mapper, AcademyContext academyDbContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _academyDbContext = academyDbContext;
         }
 
         /* public async Task<AvailableCourseDto> CreateAvailableCourseAsync(AvailableCourseDto availableCourseDto)
@@ -168,29 +171,29 @@ namespace Academy.Services.Services
              return result;
          }
         */
+
         public async Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync()
         {
-            // استرجاع كل الكورسات المتاحة
-            var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync();
-
-            // إنشاء قائمة بالكورسات من غير تكرار للدكاترة
-            var result = availableCourses
-                .GroupBy(ac => new { ac.CourseId, ac.AcademicYears, ac.Semester }) // تجميع الكورسات حسب الكورس، السنة والترم
+            var availableCourses = await _academyDbContext.Availablecourses
+                .Include(ac => ac.Course)
+                .Include(ac => ac.Doctor)
+                .GroupBy(ac => new { ac.CourseId, ac.AcademicYears, ac.Semester })
                 .Select(group => new ViewAvailableCourseDto
                 {
+                    Id = group.First().Id,
                     CourseId = group.Key.CourseId,
+                    CourseName = group.First().Course.Name,
+                    CourseCode = group.First().Course.CourseCode,
+                    CreditHours = group.First().Course.CreditHours,
+                    DoctorIds = group.Select(ac => ac.DoctorId).Distinct().ToList(),
+                    DoctorName = group.Select(ac => ac.Doctor.Name).Distinct().ToList(),
                     AcademicYears = group.Key.AcademicYears,
-                    Semester = group.Key.Semester,
-                    DoctorIds = group.Select(ac => ac.DoctorId).ToList(), // جمع كل الدكاترة الذين يدرسون نفس الكورس
-                    CourseName = group.FirstOrDefault().Course != null ? group.FirstOrDefault().Course.Name : "Unknown",
-                    // جمع أسماء كل الدكاترة
-                    DoctorName = group.Select(ac => ac.Doctor.Name).Distinct().ToList(), // استخدام Distinct لضمان عدم التكرار
-                    CourseCode = group.FirstOrDefault().Course != null ? group.FirstOrDefault().Course.CourseCode : "N/A",
-                    CreditHours = group.FirstOrDefault().Course != null ? group.FirstOrDefault().Course.CreditHours : 0
+                    Semester = (Semster)(group.Key.Semester == Semster.Fall ? 0 : 1),
                 })
-                .ToList();
+                .ToListAsync();
 
-            return result;
+            // إرجاع قائمة فارغة إذا لم توجد كورسات
+            return availableCourses ?? new List<ViewAvailableCourseDto>();
         }
 
         public async Task<bool> DeleteAvailableCourseAsync(int id)

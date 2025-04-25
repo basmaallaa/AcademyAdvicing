@@ -43,9 +43,6 @@ namespace Academy.Repo.Repositories
         }*/
 
 
-
-
-
         public async Task<IQueryable<T>> GetAllAsync()
         {
             // return (IQueryable<T>)await _context.Set<T>().ToListAsync();
