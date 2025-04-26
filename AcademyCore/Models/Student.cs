@@ -1,4 +1,5 @@
-﻿using Academy.Core.Models.Identity;
+﻿using Academy.Core.Enums;
+using Academy.Core.Models.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Academy.Core.Models
     {
         
         public string Level { get; set; }
-        public string Status { get; set; }
+        public Status Status { get; set; }
         public float GPA { get; set; }
         public int CompeletedHours { get; set; }
         public List<AssignedCourse> Courses { get; set; }

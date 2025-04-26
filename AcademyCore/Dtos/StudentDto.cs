@@ -1,4 +1,5 @@
-﻿using Academy.Core.Models;
+﻿using Academy.Core.Enums;
+using Academy.Core.Models;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Academy.Core.Dtos
 		public string PhoneNumber { get; set; }
         public IFormFile? ImageFile { get; set; }
         public string Level { get; set; }
-		public string Status { get; set; }
+		public Status Status { get; set; }
 		public float GPA { get; set; }
 		public int CompeletedHours { get; set; }
 

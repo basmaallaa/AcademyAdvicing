@@ -1,4 +1,5 @@
-﻿using Academy.Core.Models.Identity;
+﻿using Academy.Core.Enums;
+using Academy.Core.Models.Identity;
 using Academy.Core.Service;
 using Academy.Core.ServicesInterfaces;
 using Academy.Repo.Data;
@@ -115,10 +116,19 @@ namespace AcademyAdvicingGp.Controllers
                         var student = await _academyDbContext.Students.FirstOrDefaultAsync(s => s.Email == email);
                         if (student != null)
                         {
-                            _academyDbContext.Students.Remove(student);
-                            isRemovedFromAny = true;
+                            // اتأكد من حالته قبل المسح
+                            if (student.Status == Status.graduated|| student.Status == Status.Expelled)
+                            {
+                                _academyDbContext.Students.Remove(student);
+                                isRemovedFromAny = true;
+                            }
+                            else
+                            {
+                                return BadRequest(new { message = "Cannot delete student unless they are Graduated or Expelled." });
+                            }
                         }
                         break;
+
 
                     default:
                         break;

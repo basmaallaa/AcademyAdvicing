@@ -12,5 +12,7 @@ namespace Academy.Core.Models.Identity
         public string DisplayName { get; set; }
         public string? ImagePath { get; set; }
 
+
+
     }
 }

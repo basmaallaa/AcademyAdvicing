@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academy.Repo.Migrations
 {
     /// <inheritdoc />
-    public partial class DatabaseUpdate : Migration
+    public partial class cleanerDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -148,7 +148,7 @@ namespace Academy.Repo.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Level = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
                     GPA = table.Column<float>(type: "real", nullable: false),
                     CompeletedHours = table.Column<int>(type: "int", nullable: false),
                     ManageById = table.Column<int>(type: "int", nullable: true),

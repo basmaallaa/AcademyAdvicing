@@ -179,6 +179,9 @@ namespace AcademyAdvicingGp.Controllers
                 Roles = roles.ToList()
             });
         }
+
+        //edit profile 
+
         [HttpPut("EditProfile")]
         [Authorize]
         public async Task<ActionResult<UserDto>> EditProfile([FromForm] EditProfileDto dto)
@@ -212,84 +215,95 @@ namespace AcademyAdvicingGp.Controllers
                 }
             }
 
-            // Update Identity user
+            // Update Identity user (بدون تعديل الإيميل)
             appUser.DisplayName = dto.Name ?? appUser.DisplayName;
             appUser.PhoneNumber = dto.PhoneNumber ?? appUser.PhoneNumber;
-            if (!string.IsNullOrWhiteSpace(dto.Email))
-            {
-                appUser.Email = dto.Email;
-                appUser.UserName = dto.Email;
-            }
 
             var updateResult = await _userManager.UpdateAsync(appUser);
             if (!updateResult.Succeeded)
                 return BadRequest(updateResult.Errors.Select(e => e.Description));
 
             var roles = await _userManager.GetRolesAsync(appUser);
-            var role = roles.FirstOrDefault();
+            if (roles == null || !roles.Any())
+                return BadRequest("User has no assigned roles.");
 
-            if (role is null)
-                return BadRequest("User has no assigned role.");
-
-            // Update corresponding entity in Academy database based on role
-            switch (role)
+            foreach (var role in roles)
             {
-                case "Doctor":
-                    var doctor = await _academyDbContext.Doctors.FirstOrDefaultAsync(d => d.Email == email);
-                    if (doctor != null)
-                    {
-                        doctor.Name = dto.Name ?? doctor.Name;
-                        doctor.PhoneNumber = dto.PhoneNumber ?? doctor.PhoneNumber;
-                        if (!string.IsNullOrWhiteSpace(dto.Email))
+                switch (role)
+                {
+                    case "Doctor":
+                        var doctor = await _academyDbContext.Doctors.FirstOrDefaultAsync(d => d.Email == email);
+                        if (doctor != null)
                         {
-                            doctor.Email = dto.Email;
-                            doctor.UserName = dto.Email;
-                        }
-                        if (newImageName != null)
-                        {
-                            doctor.ImagePath = newImageName;
-                        }
-                    }
-                    break;
+                            doctor.Name = dto.Name ?? doctor.Name;
+                            doctor.PhoneNumber = dto.PhoneNumber ?? doctor.PhoneNumber;
+                            doctor.ArabicFullName = dto.ArabicFullName ?? doctor.ArabicFullName;
+                            doctor.EmergencyContact = dto.EmergencyContact ?? doctor.EmergencyContact;
+                            doctor.HomeAddress = dto.HomeAddress ?? doctor.HomeAddress;
 
-                case "Coordinator":
-                    var coordinator = await _academyDbContext.Coordinates.FirstOrDefaultAsync(c => c.Email == email);
-                    if (coordinator != null)
-                    {
-                        coordinator.Name = dto.Name ?? coordinator.Name;
-                        coordinator.PhoneNumber = dto.PhoneNumber ?? coordinator.PhoneNumber;
-                        if (!string.IsNullOrWhiteSpace(dto.Email))
-                        {
-                            coordinator.Email = dto.Email;
-                            coordinator.UserName = dto.Email;
+                            if (newImageName != null)
+                            {
+                                doctor.ImagePath = newImageName;
+                            }
                         }
-                        if (newImageName != null)
-                        {
-                            coordinator.ImagePath = newImageName;
-                        }
-                    }
-                    break;
+                        break;
 
-                case "StudentAffair":
-                    var studentAffair = await _academyDbContext.StudentAffairs.FirstOrDefaultAsync(sa => sa.Email == email);
-                    if (studentAffair != null)
-                    {
-                        studentAffair.Name = dto.Name ?? studentAffair.Name;
-                        studentAffair.PhoneNumber = dto.PhoneNumber ?? studentAffair.PhoneNumber;
-                        if (!string.IsNullOrWhiteSpace(dto.Email))
+                    case "Coordinator":
+                        var coordinator = await _academyDbContext.Coordinates.FirstOrDefaultAsync(c => c.Email == email);
+                        if (coordinator != null)
                         {
-                            studentAffair.Email = dto.Email;
-                            studentAffair.UserName = dto.Email;
-                        }
-                        if (newImageName != null)
-                        {
-                            studentAffair.ImagePath = newImageName;
-                        }
-                    }
-                    break;
+                            coordinator.Name = dto.Name ?? coordinator.Name;
+                            coordinator.PhoneNumber = dto.PhoneNumber ?? coordinator.PhoneNumber;
+                            coordinator.ArabicFullName = dto.ArabicFullName ?? coordinator.ArabicFullName;
+                            coordinator.EmergencyContact = dto.EmergencyContact ?? coordinator.EmergencyContact;
+                            coordinator.HomeAddress = dto.HomeAddress ?? coordinator.HomeAddress;
 
-                default:
-                    return BadRequest($"Invalid role: {role}");
+                            if (newImageName != null)
+                            {
+                                coordinator.ImagePath = newImageName;
+                            }
+                        }
+                        break;
+
+                    case "StudentAffair":
+                        var studentAffair = await _academyDbContext.StudentAffairs.FirstOrDefaultAsync(sa => sa.Email == email);
+                        if (studentAffair != null)
+                        {
+                            studentAffair.Name = dto.Name ?? studentAffair.Name;
+                            studentAffair.PhoneNumber = dto.PhoneNumber ?? studentAffair.PhoneNumber;
+                            studentAffair.ArabicFullName = dto.ArabicFullName ?? studentAffair.ArabicFullName;
+                            studentAffair.EmergencyContact = dto.EmergencyContact ?? studentAffair.EmergencyContact;
+                            studentAffair.HomeAddress = dto.HomeAddress ?? studentAffair.HomeAddress;
+
+                            if (newImageName != null)
+                            {
+                                studentAffair.ImagePath = newImageName;
+                            }
+                        }
+                        break;
+
+
+                    case "Student":
+                        var student = await _academyDbContext.Students.FirstOrDefaultAsync(sa => sa.Email == email);
+                        if (student != null)
+                        {
+                            student.Name = dto.Name ?? student.Name;
+                            student.PhoneNumber = dto.PhoneNumber ?? student.PhoneNumber;
+                            student.ArabicFullName = dto.ArabicFullName ?? student.ArabicFullName;
+                            student.EmergencyContact = dto.EmergencyContact ?? student.EmergencyContact;
+                            student.HomeAddress = dto.HomeAddress ?? student.HomeAddress;
+
+                            if (newImageName != null)
+                            {
+                                student.ImagePath = newImageName;
+                            }
+                        }
+                        break;
+
+                    default:
+                        // Handle other roles if needed
+                        break;
+                }
             }
 
             await _academyDbContext.SaveChangesAsync();
@@ -299,11 +313,34 @@ namespace AcademyAdvicingGp.Controllers
             return Ok(new UserDto
             {
                 DisplayName = appUser.DisplayName,
-                Email = appUser.Email,
+                Email = appUser.Email, // لعرض الإيميل فقط، بدون تغييره
                 Token = token,
                 Roles = roles.ToList(),
                 ImagePath = appUser.ImagePath
             });
+        }
+
+        [HttpPost("ChangePassword")]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+        {
+            var email = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(email))
+                return BadRequest("Email not found in token.");
+
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+                return NotFound("User not found.");
+
+            var passwordCheck = await _userManager.CheckPasswordAsync(user, dto.OldPassword);
+            if (!passwordCheck)
+                return BadRequest("Old password is incorrect.");
+
+            var result = await _userManager.ChangePasswordAsync(user, dto.OldPassword, dto.NewPassword);
+            if (!result.Succeeded)
+                return BadRequest(result.Errors.Select(e => e.Description));
+
+            return Ok("Password changed successfully.");
         }
 
 

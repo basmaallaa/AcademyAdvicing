@@ -15,7 +15,6 @@ namespace Academy.Core.Dtos
         public string PhoneNumber { get; set; }
 
         public IFormFile? ImageFile { get; set; }
-        public string Email { get; set; }
 
         public string ArabicFullName { get; set; }
 

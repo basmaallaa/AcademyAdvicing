@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Academy.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace Academy.Core.Dtos
         public string PhoneNumber { get; set; }
         public string ImagePath { get; set; }
         public string Level { get; set; }
-        public string Status { get; set; }
+        public Status Status { get; set; }
         public float GPA { get; set; }
         public int CompeletedHours { get; set; }
         public string Token { get; set; }
