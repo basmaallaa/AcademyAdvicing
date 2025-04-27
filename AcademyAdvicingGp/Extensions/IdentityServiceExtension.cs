@@ -17,7 +17,8 @@ namespace AcademyAdvicingGp.Extensions
             Services.AddScoped<ITokenService, TokenService>();
 
             Services.AddIdentity<AppUser, IdentityRole>()
-                           .AddEntityFrameworkStores<AppIdentityDbContext>();
+                           .AddEntityFrameworkStores<AppIdentityDbContext>()
+                           .AddDefaultTokenProviders();
             Services.AddAuthentication(Options =>
             {
                 Options.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme;

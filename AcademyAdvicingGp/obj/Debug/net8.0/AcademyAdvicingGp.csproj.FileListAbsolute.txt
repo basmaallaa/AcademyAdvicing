@@ -192,3 +192,7 @@ D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\refin
 D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.pdb
 D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\AcademyAdvicingGp.genruntimeconfig.cache
 D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\obj\Debug\net8.0\ref\AcademyAdvicingGp.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\MailKit.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\MimeKit.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\NETCore.MailKit.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyAdvicingGp\bin\Debug\net8.0\BouncyCastle.Crypto.dll
