@@ -24,21 +24,48 @@ namespace AcademyAdvicingGp.Controllers
 		}
 
 		//upload pdf
+		//[HttpPost("upload")]
+		//[Authorize(Roles = "Doctor")]
+		//public async Task<IActionResult> UploadMaterial([FromForm] MaterialDto materialDto, [FromForm] IFormFile file)
+		//{
+		//	try
+		//	{
+		//		var result = await _materialService.AddAsync(materialDto, file);
+		//		return Ok("Material Uploaded successfully.");
+		//	}
+		//	catch (Exception ex)
+		//	{
+		//		Console.WriteLine($"Upload Error: {ex.Message}"); // 3lshan afhm el error fen
+		//		return BadRequest(new { message = "An error occurred while uploading the file. Please try again." });
+		//	}
+		//}
 		[HttpPost("upload")]
 		[Authorize(Roles = "Doctor")]
 		public async Task<IActionResult> UploadMaterial([FromForm] MaterialDto materialDto, [FromForm] IFormFile file)
 		{
 			try
 			{
+				var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+				if (string.IsNullOrEmpty(userEmail))
+					return Unauthorized("Email not found in token.");
+
+				var doctor = await _academyContext.Doctors.FirstOrDefaultAsync(d => d.Email == userEmail);
+				if (doctor == null)
+					return NotFound("Doctor profile not found.");
+
+				materialDto.UploadedById = doctor.Id;
+
 				var result = await _materialService.AddAsync(materialDto, file);
+
 				return Ok("Material Uploaded successfully.");
 			}
 			catch (Exception ex)
 			{
-				Console.WriteLine($"Upload Error: {ex.Message}"); // 3lshan afhm el error fen
+				Console.WriteLine($"Upload Error: {ex.Message}"); // علشان نعرف الغلط فين
 				return BadRequest(new { message = "An error occurred while uploading the file. Please try again." });
 			}
 		}
+
 
 
 
