@@ -15,7 +15,9 @@ namespace Academy.Core.ServicesInterfaces
 		Task DeleteAsync(int id);
 		Task<IEnumerable<MaterialDto>> GetAllAsync();
 		Task<(byte[], string)> DownloadMaterialAsync(int materialId);
-		Task<IEnumerable<MaterialDto>> GetMaterialsForStudentAsync(int studentId);
+		Task<IEnumerable<MaterialViewDto>> GetMaterialsForStudentAsync(int studentId);
+		Task<IEnumerable<MaterialViewDto>> GetMaterialsForCourseAsync(int studentId, int courseId);
+		Task<IEnumerable<MaterialViewDto>> GetMaterialsUploadedByDoctorAsync(int doctorId);
 
 	}
 }

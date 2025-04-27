@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Academy.Repo.Migrations
+namespace Academy.Repo.Data.Migrations
 {
     [DbContext(typeof(AcademyContext))]
     partial class AcademyContextModelSnapshot : ModelSnapshot
