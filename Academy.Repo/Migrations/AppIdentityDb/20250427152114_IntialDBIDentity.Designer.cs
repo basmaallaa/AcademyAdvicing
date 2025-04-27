@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Academy.Repo.Identity.Migrations
+namespace Academy.Repo.Migrations.AppIdentityDb
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20250419134636_IntialIdentity")]
-    partial class IntialIdentity
+    [Migration("20250427152114_IntialDBIDentity")]
+    partial class IntialDBIDentity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -200,7 +200,7 @@ namespace Academy.Services.Services
                     c.UserName.ToLower().Contains(searchTerm) ||
                     c.PhoneNumber.ToLower().Contains(searchTerm) ||
                     c.Level.ToLower().Contains(searchTerm) ||
-                    c.Status.ToLower().Contains(searchTerm) ||
+                    c.Status.ToString().ToLower().Contains(searchTerm) ||
                     (isInt && c.Id == id) ||            // If number, check ID
                     (isFloat && c.GPA == gpa) ||        // If float, check GPA
                     (isHours && c.CompeletedHours == hours) // If int, check Completed Hours

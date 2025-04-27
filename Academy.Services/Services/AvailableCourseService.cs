@@ -148,6 +148,7 @@ namespace Academy.Services.Services
                 availableCourseDto.CourseName = course.Name;
                 availableCourseDto.CourseCode = course.CourseCode;
                 availableCourseDto.CreditHours = course.CreditHours;
+
             }
 
             return availableCourseDto;
@@ -213,7 +214,7 @@ namespace Academy.Services.Services
 
             return availableCourses.Any(c => c.CourseId == courseId
                                           && c.AcademicYears == academicYear
-                                          && c.Semester == semester);
+                                          && c.Semester == semester) ;
         }
 
 
