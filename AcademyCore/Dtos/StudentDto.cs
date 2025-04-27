@@ -1,4 +1,5 @@
 ﻿using Academy.Core.Models;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,8 +18,8 @@ namespace Academy.Core.Dtos
         [EmailAddress]
         public string Email { get; set; }
 		public string PhoneNumber { get; set; }
-		public string ImagePath { get; set; }
-		public string Level { get; set; }
+        public IFormFile? ImageFile { get; set; }
+        public string Level { get; set; }
 		public string Status { get; set; }
 		public float GPA { get; set; }
 		public int CompeletedHours { get; set; }

@@ -12,7 +12,7 @@ namespace Academy.Repo.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Coordinates",
+                name: "Coordinator",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -25,7 +25,7 @@ namespace Academy.Repo.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Coordinates", x => x.Id);
+                    table.PrimaryKey("PK_Coordinator", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -81,9 +81,9 @@ namespace Academy.Repo.Data.Migrations
                 {
                     table.PrimaryKey("PK_Courses", x => x.CourseId);
                     table.ForeignKey(
-                        name: "FK_Courses_Coordinates_ManageById",
+                        name: "FK_Courses_Coordinator_ManageById",
                         column: x => x.ManageById,
-                        principalTable: "Coordinates",
+                        principalTable: "Coordinator",
                         principalColumn: "Id");
                 });
 
@@ -104,9 +104,9 @@ namespace Academy.Repo.Data.Migrations
                 {
                     table.PrimaryKey("PK_FinalExamTimeTable", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_FinalExamTimeTable_Coordinates_UploadedById",
+                        name: "FK_FinalExamTimeTable_Coordinator_UploadedById",
                         column: x => x.UploadedById,
-                        principalTable: "Coordinates",
+                        principalTable: "Coordinator",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -125,9 +125,9 @@ namespace Academy.Repo.Data.Migrations
                 {
                     table.PrimaryKey("PK_Reports", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Reports_Coordinates_GenerateById",
+                        name: "FK_Reports_Coordinator_GenerateById",
                         column: x => x.GenerateById,
-                        principalTable: "Coordinates",
+                        principalTable: "Coordinator",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -268,9 +268,9 @@ namespace Academy.Repo.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_ScheduleTimeTable_Coordinates_UploadedById",
+                        name: "FK_ScheduleTimeTable_Coordinator_UploadedById",
                         column: x => x.UploadedById,
-                        principalTable: "Coordinates",
+                        principalTable: "Coordinator",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -365,7 +365,7 @@ namespace Academy.Repo.Data.Migrations
                 name: "Doctors");
 
             migrationBuilder.DropTable(
-                name: "Coordinates");
+                name: "Coordinator");
         }
     }
 }

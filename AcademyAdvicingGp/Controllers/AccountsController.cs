@@ -12,6 +12,9 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Academy.Core.ServicesInterfaces;
 using Academy.Services.Services;
+using Azure;
+using Academy.Core.Models.Email;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace AcademyAdvicingGp.Controllers
@@ -26,13 +29,15 @@ namespace AcademyAdvicingGp.Controllers
         private readonly ITokenService _tokenService;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-
         private readonly AcademyContext _academyDbContext;
         private readonly IFileService _fileService;
+        private readonly IEmailService _emailService;
 
 
 
-        public AccountsController(IFileService fileService, UserManager<AppUser> userManager , ITokenService tokenService,SignInManager<AppUser> signInManager, AcademyContext academyDbContext ,RoleManager<IdentityRole> roleManager)
+        public AccountsController(IFileService fileService, UserManager<AppUser> userManager , ITokenService tokenService,
+            SignInManager<AppUser> signInManager, AcademyContext academyDbContext ,RoleManager<IdentityRole> roleManager,
+            IEmailService emailService)
         {
             _fileService = fileService;
             _userManager = userManager;
@@ -40,6 +45,7 @@ namespace AcademyAdvicingGp.Controllers
             _signInManager = signInManager;
             _academyDbContext = academyDbContext;
             _roleManager = roleManager;
+            _emailService = emailService; 
         }
         [HttpPost("RegisterPerson")]
         [Authorize(Roles = "Admin")]
@@ -49,7 +55,7 @@ namespace AcademyAdvicingGp.Controllers
                 return BadRequest("Email already exists in Identity.");
 
             bool emailExists = await _academyDbContext.Doctors.AnyAsync(d => d.Email == model.Email) ||
-                               await _academyDbContext.Coordinates.AnyAsync(c => c.Email == model.Email) ||
+                               await _academyDbContext.Coordinator.AnyAsync(c => c.Email == model.Email) ||
                                await _academyDbContext.StudentAffairs.AnyAsync(sa => sa.Email == model.Email);
 
             if (emailExists)
@@ -112,9 +118,9 @@ namespace AcademyAdvicingGp.Controllers
                         break;
 
                     case "Coordinator":
-                        if (!await _academyDbContext.Coordinates.AnyAsync(c => c.Email == model.Email))
+                        if (!await _academyDbContext.Coordinator.AnyAsync(c => c.Email == model.Email))
                         {
-                            _academyDbContext.Coordinates.Add(new Coordinator
+                            _academyDbContext.Coordinator.Add(new Coordinator
                             {
                                 Name = model.DisplayName,
                                 UserName = model.Email,
@@ -157,28 +163,8 @@ namespace AcademyAdvicingGp.Controllers
             });
         }
 
-
-
-
-
-
-
-        /* [HttpPost("Login")]
-         public async Task<ActionResult<UserDto>> Login(LoginDto model)
-         {
-             var appUser = await _userManager.FindByEmailAsync(model.Email);
-             if (appUser is null) return Unauthorized(new ApiResponse(401));
-             var Result = await _signInManager.CheckPasswordSignInAsync(appUser, model.Password, false);
-             if (!Result.Succeeded) return Unauthorized(new ApiResponse(401));
-             return Ok(new UserDto()
-             {
-                 DisplayName = appUser.DisplayName,
-                 Email = appUser.Email,
-                 Token = await _tokenService.CreateTokenAsync(appUser, _userManager)
-             });
-         }
-        */
         [HttpPost("Login")]
+        [AllowAnonymous]
         public async Task<ActionResult<UserDto>> Login(LoginDto model)
         {
             var appUser = await _userManager.FindByEmailAsync(model.Email);
@@ -199,7 +185,79 @@ namespace AcademyAdvicingGp.Controllers
                 Roles = roles.ToList()
             });
         }
+
+        [HttpPost("ForgotPassword")]
+        [AllowAnonymous]
+        public async Task<IActionResult> ForgotPassword([Required] String email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if(user != null)
+            {
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var forgotPasswordlink = Url.Action(nameof(ResetPassword), "Accounts" , new {token, email=user.Email},Request.Scheme );
+
+                if (string.IsNullOrEmpty(forgotPasswordlink))
+                {
+                    return BadRequest(new { message = "Failed to generate password reset link." });
+                }
+
+                var message = new Message(
+           new List<string> { user.Email! },
+           "Forgot Password link",
+           forgotPasswordlink!
+           );
+                await _emailService.SendEmailAsync(message);
+                return Ok(new { message = $"Password Changed Request is sent on Email {user.Email}.Please open you email & clik on the link " });
+            }
+            return BadRequest(new { message = $"Failed to send Password Reset Request to Email. Please try again later." });
+
+        }
+
+        [HttpGet("resetPassword")]
+
+        public async Task<IActionResult> ResetPassword (string token , string email)
+        {
+            var model = new ResetPassword { Token = token, Email = email };
+            return Ok(new { model });  
+        }
+
+        [HttpPost("resetPassword")]
+        [AllowAnonymous]
+        public async Task<IActionResult> ResetPassword(ResetPassword resetPassword)
+        {
+            var user = await _userManager.FindByEmailAsync(resetPassword.Email);
+            if (user != null)
+            {
+                var resetPassResult = await _userManager.ResetPasswordAsync(user, resetPassword.Token, resetPassword.Password);
+                if (!resetPassResult.Succeeded)
+                {
+                    foreach(var error in resetPassResult.Errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+                    return Ok(ModelState);
+                }
+
+                return Ok(new { message = $"Password has been Changed " });
+            }
+            return BadRequest(new { message = $"Failed to send Password Reset Request to Email. Please try again later." });
+
+        }
+
+        [HttpGet("test email")]
+        
+        public async Task<IActionResult> TestEmail()
+        {
+            var message = new Message(
+            new List<string> { "basmaalaa157@gmail.com" }, 
+            "Test Email",                                                      
+            "<h1>This is a test email</h1>"                                   
+            );
+            await _emailService.SendEmailAsync(message);
+            return Ok(new { message = "Email Sent Successfully" });
+        } 
     }
+    
 }
 
     

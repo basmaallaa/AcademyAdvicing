@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Data.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250426133202_IntialDB")]
+    [Migration("20250427140703_IntialDB")]
     partial class IntialDB
     {
         /// <inheritdoc />
@@ -117,7 +117,7 @@ namespace Academy.Repo.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Coordinates");
+                    b.ToTable("Coordinator");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Course", b =>

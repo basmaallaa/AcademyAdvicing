@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Academy.Repo.Data.Migrations.Identity
+namespace Academy.Repo.Identity.Migrations
 {
     /// <inheritdoc />
-    public partial class IntialDBIdentity : Migration
+    public partial class IntialIdentity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

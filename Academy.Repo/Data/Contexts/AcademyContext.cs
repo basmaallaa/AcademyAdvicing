@@ -25,7 +25,7 @@ namespace Academy.Repo.Data
 		
 
 		public DbSet<Student> Students { get; set; }
-        public DbSet<Coordinator> Coordinates { get; set; }
+        public DbSet<Coordinator> Coordinator { get; set; }
         public DbSet<StudentAffair> StudentAffairs { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Course> Courses { get; set; }
