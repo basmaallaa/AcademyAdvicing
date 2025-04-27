@@ -95,10 +95,10 @@ namespace AcademyAdvicingGp.Controllers
                         break;
 
                     case "Coordinator":
-                        var coordinator = await _academyDbContext.Coordinates.FirstOrDefaultAsync(c => c.Email == email);
+                        var coordinator = await _academyDbContext.Coordinator.FirstOrDefaultAsync(c => c.Email == email);
                         if (coordinator != null)
                         {
-                            _academyDbContext.Coordinates.Remove(coordinator);
+                            _academyDbContext.Coordinator.Remove(coordinator);
                             isRemovedFromAny = true;
                         }
                         break;

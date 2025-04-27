@@ -110,16 +110,17 @@ namespace AcademyAdvicingGp.Controllers
                 return Ok(courses);
             }
 
-            [HttpDelete("{id}")]
-            public async Task<IActionResult> DeleteCourse(int id)
-            {
-                var deleted = await _courseService.DeleteCourseAsync(id);
-                if (!deleted)
-                    return NotFound($"Course with ID {id} not found.");
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Coordinator")]
+        public async Task<IActionResult> DeleteCourse(int id)
+        {
+            var deleted = await _courseService.DeleteCourseAsync(id);
+            if (!deleted)
+                return NotFound($"Course with ID {id} not found.");
 
-                return Ok($"Course with ID {id} deleted successfully.");
-            }
+            return Ok($"Course with ID {id} deleted successfully.");
         }
+    }
 
     } 
 

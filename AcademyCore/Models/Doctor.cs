@@ -9,6 +9,7 @@ namespace Academy.Core.Models
 {
     public class Doctor : Person
     {
+
         public List<Material> Materials { get; set; }
         public List<AvailableCourse> Courses { get; set; }
 

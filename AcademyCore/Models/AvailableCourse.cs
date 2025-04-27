@@ -2,6 +2,7 @@
 using Academy.Core.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -11,7 +12,7 @@ namespace Academy.Core.Models
 {
     public class AvailableCourse
     {
-  
+        [Key]
         public int Id { get; set; }
 
 

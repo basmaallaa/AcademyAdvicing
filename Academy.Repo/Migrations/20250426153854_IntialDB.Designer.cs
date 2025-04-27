@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250425204721_cleanerDB")]
-    partial class cleanerDB
+    [Migration("20250426153854_IntialDB")]
+    partial class IntialDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -126,7 +126,7 @@ namespace Academy.Repo.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Coordinates");
+                    b.ToTable("Coordinator");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Course", b =>
