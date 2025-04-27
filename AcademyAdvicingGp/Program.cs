@@ -21,6 +21,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
 
 using System.Text.Json.Serialization;
+using Academy.Core.Models.Email;
 
 namespace AcademyAdvicingGp
 {
@@ -37,6 +38,11 @@ namespace AcademyAdvicingGp
             });
 
             builder.Services.AddEndpointsApiExplorer();
+
+            #region Email Setting
+            // تحميل إعدادات البريد الإلكتروني
+            builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+            #endregion
 
             #region Swagger Configuration
             builder.Services.AddSwaggerGen(c =>
@@ -108,6 +114,8 @@ namespace AcademyAdvicingGp
 
 
             builder.Services.AddTransient<IFileService, FileService>();
+
+            builder.Services.AddScoped<IEmailService, EmailService>();
             #endregion
 
             #region CORS
@@ -124,6 +132,10 @@ namespace AcademyAdvicingGp
 
             #region Identity
             builder.Services.AddIdentityServices(builder.Configuration);
+            builder.Services.Configure<DataProtectionTokenProviderOptions>(opts =>
+            {
+                opts.TokenLifespan = TimeSpan.FromHours(10);
+            });
             #endregion
 
             builder.Services.AddSwaggerGen(c =>
