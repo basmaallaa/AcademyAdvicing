@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academy.services\\services\\courseservice\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\courseservice\\materialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\servicesinterfaces\\imaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\servicesinterfaces\\imaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\controllers\\scheduletimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\scheduletimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\dtos\\materialviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\materialviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\mapping\\materialprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\mapping\\materialprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\dtos\\materialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\materialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\CourseService\\MaterialService.cs",
+              "RelativeDocumentMoniker": "Academy.Services\\Services\\CourseService\\MaterialService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\CourseService\\MaterialService.cs",
+              "RelativeToolTip": "Academy.Services\\Services\\CourseService\\MaterialService.cs",
+              "ViewState": "AgIAABEBAAAAAAAAAADwvx0BAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:39:30.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScheduleTimeTableController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:58:34.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwvy4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T14:32:17.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaterialViewDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Dtos\\MaterialViewDto.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Dtos\\MaterialViewDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Dtos\\MaterialViewDto.cs",
+              "RelativeToolTip": "AcademyCore\\Dtos\\MaterialViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T16:54:30.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppIdentityDbContextSeed.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "RelativeDocumentMoniker": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "RelativeToolTip": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T14:31:27.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMaterialService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\ServicesInterfaces\\IMaterialService.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\IMaterialService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\ServicesInterfaces\\IMaterialService.cs",
+              "RelativeToolTip": "AcademyCore\\ServicesInterfaces\\IMaterialService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADgvxMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T16:48:30.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MaterialProfile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Mapping\\MaterialProfile.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Mapping\\MaterialProfile.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Mapping\\MaterialProfile.cs",
+              "RelativeToolTip": "AcademyCore\\Mapping\\MaterialProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T16:58:20.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MaterialDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Dtos\\MaterialDto.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Dtos\\MaterialDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Dtos\\MaterialDto.cs",
+              "RelativeToolTip": "AcademyCore\\Dtos\\MaterialDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T14:32:52.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Program.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Program.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T17:05:55.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Material.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\Material.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\Material.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\Material.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\Material.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:37:37.995Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
