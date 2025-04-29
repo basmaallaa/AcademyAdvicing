@@ -107,22 +107,22 @@ namespace Academy.Services.Services.CourseService
 
 
 
-       /* public async Task<bool> DeleteCourseAsync(int id)
-         {
-             // اجلب الكيان الفعلي Course من قاعدة البيانات
-             var course = await _unitOfWork.Repository<Course>().GetAsync(id);
-             if (course == null) return false;
+        /* public async Task<bool> DeleteCourseAsync(int id)
+          {
+              // اجلب الكيان الفعلي Course من قاعدة البيانات
+              var course = await _unitOfWork.Repository<Course>().GetAsync(id);
+              if (course == null) return false;
 
 
 
-             // مرر الـ id بدلاً من كائن course
-             _unitOfWork.Repository<Course>().Delete(id);
-             await _unitOfWork.CompleteAsync();
+              // مرر الـ id بدلاً من كائن course
+              _unitOfWork.Repository<Course>().Delete(id);
+              await _unitOfWork.CompleteAsync();
 
-             return true;
-         }*/
+              return true;
+          }*/
 
-     
+
 
 
 
@@ -133,7 +133,21 @@ namespace Academy.Services.Services.CourseService
             var course = await _unitOfWork.Repository<Course>().GetAsync(id);
             if (course == null) return false;
 
+            // أولاً نحذف كل AvailableCourses المرتبطة بالكورس ده
+            var availableCourses = await _unitOfWork.Repository<AvailableCourse>()
+                .GetAllAsync(ac => ac.CourseId == id);
+
+            if (availableCourses != null && availableCourses.Any())
+            {
+                foreach (var availableCourse in availableCourses)
+                {
+                    _unitOfWork.Repository<AvailableCourse>().Delete(availableCourse);
+                }
+            }
+
+            // بعدين نحذف الكورس نفسه
             _unitOfWork.Repository<Course>().Delete(course);
+
             await _unitOfWork.CompleteAsync();
 
             return true;

@@ -1,6 +1,73 @@
 [
   {
     "ContainingType": "AcademyAdvicingGp.Controllers.AccountsController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Accounts/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Academy.Core.Dtos.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.AccountsController",
+    "Method": "EditProfile",
+    "RelativePath": "api/Accounts/EditProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArabicFullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HomeAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmergencyContact",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.AccountsController",
     "Method": "ForgotPassword",
     "RelativePath": "api/Accounts/ForgotPassword",
     "HttpMethod": "POST",
@@ -839,6 +906,42 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Users/delete-user/{email}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.UsersController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Users/get-all-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[UserDto, Academy.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "AcademyAdvicingGp.Controllers.ViewAvailableCoursetToDocController",

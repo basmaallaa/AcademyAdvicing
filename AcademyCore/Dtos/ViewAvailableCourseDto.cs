@@ -20,7 +20,7 @@ namespace Academy.Core.Dtos
         public int CourseId { get; set; }
             public string CourseName { get; set; }
             public string CourseCode { get; set; }
-            public int CreditHours { get; set; }
+        public int CreditHours { get; set; }
          public List<string> DoctorName {  get; set; }
         public List<int> DoctorIds { get; set; }
 

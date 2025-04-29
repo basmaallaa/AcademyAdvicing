@@ -25,3 +25,4 @@ public class RegisterDto
     [Required]
     public List<string> Roles { get; set; } // التعديل هنا
 }
+                
