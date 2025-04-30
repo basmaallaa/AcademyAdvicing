@@ -12,12 +12,12 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Academy.Core.ServicesInterfaces;
 using Academy.Services.Services;
-
 using System.Security.Claims;
-
 using Azure;
 using Academy.Core.Models.Email;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
+using Microsoft.AspNetCore.WebUtilities;
 
 
 
@@ -363,6 +363,9 @@ namespace AcademyAdvicingGp.Controllers
             if(user != null)
             {
                 var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var encodedToken = Encoding.UTF8.GetBytes(token);
+                var validToken = WebEncoders.Base64UrlEncode(encodedToken);
+
                 var forgotPasswordlink = Url.Action(nameof(ResetPassword), "Accounts" , new {token, email=user.Email},Request.Scheme );
 
                 if (string.IsNullOrEmpty(forgotPasswordlink))
