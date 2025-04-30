@@ -16,3 +16,21 @@ D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academ
 D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
 D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
 D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.sourcelink.json
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.dll
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
+D:\AcadmyGrProject\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
+D:\AcadmyGrProject\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
+D:\AcadmyGrProject\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
+D:\AcadmyGrProject\Academy.Services\bin\Debug\net8.0\Academy.Core.dll
+D:\AcadmyGrProject\Academy.Services\bin\Debug\net8.0\Academy.Repo.dll
+D:\AcadmyGrProject\Academy.Services\bin\Debug\net8.0\Academy.Repo.pdb
+D:\AcadmyGrProject\Academy.Services\bin\Debug\net8.0\Academy.Core.pdb
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\Academy..23AF24D1.Up2Date
+D:\AcadmyGrProject\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll

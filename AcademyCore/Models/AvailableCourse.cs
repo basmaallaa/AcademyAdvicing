@@ -24,12 +24,14 @@ namespace Academy.Core.Models
 
         public Course Course { get; set; }
 
+        public string Level { get; set; }
+
         public int DoctorId { get; set; }
         public Doctor Doctor { get; set; }
        
 
         public List<ScheduleTimeTable> ScheduleTimeTables { get; set; }
-
-	}
+      
+    }
 }
 

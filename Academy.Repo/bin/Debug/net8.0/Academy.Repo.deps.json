@@ -1189,10 +1189,7 @@
           "NETCore.MailKit": "2.1.0"
         },
         "runtime": {
-          "Academy.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Academy.Core.dll": {}
         }
       }
     }
