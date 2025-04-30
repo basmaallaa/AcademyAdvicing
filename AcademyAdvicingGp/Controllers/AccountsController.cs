@@ -368,12 +368,7 @@ namespace AcademyAdvicingGp.Controllers
             var user = await _userManager.FindByEmailAsync(email);
             if(user != null)
             {
-                //var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                //var encodedToken = Encoding.UTF8.GetBytes(token);
-                //var validToken = WebEncoders.Base64UrlEncode(encodedToken);
-
-                //var forgotPasswordlink = Url.Action(nameof(ResetPassword), "Accounts" , new {token, email=user.Email},Request.Scheme );
-
+                
                 // 1. Generate OTP
                 var otp = new Random().Next(100000, 999999).ToString();
                 // Save OTP in the database or cache (Here, I'll assume a simple cache method)

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Graduation Project\\AcademyAdvicingGp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\graduation project\\academyadvicinggp\\academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\graduation project\\academyadvicinggp\\academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|d:\\graduation project\\academyadvicinggp\\academy.services\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\graduation project\\academyadvicinggp\\academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\graduation project\\academyadvicinggp\\academyadvicinggp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -332,34 +332,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "courseCategory.cs",
-              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseCategory.cs",
-              "RelativeDocumentMoniker": "AcademyCore\\Enums\\courseCategory.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseCategory.cs",
-              "RelativeToolTip": "AcademyCore\\Enums\\courseCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T22:30:40.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "Academy.Services\\Services\\EmailService.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\EmailService.cs*",
-              "RelativeToolTip": "Academy.Services\\Services\\EmailService.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAAzwCMAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T13:21:47.854Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 10,
@@ -414,13 +388,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ResetPassword.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\ResetPassword.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\ResetPassword.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\ResetPassword.cs",
-              "RelativeToolTip": "AcademyCore\\Dtos\\ResetPassword.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\ResetPassword.cs*",
+              "RelativeToolTip": "AcademyCore\\Dtos\\ResetPassword.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T11:25:06.94Z",
               "EditorCaption": ""
@@ -440,15 +414,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccountsController.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\AccountsController.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\AccountsController.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\AccountsController.cs*",
-              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\AccountsController.cs*",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\AccountsController.cs",
               "ViewState": "AgIAAHcBAAAAAAAAAAAwwIoBAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T04:42:33.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Academy.Services\\Services\\EmailService.cs",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\EmailService.cs",
+              "RelativeToolTip": "Academy.Services\\Services\\EmailService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAzwCMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:21:47.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "courseCategory.cs",
+              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseCategory.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Enums\\courseCategory.cs",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseCategory.cs",
+              "RelativeToolTip": "AcademyCore\\Enums\\courseCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T22:30:40.925Z",
               "EditorCaption": ""
             },
             {
