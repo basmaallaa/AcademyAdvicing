@@ -152,6 +152,7 @@ namespace Academy.Repo.Migrations
                     GPA = table.Column<float>(type: "real", nullable: false),
                     CompeletedHours = table.Column<int>(type: "int", nullable: false),
                     ManageById = table.Column<int>(type: "int", nullable: true),
+                    AdmissionYear = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -180,6 +181,7 @@ namespace Academy.Repo.Migrations
                     AcademicYears = table.Column<int>(type: "int", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
+                    Level = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DoctorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -233,9 +235,9 @@ namespace Academy.Repo.Migrations
                 {
                     StudentId = table.Column<int>(type: "int", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
-                    ClassWorkScore = table.Column<float>(type: "real", nullable: false),
-                    PracticalScore = table.Column<float>(type: "real", nullable: false),
-                    FinalScore = table.Column<float>(type: "real", nullable: false),
+                    ClassWorkScore = table.Column<float>(type: "real", nullable: true),
+                    PracticalScore = table.Column<float>(type: "real", nullable: true),
+                    FinalScore = table.Column<float>(type: "real", nullable: true),
                     Grade = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AcademicYears = table.Column<int>(type: "int", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false)

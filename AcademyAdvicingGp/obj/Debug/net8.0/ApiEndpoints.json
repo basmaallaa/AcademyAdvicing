@@ -562,18 +562,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
         "Name": "Title",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "UploadedById",
-        "Type": "System.Int32",
         "IsRequired": false
       },
       {
@@ -582,33 +572,8 @@
         "IsRequired": false
       },
       {
-        "Name": "ContentType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ContentDisposition",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Headers",
-        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
-        "IsRequired": false
-      },
-      {
-        "Name": "Length",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
     ],
@@ -784,43 +749,6 @@
   },
   {
     "ContainingType": "AcademyAdvicingGp.Controllers.StudentsController",
-    "Method": "AssignCourseToStudent",
-    "RelativePath": "api/Students/{studentId}/assign-course/{availableCourseId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "studentId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "availableCourseId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcademyAdvicingGp.Controllers.StudentsController",
-    "Method": "GetAvailableCourses",
-    "RelativePath": "api/Students/{studentId}/available-courses",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "studentId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcademyAdvicingGp.Controllers.StudentsController",
     "Method": "AddStudent",
     "RelativePath": "api/Students/add",
     "HttpMethod": "POST",
@@ -870,6 +798,64 @@
       {
         "Name": "CompeletedHours",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.StudentsController",
+    "Method": "AssignCourseToStudent",
+    "RelativePath": "api/Students/assign-course/{availableCourseId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "availableCourseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.StudentsController",
+    "Method": "GetAvailableCourses",
+    "RelativePath": "api/Students/available-courses/{semester}/{academicYear}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "semester",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "academicYear",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.StudentsController",
+    "Method": "CalculateStudentGpaAndCreditHours",
+    "RelativePath": "api/Students/CalculateStudentGpaAndCreditHours",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "academicYear",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "semester",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -1031,6 +1017,11 @@
       },
       {
         "Name": "semester",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "level",
         "Type": "System.String",
         "IsRequired": false
       }
