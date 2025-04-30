@@ -162,34 +162,13 @@
   {
     "ContainingType": "AcademyAdvicingGp.Controllers.AccountsController",
     "Method": "ResetPassword",
-    "RelativePath": "api/Accounts/resetPassword",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "token",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcademyAdvicingGp.Controllers.AccountsController",
-    "Method": "ResetPassword",
-    "RelativePath": "api/Accounts/resetPassword",
+    "RelativePath": "api/Accounts/ResetPassword",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "resetPassword",
+        "Name": "dto",
         "Type": "Academy.Core.Dtos.ResetPassword",
         "IsRequired": true
       }
@@ -198,12 +177,23 @@
   },
   {
     "ContainingType": "AcademyAdvicingGp.Controllers.AccountsController",
-    "Method": "TestEmail",
-    "RelativePath": "api/Accounts/test email",
-    "HttpMethod": "GET",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/Accounts/VerifyOtp",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "otp",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

@@ -18,6 +18,8 @@ using Academy.Core.Models.Email;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Memory;
 
 
 
@@ -36,12 +38,13 @@ namespace AcademyAdvicingGp.Controllers
         private readonly AcademyContext _academyDbContext;
         private readonly IFileService _fileService;
         private readonly IEmailService _emailService;
+        private readonly IMemoryCache _cache;
 
 
 
         public AccountsController(IFileService fileService, UserManager<AppUser> userManager , ITokenService tokenService,
             SignInManager<AppUser> signInManager, AcademyContext academyDbContext ,RoleManager<IdentityRole> roleManager,
-            IEmailService emailService)
+            IEmailService emailService, IMemoryCache cache)
         {
             _fileService = fileService;
             _userManager = userManager;
@@ -50,7 +53,10 @@ namespace AcademyAdvicingGp.Controllers
             _academyDbContext = academyDbContext;
             _roleManager = roleManager;
             _emailService = emailService; 
+            _cache = cache;
         }
+
+
         [HttpPost("RegisterPerson")]
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult<UserDto>> RegisterPerson([FromForm] RegisterDto model)
@@ -362,75 +368,113 @@ namespace AcademyAdvicingGp.Controllers
             var user = await _userManager.FindByEmailAsync(email);
             if(user != null)
             {
-                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                var encodedToken = Encoding.UTF8.GetBytes(token);
-                var validToken = WebEncoders.Base64UrlEncode(encodedToken);
+                //var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                //var encodedToken = Encoding.UTF8.GetBytes(token);
+                //var validToken = WebEncoders.Base64UrlEncode(encodedToken);
 
-                var forgotPasswordlink = Url.Action(nameof(ResetPassword), "Accounts" , new {token, email=user.Email},Request.Scheme );
+                //var forgotPasswordlink = Url.Action(nameof(ResetPassword), "Accounts" , new {token, email=user.Email},Request.Scheme );
 
-                if (string.IsNullOrEmpty(forgotPasswordlink))
+                // 1. Generate OTP
+                var otp = new Random().Next(100000, 999999).ToString();
+                // Save OTP in the database or cache (Here, I'll assume a simple cache method)
+                _cache.Set($"OTP_{user.Id}", otp, TimeSpan.FromMinutes(10));
+
+
+                if (string.IsNullOrEmpty(otp))
                 {
-                    return BadRequest(new { message = "Failed to generate password reset link." });
+                    return BadRequest(new { message = "Failed to generate OTP." });
                 }
 
                 var message = new Message(
            new List<string> { user.Email! },
-           "Forgot Password link",
-           forgotPasswordlink!
+           "🔐 Password Reset OTP",
+    $@"
+    <html>
+    <body style='font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;'>
+        <div style='max-width: 500px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);'>
+            <h2 style='color: #333333;'>Hello {user.DisplayName},</h2>
+            <p style='font-size: 16px; color: #555555;'>You requested to reset your password. Please use the following One-Time Password (OTP) to continue:</p>
+            <p style='font-size: 24px; color: #2E86C1; font-weight: bold; letter-spacing: 4px; text-align: center;'>{otp}</p>
+            <p style='font-size: 14px; color: #999999;'>This code will expire in 5–10 minutes. If you didn't request a password reset, please ignore this email.</p>
+            <hr style='margin-top: 30px;'/>
+            <p style='font-size: 12px; color: #cccccc; text-align: center;'>© {DateTime.Now.Year} Academy Advicing</p>
+        </div>
+    </body>
+    </html>"
+          
            );
                 await _emailService.SendEmailAsync(message);
-                return Ok(new { message = $"Password Changed Request is sent on Email {user.Email}.Please open you email & clik on the link " });
+                return Ok(new { message = $"OTP has been sent to your email. {user.Email}.Please open you email " });
             }
-            return BadRequest(new { message = $"Failed to send Password Reset Request to Email. Please try again later." });
+            return BadRequest(new { message = $"Failed to send OTP to Email. Please try again later." });
 
         }
 
-        [HttpGet("resetPassword")]
-
-        public async Task<IActionResult> ResetPassword (string token , string email)
-        {
-            var model = new ResetPassword { Token = token, Email = email };
-            return Ok(new { model });  
-        }
-
-        [HttpPost("resetPassword")]
+        [HttpPost("VerifyOtp")]
         [AllowAnonymous]
-        public async Task<IActionResult> ResetPassword(ResetPassword resetPassword)
+        public async Task<IActionResult> VerifyOtp([Required] string email, [Required] string otp)
         {
-            var user = await _userManager.FindByEmailAsync(resetPassword.Email);
+            var user = await _userManager.FindByEmailAsync(email);
             if (user != null)
             {
-                var resetPassResult = await _userManager.ResetPasswordAsync(user, resetPassword.Token, resetPassword.Password);
-                if (!resetPassResult.Succeeded)
+                var cachedOtp = _cache.Get<string>($"OTP_{user.Id}");
+                if (cachedOtp != null && cachedOtp == otp)
                 {
-                    foreach(var error in resetPassResult.Errors)
+                    // حفظ حالة التحقق في الكاش
+                    _cache.Set($"OTP_VERIFIED_{user.Id}", true, new MemoryCacheEntryOptions
                     {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
-                    return Ok(ModelState);
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5) // صلاحية التحقق 5 دقايق
+                    });
+
+                    return Ok(new
+                    {
+                        message = "OTP verified successfully. You can now reset your password.",
+                        email = user.Email
+                    });
                 }
-
-                return Ok(new { message = $"Password has been Changed " });
+                else
+                {
+                    return BadRequest(new { message = "Invalid OTP or OTP expired." });
+                }
             }
-            return BadRequest(new { message = $"Failed to send Password Reset Request to Email. Please try again later." });
-
+            return BadRequest(new { message = "User not found." });
         }
 
-        [HttpGet("test email")]
-        
-        public async Task<IActionResult> TestEmail()
+
+        [HttpPost("ResetPassword")]
+        [AllowAnonymous]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPassword dto)
         {
-            var message = new Message(
-            new List<string> { "basmaalaa157@gmail.com" }, 
-            "Test Email",                                                      
-            "<h1>This is a test email</h1>"                                   
-            );
-            await _emailService.SendEmailAsync(message);
-            return Ok(new { message = "Email Sent Successfully" });
-        } 
+            var user = await _userManager.FindByEmailAsync(dto.Email);
+            if (user == null)
+                return BadRequest(new { message = "Invalid email." });
+
+            // التحقق من حالة الـ OTP
+            var isVerified = _cache.Get<bool?>($"OTP_VERIFIED_{user.Id}");
+            if (isVerified != true)
+                return BadRequest(new { message = "OTP verification required before resetting password." });
+
+            // إنشاء توكن لتغيير كلمة المرور
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var result = await _userManager.ResetPasswordAsync(user, token, dto.NewPassword);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(new { message = "Failed to reset password." });
+            }
+
+            // حذف حالة التحقق من الكاش بعد النجاح
+            _cache.Remove($"OTP_VERIFIED_{user.Id}");
+            _cache.Remove($"OTP_{user.Id}");
+
+            return Ok(new { message = "Password reset successful." });
+        }
+
+
+
 
     }
-    
+
 }
 
     
