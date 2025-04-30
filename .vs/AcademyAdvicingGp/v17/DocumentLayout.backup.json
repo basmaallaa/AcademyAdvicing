@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Graduation Project\\AcademyAdvicingGp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\graduation project\\academyadvicinggp\\academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\graduation project\\academyadvicinggp\\academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\graduation project\\academyadvicinggp\\academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|d:\\graduation project\\academyadvicinggp\\academy.services\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\graduation project\\academyadvicinggp\\academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\graduation project\\academyadvicinggp\\academyadvicinggp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\graduation project\\academyadvicinggp\\academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -74,10 +78,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Academy.Repo\\Migrations\\20250429105707_addAdmissionYear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\graduation project\\academyadvicinggp\\academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\graduation project\\academyadvicinggp\\academyadvicinggp\\controllers\\availablecoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\availablecoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -104,10 +104,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\graduation project\\academyadvicinggp\\academy.repo\\academy.repo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\academy.repo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\graduation project\\academyadvicinggp\\academy.repo\\migrations\\20250429074653_intialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\migrations\\20250429074653_intialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\graduation project\\academyadvicinggp\\academy.repo\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -332,43 +328,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "courseType.cs",
-              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseType.cs",
-              "RelativeDocumentMoniker": "AcademyCore\\Enums\\courseType.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseType.cs",
-              "RelativeToolTip": "AcademyCore\\Enums\\courseType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T22:30:39.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetCoursesDto.cs",
-              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\GetCoursesDto.cs",
-              "RelativeDocumentMoniker": "AcademyCore\\Dtos\\GetCoursesDto.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\GetCoursesDto.cs",
-              "RelativeToolTip": "AcademyCore\\Dtos\\GetCoursesDto.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T21:26:08.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AvailableCourseService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\AvailableCourseService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\AvailableCourseService.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\AvailableCourseService.cs",
               "RelativeToolTip": "Academy.Services\\Services\\AvailableCourseService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAM4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAJQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T21:03:29.729Z",
               "EditorCaption": ""
@@ -381,19 +351,19 @@
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Program.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Program.cs",
               "RelativeToolTip": "AcademyAdvicingGp\\Program.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwIsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAQwIsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T02:20:29.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ResetPassword.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\ResetPassword.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\ResetPassword.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\ResetPassword.cs*",
-              "RelativeToolTip": "AcademyCore\\Dtos\\ResetPassword.cs*",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\ResetPassword.cs",
+              "RelativeToolTip": "AcademyCore\\Dtos\\ResetPassword.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T11:25:06.94Z",
@@ -401,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Course.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Course.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Course.cs",
@@ -414,33 +384,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AccountsController.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\AccountsController.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\AccountsController.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\AccountsController.cs",
               "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\AccountsController.cs",
-              "ViewState": "AgIAAHcBAAAAAAAAAAAwwIoBAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAHABAAAAAAAAAADwvy4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T04:42:33.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EmailService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\EmailService.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\EmailService.cs",
               "RelativeToolTip": "Academy.Services\\Services\\EmailService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAzwCMAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAzwC0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T13:21:47.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
+              "Title": "AppIdentityDbContextSeed.cs",
+              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "RelativeDocumentMoniker": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "RelativeToolTip": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAQwCoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:40:28.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetCoursesDto.cs",
+              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\GetCoursesDto.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Dtos\\GetCoursesDto.cs",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\GetCoursesDto.cs",
+              "RelativeToolTip": "AcademyCore\\Dtos\\GetCoursesDto.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T21:26:08.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "courseType.cs",
+              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseType.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Enums\\courseType.cs",
+              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseType.cs",
+              "RelativeToolTip": "AcademyCore\\Enums\\courseType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T22:30:39.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "courseCategory.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\courseCategory.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Enums\\courseCategory.cs",
@@ -453,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AcademyAdvicingGp.csproj.user",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\AcademyAdvicingGp.csproj.user",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\AcademyAdvicingGp.csproj.user",
@@ -466,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -477,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\appsettings.json",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\appsettings.json",
@@ -490,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "20250429112805_addStatusString.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Migrations\\20250429112805_addStatusString.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Migrations\\20250429112805_addStatusString.cs",
@@ -503,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CreateCourseService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\CourseService\\CreateCourseService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\CourseService\\CreateCourseService.cs",
@@ -516,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "StudentService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\StudentService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\StudentService.cs",
@@ -529,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "StudentDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\StudentDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\StudentDto.cs",
@@ -542,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Student.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Student.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Student.cs",
@@ -561,7 +570,7 @@
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\AvailableCourseController.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\AvailableCourseController.cs",
               "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\AvailableCourseController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAACYAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAADEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T21:00:20.391Z",
               "EditorCaption": ""
@@ -581,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "20250429105707_addAdmissionYear.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Migrations\\20250429105707_addAdmissionYear.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Migrations\\20250429105707_addAdmissionYear.cs",
@@ -594,26 +603,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AppIdentityDbContextSeed.cs",
-              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
-              "RelativeDocumentMoniker": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
-              "RelativeToolTip": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAQwCoAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T21:40:28.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 21,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\StudentsController.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwDsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwD0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T22:30:21.274Z",
               "EditorCaption": ""
@@ -646,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "Person.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Person.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Person.cs",
@@ -659,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\ServicesInterfaces\\IEmailService.cs",
               "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\IEmailService.cs",
@@ -672,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "Message.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Email\\Message.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Email\\Message.cs",
@@ -681,19 +677,6 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAmwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T13:13:00.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "20250429074653_IntialDB.cs",
-              "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Migrations\\20250429074653_IntialDB.cs",
-              "RelativeDocumentMoniker": "Academy.Repo\\Migrations\\20250429074653_IntialDB.cs",
-              "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Migrations\\20250429074653_IntialDB.cs",
-              "RelativeToolTip": "Academy.Repo\\Migrations\\20250429074653_IntialDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T07:46:54.304Z",
               "EditorCaption": ""
             },
             {
@@ -724,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\UnitOfWork.cs",
@@ -737,7 +720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "IdentityServiceExtension.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Extensions\\IdentityServiceExtension.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Extensions\\IdentityServiceExtension.cs",
@@ -750,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "DoctorCourseService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\DoctorCourseService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\DoctorCourseService.cs",
@@ -763,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "FileService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\FileService.cs",
@@ -776,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "IFileService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\ServicesInterfaces\\IFileService.cs",
               "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\IFileService.cs",
@@ -789,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Email\\EmailSettings.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Email\\EmailSettings.cs",
@@ -802,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "GenaricRepository.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Repositories\\GenaricRepository.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Repositories\\GenaricRepository.cs",
@@ -815,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "Coordinator.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Coordinator.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Coordinator.cs",
@@ -828,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\CoursesController.cs",
@@ -841,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "AvailableCoursesConfigration.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Data\\Configrations\\AvailableCoursesConfigration.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Data\\Configrations\\AvailableCoursesConfigration.cs",
@@ -854,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "AssignedCoursesConfigrations.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Data\\Configrations\\AssignedCoursesConfigrations.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Data\\Configrations\\AssignedCoursesConfigrations.cs",
@@ -867,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Doctor.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Doctor.cs",
@@ -880,7 +863,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "FinalExamTimeTable.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\FinalExamTimeTable.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\FinalExamTimeTable.cs",
@@ -893,7 +876,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "AvailableAssignCourse.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\AvailableAssignCourse.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\AvailableAssignCourse.cs",
@@ -906,20 +889,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "AvailableCourse.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\AvailableCourse.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\AvailableCourse.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\AvailableCourse.cs",
               "RelativeToolTip": "AcademyCore\\Models\\AvailableCourse.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA4wCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T21:01:33.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "20250425024925_AddKeyToAvailableCourse.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Migrations\\20250425024925_AddKeyToAvailableCourse.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Migrations\\20250425024925_AddKeyToAvailableCourse.cs",
@@ -930,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "CreateCourseDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\CreateCourseDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\CreateCourseDto.cs",
@@ -943,7 +926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "ViewAvailableCourseDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\ViewAvailableCourseDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\ViewAvailableCourseDto.cs",
@@ -956,7 +939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "ViewAvailableCoursetToDocController.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\ViewAvailableCoursetToDocController.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\ViewAvailableCoursetToDocController.cs",
@@ -969,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "Errorscs.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\Controllers\\Errorscs.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\Errorscs.cs",
@@ -982,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\RegisterDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\RegisterDto.cs",
@@ -995,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "DoctorProfile.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Mapping\\DoctorProfile.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Mapping\\DoctorProfile.cs",
@@ -1008,7 +991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "StudentProfile.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Mapping\\StudentProfile.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Mapping\\StudentProfile.cs",
@@ -1021,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "UserDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\UserDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\UserDto.cs",
@@ -1034,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "DoctorService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\Services\\DoctorService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\DoctorService.cs",
@@ -1047,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "DoctorDtoID.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\DoctorDtoID.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\DoctorDtoID.cs",
@@ -1060,7 +1043,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "DoctorDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\DoctorDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\DoctorDto.cs",
@@ -1073,7 +1056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "20250419114531_addImagePath.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\context\\Migrations\\20250419114531_addImagePath.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\context\\Migrations\\20250419114531_addImagePath.cs",
@@ -1084,7 +1067,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "20250419114810_addImagePath.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Contexts\\Migrations\\20250419114810_addImagePath.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Contexts\\Migrations\\20250419114810_addImagePath.cs",
@@ -1095,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "IAvailableCourse.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\ServicesInterfaces\\IAvailableCourse.cs",
               "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\IAvailableCourse.cs",
@@ -1108,7 +1091,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "AvailableCourseProfile.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Mapping\\AvailableCourseProfile.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Mapping\\AvailableCourseProfile.cs",
@@ -1121,7 +1104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "IGenaricRepository.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Repositories\\IGenaricRepository.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Repositories\\IGenaricRepository.cs",
@@ -1134,7 +1117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "AvailableCourseDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\AvailableCourseDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\AvailableCourseDto.cs",
@@ -1147,20 +1130,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "AvailableCourseDoctorDto.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs",
               "ToolTip": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs",
               "RelativeToolTip": "AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T20:26:17.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "StudentAffair.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\StudentAffair.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\StudentAffair.cs",
@@ -1173,7 +1156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 78,
               "Title": "20250412184403_removeAssignedBy.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Migrations\\20250412184403_removeAssignedBy.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Migrations\\20250412184403_removeAssignedBy.cs",
@@ -1184,7 +1167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 79,
               "Title": "20250412182140_ithialDb.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Identity\\Migrations\\20250412182140_ithialDb.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Identity\\Migrations\\20250412182140_ithialDb.cs",
@@ -1195,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 80,
               "Title": "20250412181539_inthialDB.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Repo\\Migrations\\20250412181539_inthialDB.cs",
               "RelativeDocumentMoniker": "Academy.Repo\\Migrations\\20250412181539_inthialDB.cs",
@@ -1206,7 +1189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "20250412182002_ithialDb.cs",
               "DocumentMoniker": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Identity\\Migrations\\20250412182002_ithialDb.cs",
               "ToolTip": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Identity\\Migrations\\20250412182002_ithialDb.cs",
@@ -1215,7 +1198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Identity\\AppUser.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Identity\\AppUser.cs",
@@ -1228,7 +1211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "IStudentService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\ServicesInterfaces\\IStudentService.cs",
               "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\IStudentService.cs",
@@ -1241,7 +1224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "20250410053807_IthialDb.cs",
               "DocumentMoniker": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Identity\\Migrations\\20250410053807_IthialDb.cs",
               "ToolTip": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Identity\\Migrations\\20250410053807_IthialDb.cs",
@@ -1250,7 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\Academy.Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\TokenService.cs",
@@ -1263,7 +1246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "20250407053223_appUser.cs",
               "DocumentMoniker": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Data\\Migrations\\20250407053223_appUser.cs",
               "ToolTip": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Data\\Migrations\\20250407053223_appUser.cs",
@@ -1272,7 +1255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "Material.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\Material.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\Material.cs",
@@ -1285,7 +1268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "20250407010023_seeding.cs",
               "DocumentMoniker": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Identity\\Migrations\\20250407010023_seeding.cs",
               "ToolTip": "C:\\Users\\basma\\Desktop\\C#\\AcademyAdvicingGp\\AcademyAdvicingGp\\Academy.Repo\\Identity\\Migrations\\20250407010023_seeding.cs",
@@ -1294,7 +1277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "AssignedCourse.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Models\\AssignedCourse.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Models\\AssignedCourse.cs",
@@ -1307,7 +1290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 73,
               "Title": "Semster.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Enums\\Semster.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Enums\\Semster.cs",
@@ -1320,7 +1303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 74,
               "Title": "CourseProfile.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\Mapping\\CourseProfile.cs",
               "RelativeDocumentMoniker": "AcademyCore\\Mapping\\CourseProfile.cs",
@@ -1333,7 +1316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 75,
               "Title": "ICourseService.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\ServicesInterfaces\\ICoursesInterface\\ICourseService.cs",
               "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\ICoursesInterface\\ICourseService.cs",
@@ -1346,7 +1329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 76,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -1355,7 +1338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 77,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyCore\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "AcademyCore\\IUnitOfWork.cs",

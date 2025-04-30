@@ -1,4 +1,5 @@
-﻿using Academy.Core.Dtos;
+﻿using Academy.Core.Dtos.MaterialsDtos;
+using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces;
 using Academy.Repo.Data;
 using Microsoft.AspNetCore.Authorization;
@@ -9,7 +10,7 @@ using System.Security.Claims;
 
 namespace AcademyAdvicingGp.Controllers
 {
-	[Route("api/[controller]")]
+    [Route("api/[controller]")]
 	[ApiController]
 	[Authorize]
 	public class MaterialController : ControllerBase
@@ -41,7 +42,7 @@ namespace AcademyAdvicingGp.Controllers
 		//}
 		[HttpPost("upload")]
 		[Authorize(Roles = "Doctor")]
-		public async Task<IActionResult> UploadMaterial([FromForm] MaterialDto materialDto, [FromForm] IFormFile file)
+		public async Task<IActionResult> UploadMaterial([FromForm] CreateMaterialDto materialDto, IFormFile file)
 		{
 			try
 			{
@@ -53,9 +54,17 @@ namespace AcademyAdvicingGp.Controllers
 				if (doctor == null)
 					return NotFound("Doctor profile not found.");
 
-				materialDto.UploadedById = doctor.Id;
+				//materialDto.UploadedById = doctor.Id;
+				var material = new MaterialDto
+				{
+					Title = materialDto.Title,
+					CourseId = materialDto.CourseId,
+					UploadedById = doctor.Id,
+					
+				};
 
-				var result = await _materialService.AddAsync(materialDto, file);
+
+				var result = await _materialService.AddAsync(material, file);
 
 				return Ok("Material Uploaded successfully.");
 			}

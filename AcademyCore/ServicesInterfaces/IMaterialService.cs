@@ -1,4 +1,4 @@
-﻿using Academy.Core.Dtos;
+﻿using Academy.Core.Dtos.MaterialsDtos;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Academy.Core.ServicesInterfaces
 {
-	public interface IMaterialService
+    public interface IMaterialService
 	{
 		Task<MaterialDto> GetByIdAsync(int id);
 		Task<MaterialDto> AddAsync(MaterialDto materialDto, IFormFile file);

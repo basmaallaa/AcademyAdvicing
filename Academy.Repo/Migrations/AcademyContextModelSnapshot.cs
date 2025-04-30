@@ -33,17 +33,17 @@ namespace Academy.Repo.Migrations
                     b.Property<int>("AcademicYears")
                         .HasColumnType("int");
 
-                    b.Property<float>("ClassWorkScore")
+                    b.Property<float?>("ClassWorkScore")
                         .HasColumnType("real");
 
-                    b.Property<float>("FinalScore")
+                    b.Property<float?>("FinalScore")
                         .HasColumnType("real");
 
                     b.Property<string>("Grade")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("PracticalScore")
+                    b.Property<float?>("PracticalScore")
                         .HasColumnType("real");
 
                     b.Property<int>("Semester")
@@ -72,6 +72,10 @@ namespace Academy.Repo.Migrations
 
                     b.Property<int>("DoctorId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Semester")
                         .HasColumnType("int");

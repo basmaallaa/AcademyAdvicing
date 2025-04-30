@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250429112805_addStatusString")]
-    partial class addStatusString
+    [Migration("20250430143403_IntialDB")]
+    partial class IntialDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,17 +36,17 @@ namespace Academy.Repo.Migrations
                     b.Property<int>("AcademicYears")
                         .HasColumnType("int");
 
-                    b.Property<float>("ClassWorkScore")
+                    b.Property<float?>("ClassWorkScore")
                         .HasColumnType("real");
 
-                    b.Property<float>("FinalScore")
+                    b.Property<float?>("FinalScore")
                         .HasColumnType("real");
 
                     b.Property<string>("Grade")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("PracticalScore")
+                    b.Property<float?>("PracticalScore")
                         .HasColumnType("real");
 
                     b.Property<int>("Semester")
@@ -75,6 +75,10 @@ namespace Academy.Repo.Migrations
 
                     b.Property<int>("DoctorId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Semester")
                         .HasColumnType("int");

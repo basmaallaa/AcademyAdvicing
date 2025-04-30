@@ -1,5 +1,5 @@
 ﻿using Academy.Core;
-using Academy.Core.Dtos;
+using Academy.Core.Dtos.MaterialsDtos;
 using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces;
 using Academy.Repo.Data;
@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Academy.Services.Services.CourseService
 {
-	public class MaterialService : IMaterialService
+    public class MaterialService : IMaterialService
 	{
 		private readonly IUnitOfWork _unitOfWork;
 		private readonly IMapper _mapper;

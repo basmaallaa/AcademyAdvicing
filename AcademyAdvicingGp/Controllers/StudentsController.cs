@@ -11,6 +11,8 @@ using System;
 using System.Linq;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
+using Academy.Core.Enums;
+using DocumentFormat.OpenXml.InkML;
 
 namespace AcademyAdvicingGp.Controllers
 {
@@ -120,78 +122,86 @@ namespace AcademyAdvicingGp.Controllers
 
 
 
-        //    [HttpGet("{studentId}/available-courses")]
-        //    public async Task<IActionResult> GetAvailableCourses(int studentId)
-        //    {
-        //        var student = await _unitOfWork.Repository<Student>()
-        //            .GetAllIncludingAsyncc(s => s.Courses)
-        //            .ContinueWith(t => t.Result.FirstOrDefault(s => s.Id == studentId));
-
-        //        if (student == null)
-        //            return NotFound("Student not found");
-
-        //        // Get the IDs of courses the student already completed
-        //        var previouslyTakenCourseIds = student.Courses?
-        //.Where(sc => !string.IsNullOrEmpty(sc.Grade)) // الطالب حصل على درجة
-        //.Select(sc => sc.CourseId)
-        //.ToList() ?? new List<int>();
-
-        //        // Get all available courses including their Course navigation
-        //        // بدل previouslyTakenCourseIds نخزن CourseCodes مش CourseIds
-        //        var previouslyTakenCourseCodes = student.Courses?
-        //            .Where(sc => sc.Grade != null) // يعني نجح فيها أو خلصها
-        //            .Select(sc => sc.Course.CourseCode) // نفترض إن Course navigation موجود
-        //            .ToList() ?? new List<string>();
-
-        //        var availableCourses = await _unitOfWork.Repository<AvailableCourse>()
-        //.GetAllIncludingAsyncc(ac => ac.Course);
-
-        //        var eligibleCourses = availableCourses
-        //            .Where(ac =>
-        //                // مش مسجل بالفعل
-        //                !(student.Courses?.Any(sc => sc.CourseId == ac.CourseId) ?? false)
-
-        //                // مفيش prerequisite أو الطالب واخدها
-        //                && (
-        //                    string.IsNullOrEmpty(ac.Course.prerequisite)
-        //                    || previouslyTakenCourseCodes.Contains(ac.Course.prerequisite)
-        //                )
-        //            ).ToList();
-
-
-        //        return Ok(eligibleCourses);
-        //    }
-
-
-        [HttpGet("{studentId}/available-courses")]
-        public async Task<IActionResult> GetAvailableCourses(int studentId)
+        [HttpGet("available-courses/{semester}/{academicYear}")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> GetAvailableCourses(Semster semester, int academicYear)
         {
+            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(userEmail))
+                return Unauthorized("Email not found in token.");
+
+            // Get student with assigned courses
             var student = await _unitOfWork.Repository<Student>()
                 .GetAllIncludingAsyncc(s => s.Courses)
-                .ContinueWith(t => t.Result.FirstOrDefault(s => s.Id == studentId));
+                .ContinueWith(t => t.Result.FirstOrDefault(s => s.Email == userEmail));
 
             if (student == null)
                 return NotFound("Student not found");
 
-            var previouslyTakenCourseCodes = student.Courses?
-                .Where(sc => sc.Grade != null && sc.Course != null)
-                .Select(sc => sc.Course.CourseCode)
-                .ToList() ?? new List<string>();
+            // Get the level of the student (automatically from the student data)
+            string level = student.Level;
 
+            // Get all available courses and include Course + Doctor
             var availableCourses = await _unitOfWork.Repository<AvailableCourse>()
-                .GetAllIncludingAsyncc(ac => ac.Course);
+                .GetAllIncludingAsyncc(ac => ac.Course, ac => ac.Doctor);
 
-            var eligibleCourses = availableCourses
-                .Where(ac =>
-                    // مش مسجل بالفعل
-                    !(student.Courses?.Any(sc => sc.CourseId == ac.CourseId) ?? false)
+            var studentAssignedCourses = student.Courses ?? new List<AssignedCourse>();
+            var eligibleCourses = new List<object>();
 
-                    // مفيش prerequisite أو الطالب واخدها
-                    && (
-                        string.IsNullOrEmpty(ac.Course?.prerequisite)
-                        || previouslyTakenCourseCodes.Contains(ac.Course.prerequisite)
-                    )
-                ).ToList();
+            // Filter available courses based on semester, academic year, and student's level
+            foreach (var ac in availableCourses)
+            {
+                if (ac.Level != level || ac.Semester != semester || ac.AcademicYears != academicYear)
+                    continue;
+
+                bool isAlreadyAssigned = studentAssignedCourses.Any(sc => sc.CourseId == ac.CourseId);
+                if (isAlreadyAssigned)
+                    continue;
+
+                bool hasPassedPrerequisite = true;
+
+                // Check if the course has prerequisites and verify if the student has passed it
+                if (!string.IsNullOrEmpty(ac.Course.prerequisite))
+                {
+                    var prerequisiteCourse = await _unitOfWork.Repository<Course>()
+                        .GetAllAsync()
+                        .ContinueWith(t => t.Result.FirstOrDefault(c =>
+                            c.Name.Trim().ToLower() == ac.Course.prerequisite.Trim().ToLower()));
+
+                    if (prerequisiteCourse == null)
+                    {
+                        hasPassedPrerequisite = false;
+                    }
+                    else
+                    {
+                        hasPassedPrerequisite = studentAssignedCourses
+                            .Any(sc => sc.CourseId == prerequisiteCourse.CourseId && sc.FinalScore >= 50);
+                    }
+                }
+
+                // Add eligible course to the list if prerequisites are met
+                if (hasPassedPrerequisite)
+                {
+                    var firstDoctor = ac.Doctor;
+
+                    eligibleCourses.Add(new
+                    {
+                        AvailableCourseId = ac.Id,
+                        CourseName = ac.Course?.Name,
+                        CourseId = ac.Course?.CourseId,
+                        Prerequisite = ac.Course?.prerequisite,
+                        Credit = ac.Course?.Credit,
+                        CreditHours = ac.Course?.CreditHours,
+                        Category = ac.Course?.category,
+                        Type = ac.Course?.type,
+                        DoctorName = firstDoctor?.Name ?? "Not Assigned",
+                        DoctorId = firstDoctor?.Id ?? 0,
+                        AcademicYear = ac.AcademicYears,
+                        Semester = ac.Semester.ToString(),
+                        Level = ac.Level
+                    });
+                }
+            }
 
             return Ok(eligibleCourses);
         }
@@ -200,45 +210,76 @@ namespace AcademyAdvicingGp.Controllers
 
 
 
-        [HttpPost("{studentId}/assign-course/{availableCourseId}")]
-        public async Task<IActionResult> AssignCourseToStudent(int studentId, int availableCourseId)
+        [HttpPost("assign-course/{availableCourseId}")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> AssignCourseToStudent(int availableCourseId)
         {
-            // 1. جيب الطالب من الداتا
+            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+            if (string.IsNullOrEmpty(userEmail))
+                return Unauthorized("Email not found in token.");
+
             var student = await _unitOfWork.Repository<Student>()
-                .GetIncludingAsync(s => s.Id == studentId, s => s.Courses); // تأكدنا إن الكورسات متحمّلة مع الطالب
+                .GetIncludingAsync(s => s.Email == userEmail, s => s.Courses);
 
             if (student == null)
                 return NotFound("Student not found");
 
-            // 2. جيب الكورس المتاح
             var availableCourse = await _unitOfWork.Repository<AvailableCourse>()
                 .GetIncludingAsync(ac => ac.Id == availableCourseId, ac => ac.Course);
 
             if (availableCourse == null)
                 return NotFound("Available course not found");
 
-            // 3. تأكد إن الـ Courses مش null
             student.Courses ??= new List<AssignedCourse>();
 
-            // 4. تأكد إن الطالب مش مسجل نفس الكورس قبل كده
             bool alreadyRegistered = student.Courses.Any(c => c.CourseId == availableCourse.CourseId);
             if (alreadyRegistered)
                 return BadRequest("Student already registered this course");
 
-            // 5. أضف الكورس للطالب
+            // عدد الكورسات اللي سجلها الطالب في نفس الترم والعام الأكاديمي
+            int registeredCountThisTerm = student.Courses
+                .Count(c => c.Semester == availableCourse.Semester && c.AcademicYears == availableCourse.AcademicYears);
+
+            // تحويل Level لتجنب مشاكل الـ Case
+            string studentLevel = student.Level?.Trim().ToLower();
+
+            // حالة: سنة أولى + الترم الأول
+            bool isLevelOneFirstSemester = studentLevel == "one" && availableCourse.Semester == 0;
+
+            if (isLevelOneFirstSemester)
+            {
+                if (registeredCountThisTerm >= 6)
+                    return BadRequest("You cannot register more than 6 courses in the first semester of level one.");
+            }
+            else
+            {
+                if (student.GPA < 2)
+                {
+                    if (registeredCountThisTerm >= 4)
+                        return BadRequest("Your GPA is less than 2. You can only register up to 4 courses this semester.");
+                }
+                else // GPA >= 2
+                {
+                    if (registeredCountThisTerm >= 6)
+                        return BadRequest("You cannot register more than 6 courses this semester.");
+                }
+            }
+
+            // إضافة الكورس
             student.Courses.Add(new AssignedCourse
             {
-                StudentId = studentId,
+                StudentId = student.Id,
                 CourseId = availableCourse.CourseId,
-                Grade = "0" // لسه متسجلش درجات
+                Grade = "0",
+                AcademicYears = availableCourse.AcademicYears,
+                Semester = availableCourse.Semester
             });
 
-            // 6. احفظ التغييرات
             await _unitOfWork.CompleteAsync();
 
-            // 7. رجّع OK
             return Ok("Course assigned successfully");
         }
+
 
 
         [HttpGet("my-course-scores")]
@@ -272,6 +313,86 @@ namespace AcademyAdvicingGp.Controllers
                 PracticalScore = selectedCourse.PracticalScore
             });
         }
+
+        [HttpPut("CalculateStudentGpaAndCreditHours")]
+        [Authorize(Roles = "Student")]
+        public async Task<IActionResult> CalculateStudentGpaAndCreditHours(int academicYear, Semster semester)
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Email);
+
+            if (string.IsNullOrEmpty(userEmail))
+                return Unauthorized("User email not found.");
+
+            var studentEntity = await _academyContext.Students
+                .Where(s => s.Email == userEmail)
+                .Include(s => s.Courses)
+                    .ThenInclude(ac => ac.Course)
+                .FirstOrDefaultAsync();
+
+            if (studentEntity == null)
+                return NotFound("Student not found.");
+
+            var semesterInt = (int)semester; // نحول السيمستر اللي جاي من الريكوست إلى int
+
+            var assignedCourses = studentEntity.Courses
+                .Where(c => c.AcademicYears == academicYear &&
+                            (int)c.Semester == semesterInt) // نحول سيمستر الكورس كمان إلى int
+                .ToList();
+
+            if (assignedCourses == null || assignedCourses.Count == 0)
+            {
+                return NotFound(new
+                {
+                    Message = "No assigned courses found for the given academic year and semester.",
+                    StudentLevel = studentEntity.Level,
+                    AcademicYear = academicYear,
+                    SemesterRequested = semester.ToString()
+                });
+            }
+
+            var gradePoints = new Dictionary<string, float>
+    {
+        { "A+", 4f },
+        { "A", 3.75f },
+        { "B+", 3.4f },
+        { "B", 3.1f },
+        { "C+", 2.8f },
+        { "C", 2.5f },
+        { "D+", 2.25f },
+        { "D", 2f }
+    };
+
+            float totalPoints = 0;
+            int totalCreditHours = 0;
+
+            foreach (var assignedCourse in assignedCourses)
+            {
+                if (gradePoints.TryGetValue(assignedCourse.Grade, out float gradePoint))
+                {
+                    int creditHours = assignedCourse.Course.CreditHours;
+                    totalPoints += gradePoint * creditHours;
+                    totalCreditHours += creditHours;
+                }
+            }
+
+            float gpa = totalCreditHours > 0 ? totalPoints / totalCreditHours : 0;
+
+            studentEntity.GPA = gpa;
+            studentEntity.CompeletedHours = totalCreditHours;
+
+            await _academyContext.SaveChangesAsync();
+
+            return Ok(new
+            {
+                GPA = gpa,
+                CompletedHours = totalCreditHours,
+                StudentLevel = studentEntity.Level
+            });
+        }
+
+
+
+
 
 
     }

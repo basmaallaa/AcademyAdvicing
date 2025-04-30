@@ -22,43 +22,14 @@ namespace Academy.Services.Services
         private readonly IMapper _mapper;
         private readonly AcademyContext _academyDbContext;
 
-        public AvailableCourseService(IUnitOfWork unitOfWork, IMapper mapper, AcademyContext academyDbContext)
+        public AvailableCourseService(IUnitOfWork unitOfWork, IMapper mapper, AcademyContext academyContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _academyDbContext = academyDbContext;
+            _academyDbContext = academyContext;
         }
 
-        /* public async Task<AvailableCourseDto> CreateAvailableCourseAsync(AvailableCourseDto availableCourseDto)
-         {
-             var availableCourse = _mapper.Map<AvailableCourse>(availableCourseDto);
-             await _unitOfWork.Repository<AvailableCourse>().AddAsync(availableCourse);
-             await _unitOfWork.CompleteAsync();
-             return _mapper.Map<AvailableCourseDto>(availableCourse);
-         }*/
-
-        ///edit/
-        //public async Task<AvailableCourseDto> CreateAvailableCourseAsync(AvailableCourseDto availableCourseDto)
-        //{
-        //    // الأول نشوف الكورس ده موجود ولا لأ
-        //    var existingCourse = await _unitOfWork.Repository<Course>().GetAsync(availableCourseDto.CourseId);
-        //    if (existingCourse == null)
-        //    {
-        //        throw new Exception($"CourseId {availableCourseDto.CourseId} مش موجود!");
-        //    }
-
-        //    // تحويل الـ DTO إلى كيان AvailableCourse
-        //    var availableCourse = _mapper.Map<AvailableCourse>(availableCourseDto);
-
-        //    // إضافة الكورس المتاح
-        //    await _unitOfWork.Repository<AvailableCourse>().AddAsync(availableCourse);
-
-        //    // حفظ التغييرات
-        //    await _unitOfWork.CompleteAsync();
-
-        //    // تحويل الكيان مرة تانية إلى DTO وإرجاعه
-        //    return _mapper.Map<AvailableCourseDto>(availableCourse);
-        //}
+        
 
         public async Task CreateAvailableCourseAsync(AvailableCourse availableCourse)
         {
@@ -67,17 +38,6 @@ namespace Academy.Services.Services
         }
 
 
-        /*public async Task<AvailableCourseDto> UpdateAvailableCourseAsync(int id, AvailableCourseDto updateAvailableCourseDto)
-        {
-            var availableCourse = await _unitOfWork.Repository<AvailableCourse>().GetAsync(id);
-            if (availableCourse == null) return null;
-
-            _mapper.Map(updateAvailableCourseDto, availableCourse);
-            _unitOfWork.Repository<AvailableCourse>().Update(availableCourse);
-            await _unitOfWork.CompleteAsync();
-
-            return _mapper.Map<AvailableCourseDto>(availableCourse);
-        }*/
         public async Task<AvailableCourseDoctorDto> UpdateAvailableCourseAsync(int courseId, AvailableCourseDoctorDto dto)
         {
             // 1. جيب كل الصفوف المرتبطة بالكورس
@@ -154,24 +114,6 @@ namespace Academy.Services.Services
             return availableCourseDto;
         }
 
-        /* public async Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync()
-         {
-             var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync();
-
-             var result = availableCourses.Select(ac => new ViewAvailableCourseDto
-             {
-                 Id = ac.Id,
-                 AcademicYears = ac.AcademicYears,
-                 Semester = ac.Semester,
-                 CourseId = ac.CourseId,
-                 CourseName = ac.Course != null ? ac.Course.Name : "Unknown",
-                 CourseCode = ac.Course != null ? ac.Course.CourseCode : "N/A",
-                 CreditHours = ac.Course != null ? ac.Course.CreditHours : 0
-             }).ToList();
-
-             return result;
-         }
-        */
 
         public async Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync()
         {
