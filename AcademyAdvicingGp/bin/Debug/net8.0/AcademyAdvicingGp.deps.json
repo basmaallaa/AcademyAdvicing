@@ -1288,7 +1288,10 @@
           "NETCore.MailKit": "2.1.0"
         },
         "runtime": {
-          "Academy.Core.dll": {}
+          "Academy.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Academy.Repo/1.0.0": {
@@ -1298,7 +1301,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2"
         },
         "runtime": {
-          "Academy.Repo.dll": {}
+          "Academy.Repo.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Academy.Services/1.0.0": {
@@ -1310,7 +1316,10 @@
           "NETCore.MailKit": "2.1.0"
         },
         "runtime": {
-          "Academy.Services.dll": {}
+          "Academy.Services.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

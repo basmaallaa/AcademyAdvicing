@@ -86,12 +86,25 @@ namespace Academy.Services.Services
                 imageFileName = await _fileService.SaveFileAsync(model.ImageFile, allowedExtensions);
             }
 
+            // احصلي على سنة القبول (ممكن تدخليها من الفورم أو تاخدي السنة الحالية)
+            string admissionYear = model.AdmissionYear; // مثال: 2021
+
+            // هات عدد الطلاب اللي دخلوا نفس السنة
+            int countForYear = await _academyDbContext.Students
+                .CountAsync(s => s.AdmissionYear == admissionYear);
+
+            // رقم الطالب التالي (نضيف 1 لأنه يبدأ من 0)
+            int nextSerial = countForYear + 1;
+
+            // توليد الـ UserName بالشكل 20250001 مثلاً
+            string generatedUserName = $"{admissionYear}{nextSerial.ToString("D4")}";
 
 
             var student = new Student
             {
                 Name = model.Name,
-                UserName = model.UserName,
+                AdmissionYear = model.AdmissionYear,
+                UserName = generatedUserName,
                 Email = model.Email,
                 Level = model.Level,
                 Status = model.Status,
@@ -109,7 +122,7 @@ namespace Academy.Services.Services
             // الآن سننشئ المستخدم في Identity
             var appUser = new AppUser
             {
-                UserName = model.Email,
+                UserName = generatedUserName,
                 Email = model.Email,
                 DisplayName = model.Name,
                 PhoneNumber= model.PhoneNumber

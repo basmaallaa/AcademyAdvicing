@@ -16,3 +16,21 @@ C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0
 C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
 C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
 C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.deps.json
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.dll
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Services.pdb
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.dll
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.dll
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Repo.pdb
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\bin\Debug\net8.0\Academy.Core.pdb
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.AssemblyReference.cache
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfoInputs.cache
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.AssemblyInfo.cs
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.csproj.CoreCompileInputs.cache
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.sourcelink.json
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy..23AF24D1.Up2Date
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.dll
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\refint\Academy.Services.dll
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\Academy.Services.pdb
+D:\Graduation Project\AcademyAdvicingGp\Academy.Services\obj\Debug\net8.0\ref\Academy.Services.dll
