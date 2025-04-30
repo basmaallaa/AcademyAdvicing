@@ -1,22 +1,18 @@
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\bin\Debug\net8.0\Academy.Core.deps.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\bin\Debug\net8.0\Academy.Core.runtimeconfig.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\bin\Debug\net8.0\Academy.Core.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\bin\Debug\net8.0\Academy.Core.pdb
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.AssemblyReference.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfoInputs.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfo.cs
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.CoreCompileInputs.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.sourcelink.json
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\refint\Academy.Core.dll
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.pdb
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
-C:\Users\IT\Desktop\GP_Project\AcademyAdvicing\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll
-D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.deps.json
-D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.runtimeconfig.json
-D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.dll
-D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\bin\Debug\net8.0\Academy.Core.deps.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\bin\Debug\net8.0\Academy.Core.runtimeconfig.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\bin\Debug\net8.0\Academy.Core.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\bin\Debug\net8.0\Academy.Core.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.AssemblyReference.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfoInputs.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfo.cs
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.CoreCompileInputs.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.sourcelink.json
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\refint\Academy.Core.dll
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.pdb
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
+D:\Graduation Project\AcademyAdvicingGp\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\Academy.Core.csproj.AssemblyReference.cache
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\Academy.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\Academy.Core.AssemblyInfoInputs.cache
@@ -26,5 +22,9 @@ D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\Academy.Core.sourcelink.json
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\Academy.Core.dll
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\refint\Academy.Core.dll
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\Academy.Core.pdb
+D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.deps.json
+D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.runtimeconfig.json
+D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.dll
+D:\AcadmyGrProject\AcademyCore\bin\Debug\net8.0\Academy.Core.pdb
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\Academy.Core.genruntimeconfig.cache
 D:\AcadmyGrProject\AcademyCore\obj\Debug\net8.0\ref\Academy.Core.dll

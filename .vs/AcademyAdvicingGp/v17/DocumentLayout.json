@@ -1,0 +1,557 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AcadmyGrProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\dtos\\availablecoursedoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\availablecoursedoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|d:\\acadmygrproject\\academy.services\\services\\availablecourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\availablecourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\availablecoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\availablecoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\models\\assignedcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\assignedcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\viewavailablecoursettodoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\viewavailablecoursettodoccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\enums\\semster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\enums\\semster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\dtos\\assigncourserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\assigncourserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\models\\availablecourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\availablecourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\acadmygrproject\\academy.repo\\data\\contexts\\academycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\data\\contexts\\academycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\errorscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\errorscs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\controllers\\scheduletimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\scheduletimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\dtos\\availablecoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\dtos\\availablecoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\mapping\\availablecourseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\mapping\\availablecourseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\acadmygrproject\\academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\identity\\appidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\mapping\\courseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\mapping\\courseprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|d:\\acadmygrproject\\academy.services\\services\\courseservice\\createcourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\courseservice\\createcourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|d:\\acadmygrproject\\academy.services\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\acadmygrproject\\academy.repo\\identity\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\identity\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|d:\\acadmygrproject\\academy.services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|d:\\acadmygrproject\\academycore\\service\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\service\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|d:\\acadmygrproject\\academyadvicinggp\\extensions\\identityserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\extensions\\identityserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|d:\\acadmygrproject\\academy.repo\\migrations\\20250424224751_levelinavailable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952B562B-EBE2-42B4-9E01-F7840131987B}|Academy.Repo\\Academy.Repo.csproj|solutionrelative:academy.repo\\migrations\\20250424224751_levelinavailable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\Course.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Course.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\Course.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAA+wDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T22:31:55.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AvailableCourseController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\AvailableCourseController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\AvailableCourseController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\AvailableCourseController.cs*",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\AvailableCourseController.cs*",
+              "ViewState": "AQIAAIcAAAAAAAAAAADwv5EAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:04:19.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AvailableCourseService.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Services\\Services\\AvailableCourseService.cs",
+              "RelativeDocumentMoniker": "Academy.Services\\Services\\AvailableCourseService.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Services\\Services\\AvailableCourseService.cs*",
+              "RelativeToolTip": "Academy.Services\\Services\\AvailableCourseService.cs*",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvx0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:18:22.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AvailableCourseDoctorDto.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs*",
+              "RelativeToolTip": "AcademyCore\\Dtos\\AvailableCourseDoctorDto.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:06:47.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\Student.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Student.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\Student.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAqwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T18:28:13.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAuwHkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:45:50.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssignedCourse.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Models\\AssignedCourse.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\AssignedCourse.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Models\\AssignedCourse.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\AssignedCourse.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAADwvxwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:01:11.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewAvailableCoursetToDocController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\ViewAvailableCoursetToDocController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\ViewAvailableCoursetToDocController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\ViewAvailableCoursetToDocController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\ViewAvailableCoursetToDocController.cs",
+              "ViewState": "AQIAAKMBAAAAAAAAAAAowM4BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:20:47.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Semster.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Enums\\Semster.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Enums\\Semster.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Enums\\Semster.cs",
+              "RelativeToolTip": "AcademyCore\\Enums\\Semster.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T19:01:20.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssignCourseRequest.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Dtos\\AssignCourseRequest.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Dtos\\AssignCourseRequest.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Dtos\\AssignCourseRequest.cs",
+              "RelativeToolTip": "AcademyCore\\Dtos\\AssignCourseRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T16:22:07.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AvailableCourse.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Models\\AvailableCourse.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\AvailableCourse.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Models\\AvailableCourse.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\AvailableCourse.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:31:25.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\Doctor.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Doctor.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\Doctor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:36:28.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\Person.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Models\\Person.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:35:11.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\AccountsController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:20:32.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AcademyContext.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Repo\\Data\\Contexts\\AcademyContext.cs",
+              "RelativeDocumentMoniker": "Academy.Repo\\Data\\Contexts\\AcademyContext.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Repo\\Data\\Contexts\\AcademyContext.cs",
+              "RelativeToolTip": "Academy.Repo\\Data\\Contexts\\AcademyContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T18:31:52.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\CoursesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:44:49.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\DoctorController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\DoctorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:44:46.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Errorscs.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\Errorscs.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\Errorscs.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\Errorscs.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\Errorscs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:34:04.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MaterialController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:46:01.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ScheduleTimeTableController.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:45:57.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AvailableCourseDto.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Dtos\\AvailableCourseDto.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Dtos\\AvailableCourseDto.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Dtos\\AvailableCourseDto.cs",
+              "RelativeToolTip": "AcademyCore\\Dtos\\AvailableCourseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:34:36.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AvailableCourseProfile.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Mapping\\AvailableCourseProfile.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Mapping\\AvailableCourseProfile.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Mapping\\AvailableCourseProfile.cs",
+              "RelativeToolTip": "AcademyCore\\Mapping\\AvailableCourseProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:15:35.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AppIdentityDbContextSeed.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "RelativeDocumentMoniker": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "RelativeToolTip": "Academy.Repo\\Identity\\AppIdentityDbContextSeed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:07:36.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CourseProfile.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Mapping\\CourseProfile.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Mapping\\CourseProfile.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Mapping\\CourseProfile.cs",
+              "RelativeToolTip": "AcademyCore\\Mapping\\CourseProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:17:50.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreateCourseService.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Services\\Services\\CourseService\\CreateCourseService.cs",
+              "RelativeDocumentMoniker": "Academy.Services\\Services\\CourseService\\CreateCourseService.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Services\\Services\\CourseService\\CreateCourseService.cs",
+              "RelativeToolTip": "Academy.Services\\Services\\CourseService\\CreateCourseService.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T23:17:01.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20250424224751_LevelinAvailable.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Repo\\Migrations\\20250424224751_LevelinAvailable.cs",
+              "RelativeDocumentMoniker": "Academy.Repo\\Migrations\\20250424224751_LevelinAvailable.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Repo\\Migrations\\20250424224751_LevelinAvailable.cs",
+              "RelativeToolTip": "Academy.Repo\\Migrations\\20250424224751_LevelinAvailable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T22:47:52.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Services\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "Academy.Services\\Services\\StudentService.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Services\\Services\\StudentService.cs",
+              "RelativeToolTip": "Academy.Services\\Services\\StudentService.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:46:20.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyCore\\Service\\ITokenService.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Service\\ITokenService.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyCore\\Service\\ITokenService.cs",
+              "RelativeToolTip": "AcademyCore\\Service\\ITokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:35:38.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IdentityServiceExtension.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Extensions\\IdentityServiceExtension.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Extensions\\IdentityServiceExtension.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\AcademyAdvicingGp\\Extensions\\IdentityServiceExtension.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Extensions\\IdentityServiceExtension.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:34:21.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Academy.Services\\TokenService.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Services\\TokenService.cs",
+              "RelativeToolTip": "Academy.Services\\TokenService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:33:46.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AppIdentityDbContext.cs",
+              "DocumentMoniker": "D:\\AcadmyGrProject\\Academy.Repo\\Identity\\AppIdentityDbContext.cs",
+              "RelativeDocumentMoniker": "Academy.Repo\\Identity\\AppIdentityDbContext.cs",
+              "ToolTip": "D:\\AcadmyGrProject\\Academy.Repo\\Identity\\AppIdentityDbContext.cs",
+              "RelativeToolTip": "Academy.Repo\\Identity\\AppIdentityDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:32:31.576Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

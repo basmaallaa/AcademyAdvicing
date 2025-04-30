@@ -60,7 +60,7 @@ namespace AcademyAdvicingGp.Controllers
 
         [HttpPost("add")]
         [Authorize(Roles = "StudentAffair")] // السماح فقط لموظف شؤون الطلاب
-        public async Task<IActionResult> AddStudent([FromBody] StudentDto model)
+        public async Task<IActionResult> AddStudent([FromForm] StudentDto model)
         {
             if (model == null)
                 return BadRequest("Invalid student data.");

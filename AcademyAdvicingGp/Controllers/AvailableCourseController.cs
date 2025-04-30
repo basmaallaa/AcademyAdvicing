@@ -18,6 +18,7 @@ namespace AcademyAdvicingGp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AvailableCourseController : ControllerBase
     {
         private readonly IAvailableCourse _availableCourseService;
@@ -115,7 +116,7 @@ namespace AcademyAdvicingGp.Controllers
 
 
         [HttpPut("Edit/{id}")]
-        
+        [Authorize(Roles = "Coordinator")]
         public async Task<IActionResult> UpdateAvailableCourse(int id, [FromBody] AvailableCourseDoctorDto updateAvailableCourseDto)
         {
             var result = await _availableCourseService.UpdateAvailableCourseAsync(id, updateAvailableCourseDto);
@@ -124,6 +125,7 @@ namespace AcademyAdvicingGp.Controllers
         }
 
         [HttpGet("GetByIdView/{id}")]
+        [Authorize(Roles = "Coordinator")]
         public async Task<IActionResult> GetAvailableCourseById(int id)
         {
             var result = await _availableCourseService.GetAvailableCourseByIdAsync(id);
@@ -142,8 +144,8 @@ namespace AcademyAdvicingGp.Controllers
         }
 
 
-
         [HttpDelete("delete/{id}")]
+        [Authorize(Roles = "Coordinator")]
         public async Task<IActionResult> DeleteAvailableCourse(int id)
         {
             var success = await _availableCourseService.DeleteAvailableCourseAsync(id);

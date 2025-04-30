@@ -21,12 +21,12 @@ namespace Academy.Services.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly AcademyContext _academyDbContext;
+
         public AvailableCourseService(IUnitOfWork unitOfWork, IMapper mapper, AcademyContext academyContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _academyDbContext = academyContext;
-
         }
 
         
@@ -108,12 +108,13 @@ namespace Academy.Services.Services
                 availableCourseDto.CourseName = course.Name;
                 availableCourseDto.CourseCode = course.CourseCode;
                 availableCourseDto.CreditHours = course.CreditHours;
+
             }
 
             return availableCourseDto;
         }
 
-       
+
         public async Task<IEnumerable<ViewAvailableCourseDto>> GetAllAvailableCoursesAsync()
         {
             var availableCourses = await _academyDbContext.Availablecourses
@@ -155,7 +156,7 @@ namespace Academy.Services.Services
 
             return availableCourses.Any(c => c.CourseId == courseId
                                           && c.AcademicYears == academicYear
-                                          && c.Semester == semester);
+                                          && c.Semester == semester) ;
         }
 
 

@@ -2,8 +2,10 @@
 using Academy.Core.Dtos;
 using Academy.Core.Models;
 using Academy.Core.ServicesInterfaces;
+using Academy.Repo.Data;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,11 +18,13 @@ namespace Academy.Services.Services.CourseService
 	{
 		private readonly IUnitOfWork _unitOfWork;
 		private readonly IMapper _mapper;
+		private readonly AcademyContext _academyContext;
 
-		public MaterialService(IUnitOfWork unitOfWork, IMapper mapper)
+		public MaterialService(IUnitOfWork unitOfWork, IMapper mapper, AcademyContext academyContext)
 		{
 			_unitOfWork = unitOfWork;
 			_mapper = mapper;
+			_academyContext = academyContext;
 		}
 
 		public async Task<MaterialDto> AddAsync(MaterialDto materialDto, IFormFile file)
@@ -55,6 +59,7 @@ namespace Academy.Services.Services.CourseService
 			{
 				Title = materialDto.Title,
 				UploadedById = materialDto.UploadedById,
+				CourseId = materialDto.CourseId,
 				FilePath = filePath
 			};
 			await _unitOfWork.Repository<Material>().AddAsync(material);
@@ -110,5 +115,188 @@ namespace Academy.Services.Services.CourseService
 
 			return _mapper.Map<MaterialDto>(material);
 		}
+
+
+		//public async Task<IEnumerable<MaterialDto>> GetMaterialsForStudentAsync(int studentId)
+		//{
+		//	// 1. هات كل الـ materials
+		//	var allMaterials =  await _unitOfWork.Repository<Material>().GetAllAsync();
+
+		//	// 2. هات كل الـ AssignedCourses
+		//	var allAssignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync();
+
+		//	// 3. فلتر الكورسات اللي متسجلة للطالب
+		//	var studentCourseIds = new List<int>();
+
+
+		//	foreach (var ac in allAssignedCourses)
+		//	{
+		//		if (ac.StudentId == studentId)
+		//		{
+		//			studentCourseIds.Add(ac.CourseId);
+		//		}
+		//	}
+
+		//	// 4. هات كل المواد اللي تبع الكورسات دي
+		//	var allMaterialsEntities = await _unitOfWork.Repository<Material>().GetAllAsync();
+		//	var filteredMaterials = new List<Material>();
+
+		//	foreach (var material in allMaterialsEntities)
+		//	{
+		//		if (studentCourseIds.Contains(material.CourseId)) // لازم تكون عندك CourseId في Material
+		//		{
+		//			filteredMaterials.Add(material);
+		//		}
+		//	}
+
+		//	return _mapper.Map<IEnumerable<MaterialDto>>(filteredMaterials);
+		//}
+
+
+		//public async Task<IEnumerable<MaterialDto>> GetMaterialsForCourseAsync(int studentId, int courseId)
+		//{
+		//	var allAssignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync();
+
+		//	var isAssigned = allAssignedCourses.Any(ac => ac.StudentId == studentId && ac.CourseId == courseId);
+
+		//	if (!isAssigned)
+		//	{
+		//		throw new Exception("This student is not assigned to the specified course.");
+		//	}
+
+		//	var allMaterials = await _unitOfWork.Repository<Material>().GetAllAsync();
+
+		//	var courseMaterials = allMaterials.Where(m => m.CourseId == courseId);
+
+		//	return _mapper.Map<IEnumerable<MaterialDto>>(courseMaterials);
+		//}
+		//public async Task<IEnumerable<MaterialViewDto>> GetMaterialsForStudentAsync(int studentId)
+		//{
+		//	var allMaterials = await _unitOfWork.Repository<Material>().GetAllAsync();
+		//	var allAssignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync();
+
+		//	var studentCourseIds = allAssignedCourses
+		//		.Where(ac => ac.StudentId == studentId)
+		//		.Select(ac => ac.CourseId)
+		//		.ToList();
+
+		//	var filteredMaterials = allMaterials
+		//		.Where(m => studentCourseIds.Contains(m.CourseId))
+		//		.ToList();
+
+		//	return _mapper.Map<IEnumerable<MaterialViewDto>>(filteredMaterials);
+		//}
+		public async Task<IEnumerable<MaterialViewDto>> GetMaterialsForStudentAsync(int studentId)
+		{
+			var allMaterials = await _unitOfWork.Repository<Material>().GetAllAsync();
+			var allAssignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync();
+			var allDoctors = await _unitOfWork.Repository<Doctor>().GetAllAsync(); // هات كل الدكاترة
+			var allCourses = await _unitOfWork.Repository<Course>().GetAllAsync(); // هات كل الكورسات
+
+			var studentCourseIds = allAssignedCourses
+				.Where(ac => ac.StudentId == studentId)
+				.Select(ac => ac.CourseId)
+				.ToList();
+
+			var filteredMaterials = allMaterials
+				.Where(m => studentCourseIds.Contains(m.CourseId))
+				.ToList();
+
+			// بدل ما تـ Map وخلاص، لأ، نجهز الـ Dto بنفسنا:
+			var materialDtos = filteredMaterials.Select(m => new MaterialViewDto
+			{
+				Id = m.Id,
+				Title = m.Title,
+				UploadedByName = allDoctors.FirstOrDefault(d => d.Id == m.UploadedById)?.Name,
+				CourseName = allCourses.FirstOrDefault(c => c.CourseId == m.CourseId)?.Name
+			}).ToList();
+
+			return materialDtos;
+		}
+
+		//public async Task<IEnumerable<MaterialViewDto>> GetMaterialsForCourseAsync(int studentId, int courseId)
+		//{
+		//	var allAssignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync();
+
+		//	var isAssigned = allAssignedCourses.Any(ac => ac.StudentId == studentId && ac.CourseId == courseId);
+
+		//	if (!isAssigned)
+		//	{
+		//		throw new Exception("This student is not assigned to the specified course.");
+		//	}
+
+		//	var allMaterials = await _unitOfWork.Repository<Material>().GetAllAsync();
+		//	var courseMaterials = allMaterials.Where(m => m.CourseId == courseId).ToList();
+
+		//	return _mapper.Map<IEnumerable<MaterialViewDto>>(courseMaterials);
+		//}
+		public async Task<IEnumerable<MaterialViewDto>> GetMaterialsForCourseAsync(int studentId, int courseId)
+		{
+			var allAssignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync();
+			var allMaterials = await _unitOfWork.Repository<Material>().GetAllAsync();
+			var allDoctors = await _unitOfWork.Repository<Doctor>().GetAllAsync();
+			var allCourses = await _unitOfWork.Repository<Course>().GetAllAsync();
+
+			var isAssigned = allAssignedCourses.Any(ac => ac.StudentId == studentId && ac.CourseId == courseId);
+
+			if (!isAssigned)
+			{
+				throw new Exception("This student is not assigned to the specified course.");
+			}
+
+			var courseMaterials = allMaterials.Where(m => m.CourseId == courseId).ToList();
+
+			var materialDtos = courseMaterials.Select(m => new MaterialViewDto
+			{
+				Id = m.Id,
+				Title = m.Title,
+				UploadedByName = allDoctors.FirstOrDefault(d => d.Id == m.UploadedById)?.Name,
+				CourseName = allCourses.FirstOrDefault(c => c.CourseId == m.CourseId)?.Name
+			}).ToList();
+
+			return materialDtos;
+		}
+
+		//public async Task<IEnumerable<MaterialViewDto>> GetMaterialsUploadedByDoctorAsync(int doctorId)
+		//{
+		//	var allMaterials = await _unitOfWork.Repository<Material>().GetAllAsync(); // بدون شرط
+
+		//	var doctorMaterials = allMaterials
+		//		.Where(m => m.UploadedById == doctorId)
+		//		.ToList();
+
+		//	var doctorMaterialsDto = doctorMaterials.Select(m => new MaterialViewDto
+		//	{
+		//		Id = m.Id,
+		//		Title = m.Title,
+		//		UploadedByName = m.UploadedBy?.Name, // Assuming UploadedBy is navigation property
+		//		CourseName = m.Course?.Name // Assuming Course is navigation property
+		//	});
+
+		//	return doctorMaterialsDto;
+		//}
+		public async Task<IEnumerable<MaterialViewDto>> GetMaterialsUploadedByDoctorAsync(int doctorId)
+		{
+			var doctorMaterials = await _academyContext.Materials
+				.Where(m => m.UploadedById == doctorId)
+				.Include(m => m.UploadedBy)
+				.Include(m => m.Course)
+				.ToListAsync();
+
+			var doctorMaterialsDto = doctorMaterials.Select(m => new MaterialViewDto
+			{
+				Id = m.Id,
+				Title = m.Title,
+				UploadedByName = m.UploadedBy?.Name,
+				CourseName = m.Course?.Name
+			});
+
+			return doctorMaterialsDto;
+		}
+
+
+
+
+
 	}
 }

@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Academy.Services.Services
 {
@@ -24,13 +25,16 @@ namespace Academy.Services.Services
         private readonly UserManager<AppUser> _userManager;
         private readonly ITokenService _tokenService;
         private readonly AcademyContext _academyDbContext;
-        public StudentService(IMapper mapper , IUnitOfWork unitOfWork, UserManager<AppUser> userManager, ITokenService tokenService, AcademyContext academyDbContext)
+        private readonly IFileService _fileService;
+
+        public StudentService(IMapper mapper , IUnitOfWork unitOfWork, UserManager<AppUser> userManager, ITokenService tokenService, AcademyContext academyDbContext, IFileService fileService)
         {
 			_mapper = mapper;
 			_unitOfWork = unitOfWork;
             _userManager = userManager;
             _tokenService = tokenService;
             _academyDbContext = academyDbContext;
+           _fileService = fileService;
         }
 
        
@@ -62,7 +66,7 @@ namespace Academy.Services.Services
         //	return _mapper.Map<StudentDto>(student);
         //}
 
-        public async Task<StudentDtoID> AddStudentAsync(StudentDto model)
+        public async Task<StudentDtoID> AddStudentAsync( StudentDto model)
         {
             
             var existingStudent = await _academyDbContext.Students
@@ -70,16 +74,43 @@ namespace Academy.Services.Services
             if (existingStudent != null)
                 throw new Exception("Student with this email is already registered.");
 
+            string? imageFileName = null;
+
+            if (model.ImageFile is not null)
+            {
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+
+                if (model.ImageFile.Length > 1 * 1024 * 1024)
+                    throw new ArgumentException("Image size should not exceed 1 MB.");
+
+                imageFileName = await _fileService.SaveFileAsync(model.ImageFile, allowedExtensions);
+            }
+
+            // احصلي على سنة القبول (ممكن تدخليها من الفورم أو تاخدي السنة الحالية)
+            string admissionYear = model.AdmissionYear; // مثال: 2021
+
+            // هات عدد الطلاب اللي دخلوا نفس السنة
+            int countForYear = await _academyDbContext.Students
+                .CountAsync(s => s.AdmissionYear == admissionYear);
+
+            // رقم الطالب التالي (نضيف 1 لأنه يبدأ من 0)
+            int nextSerial = countForYear + 1;
+
+            // توليد الـ UserName بالشكل 20250001 مثلاً
+            string generatedUserName = $"{admissionYear}{nextSerial.ToString("D4")}";
+
+
             var student = new Student
             {
                 Name = model.Name,
-                UserName = model.UserName,
+                AdmissionYear = model.AdmissionYear,
+                UserName = generatedUserName,
                 Email = model.Email,
                 Level = model.Level,
                 Status = model.Status,
                 GPA = model.GPA,
                 CompeletedHours = model.CompeletedHours,
-                ImagePath = model.ImagePath ?? "defaultImagePath.jpg",
+                ImagePath = imageFileName,
                 PhoneNumber = model.PhoneNumber
 
             };
@@ -91,7 +122,7 @@ namespace Academy.Services.Services
             // الآن سننشئ المستخدم في Identity
             var appUser = new AppUser
             {
-                UserName = model.Email,
+                UserName = generatedUserName,
                 Email = model.Email,
                 DisplayName = model.Name,
                 PhoneNumber= model.PhoneNumber
@@ -114,7 +145,10 @@ namespace Academy.Services.Services
             {
                 Id = student.Id,
                 Name = student.Name,
+                UserName = student.UserName,
                 Email = student.Email,
+                PhoneNumber = student.PhoneNumber,
+                ImagePath= imageFileName,
                 Level = student.Level,
                 Status = student.Status,
                 GPA = student.GPA,
@@ -179,7 +213,7 @@ namespace Academy.Services.Services
                     c.UserName.ToLower().Contains(searchTerm) ||
                     c.PhoneNumber.ToLower().Contains(searchTerm) ||
                     c.Level.ToLower().Contains(searchTerm) ||
-                    c.Status.ToLower().Contains(searchTerm) ||
+                    c.Status.ToString().ToLower().Contains(searchTerm) ||
                     (isInt && c.Id == id) ||            // If number, check ID
                     (isFloat && c.GPA == gpa) ||        // If float, check GPA
                     (isHours && c.CompeletedHours == hours) // If int, check Completed Hours

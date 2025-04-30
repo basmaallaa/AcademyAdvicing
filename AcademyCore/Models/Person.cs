@@ -13,9 +13,15 @@ namespace Academy.Core.Models
         public string Name { get; set; }
         public string UserName { get; set; }
         public string PhoneNumber { get; set; }
-
         public string? ImagePath { get; set; }
        public string Email { get; set; }
+
+       public string? ArabicFullName { get; set; }
+
+       public string? HomeAddress { get; set; }
+
+       public string? EmergencyContact {  get; set; }
+
 
     }
 }
