@@ -33,16 +33,19 @@ namespace Academy.Services.Services
         {
             var emailMessage = new MimeMessage();
 
-            emailMessage.From.Add(new MailboxAddress("email", _emailSettings.FromEmail));
+            emailMessage.From.Add(new MailboxAddress("Academy Advicing", _emailSettings.FromEmail));
             emailMessage.To.AddRange(message.To);
             emailMessage.Subject = message.Subject;
-            emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Text)
+
+            // ✨ أهم تعديل هنا
+            emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
             {
                 Text = message.Content
             };
 
             return emailMessage;
         }
+
 
         private void Send(MimeMessage mailMessage)
         {

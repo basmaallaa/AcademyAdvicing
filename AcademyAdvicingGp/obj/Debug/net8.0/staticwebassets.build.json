@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "nDGbWMmocdOmztuFwlaJaviCw82t1vB9mLKBfFk7pf4=",
+  "Hash": "2bcV/BFdjM8XBHqFZma13/6rJWQZFLYD0Yu4gCFL/1I=",
   "Source": "AcademyAdvicingGp",
   "BasePath": "_content/AcademyAdvicingGp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -137,7 +137,7 @@ namespace AcademyAdvicingGp
                 opts.TokenLifespan = TimeSpan.FromHours(10);
             });
             #endregion
-
+            builder.Services.AddMemoryCache();
             builder.Services.AddSwaggerGen(c =>
             {
                 c.SupportNonNullableReferenceTypes(); // يدعم الـ file types
