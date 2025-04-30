@@ -4,6 +4,7 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    partial class AcademyContextModelSnapshot : ModelSnapshot
+    [Migration("20250424224751_LevelinAvailable")]
+    partial class LevelinAvailable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,16 +36,17 @@ namespace Academy.Repo.Migrations
                     b.Property<int>("AcademicYears")
                         .HasColumnType("int");
 
-                    b.Property<float?>("ClassWorkScore")
+                    b.Property<float>("ClassWorkScore")
                         .HasColumnType("real");
 
-                    b.Property<float?>("FinalScore")
+                    b.Property<float>("FinalScore")
                         .HasColumnType("real");
 
                     b.Property<string>("Grade")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float?>("PracticalScore")
+                    b.Property<float>("PracticalScore")
                         .HasColumnType("real");
 
                     b.Property<int>("Semester")
