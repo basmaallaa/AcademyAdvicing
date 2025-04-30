@@ -1,4 +1,4 @@
-﻿using Academy.Core.Dtos;
+﻿using Academy.Core.Dtos.MaterialsDtos;
 using Academy.Core.Models;
 using AutoMapper;
 using System;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Academy.Core.Mapping
 {
-	public class MaterialProfile : Profile
+    public class MaterialProfile : Profile
 	{
 		public MaterialProfile()
 		{
@@ -17,6 +17,9 @@ namespace Academy.Core.Mapping
 			CreateMap<Material, MaterialViewDto>()
 				.ForMember(dest => dest.UploadedByName, opt => opt.MapFrom(src => src.UploadedBy.Name))
 				.ForMember(dest => dest.CourseName, opt => opt.MapFrom(src => src.Course.Name));
+
+			CreateMap<CreateMaterialDto, Material>();
+
 
 
 		}

@@ -40,6 +40,7 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("Grade")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<float?>("PracticalScore")
