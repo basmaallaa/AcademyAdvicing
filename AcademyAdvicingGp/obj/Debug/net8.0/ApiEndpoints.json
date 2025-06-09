@@ -685,6 +685,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcademyAdvicingGp.Controllers.ReportController",
+    "Method": "GetCandidatesReportAsync",
+    "RelativePath": "api/Report/CandidatesReport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.ReportController",
+    "Method": "GetGraduatesReportAsync",
+    "RelativePath": "api/Report/graduatesReport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcademyAdvicingGp.Controllers.ScheduleTimeTableController",
     "Method": "GetAll",
     "RelativePath": "api/ScheduleTimeTable",

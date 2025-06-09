@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academy.services\\services\\finalexamtimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\finalexamtimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\models\\finalexamtimetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\finalexamtimetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academy.services\\services\\scheduletimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\scheduletimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\servicesinterfaces\\ischeduletimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\servicesinterfaces\\ischeduletimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\controllers\\finalexamtimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\finalexamtimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\controllers\\scheduletimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\scheduletimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\servicesinterfaces\\ifinalexamtimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\servicesinterfaces\\ifinalexamtimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academy.services\\services\\finalexamtimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\finalexamtimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academy.services\\services\\scheduletimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FF4B96-9980-4E29-A884-527433157927}|Academy.Services\\Academy.Services.csproj|solutionrelative:academy.services\\services\\scheduletimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,15 +58,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IScheduleTimeTableService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\ServicesInterfaces\\IScheduleTimeTableService.cs",
-              "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\IScheduleTimeTableService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\ServicesInterfaces\\IScheduleTimeTableService.cs",
-              "RelativeToolTip": "AcademyCore\\ServicesInterfaces\\IScheduleTimeTableService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBMAAABpAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FinalExamTimeTable.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T18:55:48.458Z",
+              "WhenOpened": "2025-06-09T19:50:40.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:34:25.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FinalExamTimeTableController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAcwLwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:28:55.663Z",
               "EditorCaption": ""
             },
             {
@@ -77,27 +103,27 @@
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
               "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAwNIAAABqAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAA5wNUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T15:14:52.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "FinalExamTimeTableService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\FinalExamTimeTableService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\FinalExamTimeTableService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\FinalExamTimeTableService.cs*",
-              "RelativeToolTip": "Academy.Services\\Services\\FinalExamTimeTableService.cs*",
-              "ViewState": "AgIAABgBAAAAAAAAAAAIwC0BAAA4AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\FinalExamTimeTableService.cs",
+              "RelativeToolTip": "Academy.Services\\Services\\FinalExamTimeTableService.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAswNEAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T19:56:26.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ScheduleTimeTableService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\ScheduleTimeTableService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\ScheduleTimeTableService.cs",
@@ -106,32 +132,6 @@
               "ViewState": "AgIAAEkBAAAAAAAAAAAiwFsBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T00:30:54.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IFinalExamTimeTableService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\ServicesInterfaces\\IFinalExamTimeTableService.cs",
-              "RelativeDocumentMoniker": "AcademyCore\\ServicesInterfaces\\IFinalExamTimeTableService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\ServicesInterfaces\\IFinalExamTimeTableService.cs",
-              "RelativeToolTip": "AcademyCore\\ServicesInterfaces\\IFinalExamTimeTableService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABQAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T19:55:26.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "AcademyCore\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\Student.cs",
-              "RelativeToolTip": "AcademyCore\\Models\\Student.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA3wB4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T19:26:46.76Z",
               "EditorCaption": ""
             }
           ]

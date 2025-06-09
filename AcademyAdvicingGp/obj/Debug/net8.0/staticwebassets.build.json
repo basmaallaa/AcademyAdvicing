@@ -1,11 +1,4666 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "nDGbWMmocdOmztuFwlaJaviCw82t1vB9mLKBfFk7pf4=",
+=======
+  "Hash": "ITJFRESCt/UjompADDp1JdDijKcKKB3aZSVqyS38hbY=",
+>>>>>>> d7432283faad04673c062edaed26aa025169dfd7
   "Source": "AcademyAdvicingGp",
   "BasePath": "_content/AcademyAdvicingGp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
+<<<<<<< HEAD
   "DiscoveryPatterns": [],
   "Assets": []
+=======
+  "DiscoveryPatterns": [
+    {
+      "Name": "AcademyAdvicingGp\\wwwroot",
+      "Source": "AcademyAdvicingGp",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\Images\\logo.png",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "Images/logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "buylumq8i1",
+      "Integrity": "XcZFIrfLw1PSV7b2Mq8aOptBqKOVRh7tgM0GrVZ1M6M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo.png"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\Images\\Logo1.jpg",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "Images/Logo1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dghrreliop",
+      "Integrity": "HVS1HxhG8FwkLREU5yMeKNEBstF1NZ7UbAj93Z+Osww=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Logo1.jpg"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513002948.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513002948#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qd83j9s0oa",
+      "Integrity": "LsRecyCF7PtdwX/1yop6aSK0rhWm9hZZ2odT8DaZ0EY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513002948.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513003117.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513003117#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uvo351rvj1",
+      "Integrity": "RiYb7M/D68LLuUOB5klzVi9YfaHgPATIv8dBGMevS8Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513003117.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513005101.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513005101#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ea3u8xh1lt",
+      "Integrity": "Jui4AfAr3/sUbrMklvRwVsY4oN2EX3JaG0Zgh9U0J7s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513005101.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513010102.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513010102#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k1aptp4fb3",
+      "Integrity": "GEBcfjorTaQFCXgGB5ighO0jNAkjeEL449iNvXkrn+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513010102.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513012718.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513012718#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "br7cffbtpr",
+      "Integrity": "R63QipQNx10/ezh8WeRSaqUBwe1MSUVgE7HkqowrOQ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513012718.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513012940.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513012940#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v9mc0v67e3",
+      "Integrity": "PQi1T7uUDsL00BhnGktXgklVfy2IvhNu1FlLk9+FDRw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513012940.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513015822.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513015822#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mlzkl4dtiw",
+      "Integrity": "OsaWxzAkNHwkczOIOSdn+0VD4bBQZLIPRMbP6lXjmXI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513015822.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513020508.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513020508#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1ud3c4zply",
+      "Integrity": "NwuvkAIomZz1J62gU7oiki3Z5PNb9Fqll7WbfWBlzbk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513020508.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513020655.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250513020655#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "upf1q1b9tz",
+      "Integrity": "Lgz7ORgzesaVybHCdKsNSLPCpgPzHyFnt5rFgvnGTeM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250513020655.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607165003.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250607165003#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "44muzeg4h3",
+      "Integrity": "jDkNBlzQKlTkWN8BmeLlTDndUt3h4qDG7gyvvlixkhs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250607165003.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607194316.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250607194316#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "58mye181gl",
+      "Integrity": "BdfkLomLYZcxiaWqQqmQpOftrIFIgsBFmTI0jFRFukQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250607194316.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607202407.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250607202407#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a24z6i4nab",
+      "Integrity": "rrIz4Q7rrfvBuf/Lk1YYEmmvLDYjwzWZyI9CujbQs5k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250607202407.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607202444.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250607202444#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tku5ejun33",
+      "Integrity": "8ztQgb1zMIm7TMzYyIZItVcEU6mMDCJRzb/KGmZDkds=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250607202444.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250608040325.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_0_20250608040325#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qvfmzvz1ke",
+      "Integrity": "5kjkhYVAeI1dK0NLjHkMMnbuotta1356jSU9RKGU7jg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_0_20250608040325.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250607195949.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1_20250607195949#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3jcl7hxnhg",
+      "Integrity": "r01RiwXTso1PW1SzdDe1jKZ+6VttXMC3V1R6la4ZqB0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1_20250607195949.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250607200950.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1_20250607200950#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sywtshg7g0",
+      "Integrity": "JIzsynU5bMNW53w/kM16NSIg9ngOoOoYopaaHWM/uts=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1_20250607200950.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250608034549.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1_20250608034549#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5g9bt8ll4t",
+      "Integrity": "aw788SUJOeHvtm+W2p2l7XuTcWToKvS9DEVzXkB0mpA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1_20250608034549.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250608035559.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1_20250608035559#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8fsvnqsu6s",
+      "Integrity": "pABQ8kWbqCcD0Rvqb3zjmgOL2M5SrVTQC81Q+KeyRB4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1_20250608035559.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1012_20250608041106.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1012_20250608041106#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vgjdhttex0",
+      "Integrity": "zzg/Fv0029A9hWw8mdxgsE4YQzJ3uTnVAH5/rk63zRk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1012_20250608041106.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1013_20250608042658.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1013_20250608042658#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sa5mjj78d4",
+      "Integrity": "VFOJ6ZlYZXUlcabcBm0FdXZl7OPLcqUdf9qt6kSCwUU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1013_20250608042658.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1014_20250608042803.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1014_20250608042803#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9ih6sdz0rd",
+      "Integrity": "30GFCyoF3HSqOFpO1zztApC1xlARMUjDwS5DuFUTdA8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1014_20250608042803.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1015_20250608043527.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1015_20250608043527#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hwek4q2pin",
+      "Integrity": "j+uV3rjftd6unzpQh+2cRkaoPx1Y9RB2KuMsru7e9zU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1015_20250608043527.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1016_20250608043727.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1016_20250608043727#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "afn8bhg1dq",
+      "Integrity": "ljcZe1zeqVZCbzc4eGn5+lXREVZQ3AK6VgcIDlCE30s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1016_20250608043727.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1017_20250608044305.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1017_20250608044305#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hwq1zb95in",
+      "Integrity": "j+KLfnMOCJmnJdlfvjZ/MuQ9K4EHoOYg4XBJvmI+QdU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1017_20250608044305.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1018_20250608044639.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1018_20250608044639#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "na3k6fdzmx",
+      "Integrity": "rz9Y5/CXahkS8IZezgSoPjPxj/QAqnb2uM3V815NDPk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1018_20250608044639.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1019_20250608050448.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1019_20250608050448#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4wp7n5v3i5",
+      "Integrity": "1NlLh3iPhy5V1vApLoZOZLgBIYjAjfUFUqetQqi94KQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1019_20250608050448.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1020_20250608052657.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1020_20250608052657#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xqeud9eb5i",
+      "Integrity": "KTfPcka26HwHRMZhO3HBzbNKxie0icI7L0Im8sKknlE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1020_20250608052657.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1021_20250608234022.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1021_20250608234022#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vlz84rcj6b",
+      "Integrity": "Q7bhB+UB6b0OaR/W/jB6DwmK/2GN3+M5C2lVb/hlxZo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1021_20250608234022.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1022_20250608235324.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1022_20250608235324#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v1hnqwpiuz",
+      "Integrity": "7V+diPsxQK61xyvTmHi7t4tX4kJF6ZWdIr97LbrLcAI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1022_20250608235324.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1023_20250608235659.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1023_20250608235659#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1rvvno3vuy",
+      "Integrity": "fXnQU+fqvJc33pNYlERbro8l9e6Y1A8hNAFxotznAx0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1023_20250608235659.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1024_20250609000156.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1024_20250609000156#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p6638gtyo8",
+      "Integrity": "7yV12BPfgTK5NDwBOEe2RsjiVsYeYYbytuauN/DKNlw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1024_20250609000156.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1025_20250609000845.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1025_20250609000845#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xhncmgh9nf",
+      "Integrity": "9Wc6iSUcKN0rKTbiUx+XBDQQkhOESG+gjdjLaLUhPf0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1025_20250609000845.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1026_20250609001338.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1026_20250609001338#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fu75h81jw2",
+      "Integrity": "91fyO/h9mmofjIkkujahN2ZyjnS8+amWODhRh5F8irE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1026_20250609001338.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1027_20250609002054.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1027_20250609002054#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m4md526kn9",
+      "Integrity": "Rn4B9DNDcspTk8jLuCZkwgjc6G1cLKmZNvbbGrJomD0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1027_20250609002054.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1028_20250609002423.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1028_20250609002423#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2voco8h7dj",
+      "Integrity": "Iu99FSyMi4iQeSjJUtAY9FZ4O7ViVVqhzZWJJFjc9kw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1028_20250609002423.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1029_20250609010452.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1029_20250609010452#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "voe3bu9o9z",
+      "Integrity": "4d9BUya/uE7g8QSrFMH+anbm31LHztjnOjIp836jvvE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1029_20250609010452.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1030_20250609010725.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1030_20250609010725#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mx0las1an5",
+      "Integrity": "+sHxTGlHepg2oazZ9mhkL93tKxO8IZ2namGK2AW6C2c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1030_20250609010725.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1031_20250609033253.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1031_20250609033253#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "opl4auqzci",
+      "Integrity": "7ChxOt6G8NQCVecgOid9QLvXrpZ3sOVuKjG+tfcurfs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1031_20250609033253.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1032_20250609034133.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1032_20250609034133#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "znd88rk0d5",
+      "Integrity": "0XTfRarNBmr+hb8ra7abdnhvi2eb7c1yosmCU/3NWy4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1032_20250609034133.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1033_20250609034909.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1033_20250609034909#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7yb9htspbe",
+      "Integrity": "QRbUbCU0uAPQRFTVW6Yq9JTLA8bCQc4mj1Uz9WrDEVg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1033_20250609034909.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1034_20250609040239.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1034_20250609040239#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u3k727r8tc",
+      "Integrity": "is+YJ1L01o8y1bz4kFG+qD8LLnnx/zLjcrdnqbaq9Fk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1034_20250609040239.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1035_20250609040541.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1035_20250609040541#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fgm7du4opf",
+      "Integrity": "bxIpMgFawtsdWPiTpHsReTYfJUhNlraOE6FvcySm/Jo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1035_20250609040541.pdf"
+    },
+    {
+      "Identity": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1036_20250609174310.pdf",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "reports/Report_1036_20250609174310#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "itv2bnf9zl",
+      "Integrity": "ahsWQdrq3Wf09zxUx9WKbVqf1kY09v6kEov8rkc4LF0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\Report_1036_20250609174310.pdf"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Images/logo.buylumq8i1.png",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\Images\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XcZFIrfLw1PSV7b2Mq8aOptBqKOVRh7tgM0GrVZ1M6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:55:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "buylumq8i1"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XcZFIrfLw1PSV7b2Mq8aOptBqKOVRh7tgM0GrVZ1M6M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/logo.png",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\Images\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XcZFIrfLw1PSV7b2Mq8aOptBqKOVRh7tgM0GrVZ1M6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:55:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XcZFIrfLw1PSV7b2Mq8aOptBqKOVRh7tgM0GrVZ1M6M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Logo1.dghrreliop.jpg",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\Images\\Logo1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HVS1HxhG8FwkLREU5yMeKNEBstF1NZ7UbAj93Z+Osww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:47:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dghrreliop"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Logo1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HVS1HxhG8FwkLREU5yMeKNEBstF1NZ7UbAj93Z+Osww="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Logo1.jpg",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\Images\\Logo1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HVS1HxhG8FwkLREU5yMeKNEBstF1NZ7UbAj93Z+Osww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:47:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HVS1HxhG8FwkLREU5yMeKNEBstF1NZ7UbAj93Z+Osww="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513002948.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513002948.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LsRecyCF7PtdwX/1yop6aSK0rhWm9hZZ2odT8DaZ0EY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 21:29:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LsRecyCF7PtdwX/1yop6aSK0rhWm9hZZ2odT8DaZ0EY="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513002948.qd83j9s0oa.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513002948.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LsRecyCF7PtdwX/1yop6aSK0rhWm9hZZ2odT8DaZ0EY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 21:29:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qd83j9s0oa"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513002948.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LsRecyCF7PtdwX/1yop6aSK0rhWm9hZZ2odT8DaZ0EY="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513003117.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513003117.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RiYb7M/D68LLuUOB5klzVi9YfaHgPATIv8dBGMevS8Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 21:31:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RiYb7M/D68LLuUOB5klzVi9YfaHgPATIv8dBGMevS8Q="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513003117.uvo351rvj1.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513003117.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RiYb7M/D68LLuUOB5klzVi9YfaHgPATIv8dBGMevS8Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 21:31:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uvo351rvj1"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513003117.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RiYb7M/D68LLuUOB5klzVi9YfaHgPATIv8dBGMevS8Q="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513005101.ea3u8xh1lt.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513005101.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jui4AfAr3/sUbrMklvRwVsY4oN2EX3JaG0Zgh9U0J7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 21:51:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ea3u8xh1lt"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513005101.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jui4AfAr3/sUbrMklvRwVsY4oN2EX3JaG0Zgh9U0J7s="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513005101.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513005101.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jui4AfAr3/sUbrMklvRwVsY4oN2EX3JaG0Zgh9U0J7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 21:51:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jui4AfAr3/sUbrMklvRwVsY4oN2EX3JaG0Zgh9U0J7s="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513010102.k1aptp4fb3.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513010102.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GEBcfjorTaQFCXgGB5ighO0jNAkjeEL449iNvXkrn+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:01:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k1aptp4fb3"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513010102.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GEBcfjorTaQFCXgGB5ighO0jNAkjeEL449iNvXkrn+I="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513010102.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513010102.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GEBcfjorTaQFCXgGB5ighO0jNAkjeEL449iNvXkrn+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:01:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GEBcfjorTaQFCXgGB5ighO0jNAkjeEL449iNvXkrn+I="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513012718.br7cffbtpr.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513012718.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R63QipQNx10/ezh8WeRSaqUBwe1MSUVgE7HkqowrOQ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:27:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "br7cffbtpr"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513012718.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R63QipQNx10/ezh8WeRSaqUBwe1MSUVgE7HkqowrOQ0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513012718.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513012718.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R63QipQNx10/ezh8WeRSaqUBwe1MSUVgE7HkqowrOQ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:27:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R63QipQNx10/ezh8WeRSaqUBwe1MSUVgE7HkqowrOQ0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513012940.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513012940.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PQi1T7uUDsL00BhnGktXgklVfy2IvhNu1FlLk9+FDRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PQi1T7uUDsL00BhnGktXgklVfy2IvhNu1FlLk9+FDRw="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513012940.v9mc0v67e3.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513012940.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PQi1T7uUDsL00BhnGktXgklVfy2IvhNu1FlLk9+FDRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v9mc0v67e3"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513012940.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PQi1T7uUDsL00BhnGktXgklVfy2IvhNu1FlLk9+FDRw="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513015822.mlzkl4dtiw.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513015822.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OsaWxzAkNHwkczOIOSdn+0VD4bBQZLIPRMbP6lXjmXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:58:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mlzkl4dtiw"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513015822.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OsaWxzAkNHwkczOIOSdn+0VD4bBQZLIPRMbP6lXjmXI="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513015822.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513015822.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OsaWxzAkNHwkczOIOSdn+0VD4bBQZLIPRMbP6lXjmXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 22:58:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OsaWxzAkNHwkczOIOSdn+0VD4bBQZLIPRMbP6lXjmXI="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513020508.1ud3c4zply.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513020508.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NwuvkAIomZz1J62gU7oiki3Z5PNb9Fqll7WbfWBlzbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 23:05:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1ud3c4zply"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513020508.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NwuvkAIomZz1J62gU7oiki3Z5PNb9Fqll7WbfWBlzbk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513020508.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513020508.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NwuvkAIomZz1J62gU7oiki3Z5PNb9Fqll7WbfWBlzbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 23:05:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NwuvkAIomZz1J62gU7oiki3Z5PNb9Fqll7WbfWBlzbk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513020655.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513020655.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lgz7ORgzesaVybHCdKsNSLPCpgPzHyFnt5rFgvnGTeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 23:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lgz7ORgzesaVybHCdKsNSLPCpgPzHyFnt5rFgvnGTeM="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250513020655.upf1q1b9tz.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250513020655.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lgz7ORgzesaVybHCdKsNSLPCpgPzHyFnt5rFgvnGTeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 23:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "upf1q1b9tz"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250513020655.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lgz7ORgzesaVybHCdKsNSLPCpgPzHyFnt5rFgvnGTeM="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607165003.44muzeg4h3.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607165003.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jDkNBlzQKlTkWN8BmeLlTDndUt3h4qDG7gyvvlixkhs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 13:50:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "44muzeg4h3"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250607165003.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jDkNBlzQKlTkWN8BmeLlTDndUt3h4qDG7gyvvlixkhs="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607165003.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607165003.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jDkNBlzQKlTkWN8BmeLlTDndUt3h4qDG7gyvvlixkhs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 13:50:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jDkNBlzQKlTkWN8BmeLlTDndUt3h4qDG7gyvvlixkhs="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607194316.58mye181gl.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607194316.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BdfkLomLYZcxiaWqQqmQpOftrIFIgsBFmTI0jFRFukQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 16:43:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "58mye181gl"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250607194316.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BdfkLomLYZcxiaWqQqmQpOftrIFIgsBFmTI0jFRFukQ="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607194316.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607194316.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BdfkLomLYZcxiaWqQqmQpOftrIFIgsBFmTI0jFRFukQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 16:43:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BdfkLomLYZcxiaWqQqmQpOftrIFIgsBFmTI0jFRFukQ="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607202407.a24z6i4nab.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607202407.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rrIz4Q7rrfvBuf/Lk1YYEmmvLDYjwzWZyI9CujbQs5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 17:24:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a24z6i4nab"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250607202407.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rrIz4Q7rrfvBuf/Lk1YYEmmvLDYjwzWZyI9CujbQs5k="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607202407.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607202407.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rrIz4Q7rrfvBuf/Lk1YYEmmvLDYjwzWZyI9CujbQs5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 17:24:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rrIz4Q7rrfvBuf/Lk1YYEmmvLDYjwzWZyI9CujbQs5k="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607202444.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607202444.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ztQgb1zMIm7TMzYyIZItVcEU6mMDCJRzb/KGmZDkds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 17:24:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ztQgb1zMIm7TMzYyIZItVcEU6mMDCJRzb/KGmZDkds="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250607202444.tku5ejun33.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250607202444.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ztQgb1zMIm7TMzYyIZItVcEU6mMDCJRzb/KGmZDkds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 17:24:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tku5ejun33"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250607202444.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ztQgb1zMIm7TMzYyIZItVcEU6mMDCJRzb/KGmZDkds="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250608040325.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250608040325.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5kjkhYVAeI1dK0NLjHkMMnbuotta1356jSU9RKGU7jg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:03:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5kjkhYVAeI1dK0NLjHkMMnbuotta1356jSU9RKGU7jg="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_0_20250608040325.qvfmzvz1ke.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_0_20250608040325.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5kjkhYVAeI1dK0NLjHkMMnbuotta1356jSU9RKGU7jg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:03:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qvfmzvz1ke"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_0_20250608040325.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5kjkhYVAeI1dK0NLjHkMMnbuotta1356jSU9RKGU7jg="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250607195949.3jcl7hxnhg.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250607195949.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r01RiwXTso1PW1SzdDe1jKZ+6VttXMC3V1R6la4ZqB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 16:59:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3jcl7hxnhg"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1_20250607195949.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r01RiwXTso1PW1SzdDe1jKZ+6VttXMC3V1R6la4ZqB0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250607195949.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250607195949.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r01RiwXTso1PW1SzdDe1jKZ+6VttXMC3V1R6la4ZqB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 16:59:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r01RiwXTso1PW1SzdDe1jKZ+6VttXMC3V1R6la4ZqB0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250607200950.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250607200950.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JIzsynU5bMNW53w/kM16NSIg9ngOoOoYopaaHWM/uts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 17:09:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JIzsynU5bMNW53w/kM16NSIg9ngOoOoYopaaHWM/uts="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250607200950.sywtshg7g0.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250607200950.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JIzsynU5bMNW53w/kM16NSIg9ngOoOoYopaaHWM/uts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 17:09:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sywtshg7g0"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1_20250607200950.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JIzsynU5bMNW53w/kM16NSIg9ngOoOoYopaaHWM/uts="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250608034549.5g9bt8ll4t.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250608034549.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aw788SUJOeHvtm+W2p2l7XuTcWToKvS9DEVzXkB0mpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 00:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5g9bt8ll4t"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1_20250608034549.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aw788SUJOeHvtm+W2p2l7XuTcWToKvS9DEVzXkB0mpA="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250608034549.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250608034549.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aw788SUJOeHvtm+W2p2l7XuTcWToKvS9DEVzXkB0mpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 00:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aw788SUJOeHvtm+W2p2l7XuTcWToKvS9DEVzXkB0mpA="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250608035559.8fsvnqsu6s.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250608035559.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pABQ8kWbqCcD0Rvqb3zjmgOL2M5SrVTQC81Q+KeyRB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 00:56:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8fsvnqsu6s"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1_20250608035559.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pABQ8kWbqCcD0Rvqb3zjmgOL2M5SrVTQC81Q+KeyRB4="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1_20250608035559.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1_20250608035559.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pABQ8kWbqCcD0Rvqb3zjmgOL2M5SrVTQC81Q+KeyRB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 00:56:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pABQ8kWbqCcD0Rvqb3zjmgOL2M5SrVTQC81Q+KeyRB4="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1012_20250608041106.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1012_20250608041106.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zzg/Fv0029A9hWw8mdxgsE4YQzJ3uTnVAH5/rk63zRk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:11:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zzg/Fv0029A9hWw8mdxgsE4YQzJ3uTnVAH5/rk63zRk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1012_20250608041106.vgjdhttex0.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1012_20250608041106.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zzg/Fv0029A9hWw8mdxgsE4YQzJ3uTnVAH5/rk63zRk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:11:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgjdhttex0"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1012_20250608041106.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zzg/Fv0029A9hWw8mdxgsE4YQzJ3uTnVAH5/rk63zRk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1013_20250608042658.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1013_20250608042658.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VFOJ6ZlYZXUlcabcBm0FdXZl7OPLcqUdf9qt6kSCwUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:26:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VFOJ6ZlYZXUlcabcBm0FdXZl7OPLcqUdf9qt6kSCwUU="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1013_20250608042658.sa5mjj78d4.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1013_20250608042658.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VFOJ6ZlYZXUlcabcBm0FdXZl7OPLcqUdf9qt6kSCwUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:26:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sa5mjj78d4"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1013_20250608042658.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VFOJ6ZlYZXUlcabcBm0FdXZl7OPLcqUdf9qt6kSCwUU="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1014_20250608042803.9ih6sdz0rd.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1014_20250608042803.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"30GFCyoF3HSqOFpO1zztApC1xlARMUjDwS5DuFUTdA8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:28:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ih6sdz0rd"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1014_20250608042803.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-30GFCyoF3HSqOFpO1zztApC1xlARMUjDwS5DuFUTdA8="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1014_20250608042803.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1014_20250608042803.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"30GFCyoF3HSqOFpO1zztApC1xlARMUjDwS5DuFUTdA8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:28:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-30GFCyoF3HSqOFpO1zztApC1xlARMUjDwS5DuFUTdA8="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1015_20250608043527.hwek4q2pin.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1015_20250608043527.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+uV3rjftd6unzpQh+2cRkaoPx1Y9RB2KuMsru7e9zU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:35:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hwek4q2pin"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1015_20250608043527.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+uV3rjftd6unzpQh+2cRkaoPx1Y9RB2KuMsru7e9zU="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1015_20250608043527.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1015_20250608043527.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+uV3rjftd6unzpQh+2cRkaoPx1Y9RB2KuMsru7e9zU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:35:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+uV3rjftd6unzpQh+2cRkaoPx1Y9RB2KuMsru7e9zU="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1016_20250608043727.afn8bhg1dq.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1016_20250608043727.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47987"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ljcZe1zeqVZCbzc4eGn5+lXREVZQ3AK6VgcIDlCE30s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "afn8bhg1dq"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1016_20250608043727.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ljcZe1zeqVZCbzc4eGn5+lXREVZQ3AK6VgcIDlCE30s="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1016_20250608043727.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1016_20250608043727.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47987"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ljcZe1zeqVZCbzc4eGn5+lXREVZQ3AK6VgcIDlCE30s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ljcZe1zeqVZCbzc4eGn5+lXREVZQ3AK6VgcIDlCE30s="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1017_20250608044305.hwq1zb95in.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1017_20250608044305.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+KLfnMOCJmnJdlfvjZ/MuQ9K4EHoOYg4XBJvmI+QdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:43:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hwq1zb95in"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1017_20250608044305.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+KLfnMOCJmnJdlfvjZ/MuQ9K4EHoOYg4XBJvmI+QdU="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1017_20250608044305.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1017_20250608044305.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+KLfnMOCJmnJdlfvjZ/MuQ9K4EHoOYg4XBJvmI+QdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:43:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+KLfnMOCJmnJdlfvjZ/MuQ9K4EHoOYg4XBJvmI+QdU="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1018_20250608044639.na3k6fdzmx.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1018_20250608044639.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rz9Y5/CXahkS8IZezgSoPjPxj/QAqnb2uM3V815NDPk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:46:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "na3k6fdzmx"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1018_20250608044639.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rz9Y5/CXahkS8IZezgSoPjPxj/QAqnb2uM3V815NDPk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1018_20250608044639.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1018_20250608044639.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rz9Y5/CXahkS8IZezgSoPjPxj/QAqnb2uM3V815NDPk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 01:46:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rz9Y5/CXahkS8IZezgSoPjPxj/QAqnb2uM3V815NDPk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1019_20250608050448.4wp7n5v3i5.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1019_20250608050448.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59217"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1NlLh3iPhy5V1vApLoZOZLgBIYjAjfUFUqetQqi94KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 02:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4wp7n5v3i5"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1019_20250608050448.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1NlLh3iPhy5V1vApLoZOZLgBIYjAjfUFUqetQqi94KQ="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1019_20250608050448.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1019_20250608050448.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59217"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1NlLh3iPhy5V1vApLoZOZLgBIYjAjfUFUqetQqi94KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 02:04:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1NlLh3iPhy5V1vApLoZOZLgBIYjAjfUFUqetQqi94KQ="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1020_20250608052657.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1020_20250608052657.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59217"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KTfPcka26HwHRMZhO3HBzbNKxie0icI7L0Im8sKknlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 02:26:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KTfPcka26HwHRMZhO3HBzbNKxie0icI7L0Im8sKknlE="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1020_20250608052657.xqeud9eb5i.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1020_20250608052657.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59217"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KTfPcka26HwHRMZhO3HBzbNKxie0icI7L0Im8sKknlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 02:26:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xqeud9eb5i"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1020_20250608052657.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KTfPcka26HwHRMZhO3HBzbNKxie0icI7L0Im8sKknlE="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1021_20250608234022.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1021_20250608234022.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59217"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q7bhB+UB6b0OaR/W/jB6DwmK/2GN3+M5C2lVb/hlxZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q7bhB+UB6b0OaR/W/jB6DwmK/2GN3+M5C2lVb/hlxZo="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1021_20250608234022.vlz84rcj6b.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1021_20250608234022.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59217"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q7bhB+UB6b0OaR/W/jB6DwmK/2GN3+M5C2lVb/hlxZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vlz84rcj6b"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1021_20250608234022.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q7bhB+UB6b0OaR/W/jB6DwmK/2GN3+M5C2lVb/hlxZo="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1022_20250608235324.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1022_20250608235324.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7V+diPsxQK61xyvTmHi7t4tX4kJF6ZWdIr97LbrLcAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:53:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7V+diPsxQK61xyvTmHi7t4tX4kJF6ZWdIr97LbrLcAI="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1022_20250608235324.v1hnqwpiuz.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1022_20250608235324.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55177"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7V+diPsxQK61xyvTmHi7t4tX4kJF6ZWdIr97LbrLcAI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:53:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v1hnqwpiuz"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1022_20250608235324.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7V+diPsxQK61xyvTmHi7t4tX4kJF6ZWdIr97LbrLcAI="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1023_20250608235659.1rvvno3vuy.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1023_20250608235659.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fXnQU+fqvJc33pNYlERbro8l9e6Y1A8hNAFxotznAx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:56:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1rvvno3vuy"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1023_20250608235659.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fXnQU+fqvJc33pNYlERbro8l9e6Y1A8hNAFxotznAx0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1023_20250608235659.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1023_20250608235659.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fXnQU+fqvJc33pNYlERbro8l9e6Y1A8hNAFxotznAx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 20:56:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fXnQU+fqvJc33pNYlERbro8l9e6Y1A8hNAFxotznAx0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1024_20250609000156.p6638gtyo8.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1024_20250609000156.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7yV12BPfgTK5NDwBOEe2RsjiVsYeYYbytuauN/DKNlw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:01:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6638gtyo8"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1024_20250609000156.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7yV12BPfgTK5NDwBOEe2RsjiVsYeYYbytuauN/DKNlw="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1024_20250609000156.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1024_20250609000156.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7yV12BPfgTK5NDwBOEe2RsjiVsYeYYbytuauN/DKNlw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:01:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7yV12BPfgTK5NDwBOEe2RsjiVsYeYYbytuauN/DKNlw="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1025_20250609000845.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1025_20250609000845.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Wc6iSUcKN0rKTbiUx+XBDQQkhOESG+gjdjLaLUhPf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9Wc6iSUcKN0rKTbiUx+XBDQQkhOESG+gjdjLaLUhPf0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1025_20250609000845.xhncmgh9nf.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1025_20250609000845.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Wc6iSUcKN0rKTbiUx+XBDQQkhOESG+gjdjLaLUhPf0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xhncmgh9nf"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1025_20250609000845.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9Wc6iSUcKN0rKTbiUx+XBDQQkhOESG+gjdjLaLUhPf0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1026_20250609001338.fu75h81jw2.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1026_20250609001338.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"91fyO/h9mmofjIkkujahN2ZyjnS8+amWODhRh5F8irE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fu75h81jw2"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1026_20250609001338.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-91fyO/h9mmofjIkkujahN2ZyjnS8+amWODhRh5F8irE="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1026_20250609001338.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1026_20250609001338.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"91fyO/h9mmofjIkkujahN2ZyjnS8+amWODhRh5F8irE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-91fyO/h9mmofjIkkujahN2ZyjnS8+amWODhRh5F8irE="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1027_20250609002054.m4md526kn9.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1027_20250609002054.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rn4B9DNDcspTk8jLuCZkwgjc6G1cLKmZNvbbGrJomD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:20:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m4md526kn9"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1027_20250609002054.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rn4B9DNDcspTk8jLuCZkwgjc6G1cLKmZNvbbGrJomD0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1027_20250609002054.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1027_20250609002054.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rn4B9DNDcspTk8jLuCZkwgjc6G1cLKmZNvbbGrJomD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:20:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rn4B9DNDcspTk8jLuCZkwgjc6G1cLKmZNvbbGrJomD0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1028_20250609002423.2voco8h7dj.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1028_20250609002423.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Iu99FSyMi4iQeSjJUtAY9FZ4O7ViVVqhzZWJJFjc9kw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:24:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2voco8h7dj"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1028_20250609002423.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Iu99FSyMi4iQeSjJUtAY9FZ4O7ViVVqhzZWJJFjc9kw="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1028_20250609002423.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1028_20250609002423.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Iu99FSyMi4iQeSjJUtAY9FZ4O7ViVVqhzZWJJFjc9kw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 21:24:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Iu99FSyMi4iQeSjJUtAY9FZ4O7ViVVqhzZWJJFjc9kw="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1029_20250609010452.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1029_20250609010452.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4d9BUya/uE7g8QSrFMH+anbm31LHztjnOjIp836jvvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 22:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4d9BUya/uE7g8QSrFMH+anbm31LHztjnOjIp836jvvE="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1029_20250609010452.voe3bu9o9z.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1029_20250609010452.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4d9BUya/uE7g8QSrFMH+anbm31LHztjnOjIp836jvvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 22:04:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "voe3bu9o9z"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1029_20250609010452.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4d9BUya/uE7g8QSrFMH+anbm31LHztjnOjIp836jvvE="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1030_20250609010725.mx0las1an5.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1030_20250609010725.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+sHxTGlHepg2oazZ9mhkL93tKxO8IZ2namGK2AW6C2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 22:07:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mx0las1an5"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1030_20250609010725.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+sHxTGlHepg2oazZ9mhkL93tKxO8IZ2namGK2AW6C2c="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1030_20250609010725.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1030_20250609010725.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+sHxTGlHepg2oazZ9mhkL93tKxO8IZ2namGK2AW6C2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Jun 2025 22:07:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+sHxTGlHepg2oazZ9mhkL93tKxO8IZ2namGK2AW6C2c="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1031_20250609033253.opl4auqzci.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1031_20250609033253.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ChxOt6G8NQCVecgOid9QLvXrpZ3sOVuKjG+tfcurfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 00:32:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "opl4auqzci"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1031_20250609033253.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ChxOt6G8NQCVecgOid9QLvXrpZ3sOVuKjG+tfcurfs="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1031_20250609033253.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1031_20250609033253.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ChxOt6G8NQCVecgOid9QLvXrpZ3sOVuKjG+tfcurfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 00:32:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ChxOt6G8NQCVecgOid9QLvXrpZ3sOVuKjG+tfcurfs="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1032_20250609034133.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1032_20250609034133.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0XTfRarNBmr+hb8ra7abdnhvi2eb7c1yosmCU/3NWy4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 00:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0XTfRarNBmr+hb8ra7abdnhvi2eb7c1yosmCU/3NWy4="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1032_20250609034133.znd88rk0d5.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1032_20250609034133.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0XTfRarNBmr+hb8ra7abdnhvi2eb7c1yosmCU/3NWy4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 00:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "znd88rk0d5"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1032_20250609034133.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0XTfRarNBmr+hb8ra7abdnhvi2eb7c1yosmCU/3NWy4="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1033_20250609034909.7yb9htspbe.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1033_20250609034909.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QRbUbCU0uAPQRFTVW6Yq9JTLA8bCQc4mj1Uz9WrDEVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 00:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7yb9htspbe"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1033_20250609034909.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QRbUbCU0uAPQRFTVW6Yq9JTLA8bCQc4mj1Uz9WrDEVg="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1033_20250609034909.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1033_20250609034909.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80649"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QRbUbCU0uAPQRFTVW6Yq9JTLA8bCQc4mj1Uz9WrDEVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 00:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QRbUbCU0uAPQRFTVW6Yq9JTLA8bCQc4mj1Uz9WrDEVg="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1034_20250609040239.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1034_20250609040239.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"is+YJ1L01o8y1bz4kFG+qD8LLnnx/zLjcrdnqbaq9Fk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 01:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-is+YJ1L01o8y1bz4kFG+qD8LLnnx/zLjcrdnqbaq9Fk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1034_20250609040239.u3k727r8tc.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1034_20250609040239.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"is+YJ1L01o8y1bz4kFG+qD8LLnnx/zLjcrdnqbaq9Fk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 01:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u3k727r8tc"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1034_20250609040239.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-is+YJ1L01o8y1bz4kFG+qD8LLnnx/zLjcrdnqbaq9Fk="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1035_20250609040541.fgm7du4opf.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1035_20250609040541.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80647"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bxIpMgFawtsdWPiTpHsReTYfJUhNlraOE6FvcySm/Jo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 01:05:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fgm7du4opf"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1035_20250609040541.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bxIpMgFawtsdWPiTpHsReTYfJUhNlraOE6FvcySm/Jo="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1035_20250609040541.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1035_20250609040541.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80647"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bxIpMgFawtsdWPiTpHsReTYfJUhNlraOE6FvcySm/Jo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 01:05:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bxIpMgFawtsdWPiTpHsReTYfJUhNlraOE6FvcySm/Jo="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1036_20250609174310.itv2bnf9zl.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1036_20250609174310.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ahsWQdrq3Wf09zxUx9WKbVqf1kY09v6kEov8rkc4LF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 14:43:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "itv2bnf9zl"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/Report_1036_20250609174310.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ahsWQdrq3Wf09zxUx9WKbVqf1kY09v6kEov8rkc4LF0="
+        }
+      ]
+    },
+    {
+      "Route": "reports/Report_1036_20250609174310.pdf",
+      "AssetFile": "D:\\Graduation Project\\AcademyAdvicingGp\\AcademyAdvicingGp\\wwwroot\\reports\\Report_1036_20250609174310.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ahsWQdrq3Wf09zxUx9WKbVqf1kY09v6kEov8rkc4LF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 14:43:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ahsWQdrq3Wf09zxUx9WKbVqf1kY09v6kEov8rkc4LF0="
+        }
+      ]
+    }
+  ]
+>>>>>>> d7432283faad04673c062edaed26aa025169dfd7
 }

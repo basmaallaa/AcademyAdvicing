@@ -11,7 +11,7 @@ namespace Academy.Core.Models
         public int Id { get; set; }
         public string Type { get; set; }
         public string FilePath { get; set; }
-        public Coordinator GenerateBy { get; set; }
-        public int GenerateById { get; set; }
+        //public Coordinator GenerateBy { get; set; }
+        //public int GenerateById { get; set; }
     }
 }

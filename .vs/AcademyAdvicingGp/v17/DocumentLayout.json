@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academycore\\models\\finalexamtimetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A24AD44-C70B-49E4-B8F8-2879CA447767}|AcademyCore\\Academy.Core.csproj|solutionrelative:academycore\\models\\finalexamtimetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|c:\\users\\user\\desktop\\gp git updated\\academyadvicing\\academyadvicinggp\\controllers\\finalexamtimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712873A9-6ED1-4740-9FA9-336FC778FDEF}|AcademyAdvicingGp\\AcademyAdvicingGp.csproj|solutionrelative:academyadvicinggp\\controllers\\finalexamtimetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,11 +59,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FinalExamTimeTable.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "RelativeDocumentMoniker": "AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "RelativeToolTip": "AcademyCore\\Models\\FinalExamTimeTable.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:50:40.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MaterialController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\MaterialController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:34:25.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FinalExamTimeTableController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs*",
-              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs*",
+              "ToolTip": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
+              "RelativeToolTip": "AcademyAdvicingGp\\Controllers\\FinalExamTimeTableController.cs",
               "ViewState": "AgIAAJIAAAAAAAAAAAAcwLwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T19:28:55.663Z",
@@ -63,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ScheduleTimeTableController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
               "RelativeDocumentMoniker": "AcademyAdvicingGp\\Controllers\\ScheduleTimeTableController.cs",
@@ -76,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FinalExamTimeTableService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\FinalExamTimeTableService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\FinalExamTimeTableService.cs",
@@ -89,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ScheduleTimeTableService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\gp git updated\\AcademyAdvicing\\Academy.Services\\Services\\ScheduleTimeTableService.cs",
               "RelativeDocumentMoniker": "Academy.Services\\Services\\ScheduleTimeTableService.cs",
