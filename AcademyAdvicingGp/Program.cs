@@ -3,25 +3,21 @@ using Academy.Core.Mapping;
 using Academy.Core.ServicesInterfaces;
 using Academy.Core.ServicesInterfaces.ICoursesInterface;
 using Academy.Core.Models.Identity;
-
 using Academy.Repo;
 using Academy.Repo.Data;
 using Academy.Repo.Identity;
-
 using Academy.Services.Services;
 using Academy.Services.Services.CourseService;
-
 using AcademyAdvicingGp.Extensions;
-
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
-
 using System.Text.Json.Serialization;
 using Academy.Core.Models.Email;
+using QuestPDF;
+using System.ComponentModel;
 
 namespace AcademyAdvicingGp
 {
@@ -116,6 +112,8 @@ namespace AcademyAdvicingGp
             builder.Services.AddTransient<IFileService, FileService>();
 
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IReportService, ReportService>();
+
             #endregion
 
             #region CORS
@@ -148,8 +146,11 @@ namespace AcademyAdvicingGp
                 });
             });
 
+            // Set the QuestPDF license
+            QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 
             var app = builder.Build();
+            app.UseStaticFiles();
 
             #region Database Migration & Seeding
             using var scope = app.Services.CreateScope();

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250430143403_IntialDB")]
-    partial class IntialDB
+    [Migration("20250512225717_deleteGenerateID")]
+    partial class deleteGenerateID
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -293,16 +293,11 @@ namespace Academy.Repo.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("GenerateById")
-                        .HasColumnType("int");
-
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("GenerateById");
 
                     b.ToTable("Reports");
                 });
@@ -525,17 +520,6 @@ namespace Academy.Repo.Migrations
                     b.Navigation("UploadedBy");
                 });
 
-            modelBuilder.Entity("Academy.Core.Models.Report", b =>
-                {
-                    b.HasOne("Academy.Core.Models.Coordinator", "GenerateBy")
-                        .WithMany("Reports")
-                        .HasForeignKey("GenerateById")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("GenerateBy");
-                });
-
             modelBuilder.Entity("Academy.Core.Models.ScheduleTimeTable", b =>
                 {
                     b.HasOne("Academy.Core.Models.AvailableCourse", "AvailableCourse")
@@ -571,8 +555,6 @@ namespace Academy.Repo.Migrations
             modelBuilder.Entity("Academy.Core.Models.Coordinator", b =>
                 {
                     b.Navigation("Courses");
-
-                    b.Navigation("Reports");
 
                     b.Navigation("ScheduleTimeTables");
 
