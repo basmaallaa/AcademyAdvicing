@@ -18,6 +18,7 @@ namespace Academy.Core.Models
 
 		public int? AvailableCourseId { get; set; }
 		public AvailableCourse AvailableCourse { get; set; }
+        public List<Student> Students { get; set; }
 
-	}
+    }
 }

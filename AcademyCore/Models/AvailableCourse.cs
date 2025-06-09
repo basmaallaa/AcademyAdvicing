@@ -31,6 +31,7 @@ namespace Academy.Core.Models
        
 
         public List<ScheduleTimeTable> ScheduleTimeTables { get; set; }
+        public List<FinalExamTimeTable> FinalExamTimeTables { get; set; }
       
     }
 }

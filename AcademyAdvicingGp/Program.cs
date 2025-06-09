@@ -111,6 +111,9 @@ namespace AcademyAdvicingGp
 
 			builder.Services.AddScoped<IScheduleTimeTableService, ScheduleTimeTableService>();
 			builder.Services.AddAutoMapper(M => M.AddProfile(new ScheduleTimeTableProfile()));
+            
+            builder.Services.AddScoped<IFinalExamTimeTableService, FinalExamTimeTableService>();
+			builder.Services.AddAutoMapper(M => M.AddProfile(new FinalExamTimeTableProfile()));
 
 
             builder.Services.AddTransient<IFileService, FileService>();
@@ -147,9 +150,10 @@ namespace AcademyAdvicingGp
                     Format = "binary"
                 });
             });
+			QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 
 
-            var app = builder.Build();
+			var app = builder.Build();
 
             #region Database Migration & Seeding
             using var scope = app.Services.CreateScope();

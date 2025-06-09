@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Academy.Repo.Migrations
+namespace Academy.Repo.Data.Migrations
 {
     /// <inheritdoc />
     public partial class IntialDB : Migration
@@ -142,37 +142,6 @@ namespace Academy.Repo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Students",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Level = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false),
-                    GPA = table.Column<float>(type: "real", nullable: false),
-                    CompeletedHours = table.Column<int>(type: "int", nullable: false),
-                    ManageById = table.Column<int>(type: "int", nullable: true),
-                    AdmissionYear = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ArabicFullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HomeAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EmergencyContact = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Students", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Students_StudentAffairs_ManageById",
-                        column: x => x.ManageById,
-                        principalTable: "StudentAffairs",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Availablecourses",
                 columns: table => new
                 {
@@ -230,36 +199,6 @@ namespace Academy.Repo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Assignedcourses",
-                columns: table => new
-                {
-                    StudentId = table.Column<int>(type: "int", nullable: false),
-                    CourseId = table.Column<int>(type: "int", nullable: false),
-                    ClassWorkScore = table.Column<float>(type: "real", nullable: true),
-                    PracticalScore = table.Column<float>(type: "real", nullable: true),
-                    FinalScore = table.Column<float>(type: "real", nullable: true),
-                    Grade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AcademicYears = table.Column<int>(type: "int", nullable: false),
-                    Semester = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Assignedcourses", x => new { x.StudentId, x.CourseId });
-                    table.ForeignKey(
-                        name: "FK_Assignedcourses_Courses_CourseId",
-                        column: x => x.CourseId,
-                        principalTable: "Courses",
-                        principalColumn: "CourseId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Assignedcourses_Students_StudentId",
-                        column: x => x.StudentId,
-                        principalTable: "Students",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ScheduleTimeTable",
                 columns: table => new
                 {
@@ -285,6 +224,73 @@ namespace Academy.Repo.Migrations
                         name: "FK_ScheduleTimeTable_Coordinator_UploadedById",
                         column: x => x.UploadedById,
                         principalTable: "Coordinator",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Students",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Level = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    GPA = table.Column<float>(type: "real", nullable: false),
+                    CompeletedHours = table.Column<int>(type: "int", nullable: false),
+                    ManageById = table.Column<int>(type: "int", nullable: true),
+                    AdmissionYear = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ScheduleId = table.Column<int>(type: "int", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ArabicFullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HomeAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EmergencyContact = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Students", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Students_ScheduleTimeTable_ScheduleId",
+                        column: x => x.ScheduleId,
+                        principalTable: "ScheduleTimeTable",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Students_StudentAffairs_ManageById",
+                        column: x => x.ManageById,
+                        principalTable: "StudentAffairs",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Assignedcourses",
+                columns: table => new
+                {
+                    StudentId = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    ClassWorkScore = table.Column<float>(type: "real", nullable: true),
+                    PracticalScore = table.Column<float>(type: "real", nullable: true),
+                    FinalScore = table.Column<float>(type: "real", nullable: true),
+                    Grade = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AcademicYears = table.Column<int>(type: "int", nullable: false),
+                    Semester = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Assignedcourses", x => new { x.StudentId, x.CourseId });
+                    table.ForeignKey(
+                        name: "FK_Assignedcourses_Courses_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Assignedcourses_Students_StudentId",
+                        column: x => x.StudentId,
+                        principalTable: "Students",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -343,6 +349,11 @@ namespace Academy.Repo.Migrations
                 name: "IX_Students_ManageById",
                 table: "Students",
                 column: "ManageById");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Students_ScheduleId",
+                table: "Students",
+                column: "ScheduleId");
         }
 
         /// <inheritdoc />
@@ -361,16 +372,16 @@ namespace Academy.Repo.Migrations
                 name: "Reports");
 
             migrationBuilder.DropTable(
-                name: "ScheduleTimeTable");
-
-            migrationBuilder.DropTable(
                 name: "Students");
 
             migrationBuilder.DropTable(
-                name: "Availablecourses");
+                name: "ScheduleTimeTable");
 
             migrationBuilder.DropTable(
                 name: "StudentAffairs");
+
+            migrationBuilder.DropTable(
+                name: "Availablecourses");
 
             migrationBuilder.DropTable(
                 name: "Courses");

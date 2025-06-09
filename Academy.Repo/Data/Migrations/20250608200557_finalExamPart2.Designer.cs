@@ -4,16 +4,19 @@ using Academy.Repo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Academy.Repo.Migrations
+namespace Academy.Repo.Data.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    partial class AcademyContextModelSnapshot : ModelSnapshot
+    [Migration("20250608200557_finalExamPart2")]
+    partial class finalExamPart2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -220,6 +223,9 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("AvailableCourseId")
+                        .HasColumnType("int");
+
                     b.Property<DateOnly>("Date")
                         .HasColumnType("date");
 
@@ -241,6 +247,8 @@ namespace Academy.Repo.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AvailableCourseId");
 
                     b.HasIndex("UploadedById");
 
@@ -304,7 +312,7 @@ namespace Academy.Repo.Migrations
                     b.ToTable("Reports");
                 });
 
-            modelBuilder.Entity("Academy.Core.Models.ScheduleTimeTable", b =>
+            modelBuilder.Entity("Academy.Core.Models.Final", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -338,7 +346,7 @@ namespace Academy.Repo.Migrations
 
                     b.HasIndex("UploadedById");
 
-                    b.ToTable("ScheduleTimeTable");
+                    b.ToTable("Final");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Student", b =>
@@ -366,6 +374,9 @@ namespace Academy.Repo.Migrations
                     b.Property<string>("EmergencyContact")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("FinalId")
+                        .HasColumnType("int");
+
                     b.Property<float>("GPA")
                         .HasColumnType("real");
 
@@ -390,6 +401,9 @@ namespace Academy.Repo.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ScheduleId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -400,6 +414,8 @@ namespace Academy.Repo.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ManageById");
+
+                    b.HasIndex("ScheduleId");
 
                     b.ToTable("Students");
                 });
@@ -494,11 +510,17 @@ namespace Academy.Repo.Migrations
 
             modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>
                 {
+                    b.HasOne("Academy.Core.Models.AvailableCourse", "AvailableCourses")
+                        .WithMany("FinalExamTimeTables")
+                        .HasForeignKey("AvailableCourseId");
+
                     b.HasOne("Academy.Core.Models.Coordinator", "UploadedBy")
                         .WithMany("finalExamTimeTables")
                         .HasForeignKey("UploadedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("AvailableCourses");
 
                     b.Navigation("UploadedBy");
                 });
@@ -533,7 +555,7 @@ namespace Academy.Repo.Migrations
                     b.Navigation("GenerateBy");
                 });
 
-            modelBuilder.Entity("Academy.Core.Models.ScheduleTimeTable", b =>
+            modelBuilder.Entity("Academy.Core.Models.Final", b =>
                 {
                     b.HasOne("Academy.Core.Models.AvailableCourse", "AvailableCourse")
                         .WithMany("ScheduleTimeTables")
@@ -557,11 +579,25 @@ namespace Academy.Repo.Migrations
                         .WithMany("Students")
                         .HasForeignKey("ManageById");
 
+                    b.HasOne("Academy.Core.Models.FinalExamTimeTable", "finalExamTimeTable")
+                        .WithMany("Students")
+                        .HasForeignKey("ScheduleId");
+
+                    b.HasOne("Academy.Core.Models.Final", "scheduleTimeTable")
+                        .WithMany("Students")
+                        .HasForeignKey("ScheduleId");
+
                     b.Navigation("ManageBy");
+
+                    b.Navigation("finalExamTimeTable");
+
+                    b.Navigation("scheduleTimeTable");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.AvailableCourse", b =>
                 {
+                    b.Navigation("FinalExamTimeTables");
+
                     b.Navigation("ScheduleTimeTables");
                 });
 
@@ -590,6 +626,16 @@ namespace Academy.Repo.Migrations
                     b.Navigation("Courses");
 
                     b.Navigation("Materials");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>
+                {
+                    b.Navigation("Students");
+                });
+
+            modelBuilder.Entity("Academy.Core.Models.Final", b =>
+                {
+                    b.Navigation("Students");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.Student", b =>

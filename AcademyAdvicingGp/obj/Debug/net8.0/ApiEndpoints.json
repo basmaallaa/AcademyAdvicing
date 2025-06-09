@@ -466,6 +466,121 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "GetAll",
+    "RelativePath": "api/FinalExamTimeTable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "Create",
+    "RelativePath": "api/FinalExamTimeTable",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Academy.Core.Dtos.FinalTimeTableDtos.CreateFinalExamTimeTableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "Get",
+    "RelativePath": "api/FinalExamTimeTable/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "Delete",
+    "RelativePath": "api/FinalExamTimeTable/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "AddBulkSchedule",
+    "RelativePath": "api/FinalExamTimeTable/bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Academy.Core.Dtos.FinalTimeTableDtos.CreateFullFinalTimeTableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "DownloadMyFinalTimeTable",
+    "RelativePath": "api/FinalExamTimeTable/download-schedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "GetMySchedule",
+    "RelativePath": "api/FinalExamTimeTable/my-schedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.FinalExamTimeTableController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/FinalExamTimeTable/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Academy.Core.Dtos.FinalTimeTableDtos.EditFinalExamTimeTableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcademyAdvicingGp.Controllers.MaterialController",
     "Method": "GetAllMaterials",
     "RelativePath": "api/Material",
@@ -593,17 +708,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Academy.Core.Dtos.ScheduleDtos.ScheduleTimeTableDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "AcademyAdvicingGp.Controllers.ScheduleTimeTableController",
@@ -655,6 +760,26 @@
   },
   {
     "ContainingType": "AcademyAdvicingGp.Controllers.ScheduleTimeTableController",
+    "Method": "DownloadMySchedule",
+    "RelativePath": "api/ScheduleTimeTable/download-schedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.ScheduleTimeTableController",
+    "Method": "GetMySchedule",
+    "RelativePath": "api/ScheduleTimeTable/my-schedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcademyAdvicingGp.Controllers.ScheduleTimeTableController",
     "Method": "UpdateAsync",
     "RelativePath": "api/ScheduleTimeTable/update/{id}",
     "HttpMethod": "PUT",
@@ -668,7 +793,7 @@
       },
       {
         "Name": "dto",
-        "Type": "Academy.Core.Dtos.ScheduleDtos.CreateScheduleTimeTableDto",
+        "Type": "Academy.Core.Dtos.ScheduleDtos.EditScheduleTimeTableDto",
         "IsRequired": true
       }
     ],
