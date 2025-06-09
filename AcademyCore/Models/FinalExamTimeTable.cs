@@ -17,5 +17,10 @@ namespace Academy.Core.Models
         public Coordinator UploadedBy { get; set; }
         public int UploadedById { get; set; }
 
-    }
+
+		public int? AvailableCourseId { get; set; }
+		public AvailableCourse AvailableCourses { get; set; }
+		public List<Student> Students { get; set; }
+
+	}
 }

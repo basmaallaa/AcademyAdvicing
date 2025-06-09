@@ -17,6 +17,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.3",
           "Microsoft.Extensions.Caching.Memory": "9.0.4",
+          "QuestPDF": "2025.5.1",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -932,11 +933,19 @@
           }
         }
       },
+<<<<<<< HEAD
+      "QuestPDF/2025.5.1": {
+        "runtime": {
+          "lib/net8.0/QuestPDF.dll": {
+            "assemblyVersion": "2025.5.1.0",
+            "fileVersion": "2025.5.1.0"
+=======
       "QuestPDF/2025.4.4": {
         "runtime": {
           "lib/net8.0/QuestPDF.dll": {
             "assemblyVersion": "2025.4.4.0",
             "fileVersion": "2025.4.4.0"
+>>>>>>> d7432283faad04673c062edaed26aa025169dfd7
           }
         },
         "runtimeTargets": {
@@ -1440,7 +1449,7 @@
         },
         "runtime": {
           "Academy.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1453,7 +1462,7 @@
         },
         "runtime": {
           "Academy.Repo.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1465,12 +1474,16 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.14",
           "NETCore.MailKit": "2.1.0",
+<<<<<<< HEAD
+          "QuestPDF": "2025.5.1"
+=======
           "QuestPDF": "2025.4.4",
           "System.Drawing.Common": "9.0.4"
+>>>>>>> d7432283faad04673c062edaed26aa025169dfd7
         },
         "runtime": {
           "Academy.Services.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1910,12 +1923,21 @@
       "path": "portable.bouncycastle/1.9.0",
       "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
     },
+<<<<<<< HEAD
+    "QuestPDF/2025.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oRjdICOO28qkO9zTw3mFzFG1w51YAG6dWgC2g7JjzlsQF4HbY0iTa0uluwyPNZckPTv8v9+krSUyjjtspKhi7g==",
+      "path": "questpdf/2025.5.1",
+      "hashPath": "questpdf.2025.5.1.nupkg.sha512"
+=======
     "QuestPDF/2025.4.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ZHPAcemDniL/eJN6Kz4YmO5Mg7jhHuIUy77eCcYFP8Yf8q0nL5BSOkKb3xSPYC/mJD0ypR+X85THFaCwBZe3YQ==",
       "path": "questpdf/2025.4.4",
       "hashPath": "questpdf.2025.4.4.nupkg.sha512"
+>>>>>>> d7432283faad04673c062edaed26aa025169dfd7
     },
     "RBush/4.0.0": {
       "type": "package",

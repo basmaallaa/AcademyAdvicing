@@ -1,11 +1,19 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "nDGbWMmocdOmztuFwlaJaviCw82t1vB9mLKBfFk7pf4=",
+=======
   "Hash": "ITJFRESCt/UjompADDp1JdDijKcKKB3aZSVqyS38hbY=",
+>>>>>>> d7432283faad04673c062edaed26aa025169dfd7
   "Source": "AcademyAdvicingGp",
   "BasePath": "_content/AcademyAdvicingGp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
+<<<<<<< HEAD
+  "DiscoveryPatterns": [],
+  "Assets": []
+=======
   "DiscoveryPatterns": [
     {
       "Name": "AcademyAdvicingGp\\wwwroot",
@@ -4654,4 +4662,5 @@
       ]
     }
   ]
+>>>>>>> d7432283faad04673c062edaed26aa025169dfd7
 }

@@ -9,6 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Academy.Repo.Data;
+using QuestPDF.Fluent;
+using QuestPDF.Helpers;
+using QuestPDF.Infrastructure;
+using Academy.Core.Dtos.ScheduleDtos;
+
 
 namespace Academy.Services.Services
 {
@@ -16,11 +22,13 @@ namespace Academy.Services.Services
 	{
 		private readonly IMapper _mapper;
 		private readonly IUnitOfWork _unitOfWork;
+		private readonly AcademyContext _academyContext;
 
-		public ScheduleTimeTableService(IMapper mapper, IUnitOfWork unitOfWork)
+		public ScheduleTimeTableService(IMapper mapper, IUnitOfWork unitOfWork , AcademyContext academyContext)
 		{
 			_mapper = mapper;
 			_unitOfWork = unitOfWork;
+			_academyContext = academyContext;
 		}
 		public async Task<IEnumerable<ScheduleTimeTableDto>> GetAllAsync()
 		{
@@ -78,8 +86,19 @@ namespace Academy.Services.Services
 
 
 
-		public async Task<ScheduleTimeTableDto> AddAsync(CreateScheduleTimeTableDto dto)
+		public async Task<ScheduleTimeTableDto> AddAsync(CreateScheduleTimeTableDto dto, int coordinatorId)
 		{
+			// Validate time range
+			if (dto.StartTime == dto.EndTime)
+			{
+				throw new ArgumentException("Start time and end time cannot be the same.");
+			}
+
+			if (dto.StartTime > dto.EndTime)
+			{
+				throw new ArgumentException("Start time cannot be after end time.");
+			}
+
 			// Check if there's already a course at the same time and location
 			var allSchedules = await _unitOfWork.Repository<ScheduleTimeTable>().GetAllAsync();
 			var conflict = allSchedules.Any(s =>
@@ -91,27 +110,24 @@ namespace Academy.Services.Services
 			if (conflict)
 			{
 				throw new ArgumentException("There is already a course scheduled at this time and location.");
-
-
 			}
 
 			var availableCourse = await _unitOfWork.Repository<AvailableCourse>().GetAsync(dto.AvailableCourseId);
-			if (availableCourse == null) return null;  // AvailableCourse not found
+			if (availableCourse == null) return null;
 
-			var uploadedBy = await _unitOfWork.Repository<Coordinator>().GetAsync(dto.UploadedById);
-			if (uploadedBy == null) return null;  // User (UploadedBy) not found
+			var uploadedBy = await _unitOfWork.Repository<Coordinator>().GetAsync(coordinatorId);
+			if (uploadedBy == null) return null;
 
-			// Map DTO to entity
 			var scheduleTimeTable = _mapper.Map<ScheduleTimeTable>(dto);
 			scheduleTimeTable.AvailableCourse = availableCourse;
 			scheduleTimeTable.UploadedBy = uploadedBy;
 
-			// Add entity to repository
 			await _unitOfWork.Repository<ScheduleTimeTable>().AddAsync(scheduleTimeTable);
 			await _unitOfWork.CompleteAsync();
 
 			return _mapper.Map<ScheduleTimeTableDto>(scheduleTimeTable);
 		}
+
 
 		//public async Task<ScheduleTimeTableDto> UpdateScheduleTimeTableAsync(int id, CreateScheduleTimeTableDto dto)
 		//{
@@ -146,12 +162,24 @@ namespace Academy.Services.Services
 		//	return _mapper.Map<ScheduleTimeTableDto>(existingSchedule);
 		//}
 
-		public async Task UpdateScheduleTimeTableAsync(int id, CreateScheduleTimeTableDto dto)
+		public async Task UpdateScheduleTimeTableAsync(int id, EditScheduleTimeTableDto dto, int coordinatorId)
 		{
 			var existingSchedule = await _unitOfWork.Repository<ScheduleTimeTable>().GetAsync(id);
 
 			if (existingSchedule == null)
 				throw new ArgumentException("Schedule not found.");
+
+
+			if (dto.StartTime == dto.EndTime)
+			{
+				throw new ArgumentException("Start time and end time cannot be the same.");
+			}
+
+			if (dto.StartTime > dto.EndTime)
+			{
+				throw new ArgumentException("Start time must be before end time.");
+			}
+
 
 			// Check for conflict with other schedules (excluding the current one)
 			var allSchedules = await _unitOfWork.Repository<ScheduleTimeTable>().GetAllAsync();
@@ -167,29 +195,35 @@ namespace Academy.Services.Services
 				throw new ArgumentException("There is already a course scheduled at this time and location.");
 
 			// Update values
-			existingSchedule.AvailableCourseId = dto.AvailableCourseId;
+			//existingSchedule.AvailableCourseId = dto.AvailableCourseId;
 			existingSchedule.DayOfWeek = dto.DayOfWeek;
 			existingSchedule.StartTime = dto.StartTime;
 			existingSchedule.EndTime = dto.EndTime;
 			existingSchedule.Location = dto.Location;
-			existingSchedule.UploadedById = dto.UploadedById;
+			existingSchedule.UploadedById =coordinatorId;
 
 			_unitOfWork.Repository<ScheduleTimeTable>().Update(existingSchedule);
 			await _unitOfWork.CompleteAsync();
 
-			//// Re-fetch to include navigation properties
-			//var updatedSchedule = _unitOfWork.Repository<ScheduleTimeTable>()
-			//	.GetAllAsync("AvailableCourse.Course,AvailableCourse.Doctor,UploadedBy")
-			//	.FirstOrDefault(s => s.Id == id);
-
-			//return _mapper.Map<ScheduleTimeTableDto>(updatedSchedule);
-			//return _mapper.Map<ScheduleTimeTableDto>(existingSchedule);
+			
 		}
 
-		public async Task AddBulkScheduleAsync(CreateFullScheduleDto dto)
+		public async Task AddBulkScheduleAsync(CreateFullScheduleDto dto , int coordinatorId)
 		{
 			foreach (var scheduleDto in dto.Courses)
 			{
+				// check Time Logic
+				if (scheduleDto.StartTime == scheduleDto.EndTime)
+				{
+					throw new Exception($"Start time and end time cannot be the same for course at {scheduleDto.DayOfWeek} in {scheduleDto.Location}.");
+				}
+
+				if (scheduleDto.StartTime > scheduleDto.EndTime)
+				{
+					throw new Exception($"Start time must be before end time for course at {scheduleDto.DayOfWeek} in {scheduleDto.Location}.");
+				}
+
+				// Check for time aw location conflicts
 				var conflict = await _unitOfWork.Repository<ScheduleTimeTable>().GetAllAsync();
 				var isConflict = conflict.Any(s =>
 					s.DayOfWeek == scheduleDto.DayOfWeek &&
@@ -206,7 +240,7 @@ namespace Academy.Services.Services
 				var schedule = new ScheduleTimeTable
 				{
 					AvailableCourseId = scheduleDto.AvailableCourseId,
-					UploadedById = dto.UploadedById,
+					UploadedById = coordinatorId,
 					DayOfWeek = scheduleDto.DayOfWeek,
 					StartTime = scheduleDto.StartTime,
 					EndTime = scheduleDto.EndTime,
@@ -218,5 +252,114 @@ namespace Academy.Services.Services
 
 			await _unitOfWork.CompleteAsync();
 		}
+
+
+		public async Task<List<ScheduleTimeTableDto>> GetStudentSchedule(int studentId)
+		{
+			// Step 1: Get student's assigned courses
+			var student = await _unitOfWork.Repository<Student>().FirstOrDefaultAsync(s => s.Id == studentId);
+			if (student == null)
+				return null;
+
+			var assignedCourses = await _unitOfWork.Repository<AssignedCourse>().GetAllAsync(ac => ac.StudentId == studentId);
+
+			var courseIds = assignedCourses.Select(ac => ac.CourseId).Distinct().ToList();
+
+			if (!courseIds.Any())
+				return new List<ScheduleTimeTableDto>();
+
+			// Step 2: Get available courses related to the student's assigned courseIds
+			var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync(ac => courseIds.Contains(ac.CourseId));
+
+			var availableCourseIds = availableCourses.Select(ac => ac.Id).Distinct().ToList();
+
+			if (!availableCourseIds.Any())
+				return new List<ScheduleTimeTableDto>();
+
+			// Step 3: Get schedule entries for those available courses
+			var timeTables = await _academyContext.ScheduleTimeTable
+			.Where(st => availableCourseIds.Contains(st.AvailableCourseId ?? 0))
+			.Include(st => st.UploadedBy)
+			.Include(st => st.AvailableCourse)
+				.ThenInclude(ac => ac.Course)
+			.Include(st => st.AvailableCourse)
+				.ThenInclude(ac => ac.Doctor)
+			.ToListAsync();
+
+			return _mapper.Map<List<ScheduleTimeTableDto>>(timeTables);
+		}
+
+
+		public byte[] GenerateStudentSchedulePdf(List<ScheduleTimeTableDto> schedule, string studentName, string level)
+		{
+			QuestPDF.Settings.License = LicenseType.Community;
+
+			var document = Document.Create(container =>
+			{
+				container.Page(page =>
+				{
+					page.Margin(30);
+					page.Size(PageSizes.A4);
+					page.PageColor(Colors.White);
+					page.DefaultTextStyle(x => x.FontSize(12));
+
+					page.Header().Column(col =>
+					{
+						col.Item().Text($"Student Name: {studentName}").Bold().FontSize(14);
+						col.Item().Text($"Level: {level}").FontSize(12);
+						col.Item().PaddingVertical(10).Text("Student Weekly Schedule")
+							.FontSize(20).Bold().FontColor(Colors.Blue.Medium);
+					});
+
+					page.Content().Table(table =>
+					{
+						// Define column widths
+						table.ColumnsDefinition(columns =>
+						{
+							columns.RelativeColumn(2); // Day
+							columns.RelativeColumn(3); // Course
+							columns.RelativeColumn(5); // Time (wider)
+							columns.RelativeColumn(3); // Doctor
+							columns.RelativeColumn(3); // Location
+						});
+
+						// Header row
+						table.Header(header =>
+						{
+							header.Cell().Element(CellStyle).Text("Day").Bold();
+							header.Cell().Element(CellStyle).Text("Course").Bold();
+							header.Cell().Element(CellStyle).Text("Time").Bold();
+							header.Cell().Element(CellStyle).Text("Doctor").Bold();
+							header.Cell().Element(CellStyle).Text("Location").Bold();
+
+							static IContainer CellStyle(IContainer container)
+							{
+								return container.DefaultTextStyle(x => x.SemiBold()).Padding(5).Background(Colors.Grey.Lighten3).BorderBottom(1);
+							}
+						});
+
+						// Data rows
+						foreach (var item in schedule)
+						{
+							table.Cell().Element(CellStyle).Text(item.DayOfWeek);
+							table.Cell().Element(CellStyle).Text(item.CourseName);
+							table.Cell().Element(CellStyle).Text($"{item.StartTime} - {item.EndTime}");
+							table.Cell().Element(CellStyle).Text(item.DoctorName);
+							table.Cell().Element(CellStyle).Text(item.Location);
+
+							static IContainer CellStyle(IContainer container)
+							{
+								return container.BorderBottom(0.5f).PaddingVertical(4).PaddingHorizontal(2);
+							}
+						}
+					});
+				});
+			});
+
+			return document.GeneratePdf();
+
+			static string FormatTime(TimeSpan time) => DateTime.Today.Add(time).ToString("hh:mm tt");
+		}
+
 	}
 }

@@ -24,6 +24,12 @@ namespace Academy.Core.Models
 
         public string AdmissionYear { get; set; }
 
+        public ScheduleTimeTable scheduleTimeTable { get; set; }
+        public FinalExamTimeTable finalExamTimeTable { get; set; }
+
+        public int? ScheduleId { get; set; }
+        public int? FinalId { get; set; }
+
 
     }
 }

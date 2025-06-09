@@ -17,7 +17,7 @@ namespace Academy.Core.Dtos.ScheduleDtos
 
 		//public string UploadedByName { get; set; }
 		public string DoctorName { get; set; }
-		public int UploadedById { get; set; } //++++++++
+		//public int UploadedById { get; set; } //++++++++
 
 
 		public string CourseName { get; set; }

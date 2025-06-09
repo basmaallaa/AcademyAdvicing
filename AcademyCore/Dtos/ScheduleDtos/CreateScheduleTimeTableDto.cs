@@ -12,7 +12,7 @@ namespace Academy.Core.Dtos.ScheduleDtos
 		public TimeOnly StartTime { get; set; }
 		public TimeOnly EndTime { get; set; }
 		public string Location { get; set; }
-		public int UploadedById { get; set; }
+		//public int UploadedById { get; set; }
 		//public string UploadedByName { get; set; } 
 		//public string DoctorName { get; set; }
 

@@ -11,9 +11,12 @@ namespace Academy.Core.ServicesInterfaces
 	{
 		Task<IEnumerable<ScheduleTimeTableDto>> GetAllAsync();
 		Task<ScheduleTimeTableDto> GetByIdAsync(int id);
-		Task<ScheduleTimeTableDto> AddAsync(CreateScheduleTimeTableDto createScheduleTimeTableDto);
-		Task AddBulkScheduleAsync(CreateFullScheduleDto dto);
+		Task<ScheduleTimeTableDto> AddAsync(CreateScheduleTimeTableDto createScheduleTimeTableDto , int coordinatorId);
+		Task AddBulkScheduleAsync(CreateFullScheduleDto dto, int coordinatorId);
 		Task DeleteAsync(int id);
-		Task UpdateScheduleTimeTableAsync(int id, CreateScheduleTimeTableDto dto);
+		Task UpdateScheduleTimeTableAsync(int id, EditScheduleTimeTableDto dto , int coordinatorId);
+
+		Task<List<ScheduleTimeTableDto>> GetStudentSchedule(int studentId);
+		byte[] GenerateStudentSchedulePdf(List<ScheduleTimeTableDto> schedule, string studentName, string level);
 	}
 }
