@@ -153,6 +153,14 @@
             "NETCore.MailKit": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.4.4, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
