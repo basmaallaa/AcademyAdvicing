@@ -11,9 +11,10 @@ namespace Academy.Core.Dtos
     {
         public List<int> DoctorIds { get; set; }
       
-        public int AcademicYears { get; set; }
+        public string AcademicYears { get; set; }
         public Semster Semester { get; set; }
-
+         
+        public Levels? Level { get; set; }
         public int CourseId { get; set; }
 
     }

@@ -6,6 +6,7 @@ public class UserDto
     public string Email { get; set; }
     public string Token { get; set; }
 
-    public string ImagePath { get; set; }
+    //public string ImagePath { get; set; }
+    public string? ImagePath { get; set; }
     public List<string> Roles { get; set; } // تعديل هنا بدلاً من string واحد
 }

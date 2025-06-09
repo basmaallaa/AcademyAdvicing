@@ -11,7 +11,7 @@ namespace Academy.Core.Dtos
     public class ViewAvailableCourseDto
     {
             public int Id { get; set; }  // ID الخاص بـ Available Course
-            public int AcademicYears { get; set; }
+            public string  AcademicYears { get; set; }
 
              [JsonConverter(typeof(JsonStringEnumConverter))]
              public Semster Semester { get; set; }

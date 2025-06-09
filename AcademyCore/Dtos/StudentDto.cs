@@ -14,19 +14,22 @@ namespace Academy.Core.Dtos
 	{
 		
 		public string Name { get; set; }
-        public string UserName { get; set; }
+
+        public String AdmissionYear { get; set; }
         [Required]
         [EmailAddress]
         public string Email { get; set; }
 		public string PhoneNumber { get; set; }
         public IFormFile? ImageFile { get; set; }
-        public string Level { get; set; }
-		public Status Status { get; set; }
-		public float GPA { get; set; }
-		public int CompeletedHours { get; set; }
 
-		//حاسه مالهاش لازمه نعرض معاه الكورسيز بتاعتو
-		//public List<AssignedCourse> Courses { get; set; }
-		
-	}
+        public Levels Level { get; set; }
+		public Status Status { get; set; }
+		//public float GPA { get; set; }
+		//public int CompeletedHours { get; set; }
+       
+
+        //حاسه مالهاش لازمه نعرض معاه الكورسيز بتاعتو
+        //public List<AssignedCourse> Courses { get; set; }
+
+    }
 }

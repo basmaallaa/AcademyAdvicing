@@ -26,6 +26,20 @@ namespace Academy.Services.Services.CourseService
             _mapper = mapper;
         }
 
+        /* public async Task<CreateCourseDto> CreateCourseAsync(CreateCourseDto createCourseDto)
+         {
+             if (createCourseDto == null)
+                 throw new ArgumentNullException(nameof(createCourseDto));
+
+             var course = _mapper.Map<Course>(createCourseDto);
+
+             await _unitOfWork.Repository<Course>().AddAsync(course);
+             await _unitOfWork.CompleteAsync();
+
+             // تحويل الـ Course المُنشأ إلى CreateCourseDto وإرجاعه
+             var createdCourseDto = _mapper.Map<CreateCourseDto>(course);
+             return createdCourseDto;
+         }*/
         public async Task<CreateCourseDto> CreateCourseAsync(CreateCourseDto createCourseDto)
         {
             if (createCourseDto == null)
@@ -33,13 +47,20 @@ namespace Academy.Services.Services.CourseService
 
             var course = _mapper.Map<Course>(createCourseDto);
 
+            // تحقق من صحة prerequisite إذا تم تحديده
+            if (createCourseDto.PrerequisiteCourseId.HasValue)
+            {
+                var prerequisite = await _unitOfWork.Repository<Course>().GetByIdAsync(createCourseDto.PrerequisiteCourseId.Value);
+                if (prerequisite == null)
+                    throw new ArgumentException("Prerequisite course not found.");
+            }
+
             await _unitOfWork.Repository<Course>().AddAsync(course);
             await _unitOfWork.CompleteAsync();
 
-            // تحويل الـ Course المُنشأ إلى CreateCourseDto وإرجاعه
-            var createdCourseDto = _mapper.Map<CreateCourseDto>(course);
-            return createdCourseDto;
+            return _mapper.Map<CreateCourseDto>(course);
         }
+
         public async Task<CreateCourseDto> UpdateCourseAsync(int id, CreateCourseDto updateCourseDto)
         {
             var course = await _unitOfWork.Repository<Course>().GetAsync(id);

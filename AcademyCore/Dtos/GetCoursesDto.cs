@@ -18,7 +18,7 @@ namespace Academy.Core.Dtos
         [Range(2, 3, ErrorMessage = "CreditHours must be either 2 or 3.")]
         public int CreditHours { get; set; }
         public float Credit { get; set; }
-        public string? prerequisite { get; set; }
+        public int? PrerequisiteCourseId { get; set; }
 
 
         [JsonConverter(typeof(JsonStringEnumConverter))]

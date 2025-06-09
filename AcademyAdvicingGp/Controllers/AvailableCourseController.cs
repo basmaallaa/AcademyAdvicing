@@ -33,11 +33,11 @@ namespace AcademyAdvicingGp.Controllers
 
 
 
-       
 
-        [HttpPost("AddAvailableCourseWithDoctors")]
+
+        [HttpPost("AddAvailableCourse")]
         [Authorize(Roles = "Coordinator")]
-        public async Task<IActionResult> AssignDoctorsToAvailableCourse([FromBody] AvailableCourseDoctorDto dto)
+        public async Task<IActionResult> AddAvailableCourse([FromBody] AvailableCourseDoctorDto dto)
         {
             if (dto == null || dto.DoctorIds == null || !dto.DoctorIds.Any())
                 return BadRequest("Invalid data.");
@@ -45,15 +45,19 @@ namespace AcademyAdvicingGp.Controllers
             var alreadyAssignedDoctors = new List<int>();
             var newAssignments = new List<AvailableCourse>();
 
+            // ✅ احصلي على السنة الأكاديمية الحالية
+            int currentYear = DateTime.Now.Year;
+            string academicYear = $"{currentYear}/{currentYear + 1}";
+
             foreach (var doctorId in dto.DoctorIds)
             {
-                // هل فيه بالفعل AvailableCourse لنفس الدكتور والكورس والسنة والترم؟
                 var alreadyLinked = await _unitOfWork.Repository<AvailableCourse>().AnyAsync(ac =>
                     ac.DoctorId == doctorId &&
                     ac.CourseId == dto.CourseId &&
-                    ac.AcademicYears == dto.AcademicYears &&
-                    ac.Semester == dto.Semester
-                );
+                    ac.AcademicYears == academicYear &&
+                    ac.Semester == dto.Semester &&
+                    ac.Level == dto.Level
+                ) ;
 
                 if (alreadyLinked)
                 {
@@ -65,13 +69,13 @@ namespace AcademyAdvicingGp.Controllers
                     {
                         DoctorId = doctorId,
                         CourseId = dto.CourseId,
-                        AcademicYears = dto.AcademicYears,
-                        Semester = dto.Semester
+                        AcademicYears = academicYear,
+                        Semester = dto.Semester,
+                        Level = dto.Level
                     });
                 }
             }
 
-            // أضف التعيينات الجديدة
             if (newAssignments.Any())
             {
                 foreach (var assignment in newAssignments)
@@ -82,7 +86,6 @@ namespace AcademyAdvicingGp.Controllers
                 await _unitOfWork.CompleteAsync();
             }
 
-            // لو فيه دكاترة متسجلين قبل كده
             if (alreadyAssignedDoctors.Any())
             {
                 return Ok(new

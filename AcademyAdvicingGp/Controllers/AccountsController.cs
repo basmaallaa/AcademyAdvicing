@@ -18,6 +18,9 @@ using System.Security.Claims;
 using Azure;
 using Academy.Core.Models.Email;
 using System.ComponentModel.DataAnnotations;
+using DocumentFormat.OpenXml.Spreadsheet;
+using System.Collections.Generic;
+using DocumentFormat.OpenXml.Office2010.ExcelAc;
 
 
 
@@ -28,8 +31,8 @@ namespace AcademyAdvicingGp.Controllers
     public class AccountsController : ControllerBase
     {
         private readonly UserManager<AppUser> _userManager;
-         
-       
+
+
         private readonly ITokenService _tokenService;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -39,8 +42,8 @@ namespace AcademyAdvicingGp.Controllers
 
 
 
-        public AccountsController(IFileService fileService, UserManager<AppUser> userManager , ITokenService tokenService,
-            SignInManager<AppUser> signInManager, AcademyContext academyDbContext ,RoleManager<IdentityRole> roleManager,
+        public AccountsController(IFileService fileService, UserManager<AppUser> userManager, ITokenService tokenService,
+            SignInManager<AppUser> signInManager, AcademyContext academyDbContext, RoleManager<IdentityRole> roleManager,
             IEmailService emailService)
         {
             _fileService = fileService;
@@ -49,7 +52,7 @@ namespace AcademyAdvicingGp.Controllers
             _signInManager = signInManager;
             _academyDbContext = academyDbContext;
             _roleManager = roleManager;
-            _emailService = emailService; 
+            _emailService = emailService;
         }
         [HttpPost("RegisterPerson")]
         [Authorize(Roles = "Admin")]
@@ -171,7 +174,9 @@ namespace AcademyAdvicingGp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<UserDto>> Login(LoginDto model)
         {
-            var appUser = await _userManager.FindByEmailAsync(model.Email);
+            //var appUser = await _userManager.FindByEmailAsync(model.Email);
+            AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
+
             if (appUser is null) return Unauthorized(new ApiResponse(401));
 
             var result = await _signInManager.CheckPasswordSignInAsync(appUser, model.Password, false);
@@ -180,13 +185,14 @@ namespace AcademyAdvicingGp.Controllers
             // جلب الدور
             var roles = await _userManager.GetRolesAsync(appUser);
             //var role = roles.FirstOrDefault();
-      
+
             return Ok(new UserDto()
             {
                 DisplayName = appUser.DisplayName,
                 Email = appUser.Email,
                 Token = await _tokenService.CreateTokenAsync(appUser, _userManager),
-                Roles = roles.ToList()
+                Roles = roles.ToList(),
+                ImagePath = appUser.ImagePath
             });
         }
 
@@ -360,10 +366,10 @@ namespace AcademyAdvicingGp.Controllers
         public async Task<IActionResult> ForgotPassword([Required] String email)
         {
             var user = await _userManager.FindByEmailAsync(email);
-            if(user != null)
+            if (user != null)
             {
                 var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                var forgotPasswordlink = Url.Action(nameof(ResetPassword), "Accounts" , new {token, email=user.Email},Request.Scheme );
+                var forgotPasswordlink = Url.Action(nameof(ResetPassword), "Accounts", new { token, email = user.Email }, Request.Scheme);
 
                 if (string.IsNullOrEmpty(forgotPasswordlink))
                 {
@@ -384,10 +390,10 @@ namespace AcademyAdvicingGp.Controllers
 
         [HttpGet("resetPassword")]
 
-        public async Task<IActionResult> ResetPassword (string token , string email)
+        public async Task<IActionResult> ResetPassword(string token, string email)
         {
             var model = new ResetPassword { Token = token, Email = email };
-            return Ok(new { model });  
+            return Ok(new { model });
         }
 
         [HttpPost("resetPassword")]
@@ -400,7 +406,7 @@ namespace AcademyAdvicingGp.Controllers
                 var resetPassResult = await _userManager.ResetPasswordAsync(user, resetPassword.Token, resetPassword.Password);
                 if (!resetPassResult.Succeeded)
                 {
-                    foreach(var error in resetPassResult.Errors)
+                    foreach (var error in resetPassResult.Errors)
                     {
                         ModelState.AddModelError(error.Code, error.Description);
                     }
@@ -414,20 +420,39 @@ namespace AcademyAdvicingGp.Controllers
         }
 
         [HttpGet("test email")]
-        
+
         public async Task<IActionResult> TestEmail()
         {
             var message = new Message(
-            new List<string> { "basmaalaa157@gmail.com" }, 
-            "Test Email",                                                      
-            "<h1>This is a test email</h1>"                                   
+            new List<string> { "basmaalaa157@gmail.com" },
+            "Test Email",
+            "<h1>This is a test email</h1>"
             );
             await _emailService.SendEmailAsync(message);
             return Ok(new { message = "Email Sent Successfully" });
-        } 
+        }
+
+
+
+        [Authorize]
+        
+       [HttpGet("GetCurrentUser")]
+
+
+       public async Task<ActionResult<List>> GetCurrentUser()
+        {
+            var Email = User.FindFirstValue(ClaimTypes.Email);
+            var user = await _userManager.FindByEmailAsync(Email);
+            var ReturnedObject = new UserDto()
+            {
+                DisplayName = user.DisplayName,
+                Email = user.Email,
+                Token = await _tokenService.CreateTokenAsync(user, _userManager)
+            };
+            return Ok(ReturnedObject);
+        }
 
     }
-    
 }
 
     

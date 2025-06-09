@@ -13,11 +13,13 @@ namespace Academy.Core.Models
         public int CourseId { get; set; } //FK
 
 
-        public float ClassWorkScore { get; set; }
-        public float PracticalScore { get; set; }
-        public float FinalScore { get; set; }
+        public float? ClassWorkScore { get; set; }
+        public float? PracticalScore { get; set; }
+        public float? FinalScore { get; set; }
+
+        public float? TotalGrades { get; set; }
         public string Grade { get; set; }
-        public int AcademicYears { get; set; }
+        public string  AcademicYears { get; set; }
 
         public Semster Semester { get; set; }
 

@@ -19,9 +19,10 @@ using Microsoft.EntityFrameworkCore;
 
 using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
-
+using QuestPDF.Infrastructure;
 using System.Text.Json.Serialization;
 using Academy.Core.Models.Email;
+using QuestPDF.Infrastructure;
 
 namespace AcademyAdvicingGp
 {
@@ -29,6 +30,8 @@ namespace AcademyAdvicingGp
     {
         public static async Task Main(string[] args)
         {
+            QuestPDF.Settings.License = LicenseType.Community;
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container
@@ -137,7 +140,7 @@ namespace AcademyAdvicingGp
                 opts.TokenLifespan = TimeSpan.FromHours(10);
             });
             #endregion
-
+            
             builder.Services.AddSwaggerGen(c =>
             {
                 c.SupportNonNullableReferenceTypes(); // يدعم الـ file types
@@ -148,7 +151,8 @@ namespace AcademyAdvicingGp
                 });
             });
 
-
+            builder.Services.AddScoped<TranscriptService>();
+            
             var app = builder.Build();
 
             #region Database Migration & Seeding

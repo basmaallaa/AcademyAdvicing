@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "nDGbWMmocdOmztuFwlaJaviCw82t1vB9mLKBfFk7pf4=",
+  "Hash": "Lyl+obseLZOYOpm7Hq/VKvZuXjps9KF+lddiJOr0Sn0=",
   "Source": "AcademyAdvicingGp",
   "BasePath": "_content/AcademyAdvicingGp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "AcademyAdvicingGp\\wwwroot",
+      "Source": "AcademyAdvicingGp",
+      "ContentRoot": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyAdvicingGp\\wwwroot\\images\\helwan-logo.png",
+      "SourceId": "AcademyAdvicingGp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\AcademyAdvicingGp\\wwwroot\\",
+      "BasePath": "_content/AcademyAdvicingGp",
+      "RelativePath": "images/helwan-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\helwan-logo.png"
+    }
+  ]
 }

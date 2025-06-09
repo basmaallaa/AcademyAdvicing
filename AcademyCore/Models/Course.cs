@@ -1,4 +1,5 @@
 ﻿using Academy.Core.Enums;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Academy.Core.Models
 {
+    [Index(nameof(CourseCode), IsUnique = true)]
     public class Course
     {
 
@@ -17,7 +19,10 @@ namespace Academy.Core.Models
         public int CreditHours { get; set; }
         public float Credit { get; set; }
 
-        public string? prerequisite { get; set; }
+        //public string? prerequisite { get; set; }
+        public int? PrerequisiteCourseId { get; set; }
+
+        public Course? PrerequisiteCourse { get; set; }
 
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public courseCategory category { get; set; }

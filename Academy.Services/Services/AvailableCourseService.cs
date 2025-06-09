@@ -189,6 +189,7 @@ namespace Academy.Services.Services
                     DoctorIds = group.Select(ac => ac.DoctorId).Distinct().ToList(),
                     DoctorName = group.Select(ac => ac.Doctor.Name).Distinct().ToList(),
                     AcademicYears = group.Key.AcademicYears,
+                    // AcademicYears = int.Parse(group.Key.AcademicYears),
                     Semester = (Semster)(group.Key.Semester == Semster.Fall ? 0 : 1),
                 })
                 .ToListAsync();
@@ -213,7 +214,7 @@ namespace Academy.Services.Services
             var availableCourses = await _unitOfWork.Repository<AvailableCourse>().GetAllAsync();
 
             return availableCourses.Any(c => c.CourseId == courseId
-                                          && c.AcademicYears == academicYear
+                                          && c.AcademicYears == academicYear.ToString()
                                           && c.Semester == semester) ;
         }
 

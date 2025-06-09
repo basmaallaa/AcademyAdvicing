@@ -18,7 +18,7 @@ namespace Academy.Core.Dtos
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string ImagePath { get; set; }
-        public string Level { get; set; }
+        public Levels Level { get; set; }
         public Status Status { get; set; }
         public float GPA { get; set; }
         public int CompeletedHours { get; set; }

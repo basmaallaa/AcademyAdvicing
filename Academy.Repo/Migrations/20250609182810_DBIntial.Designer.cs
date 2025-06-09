@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Academy.Repo.Migrations
 {
     [DbContext(typeof(AcademyContext))]
-    [Migration("20250427151934_IntialDB")]
-    partial class IntialDB
+    [Migration("20250609182810_DBIntial")]
+    partial class DBIntial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,24 +33,28 @@ namespace Academy.Repo.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.Property<int>("AcademicYears")
-                        .HasColumnType("int");
+                    b.Property<string>("AcademicYears")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("ClassWorkScore")
+                    b.Property<float?>("ClassWorkScore")
                         .HasColumnType("real");
 
-                    b.Property<float>("FinalScore")
+                    b.Property<float?>("FinalScore")
                         .HasColumnType("real");
 
                     b.Property<string>("Grade")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("PracticalScore")
+                    b.Property<float?>("PracticalScore")
                         .HasColumnType("real");
 
                     b.Property<int>("Semester")
                         .HasColumnType("int");
+
+                    b.Property<float?>("TotalGrades")
+                        .HasColumnType("real");
 
                     b.HasKey("StudentId", "CourseId");
 
@@ -67,13 +71,17 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AcademicYears")
-                        .HasColumnType("int");
+                    b.Property<string>("AcademicYears")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
                     b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Level")
                         .HasColumnType("int");
 
                     b.Property<int>("Semester")
@@ -139,7 +147,7 @@ namespace Academy.Repo.Migrations
 
                     b.Property<string>("CourseCode")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<float>("Credit")
                         .HasColumnType("real");
@@ -154,18 +162,23 @@ namespace Academy.Repo.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("category")
+                    b.Property<int?>("PrerequisiteCourseId")
                         .HasColumnType("int");
 
-                    b.Property<string>("prerequisite")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("category")
+                        .HasColumnType("int");
 
                     b.Property<int>("type")
                         .HasColumnType("int");
 
                     b.HasKey("CourseId");
 
+                    b.HasIndex("CourseCode")
+                        .IsUnique();
+
                     b.HasIndex("ManageById");
+
+                    b.HasIndex("PrerequisiteCourseId");
 
                     b.ToTable("Courses");
                 });
@@ -348,6 +361,10 @@ namespace Academy.Repo.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AdmissionYear")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ArabicFullName")
                         .HasColumnType("nvarchar(max)");
 
@@ -370,9 +387,8 @@ namespace Academy.Repo.Migrations
                     b.Property<string>("ImagePath")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Level")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
 
                     b.Property<int?>("ManageById")
                         .HasColumnType("int");
@@ -484,7 +500,13 @@ namespace Academy.Repo.Migrations
                         .WithMany("Courses")
                         .HasForeignKey("ManageById");
 
+                    b.HasOne("Academy.Core.Models.Course", "PrerequisiteCourse")
+                        .WithMany()
+                        .HasForeignKey("PrerequisiteCourseId");
+
                     b.Navigation("ManageBy");
+
+                    b.Navigation("PrerequisiteCourse");
                 });
 
             modelBuilder.Entity("Academy.Core.Models.FinalExamTimeTable", b =>

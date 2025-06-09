@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academy.Repo.Migrations
 {
     /// <inheritdoc />
-    public partial class IntialDB : Migration
+    public partial class DBIntial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -78,10 +78,10 @@ namespace Academy.Repo.Migrations
                     CourseId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CourseCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CourseCode = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     CreditHours = table.Column<int>(type: "int", nullable: false),
                     Credit = table.Column<float>(type: "real", nullable: false),
-                    prerequisite = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PrerequisiteCourseId = table.Column<int>(type: "int", nullable: true),
                     category = table.Column<int>(type: "int", nullable: false),
                     type = table.Column<int>(type: "int", nullable: false),
                     ManageById = table.Column<int>(type: "int", nullable: true)
@@ -94,6 +94,11 @@ namespace Academy.Repo.Migrations
                         column: x => x.ManageById,
                         principalTable: "Coordinator",
                         principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Courses_Courses_PrerequisiteCourseId",
+                        column: x => x.PrerequisiteCourseId,
+                        principalTable: "Courses",
+                        principalColumn: "CourseId");
                 });
 
             migrationBuilder.CreateTable(
@@ -147,11 +152,12 @@ namespace Academy.Repo.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Level = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Level = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     GPA = table.Column<float>(type: "real", nullable: false),
                     CompeletedHours = table.Column<int>(type: "int", nullable: false),
                     ManageById = table.Column<int>(type: "int", nullable: true),
+                    AdmissionYear = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -177,8 +183,9 @@ namespace Academy.Repo.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AcademicYears = table.Column<int>(type: "int", nullable: false),
+                    AcademicYears = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false),
+                    Level = table.Column<int>(type: "int", nullable: true),
                     CourseId = table.Column<int>(type: "int", nullable: false),
                     DoctorId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -233,11 +240,12 @@ namespace Academy.Repo.Migrations
                 {
                     StudentId = table.Column<int>(type: "int", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
-                    ClassWorkScore = table.Column<float>(type: "real", nullable: false),
-                    PracticalScore = table.Column<float>(type: "real", nullable: false),
-                    FinalScore = table.Column<float>(type: "real", nullable: false),
+                    ClassWorkScore = table.Column<float>(type: "real", nullable: true),
+                    PracticalScore = table.Column<float>(type: "real", nullable: true),
+                    FinalScore = table.Column<float>(type: "real", nullable: true),
+                    TotalGrades = table.Column<float>(type: "real", nullable: true),
                     Grade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AcademicYears = table.Column<int>(type: "int", nullable: false),
+                    AcademicYears = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -303,9 +311,20 @@ namespace Academy.Repo.Migrations
                 column: "DoctorId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Courses_CourseCode",
+                table: "Courses",
+                column: "CourseCode",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Courses_ManageById",
                 table: "Courses",
                 column: "ManageById");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Courses_PrerequisiteCourseId",
+                table: "Courses",
+                column: "PrerequisiteCourseId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_FinalExamTimeTable_UploadedById",

@@ -24,137 +24,73 @@ namespace AcademyAdvicingGp.Controllers
 
 
 
-
-
         [HttpGet("View_Available_Course_TO_Doctor")]
         [Authorize(Roles = "Doctor")]
-        public async Task<IActionResult> GetDoctorCourses(int academicYear, Semster semester)
+        public async Task<IActionResult> GetDoctorCourses(string level)
         {
-            // استخراج الإيميل من الـ JWT token
+            // 1. استخراج الإيميل من التوكن
             var userEmail = User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(userEmail))
                 return Unauthorized("Email not found in token.");
 
-            // البحث عن الدكتور في جدول الأكاديمية بناءً على الإيميل
+            // 2. البحث عن الدكتور بناءً على الإيميل
             var doctor = await _academyContext.Doctors
                 .FirstOrDefaultAsync(d => d.Email == userEmail);
 
             if (doctor == null)
                 return NotFound("Doctor profile not found for the current user.");
 
-            // جلب الكورسات المرتبطة بالدكتور في السنة والفصل المحددين
+            // 3. حساب السنة الأكاديمية والترم الحالي
+            DateTime now = DateTime.Now;
+            int currentYear = now.Year;
+            string academicYear = $"{currentYear}/{currentYear + 1}";
+
+            Semster semester;
+            if (now.Month >= 9 && now.Month <= 12)
+                semester = Semster.Fall;
+            else if (now.Month >= 1 && now.Month <= 8)
+                semester = Semster.Spring;
+            else
+                return BadRequest("No available courses in summer (June–August).");
+
+            // 4. جلب الكورسات المرتبطة بالدكتور بالسنة، الترم، والليفيل الحاليين
+            // محاولة تحويل الـ string إلى enum من نوع Levels
+            if (!Enum.TryParse<Levels>(level, true, out var parsedLevel))
+                return BadRequest("Invalid level value.");
+
+            // بعد التحويل الناجح، استخدم parsedLevel في المقارنة
             var courses = await _academyContext.Availablecourses
                 .Where(ac => ac.DoctorId == doctor.Id &&
                              ac.AcademicYears == academicYear &&
-                             ac.Semester == semester)
+                             ac.Semester == semester &&
+                             ac.Level == parsedLevel)
                 .Include(ac => ac.Course)
                 .ToListAsync();
 
-            if (courses == null || !courses.Any())
-                return NotFound("No assigned courses found for this doctor in the specified year and semester.");
 
-            // تجهيز النتيجة للإرجاع
+            if (courses == null || !courses.Any())
+                return NotFound("No assigned courses found for this doctor in the current year, semester, and level.");
+
+            // 5. تجهيز النتيجة
             var result = courses.Select(course => new
             {
-                CourseId = course.Course.CourseId,
+                AvailableCourseId = course.Id,
                 Name = course.Course.Name,
                 Code = course.Course.CourseCode,
                 AcademicYear = course.AcademicYears,
-                Semester = course.Semester
+                Semester = course.Semester,
+                Level = course.Level
             });
 
             return Ok(result);
         }
 
 
-        [HttpGet("course-students-with-grades")]
-        [Authorize(Roles = "Doctor")]
-        public async Task<IActionResult> GetCourseStudentsWithGrades([FromQuery] int? availableCourseId, [FromQuery] int? academicYear, [FromQuery] Semster? semester)
-        {
-            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
-            if (string.IsNullOrEmpty(userEmail))
-                return Unauthorized("Email not found in token.");
-
-            var doctor = await _academyContext.Doctors.FirstOrDefaultAsync(d => d.Email == userEmail);
-            if (doctor == null)
-                return NotFound("Doctor profile not found.");
-
-            // الخطوة الأولى: رجّع الكورسات بتاعة الدكتور (لـ DropDown)
-            var availableCourses = await _unitOfWork.Repository<AvailableCourse>()
-                .GetAllIncludingAsync(ac => ac.DoctorId == doctor.Id, ac => ac.Course);
-
-            if (availableCourses == null || !availableCourses.Any())
-                return NotFound("No courses found for this doctor.");
-
-            // لو ما تمش اختيار كورس أو سنة أو ترم → رجّع الكورسات فقط
-            if (!availableCourseId.HasValue || !academicYear.HasValue || !semester.HasValue)
-            {
-                var courseOptions = availableCourses.Select(ac => new
-                {
-                    AvailableCourseId = ac.Id,
-                    CourseName = ac.Course.Name,
-                    AcademicYear = ac.AcademicYears,
-                    Semester = ac.Semester
-                }).ToList();
-
-                return Ok(new
-                {
-                    Courses = courseOptions,
-                    Message = "Please select a course, academic year, and semester to view students."
-                });
-            }
-
-            // الخطوة الثانية: نجيب الكورس المتاح بناءً على الاختيار
-            var selectedCourse = availableCourses.FirstOrDefault(ac =>
-                ac.Id == availableCourseId.Value &&
-                ac.AcademicYears == academicYear.Value &&
-                ac.Semester == semester.Value
-            );
-
-            if (selectedCourse == null)
-                return NotFound("Selected course not found for the given academic year and semester.");
-
-            // الخطوة الثالثة: نجيب الطلاب اللي سجلوا الكورس ده
-            var students = await _unitOfWork.Repository<Student>()
-                .GetAllIncludingAsync(
-                    s => s.Courses.Any(c => c.CourseId == selectedCourse.CourseId),
-                    s => s.Courses
-                );
-
-            var studentData = students.Select(s => new
-            {
-                StudentId = s.Id,
-                s.Name,
-                s.Email,
-                Scores = s.Courses
-                    .Where(c => c.CourseId == selectedCourse.CourseId)
-                    .Select(c => new
-                    {
-                        c.ClassWorkScore,
-                        c.PracticalScore,
-                        c.FinalScore,
-                        c.Grade
-                    }).ToList()
-            }).ToList();
-
-            return Ok(new
-            {
-                Course = new
-                {
-                    selectedCourse.Id,
-                    CourseName = selectedCourse.Course.Name,
-                    AcademicYear = selectedCourse.AcademicYears,
-                    Semester = selectedCourse.Semester
-                },
-                Students = studentData
-            });
-        }
-
 
         [HttpGet("export-course-students")]
         [Authorize(Roles = "Doctor")]
-        public async Task<IActionResult> ExportCourseStudentsToExcel([FromQuery] int? availableCourseId, [FromQuery] int? academicYear, [FromQuery] Semster? semester)
+        public async Task<IActionResult> ExportCourseStudentsToExcel([FromQuery] int availableCourseId)
         {
             var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
             if (string.IsNullOrEmpty(userEmail))
@@ -163,6 +99,18 @@ namespace AcademyAdvicingGp.Controllers
             var doctor = await _academyContext.Doctors.FirstOrDefaultAsync(d => d.Email == userEmail);
             if (doctor == null)
                 return NotFound("Doctor profile not found.");
+
+            DateTime now = DateTime.Now;
+            int currentYear = now.Year;
+            string academicYear = $"{currentYear}/{currentYear + 1}";
+
+            Semster semester;
+            if (now.Month >= 9 && now.Month <= 12)
+                semester = Semster.Spring;
+            else if (now.Month >= 1 && now.Month <= 8)
+                semester = Semster.Fall;
+            else
+                return BadRequest("No available courses in summer (June–August).");
 
             var availableCourses = await _unitOfWork.Repository<AvailableCourse>()
                 .GetAllIncludingAsync(ac => ac.DoctorId == doctor.Id, ac => ac.Course);
@@ -170,18 +118,14 @@ namespace AcademyAdvicingGp.Controllers
             if (!availableCourses.Any())
                 return NotFound("No courses found for this doctor.");
 
-            if (!availableCourseId.HasValue || !academicYear.HasValue || !semester.HasValue)
-                return BadRequest("Please provide course ID, academic year, and semester.");
-
             var selectedCourse = availableCourses.FirstOrDefault(ac =>
-                ac.Id == availableCourseId.Value &&
-                ac.AcademicYears == academicYear.Value &&
-                ac.Semester == semester.Value);
+                ac.Id == availableCourseId &&
+                ac.AcademicYears == academicYear &&
+                ac.Semester == semester);
 
             if (selectedCourse == null)
-                return NotFound("Selected course not found.");
+                return NotFound("Selected course not found for the current semester and academic year.");
 
-            // ✅ نجيب الطلاب من علاقة Student.Courses (مش من AssignedCourse)
             var students = await _unitOfWork.Repository<Student>()
                 .GetAllIncludingAsync(
                     s => s.Courses.Any(c => c.CourseId == selectedCourse.CourseId),
@@ -194,7 +138,6 @@ namespace AcademyAdvicingGp.Controllers
             using var workbook = new ClosedXML.Excel.XLWorkbook();
             var worksheet = workbook.Worksheets.Add("Course Students");
 
-            // Add headers
             worksheet.Cell(1, 1).Value = "Student ID";
             worksheet.Cell(1, 2).Value = "Name";
             worksheet.Cell(1, 3).Value = "Email";
@@ -202,6 +145,7 @@ namespace AcademyAdvicingGp.Controllers
             worksheet.Cell(1, 5).Value = "Practical Score";
             worksheet.Cell(1, 6).Value = "Final Score";
             worksheet.Cell(1, 7).Value = "Grade";
+            worksheet.Cell(1, 8).Value = "Total Grades";
 
             int row = 2;
             foreach (var student in students)
@@ -211,10 +155,11 @@ namespace AcademyAdvicingGp.Controllers
                 worksheet.Cell(row, 1).Value = student.Id;
                 worksheet.Cell(row, 2).Value = student.Name;
                 worksheet.Cell(row, 3).Value = student.Email;
-                worksheet.Cell(row, 4).Value = courseScore?.ClassWorkScore;
-                worksheet.Cell(row, 5).Value = courseScore?.PracticalScore;
-                worksheet.Cell(row, 6).Value = courseScore?.FinalScore;
-                worksheet.Cell(row, 7).Value = courseScore?.Grade;
+                worksheet.Cell(row, 4).Value = courseScore?.ClassWorkScore ?? 0;
+                worksheet.Cell(row, 5).Value = courseScore?.PracticalScore ?? 0;
+                worksheet.Cell(row, 6).Value = courseScore?.FinalScore ?? 0;
+                worksheet.Cell(row, 7).Value = courseScore?.Grade ?? "null";
+                worksheet.Cell(row, 8).Value = courseScore?.TotalGrades ?? 0;
                 row++;
             }
 
@@ -222,9 +167,11 @@ namespace AcademyAdvicingGp.Controllers
             workbook.SaveAs(stream);
             stream.Seek(0, SeekOrigin.Begin);
 
-            var fileName = $"Course_Students_{selectedCourse.Course.Name}_{academicYear}_{semester}.xlsx";
+            var fileName = $"Course_Students_{selectedCourse.Course.Name}{academicYear.Replace("/", "-")}{semester}.xlsx";
             return File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
         }
+
+
 
         [HttpPost("upload-course-student-grades")]
         [Authorize(Roles = "Doctor")]
@@ -252,13 +199,15 @@ namespace AcademyAdvicingGp.Controllers
             await file.CopyToAsync(stream);
             using var workbook = new XLWorkbook(stream);
             var worksheet = workbook.Worksheet(1);
-            var rows = worksheet.RangeUsed().RowsUsed().Skip(1); // Skip headers
+            var rows = worksheet.RangeUsed().RowsUsed().Skip(1); // Skip header row
 
             int updatedCount = 0;
 
             foreach (var row in rows)
             {
-                var studentId = row.Cell(1).GetValue<int>();
+                var studentIdCellValue = row.Cell(1).GetValue<string>()?.Trim();
+                if (!int.TryParse(studentIdCellValue, out var studentId))
+                    continue;
 
                 var student = await _academyContext.Students
                     .Include(s => s.Courses)
@@ -271,23 +220,34 @@ namespace AcademyAdvicingGp.Controllers
                 if (courseRecord == null)
                     continue;
 
-                // Try get values safely
-                var classWorkScore = row.Cell(4).GetValue<double?>();
-                var practicalScore = row.Cell(5).GetValue<double?>();
-                var finalScore = row.Cell(6).GetValue<double?>();
-                var grade = row.Cell(7).GetValue<string>();
+                var classWorkScoreStr = row.Cell(4).GetValue<string>()?.Trim();
+                var practicalScoreStr = row.Cell(5).GetValue<string>()?.Trim();
+                var finalScoreStr = row.Cell(6).GetValue<string>()?.Trim();
 
-                if (classWorkScore.HasValue)
-                    courseRecord.ClassWorkScore = (float)classWorkScore.Value;
+                courseRecord.ClassWorkScore = TryParseNullableFloat(classWorkScoreStr);
+                _academyContext.Entry(courseRecord).Property(c => c.ClassWorkScore).IsModified = true;
 
-                if (practicalScore.HasValue)
-                    courseRecord.PracticalScore = (float)practicalScore.Value;
+                courseRecord.PracticalScore = TryParseNullableFloat(practicalScoreStr);
+                _academyContext.Entry(courseRecord).Property(c => c.PracticalScore).IsModified = true;
 
-                if (finalScore.HasValue)
-                    courseRecord.FinalScore = (float)finalScore.Value;
+                courseRecord.FinalScore = TryParseNullableFloat(finalScoreStr);
+                _academyContext.Entry(courseRecord).Property(c => c.FinalScore).IsModified = true;
 
-                if (!string.IsNullOrEmpty(grade))
-                    courseRecord.Grade = grade;
+                // حساب TotalGrades = ClassWorkScore + PracticalScore + FinalScore
+                float totalGrades = 0f;
+                if (courseRecord.ClassWorkScore.HasValue)
+                    totalGrades += courseRecord.ClassWorkScore.Value;
+                if (courseRecord.PracticalScore.HasValue)
+                    totalGrades += courseRecord.PracticalScore.Value;
+                if (courseRecord.FinalScore.HasValue)
+                    totalGrades += courseRecord.FinalScore.Value;
+
+                courseRecord.TotalGrades = totalGrades;
+                _academyContext.Entry(courseRecord).Property(c => c.TotalGrades).IsModified = true;
+
+                // حساب التقدير بناء على TotalGrades المحسوبة
+                courseRecord.Grade = CalculateGrade(totalGrades);
+                _academyContext.Entry(courseRecord).Property(c => c.Grade).IsModified = true;
 
                 updatedCount++;
             }
@@ -296,6 +256,33 @@ namespace AcademyAdvicingGp.Controllers
 
             return Ok($"{updatedCount} student grades updated successfully.");
         }
+
+        private float? TryParseNullableFloat(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+                return null;
+
+            if (float.TryParse(input, out var result))
+                return result;
+
+            return null;
+        }
+
+        private string CalculateGrade(float totalGrade)
+        {
+            if (totalGrade >= 90) return "A+";
+            if (totalGrade >= 85) return "A";
+            if (totalGrade >= 80) return "B+";
+            if (totalGrade >= 75) return "B";
+            if (totalGrade >= 70) return "C+";
+            if (totalGrade >= 65) return "C";
+            if (totalGrade >= 60) return "D+";
+            if (totalGrade >= 50) return "D";
+            return "F";
+        }
+
+
+
 
 
 

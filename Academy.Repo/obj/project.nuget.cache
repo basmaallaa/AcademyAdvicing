@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yocYTlqjcyypAJRvpu7Yq2fzmM1KiALJb62KGBsbGHI98XjQQCr4QJQyKGWwbuUg0nYUlDEPsQ2sSqYQYfzEOA==",
+  "dgSpecHash": "9bxvKoqqBpnc1v/Y0g+2uUy9DPsKKVfN816ZWLUk6P0dg/ueARlJ08/nDIGEmfybRzqCNGE0g50B0UcD6SchkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT\\Desktop\\GP_Project\\AcademyAdvicing\\Academy.Repo\\Academy.Repo.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\IT\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\netcore.mailkit\\2.1.0\\netcore.mailkit.2.1.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\IT\\.nuget\\packages\\questpdf\\2025.4.4\\questpdf.2025.4.4.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\IT\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

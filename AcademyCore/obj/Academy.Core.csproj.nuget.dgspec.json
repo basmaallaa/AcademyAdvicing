@@ -66,6 +66,10 @@
             "NETCore.MailKit": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.4.4, )"
             }
           },
           "imports": [

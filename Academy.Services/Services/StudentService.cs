@@ -16,41 +16,43 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
+
+
 namespace Academy.Services.Services
 {
-	public class StudentService : IStudentService
-	{
-		private readonly IUnitOfWork _unitOfWork;
+    public class StudentService : IStudentService
+    {
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly UserManager<AppUser> _userManager;
         private readonly ITokenService _tokenService;
         private readonly AcademyContext _academyDbContext;
         private readonly IFileService _fileService;
 
-        public StudentService(IMapper mapper , IUnitOfWork unitOfWork, UserManager<AppUser> userManager, ITokenService tokenService, AcademyContext academyDbContext, IFileService fileService)
+        public StudentService(IMapper mapper, IUnitOfWork unitOfWork, UserManager<AppUser> userManager, ITokenService tokenService, AcademyContext academyDbContext, IFileService fileService)
         {
-			_mapper = mapper;
-			_unitOfWork = unitOfWork;
+            _mapper = mapper;
+            _unitOfWork = unitOfWork;
             _userManager = userManager;
             _tokenService = tokenService;
             _academyDbContext = academyDbContext;
-           _fileService = fileService;
+            _fileService = fileService;
         }
 
-       
+
 
 
         public async Task<IEnumerable<StudentDtoID>> GetAllStudentsAsync()
-		{
-			return _mapper.Map<IEnumerable<StudentDtoID>>(await _unitOfWork.Repository<Student>().GetAllAsync());
-		}
+        {
+            return _mapper.Map<IEnumerable<StudentDtoID>>(await _unitOfWork.Repository<Student>().GetAllAsync());
+        }
 
-		public async Task<StudentDtoID> GetStudentByIdAsync(int id)
-		{
-			var student = await _unitOfWork.Repository<Student>().GetAsync(id);
-			var studentMapped = _mapper.Map<StudentDtoID>(student);
-			return studentMapped;
-		}
+        public async Task<StudentDtoID> GetStudentByIdAsync(int id)
+        {
+            var student = await _unitOfWork.Repository<Student>().GetAsync(id);
+            var studentMapped = _mapper.Map<StudentDtoID>(student);
+            return studentMapped;
+        }
 
         //public async Task<StudentDto> AddStudentAsync(StudentDto studentDto)
         //{
@@ -66,9 +68,9 @@ namespace Academy.Services.Services
         //	return _mapper.Map<StudentDto>(student);
         //}
 
-        public async Task<StudentDtoID> AddStudentAsync( StudentDto model)
+        public async Task<StudentDtoID> AddStudentAsync(StudentDto model)
         {
-            
+
             var existingStudent = await _academyDbContext.Students
                 .FirstOrDefaultAsync(s => s.Email == model.Email);
             if (existingStudent != null)
@@ -86,17 +88,30 @@ namespace Academy.Services.Services
                 imageFileName = await _fileService.SaveFileAsync(model.ImageFile, allowedExtensions);
             }
 
+            // احصلي على سنة القبول (ممكن تدخليها من الفورم أو تاخدي السنة الحالية)
+            string admissionYear = model.AdmissionYear; // مثال: 2021
+
+            // هات عدد الطلاب اللي دخلوا نفس السنة
+            int countForYear = await _academyDbContext.Students
+                .CountAsync(s => s.AdmissionYear == admissionYear);
+
+            // رقم الطالب التالي (نضيف 1 لأنه يبدأ من 0)
+            int nextSerial = countForYear + 1;
+
+            // توليد الـ UserName بالشكل 20250001 مثلاً
+            string generatedUserName = $"{admissionYear}{nextSerial.ToString("D4")}";
 
 
             var student = new Student
             {
                 Name = model.Name,
-                UserName = model.UserName,
+                AdmissionYear = model.AdmissionYear,
+                UserName = generatedUserName,
                 Email = model.Email,
                 Level = model.Level,
                 Status = model.Status,
-                GPA = model.GPA,
-                CompeletedHours = model.CompeletedHours,
+                //GPA = model.GPA,
+               //CompeletedHours = model.CompeletedHours,
                 ImagePath = imageFileName,
                 PhoneNumber = model.PhoneNumber
 
@@ -109,10 +124,10 @@ namespace Academy.Services.Services
             // الآن سننشئ المستخدم في Identity
             var appUser = new AppUser
             {
-                UserName = model.Email,
+                UserName = generatedUserName,
                 Email = model.Email,
                 DisplayName = model.Name,
-                PhoneNumber= model.PhoneNumber
+                PhoneNumber = model.PhoneNumber
             };
 
             var result = await _userManager.CreateAsync(appUser, "Student@123"); // تأكدي من تعيين كلمة مرور مؤقتة أو إرسال بريد إلكتروني لتغييرها
@@ -135,21 +150,22 @@ namespace Academy.Services.Services
                 UserName = student.UserName,
                 Email = student.Email,
                 PhoneNumber = student.PhoneNumber,
-                ImagePath= imageFileName,
+                ImagePath = imageFileName,
                 Level = student.Level,
                 Status = student.Status,
-                GPA = student.GPA,
-                CompeletedHours = student.CompeletedHours,
+                //GPA = student.GPA,
+                //CompeletedHours = student.CompeletedHours,
                 Token = token
             };
 
             return studentDtoID;
         }
 
+        
 
 
 
-            public async Task UpdateStudentAsync(StudentDtoID studentDtoid)
+        public async Task UpdateStudentAsync(StudentDtoID studentDtoid)
         {
             var existingStudent = await _unitOfWork.Repository<Student>().GetAsync(studentDtoid.Id);
 
@@ -178,7 +194,7 @@ namespace Academy.Services.Services
             await _unitOfWork.CompleteAsync();
         }
 
-       
+
 
         public async Task<IEnumerable<StudentDtoID>> SearchStudentsAsync(string? searchTerm)
         {
@@ -199,7 +215,7 @@ namespace Academy.Services.Services
                     c.Name.ToLower().Contains(searchTerm) ||
                     c.UserName.ToLower().Contains(searchTerm) ||
                     c.PhoneNumber.ToLower().Contains(searchTerm) ||
-                    c.Level.ToLower().Contains(searchTerm) ||
+                   c.Level.ToString().ToLower().Contains(searchTerm) ||
                     c.Status.ToString().ToLower().Contains(searchTerm) ||
                     (isInt && c.Id == id) ||            // If number, check ID
                     (isFloat && c.GPA == gpa) ||        // If float, check GPA

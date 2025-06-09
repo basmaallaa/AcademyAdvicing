@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academy.Repo.Migrations.AppIdentityDb
 {
     /// <inheritdoc />
-    public partial class IntialDBIDentity : Migration
+    public partial class DBIntial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
